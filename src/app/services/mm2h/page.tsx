@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import {
     Clock,
     Users,
-    Car,
+    Briefcase,
     Home,
     Globe,
     HeartPulse,
@@ -14,10 +14,12 @@ import {
     Mail,
     ArrowRight,
     ShieldCheck,
-    Briefcase
+    Award,
+    Building,
+    UserCheck
 } from "lucide-react";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,6 +42,58 @@ const itemVariants = {
     }
 };
 
+// Tier data
+const tiers = [
+    {
+        name: "Platinum",
+        color: "from-gray-700 to-gray-900",
+        borderColor: "border-gray-400",
+        bgColor: "bg-gradient-to-br from-gray-800 to-gray-900",
+        fixedDeposit: "USD 1,000,000",
+        property: "RM 2,000,000",
+        visaDuration: "20 Years",
+        minAge: "25",
+        highlights: ["Work & Business Rights", "Domestic Helper", "Premium Status"],
+        popular: false
+    },
+    {
+        name: "Gold",
+        color: "from-yellow-500 to-yellow-700",
+        borderColor: "border-yellow-400",
+        bgColor: "bg-gradient-to-br from-yellow-600 to-yellow-800",
+        fixedDeposit: "USD 500,000",
+        property: "RM 1,000,000",
+        visaDuration: "15 Years",
+        minAge: "25",
+        highlights: ["Extended Visa", "Property Investment", "Family Inclusion"],
+        popular: true
+    },
+    {
+        name: "Silver",
+        color: "from-gray-400 to-gray-600",
+        borderColor: "border-gray-300",
+        bgColor: "bg-gradient-to-br from-gray-400 to-gray-600",
+        fixedDeposit: "USD 150,000",
+        property: "RM 600,000",
+        visaDuration: "5 Years",
+        minAge: "25",
+        highlights: ["Entry Level", "Renewable Visa", "Family Inclusion"],
+        popular: false
+    },
+    {
+        name: "SEZ / SFZ",
+        color: "from-primary to-primary-hover",
+        borderColor: "border-primary",
+        bgColor: "bg-gradient-to-br from-primary to-primary-hover",
+        fixedDeposit: "USD 32,000 - 65,000",
+        property: "From Developer",
+        visaDuration: "10 Years",
+        minAge: "21",
+        highlights: ["Special Zones", "Lower Entry", "Age-Based Rates"],
+        popular: false
+    }
+];
+
 export default function MM2H() {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -48,6 +102,7 @@ export default function MM2H() {
     });
 
     const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+    const [activeTab, setActiveTab] = useState("requirements");
 
     return (
         <div className="min-h-screen bg-white pt-24 pb-20 overflow-hidden" ref={ref}>
@@ -69,13 +124,14 @@ export default function MM2H() {
                         transition={{ delay: 0.2, duration: 0.5 }}
                         className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6"
                     >
-                        Premium Residency Programme
+                        New 2024/2025 Tiered Programme
                     </motion.span>
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
                         MM2H – Malaysia <span className="text-primary">My Second Home</span>
                     </h1>
                     <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                        Live, retire, or invest in Malaysia with the MM2H Programme! Get a 10-year renewable visa and enjoy the benefits of calling Malaysia your second home.
+                        Choose from Platinum, Gold, Silver, or SEZ tiers with visa durations from 5 to 20 years. 
+                        Make Malaysia your second home with our comprehensive residency programme.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
@@ -85,10 +141,10 @@ export default function MM2H() {
                             Apply Now <ArrowRight size={20} />
                         </Link>
                         <Link
-                            href="#requirements"
+                            href="#tiers"
                             className="bg-white border border-gray-200 text-gray-700 hover:text-primary hover:border-primary font-bold py-4 px-8 rounded-full transition-all hover:shadow-md flex items-center justify-center gap-2"
                         >
-                            Check Requirements
+                            View Tier Options
                         </Link>
                     </div>
                 </motion.div>
@@ -107,11 +163,17 @@ export default function MM2H() {
                         >
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">What is MM2H?</h2>
                             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                Malaysia My Second Home (MM2H) is a long-term residency programme that allows foreigners to live in Malaysia for up to 10 years (renewable).
+                                Malaysia My Second Home (MM2H) is a government initiative introduced in 2002 to attract foreigners to live and retire in Malaysia. The programme has been restructured with a new tiered system for 2024/2025.
                             </p>
-                            <p className="text-gray-600 text-lg leading-relaxed">
-                                It is perfect for retirees, investors, and those seeking a better quality of life in a tropical paradise with affordable living costs.
+                            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                                The new structure offers four categories: <strong>Platinum</strong> (20-year visa), <strong>Gold</strong> (15-year visa), <strong>Silver</strong> (5-year visa), and <strong>Special Economic/Financial Zone</strong> (10-year visa) – each with different financial requirements and benefits.
                             </p>
+                            <div className="flex flex-wrap gap-3">
+                                <span className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium">Platinum</span>
+                                <span className="px-4 py-2 bg-yellow-600 text-white rounded-full text-sm font-medium">Gold</span>
+                                <span className="px-4 py-2 bg-gray-500 text-white rounded-full text-sm font-medium">Silver</span>
+                                <span className="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium">SEZ/SFZ</span>
+                            </div>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, x: 50, rotate: 5 }}
@@ -128,6 +190,94 @@ export default function MM2H() {
                         </motion.div>
                     </div>
                 </div>
+            </section>
+
+            {/* Tier Cards */}
+            <section id="tiers" className="container mx-auto px-6 mb-20">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-center mb-16"
+                >
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Choose Your Tier</h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        Select the MM2H tier that best suits your investment capacity and lifestyle goals.
+                    </p>
+                </motion.div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {tiers.map((tier, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            className={`relative bg-white rounded-2xl shadow-lg border-2 ${tier.popular ? 'border-yellow-400 scale-105' : 'border-gray-100'} overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2`}
+                        >
+                            {tier.popular && (
+                                <div className="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                                    POPULAR
+                                </div>
+                            )}
+                            <div className={`${tier.bgColor} text-white p-6 text-center`}>
+                                <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
+                                <div className="text-3xl font-bold">{tier.visaDuration}</div>
+                                <div className="text-sm opacity-80">Renewable Visa</div>
+                            </div>
+                            <div className="p-6">
+                                <div className="space-y-4 mb-6">
+                                    <div className="flex justify-between items-center border-b pb-3">
+                                        <span className="text-gray-600">Fixed Deposit</span>
+                                        <span className="font-bold text-gray-900">{tier.fixedDeposit}</span>
+                                    </div>
+                                    <div className="flex justify-between items-center border-b pb-3">
+                                        <span className="text-gray-600">Property</span>
+                                        <span className="font-bold text-gray-900">{tier.property}</span>
+                                    </div>
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-gray-600">Min Age</span>
+                                        <span className="font-bold text-gray-900">{tier.minAge} years</span>
+                                    </div>
+                                </div>
+                                <div className="space-y-2 mb-6">
+                                    {tier.highlights.map((highlight, i) => (
+                                        <div key={i} className="flex items-center gap-2 text-sm text-gray-600">
+                                            <CheckCircle size={16} className="text-primary" />
+                                            {highlight}
+                                        </div>
+                                    ))}
+                                </div>
+                                <Link
+                                    href="/contact"
+                                    className="block w-full text-center bg-gray-100 hover:bg-primary hover:text-white text-gray-700 font-bold py-3 px-4 rounded-full transition-all"
+                                >
+                                    Get Started
+                                </Link>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* SEZ Note */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/10"
+                >
+                    <div className="flex items-start gap-4">
+                        <div className="text-primary mt-1"><Building size={24} /></div>
+                        <div>
+                            <h4 className="font-bold text-gray-900 mb-2">SEZ/SFZ Special Zones</h4>
+                            <p className="text-gray-600 text-sm">
+                                The SEZ/SFZ category offers lower entry requirements with fixed deposits of <strong>USD 65,000</strong> (ages 21-49) or <strong>USD 32,000</strong> (50+). 
+                                Property must be purchased directly from developers in designated zones like Forest City in Johor.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
             </section>
 
             {/* Benefits */}
@@ -154,33 +304,33 @@ export default function MM2H() {
                     {[
                         {
                             icon: <Clock size={32} />,
-                            title: "10-Year Visa",
-                            desc: "Stay in Malaysia for up to 10 years, renewable indefinitely."
+                            title: "5 to 20-Year Visa",
+                            desc: "Choose visa duration based on your tier: Silver (5yr), SEZ (10yr), Gold (15yr), or Platinum (20yr)."
                         },
                         {
                             icon: <Users size={32} />,
                             title: "Family Inclusion",
-                            desc: "Bring your spouse, unmarried children under 21, and parents."
+                            desc: "Include spouse, unmarried children below 34, disabled children, and parents/in-laws as dependents."
                         },
                         {
-                            icon: <Car size={32} />,
-                            title: "Tax-Free Car",
-                            desc: "Import one duty-free car or buy a locally-assembled car tax-free."
+                            icon: <Briefcase size={32} />,
+                            title: "Work & Business",
+                            desc: "Platinum category holders can conduct business and work in Malaysia without special permission."
                         },
                         {
                             icon: <Home size={32} />,
                             title: "Property Purchase",
-                            desc: "Buy unlimited properties with no additional approvals needed."
+                            desc: "Buy property in Malaysia with higher approval rates and access to financing for MM2H holders."
                         },
                         {
                             icon: <Globe size={32} />,
-                            title: "Multiple Entry",
-                            desc: "No restrictions on entry/exit – come and go as you please."
+                            title: "Freedom to Move",
+                            desc: "Enjoy visa flexibility in West Malaysia without location mandates or reporting requirements."
                         },
                         {
                             icon: <HeartPulse size={32} />,
-                            title: "World-Class Healthcare",
-                            desc: "Access Malaysia’s excellent private healthcare at affordable prices."
+                            title: "Tax-Free Offshore Income",
+                            desc: "Tax exemption on pension remitted into Malaysia for MM2H participants."
                         }
                     ].map((benefit, index) => (
                         <motion.div
@@ -198,7 +348,7 @@ export default function MM2H() {
                 </motion.div>
             </section>
 
-            {/* Financial Requirements */}
+            {/* Financial Requirements Table */}
             <section id="requirements" className="container mx-auto px-4 md:px-6 mb-20">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
@@ -212,20 +362,21 @@ export default function MM2H() {
 
                     <div className="container mx-auto px-6 relative z-10">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Financial Requirements (2025)</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Financial Requirements (2024/2025)</h2>
                             <p className="text-gray-400 max-w-2xl mx-auto">
-                                Applicants must meet the following financial criteria.
+                                The new tiered structure with USD-based fixed deposits and mandatory property purchase.
                             </p>
                         </div>
 
                         <div className="overflow-x-auto">
-                            <table className="w-full max-w-4xl mx-auto text-left border-collapse">
+                            <table className="w-full max-w-5xl mx-auto text-left border-collapse">
                                 <thead>
                                     <tr className="border-b border-gray-700">
-                                        <th className="py-4 px-6 text-lg font-semibold text-primary">Category</th>
-                                        <th className="py-4 px-6 text-lg font-semibold text-primary">Liquid Assets</th>
-                                        <th className="py-4 px-6 text-lg font-semibold text-primary">Fixed Deposit (Malaysia)</th>
-                                        <th className="py-4 px-6 text-lg font-semibold text-primary">Monthly Income</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Tier</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Fixed Deposit (USD)</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Property Purchase (RM)</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Visa Duration</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Min Age</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -233,25 +384,66 @@ export default function MM2H() {
                                         initial={{ opacity: 0, x: -20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
+                                        transition={{ delay: 0.1 }}
+                                        className="border-b border-gray-800 hover:bg-white/5 transition-colors"
+                                    >
+                                        <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Platinum</span></td>
+                                        <td className="py-5 px-4 text-gray-300">USD 1,000,000</td>
+                                        <td className="py-5 px-4 text-gray-300">RM 2,000,000</td>
+                                        <td className="py-5 px-4 text-gray-300">20 Years</td>
+                                        <td className="py-5 px-4 text-gray-300">25</td>
+                                    </motion.tr>
+                                    <motion.tr
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
                                         transition={{ delay: 0.2 }}
                                         className="border-b border-gray-800 hover:bg-white/5 transition-colors"
                                     >
-                                        <td className="py-6 px-6 font-medium">Under 50 years</td>
-                                        <td className="py-6 px-6 text-gray-300">RM 500,000</td>
-                                        <td className="py-6 px-6 text-gray-300">RM 300,000</td>
-                                        <td className="py-6 px-6 text-gray-300">RM 40,000</td>
+                                        <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-yellow-600 rounded-full text-sm">Gold</span></td>
+                                        <td className="py-5 px-4 text-gray-300">USD 500,000</td>
+                                        <td className="py-5 px-4 text-gray-300">RM 1,000,000</td>
+                                        <td className="py-5 px-4 text-gray-300">15 Years</td>
+                                        <td className="py-5 px-4 text-gray-300">25</td>
                                     </motion.tr>
                                     <motion.tr
                                         initial={{ opacity: 0, x: -20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: 0.3 }}
+                                        className="border-b border-gray-800 hover:bg-white/5 transition-colors"
+                                    >
+                                        <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-gray-500 rounded-full text-sm">Silver</span></td>
+                                        <td className="py-5 px-4 text-gray-300">USD 150,000</td>
+                                        <td className="py-5 px-4 text-gray-300">RM 600,000</td>
+                                        <td className="py-5 px-4 text-gray-300">5 Years</td>
+                                        <td className="py-5 px-4 text-gray-300">25</td>
+                                    </motion.tr>
+                                    <motion.tr
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: 0.4 }}
+                                        className="border-b border-gray-800 hover:bg-white/5 transition-colors"
+                                    >
+                                        <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-primary rounded-full text-sm">SEZ (21-49)</span></td>
+                                        <td className="py-5 px-4 text-gray-300">USD 65,000</td>
+                                        <td className="py-5 px-4 text-gray-300">From Developer</td>
+                                        <td className="py-5 px-4 text-gray-300">10 Years</td>
+                                        <td className="py-5 px-4 text-gray-300">21</td>
+                                    </motion.tr>
+                                    <motion.tr
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: 0.5 }}
                                         className="hover:bg-white/5 transition-colors"
                                     >
-                                        <td className="py-6 px-6 font-medium">50 years & above</td>
-                                        <td className="py-6 px-6 text-gray-300">RM 500,000</td>
-                                        <td className="py-6 px-6 text-gray-300">RM 300,000</td>
-                                        <td className="py-6 px-6 text-gray-300">RM 40,000</td>
+                                        <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-primary rounded-full text-sm">SEZ (50+)</span></td>
+                                        <td className="py-5 px-4 text-gray-300">USD 32,000</td>
+                                        <td className="py-5 px-4 text-gray-300">From Developer</td>
+                                        <td className="py-5 px-4 text-gray-300">10 Years</td>
+                                        <td className="py-5 px-4 text-gray-300">50</td>
                                     </motion.tr>
                                 </tbody>
                             </table>
@@ -261,13 +453,25 @@ export default function MM2H() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.4 }}
-                            className="max-w-4xl mx-auto mt-8 p-6 bg-white/10 rounded-xl border border-white/10 flex items-start gap-4 backdrop-blur-sm"
+                            transition={{ delay: 0.6 }}
+                            className="max-w-5xl mx-auto mt-8 p-6 bg-white/10 rounded-xl border border-white/10 backdrop-blur-sm"
                         >
-                            <div className="text-primary mt-1"><Briefcase size={24} /></div>
-                            <p className="text-gray-300 text-sm md:text-base">
-                                <span className="font-bold text-white">Note:</span> After 1 year, you can withdraw up to RM 50,000 from the fixed deposit for approved purposes (property purchase, medical expenses, or children's education).
-                            </p>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="text-primary mt-1"><Award size={24} /></div>
+                                    <div>
+                                        <p className="font-bold text-white mb-1">Fixed Deposit Withdrawal</p>
+                                        <p className="text-gray-400 text-sm">Up to 50% can be withdrawn after 1 year for approved purposes (property, medical, education).</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-4">
+                                    <div className="text-primary mt-1"><UserCheck size={24} /></div>
+                                    <div>
+                                        <p className="font-bold text-white mb-1">Stay Requirement</p>
+                                        <p className="text-gray-400 text-sm">Applicants under 50 must stay 90 cumulative days per year in Peninsula Malaysia.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </motion.div>
                     </div>
                 </motion.div>
@@ -288,15 +492,12 @@ export default function MM2H() {
                         </h2>
                         <ul className="space-y-4">
                             {[
-                                "Valid Passport – All pages copy, minimum 18 months validity",
-                                "Bank Statements – Last 3 months showing required liquid assets",
-                                "Income Proof – Employment letter, pension statements, or business documents",
-                                "Medical Report – From any registered hospital/clinic",
-                                "Police Clearance – From home country (notarized)",
-                                "Marriage Certificate – If applying with spouse (English version)",
-                                "Birth Certificates – For dependent children",
-                                "Passport Photos – Recent photos, white background",
-                                "Resume/CV – Educational and professional background"
+                                "Passport Photos – 2 pieces, blue background (physical & digital)",
+                                "Passport Copy – All pages, colour copy",
+                                "Resume (CV) – Main applicant only",
+                                "Marriage Certificate – If applying with spouse",
+                                "Birth Certificates – For children below age 34",
+                                "Police Clearance – From country of origin (main applicant & dependents 18+)"
                             ].map((doc, i) => (
                                 <motion.li
                                     key={i}
@@ -313,6 +514,9 @@ export default function MM2H() {
                                 </motion.li>
                             ))}
                         </ul>
+                        <p className="mt-6 text-sm text-gray-500 italic">
+                            Note: All documents must be translated into English and certified by a notary public.
+                        </p>
                     </motion.div>
 
                     {/* Application Process */}
@@ -325,27 +529,37 @@ export default function MM2H() {
                         <h2 className="text-3xl font-bold mb-8 text-gray-900 flex items-center gap-3">
                             <ShieldCheck className="text-primary" /> Application Process
                         </h2>
-                        <div className="relative border-l-2 border-primary/20 ml-4 space-y-12">
+                        <div className="relative border-l-2 border-primary/20 ml-4 space-y-10">
                             {[
                                 {
                                     step: "1",
-                                    title: "Eligibility Check",
-                                    desc: "Free consultation to verify financial and eligibility requirements"
+                                    title: "Appointment",
+                                    desc: "Appoint NextPath Global as your official MM2H consultant and sponsor"
                                 },
                                 {
                                     step: "2",
-                                    title: "Document Prep",
-                                    desc: "Complete document collection and verification assistance"
+                                    title: "Pre-Screen",
+                                    desc: "Gather required documents for preliminary assessment and verification"
                                 },
                                 {
                                     step: "3",
                                     title: "Submission",
-                                    desc: "Professional application submission to MM2H Centre"
+                                    desc: "Application submitted to Immigration Department for processing"
                                 },
                                 {
                                     step: "4",
-                                    title: "Approval & Pass",
-                                    desc: "Receive conditional approval, open FD, collect MM2H pass"
+                                    title: "Approval",
+                                    desc: "Arrive in Malaysia, open FD account, complete medical check & insurance"
+                                },
+                                {
+                                    step: "5",
+                                    title: "Property Purchase",
+                                    desc: "Purchase property within the specified timeframe based on your tier"
+                                },
+                                {
+                                    step: "6",
+                                    title: "Visa Endorsement",
+                                    desc: "Receive MM2H visa endorsement and passport delivery"
                                 }
                             ].map((item, i) => (
                                 <motion.div
@@ -353,7 +567,7 @@ export default function MM2H() {
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: i * 0.2 }}
+                                    transition={{ delay: i * 0.15 }}
                                     className="relative pl-10"
                                 >
                                     <div className="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-white border-4 border-primary flex items-center justify-center font-bold text-gray-900 shadow-sm z-10">
@@ -370,15 +584,44 @@ export default function MM2H() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.6 }}
-                            className="mt-12 p-6 bg-primary/5 rounded-xl border border-primary/10 hover:bg-primary/10 transition-colors"
+                            className="mt-10 p-6 bg-primary/5 rounded-xl border border-primary/10 hover:bg-primary/10 transition-colors"
                         >
                             <div className="flex items-center gap-3 mb-2 text-gray-900 font-bold">
                                 <Clock className="text-primary" size={20} /> Processing Time
                             </div>
-                            <p className="text-gray-600">6-12 months | Pass Validity: 10 years (renewable)</p>
+                            <p className="text-gray-600">4-6 months | Pass Validity: 5-20 years based on tier (renewable)</p>
                         </motion.div>
                     </motion.div>
                 </div>
+            </section>
+
+            {/* Additional Requirements */}
+            <section className="container mx-auto px-6 mb-20">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="bg-gray-50 rounded-3xl p-8 md:p-12"
+                >
+                    <h2 className="text-2xl md:text-3xl font-bold mb-8 text-gray-900 text-center">Additional Requirements</h2>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                            <HeartPulse className="text-primary mb-4" size={32} />
+                            <h3 className="font-bold text-gray-900 mb-2">Medical Check-Up</h3>
+                            <p className="text-gray-600 text-sm">All applicants must undergo medical examination in Malaysia upon approval.</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                            <ShieldCheck className="text-primary mb-4" size={32} />
+                            <h3 className="font-bold text-gray-900 mb-2">Medical Insurance</h3>
+                            <p className="text-gray-600 text-sm">Valid Malaysian medical insurance required. Waived for applicants aged 60 and above.</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                            <Building className="text-primary mb-4" size={32} />
+                            <h3 className="font-bold text-gray-900 mb-2">Property Timeline</h3>
+                            <p className="text-gray-600 text-sm">Property must be purchased within the specified timeframe and held for minimum 10 years.</p>
+                        </div>
+                    </div>
+                </motion.div>
             </section>
 
             {/* Why Choose Us & CTA */}
@@ -401,7 +644,7 @@ export default function MM2H() {
                         className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
                     >
                         {[
-                            "Expert MM2H Consultants",
+                            "Licensed MM2H Agents",
                             "End-to-End Support",
                             "Bank Account Assistance",
                             "Property Guidance",
@@ -450,7 +693,7 @@ export default function MM2H() {
                             </Link>
                         </div>
                         <p className="mt-6 text-sm text-gray-500">
-                            NextPath Global Sdn Bhd – Your trusted MM2H partner since 2019 🇲🇾
+                            NextPath Global Sdn Bhd – Your trusted MM2H partner 🇲🇾
                         </p>
                     </motion.div>
                 </div>
