@@ -20,10 +20,10 @@ export default function Footer() {
                             Your trusted partner for immigration and visa consulting services. We help you navigate the path to your global dreams.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Facebook size={20} /></a>
-                            <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Twitter size={20} /></a>
-                            <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Linkedin size={20} /></a>
-                            <a href="#" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={20} /></a>
+                            <a href="https://www.facebook.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Facebook size={20} /></a>
+                            <a href="https://twitter.com/nextpathglobal" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Twitter size={20} /></a>
+                            <a href="https://linkedin.com/company/nextpathglobal" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Linkedin size={20} /></a>
+                            <a href="https://instagram.com/nextpathglobal" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={20} /></a>
                         </div>
                     </div>
 
