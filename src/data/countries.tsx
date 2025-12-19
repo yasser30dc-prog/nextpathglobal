@@ -41,6 +41,46 @@ export interface CountryData {
 
 export const countries: CountryData[] = [
     {
+        slug: "malaysia",
+        name: "Malaysia",
+        tagline: "Truly Asia",
+        description: "Experience the diversity of Malaysia - from Kuala Lumpur's Petronas Towers to pristine beaches, rainforests, and a harmonious blend of Malay, Chinese, and Indian cultures.",
+        coverImage: "/assets/countries/malaysia.png",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 175" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Outside of Malaysia" },
+        ],
+        requirements: [
+            { icon: <FileText size={20} />, document: "Passport", requirement: "Valid for at least 6 months" },
+            { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Valid for at least 3 months" },
+            { icon: <Briefcase size={20} />, document: "Employment/Study Letter", requirement: "From Company/University/College" },
+            { icon: <FileText size={20} />, document: "Introduction Letter", requirement: "Issued by Bangladesh High Commission in Malaysia" },
+            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min balance 200K BDT" },
+            { icon: <Camera size={20} />, document: "Photograph", requirement: "1 copy (35 × 45 mm, white background)" },
+        ],
+        whyChoose: [
+            { icon: <Building size={32} />, title: "Modern Cities", description: "Iconic Petronas Towers, shopping malls, diverse urban culture" },
+            { icon: <Utensils size={32} />, title: "Food Paradise", description: "Nasi lemak, satay, roti canai - incredible diverse cuisine" },
+            { icon: <Sun size={32} />, title: "Beautiful Beaches", description: "Langkawi, Penang, Perhentian Islands, and more" },
+            { icon: <Leaf size={32} />, title: "Nature & Wildlife", description: "Rainforests, Cameron Highlands, Taman Negara, orangutans" },
+        ],
+        destinations: [
+            { name: "Kuala Lumpur", highlights: "Petronas Towers, Batu Caves, Chinatown, Shopping", image: "/assets/destinations/kuala-lumpur.jpg" },
+            { name: "Penang", highlights: "George Town UNESCO Site, Street Food, Beaches, Culture", image: "/assets/destinations/penang.jpg" },
+            { name: "Langkawi", highlights: "Island Paradise, Cable Car, Beaches, Duty-Free Shopping", image: "/assets/destinations/langkawi.jpg" },
+            { name: "Cameron Highlands", highlights: "Tea Plantations, Cool Climate, Strawberry Farms, Nature", image: "/assets/destinations/cameron.jpg" },
+        ],
+        process: [
+            { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
+            { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
+            { step: 3, title: "Processing", description: "We handle your visa application" },
+            { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 3-5 days" },
+        ],
+    },
+    {
         slug: "cambodia",
         name: "Cambodia",
         tagline: "Kingdom of Wonder",
@@ -971,46 +1011,6 @@ export const countries: CountryData[] = [
             { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
             { step: 3, title: "Processing", description: "We handle your visa application" },
             { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 5-8 days" },
-        ],
-    },
-    {
-        slug: "malaysia",
-        name: "Malaysia",
-        tagline: "Truly Asia",
-        description: "Experience the diversity of Malaysia - from Kuala Lumpur's Petronas Towers to pristine beaches, rainforests, and a harmonious blend of Malay, Chinese, and Indian cultures.",
-        coverImage: "/assets/countries/malaysia.png",
-        quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 175" },
-            { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
-            { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
-            { icon: <Users size={20} />, label: "Who Can Apply", value: "Outside of Malaysia" },
-        ],
-        requirements: [
-            { icon: <FileText size={20} />, document: "Passport", requirement: "Valid for at least 6 months" },
-            { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Valid for at least 3 months" },
-            { icon: <Briefcase size={20} />, document: "Employment/Study Letter", requirement: "From Company/University/College" },
-            { icon: <FileText size={20} />, document: "Introduction Letter", requirement: "Issued by Bangladesh High Commission in Malaysia" },
-            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min balance 200K BDT" },
-            { icon: <Camera size={20} />, document: "Photograph", requirement: "1 copy (35 × 45 mm, white background)" },
-        ],
-        whyChoose: [
-            { icon: <Building size={32} />, title: "Modern Cities", description: "Iconic Petronas Towers, shopping malls, diverse urban culture" },
-            { icon: <Utensils size={32} />, title: "Food Paradise", description: "Nasi lemak, satay, roti canai - incredible diverse cuisine" },
-            { icon: <Sun size={32} />, title: "Beautiful Beaches", description: "Langkawi, Penang, Perhentian Islands, and more" },
-            { icon: <Leaf size={32} />, title: "Nature & Wildlife", description: "Rainforests, Cameron Highlands, Taman Negara, orangutans" },
-        ],
-        destinations: [
-            { name: "Kuala Lumpur", highlights: "Petronas Towers, Batu Caves, Chinatown, Shopping", image: "/assets/destinations/kuala-lumpur.jpg" },
-            { name: "Penang", highlights: "George Town UNESCO Site, Street Food, Beaches, Culture", image: "/assets/destinations/penang.jpg" },
-            { name: "Langkawi", highlights: "Island Paradise, Cable Car, Beaches, Duty-Free Shopping", image: "/assets/destinations/langkawi.jpg" },
-            { name: "Cameron Highlands", highlights: "Tea Plantations, Cool Climate, Strawberry Farms, Nature", image: "/assets/destinations/cameron.jpg" },
-        ],
-        process: [
-            { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
-            { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
-            { step: 3, title: "Processing", description: "We handle your visa application" },
-            { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 3-5 days" },
         ],
     },
 ];
