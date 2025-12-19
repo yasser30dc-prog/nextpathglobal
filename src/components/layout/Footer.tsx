@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 // Custom TikTok icon since lucide-react doesn't have one
 const TikTokIcon = ({ size = 20 }: { size?: number }) => (
@@ -36,7 +36,6 @@ export default function Footer() {
                             <a href="https://www.facebook.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Facebook size={20} /></a>
                             <a href="https://www.instagram.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Instagram size={20} /></a>
                             <a href="https://www.tiktok.com/@npg0058" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><TikTokIcon size={20} /></a>
-                            <a href="https://linkedin.com/company/nextpathglobal" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors"><Linkedin size={20} /></a>
                         </div>
                     </div>
 
