@@ -64,13 +64,15 @@ export default function Footer() {
 
                     <div>
                         <h3 className="text-lg font-bold mb-6 text-primary">Contact</h3>
-                        <ul className="space-y-3 text-gray-600">
-                            <li>Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak,</li>
-                            <li>Kampung Datuk Keramat, 50400 Kuala Lumpur,</li>
-                            <li>Federal Territory of Kuala Lumpur</li>
-                            <li>+60 11 1669 5249</li>
-                            <li>hello@nextpathglobal.my</li>
-                        </ul>
+                        <div className="space-y-4 text-gray-600">
+                            <p className="leading-relaxed">
+                                Level 41, The Intermark, Vista Tower,<br />
+                                384, Jln Tun Razak, Kampung Datuk Keramat,<br />
+                                50400 Kuala Lumpur, Federal Territory of Kuala Lumpur
+                            </p>
+                            <p>+60 11 1669 5249</p>
+                            <p>hello@nextpathglobal.my</p>
+                        </div>
                     </div>
                 </div>
 
