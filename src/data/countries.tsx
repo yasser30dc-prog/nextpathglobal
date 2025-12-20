@@ -124,9 +124,9 @@ export const countries: CountryData[] = [
         description: "From pristine beaches to golden temples, bustling night markets to peaceful mountain villages – Thailand offers unforgettable experiences for every traveler.",
         coverImage: "/assets/countries/thailand.png",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "2-3 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 320" },
-            { icon: <Calendar size={20} />, label: "Validity", value: "60 Days" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Living/Travelling in Malaysia" },
         ],
@@ -153,7 +153,7 @@ export const countries: CountryData[] = [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
             { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
             { step: 3, title: "Processing", description: "We handle your visa application" },
-            { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 2-3 days" },
+            { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 3-5 days" },
         ],
     },
     {
