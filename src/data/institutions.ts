@@ -959,6 +959,7 @@ export const institutions: Institution[] = [
         qsRanking: "Not ranked",
         description: "Malaysian campus of the UK-based LSBF offering business and finance programs.",
         history: "LSBF Malaysia is the Malaysian campus of the globally recognized London School of Business and Finance, offering UK-standard education.",
+        coverImage: "/assets/institutions/lsbf-cover.jpg",
         programs: ["Business", "Finance", "Accounting", "Marketing", "Management", "ACCA"],
         intakes: ["January", "May", "September"],
         website: "https://www.lsbf.edu.my",
