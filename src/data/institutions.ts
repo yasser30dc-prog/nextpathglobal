@@ -912,6 +912,7 @@ export const institutions: Institution[] = [
         qsRanking: "Not ranked",
         description: "An east coast university college focusing on business and professional programs.",
         history: "Widad University College was established to serve the educational needs of the east coast region of Malaysia.",
+        coverImage: "/assets/institutions/widad-cover.jpg",
         programs: ["Business", "Accounting", "IT", "Management", "Islamic Finance"],
         intakes: ["January", "May", "September"],
         website: "https://www.wuc.edu.my",
