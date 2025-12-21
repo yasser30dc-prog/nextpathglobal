@@ -1,9 +1,9 @@
 
 "use client";
 
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Torus, Points, PointMaterial } from "@react-three/drei";
+import { Torus, Points, PointMaterial, Line } from "@react-three/drei";
 import * as THREE from "three";
 
 // Brand Colors
@@ -54,36 +54,82 @@ function AirplaneMesh() {
   );
 }
 
+function DynamicTrail({ points }: { points: THREE.Vector3[] }) {
+  if (points.length < 2) return null;
+
+  return (
+    <Line
+      points={points}
+      color={NAVY_BLUE}
+      lineWidth={2}
+      transparent
+      opacity={0.8}
+    />
+  );
+}
+
 function OrbitingAirplane({ radius, speed }: { radius: number; speed: number }) {
   const groupRef = useRef<THREE.Group>(null);
+  const airplaneRef = useRef<THREE.Group>(null);
+  const trailPoints = useRef<THREE.Vector3[]>([]);
+  const [points, setPoints] = useState<THREE.Vector3[]>([]);
+  const maxTrailLength = 150; // Maximum number of points in the trail
+  const frameCounter = useRef(0);
+  const pointsPerSecond = 30; // How many trail points to add per second
+  const initialized = useRef(false);
 
   useFrame((state, delta) => {
-    if (groupRef.current) {
+    if (groupRef.current && airplaneRef.current) {
       // Rotate the entire group to orbit
       groupRef.current.rotation.z -= delta * speed;
 
       // Add a slight wobble for realism
       groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.1 + (Math.PI / 3);
       groupRef.current.rotation.y = Math.cos(state.clock.elapsedTime * 0.3) * 0.1;
+
+      // Calculate airplane's current position in world space
+      const airplaneWorldPos = new THREE.Vector3();
+      airplaneRef.current.getWorldPosition(airplaneWorldPos);
+
+      // Check if the airplane is in a valid position (not at origin)
+      // Wait a bit for the scene to initialize properly
+      if (!initialized.current) {
+        if (airplaneWorldPos.length() > 0.1 && state.clock.elapsedTime > 0.1) {
+          initialized.current = true;
+        } else {
+          return; // Skip this frame
+        }
+      }
+
+      // Only add points at controlled intervals (not every frame)
+      frameCounter.current++;
+      const framesPerPoint = Math.max(1, Math.floor(60 / pointsPerSecond));
+
+      if (frameCounter.current >= framesPerPoint) {
+        frameCounter.current = 0;
+
+        // Add new point to trail
+        trailPoints.current.push(airplaneWorldPos.clone());
+
+        // Limit trail length
+        if (trailPoints.current.length > maxTrailLength) {
+          trailPoints.current.shift();
+        }
+
+        // Update points for rendering
+        setPoints([...trailPoints.current]);
+      }
     }
   });
 
   return (
     <group ref={groupRef} rotation={[Math.PI / 3, 0, 0]}>
-      {/* The Trail Line - Torus with gap */}
-      <Torus args={[radius, 0.008, 16, 100, Math.PI * 1.5]} rotation={[0, 0, Math.PI / 2 + 0.2]}>
-        <meshStandardMaterial
-          color={NAVY_BLUE} // Blue Orbit
-          emissive={NAVY_BLUE}
-          emissiveIntensity={1.5}
-          transparent
-          opacity={0.8}
-        />
-      </Torus>
+      {/* Dynamic Trail Line */}
+      <DynamicTrail points={points} />
 
       {/* The Code-Generated Airplane */}
       <group rotation={[0, 0, Math.PI / 2 + 0.2 + (Math.PI * 1.5)]}>
-        <group position={[radius, 0, 0]} rotation={[0, 0, -Math.PI / 2]}>
+        <group ref={airplaneRef} position={[radius, 0, 0]} rotation={[0, 0, -Math.PI / 2]}>
           <AirplaneMesh />
         </group>
       </group>
