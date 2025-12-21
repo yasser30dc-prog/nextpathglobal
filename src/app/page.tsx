@@ -45,7 +45,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-6 text-gray-900"
+            className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg"
           >
             Your Gateway to <br />
             <span className="text-primary">Global Opportunities</span>
@@ -54,7 +54,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto"
+            className="text-xl text-white/90 mb-10 max-w-2xl mx-auto drop-shadow-md"
           >
             Next Path Global provides expert immigration and visa consulting services to help you achieve your dreams abroad.
           </motion.p>
