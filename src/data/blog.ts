@@ -102,6 +102,38 @@ Malaysia combines the best of education quality, affordability, safety, and glob
 
 With proper guidance and planning, studying in Malaysia can be a life-changing step toward academic success and long-term career development.
         `
+    },
+    {
+        id: "2",
+        title: "Important Visa Update for Bangladeshi Citizens",
+        slug: "visa-update-bangladeshi-citizens",
+        category: "updates-announcements",
+        excerpt: "Effective immediately, Bangladeshi passport holders cannot apply for Vietnam or Indonesia visit visas while staying in Malaysia. Learn what this means for your travel plans.",
+        author: "NextPath Global Team",
+        date: "2024-12-22",
+        readTime: "3 min read",
+        content: `
+# 📢 Important Visa Update for Bangladeshi Citizens
+
+Effective immediately, Bangladeshi passport holders cannot apply for Vietnam or Indonesia visit visas while staying in Malaysia.
+
+## 📌 What this means:
+
+- If you are a Bangladeshi citizen visiting or residing in Malaysia, applications for Vietnam or Indonesia visas are not accepted from Malaysia at this time.
+- Visa applications for these countries must be processed from Bangladesh or another eligible country, subject to the respective embassy or consulate rules.
+
+## 📌 Why this update matters:
+
+Visa regulations change from time to time, and embassies strictly follow their jurisdiction policies. To avoid delays, rejections, or unnecessary expenses, we strongly advise travelers to plan accordingly before coming to Malaysia.
+
+## 📌 Our advice:
+
+Before finalizing travel plans, always confirm the latest visa eligibility rules or consult with a professional visa advisor.
+
+We will keep updating our website with any changes as soon as official information is released.
+
+Thank you for your understanding and for trusting us to keep you informed 🤝
+        `
     }
 ];
 
