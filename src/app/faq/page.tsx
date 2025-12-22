@@ -162,7 +162,29 @@ const faqData: FAQSection[] = [
             },
             {
                 question: "Q16. How can I stay updated about new programs and offers?",
-                answer: "Follow our official Facebook page or visit our website regularly for the latest updates on scholarships, job openings, and visa promotions."
+                answer: (
+                    <p>
+                        Follow our official{" "}
+                        <a
+                            href="https://www.facebook.com/npg058"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline font-semibold"
+                        >
+                            Facebook page
+                        </a>
+                        {" "}or visit our{" "}
+                        <a
+                            href="https://nextpathglobal.my/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline font-semibold"
+                        >
+                            website
+                        </a>
+                        {" "}regularly for the latest updates on scholarships, job openings, and visa promotions.
+                    </p>
+                )
             }
         ]
     }
