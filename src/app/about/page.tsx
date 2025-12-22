@@ -38,7 +38,7 @@ export default function About() {
                         Your Trusted Partner
                     </span>
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
-                        About <span className="text-primary">NextPath Global</span>
+                        About <span className="text-primary">NextPath Global Sdn Bhd</span>
                     </h1>
                     <p className="text-xl text-gray-600 mb-10 leading-relaxed">
                         We are more than just a consultancy or a travel service provider—we are a trusted partner in life-changing journeys.
