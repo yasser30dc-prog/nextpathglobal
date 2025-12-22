@@ -33,44 +33,9 @@ export default function Blog() {
                 </motion.div>
             </section>
 
-            {/* Coming Soon Section */}
-            <section className="container mx-auto px-6">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="max-w-2xl mx-auto text-center"
-                >
-                    <div className="bg-gray-50 rounded-3xl p-12 md:p-16 border border-gray-100">
-                        <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
-                            <BookOpen size={48} />
-                        </div>
-                        <h2 className="text-3xl font-bold mb-4 text-gray-900">Coming Soon</h2>
-                        <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                            We're working on bringing you valuable content about studying abroad, visa processes,
-                            travel tips, and success stories. Stay tuned for our latest articles and updates!
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link
-                                href="/"
-                                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
-                            >
-                                <ArrowLeft size={20} />
-                                Back to Home
-                            </Link>
-                            <Link
-                                href="/contact"
-                                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-primary border-2 border-primary font-bold py-3 px-8 rounded-full transition-all"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                    </div>
-                </motion.div>
-            </section>
 
             {/* Blog Categories Section */}
-            <section className="container mx-auto px-6 mt-16">
+            <section className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
                     <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">
                         Blog Categories
