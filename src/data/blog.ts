@@ -22,8 +22,6 @@ export const blogPosts: BlogPost[] = [
         date: "2024-12-22",
         readTime: "5 min read",
         content: `
-# Why International Students Should Pursue Their Studies in Malaysia
-
 Choosing the right study destination is one of the most important decisions in a student's life. Beyond academics, it shapes career opportunities, global exposure, personal growth, and long-term success. Over the years, Malaysia has emerged as one of the most attractive education destinations for international students, especially from Asia, Africa, and the Middle East.
 
 As experienced education counselors, we believe Malaysia offers a unique balance of quality education, affordability, safety, and global recognition. Here's why studying in Malaysia is a smart and strategic choice.
@@ -113,8 +111,6 @@ With proper guidance and planning, studying in Malaysia can be a life-changing s
         date: "2024-12-22",
         readTime: "3 min read",
         content: `
-# 📢 Important Visa Update for Bangladeshi Citizens
-
 Effective immediately, Bangladeshi passport holders cannot apply for Vietnam or Indonesia visit visas while staying in Malaysia.
 
 ## 📌 What this means:
