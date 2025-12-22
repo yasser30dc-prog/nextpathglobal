@@ -29,6 +29,7 @@ const navLinks: NavLink[] = [
     { name: "MM2H", href: "/services/mm2h" },
     { name: "PVIP", href: "/services/pvip" },
     { name: "About Us", href: "/about" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
 ];
 
