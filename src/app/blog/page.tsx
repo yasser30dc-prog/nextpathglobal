@@ -81,44 +81,52 @@ export default function Blog() {
                                 title: "Study in Malaysia",
                                 icon: "🎓",
                                 description: "Guides, tips, and insights about studying in Malaysian universities",
-                                color: "from-blue-500 to-blue-600"
+                                color: "from-blue-500 to-blue-600",
+                                href: "/blog/study-in-malaysia"
                             },
                             {
                                 title: "Visa & Immigration",
                                 icon: "✈️",
                                 description: "Everything about visa processes, requirements, and immigration",
-                                color: "from-orange-500 to-orange-600"
+                                color: "from-orange-500 to-orange-600",
+                                href: "/blog/visa-immigration"
                             },
                             {
                                 title: "Student Life",
                                 icon: "🌟",
                                 description: "Campus life, accommodation, culture, and student experiences",
-                                color: "from-purple-500 to-purple-600"
+                                color: "from-purple-500 to-purple-600",
+                                href: "/blog/student-life"
                             },
                             {
                                 title: "Updates & Announcements",
                                 icon: "📢",
                                 description: "Latest news, policy changes, and important announcements",
-                                color: "from-green-500 to-green-600"
+                                color: "from-green-500 to-green-600",
+                                href: "/blog/updates-announcements"
                             }
                         ].map((category, i) => (
-                            <motion.div
+                            <Link
                                 key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: i * 0.1 }}
-                                className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-xl transition-all group cursor-pointer"
+                                href={category.href}
                             >
-                                <div className={`w-16 h-16 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform`}>
-                                    {category.icon}
-                                </div>
-                                <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                                    {category.title}
-                                </h4>
-                                <p className="text-gray-600 text-sm">
-                                    {category.description}
-                                </p>
-                            </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: i * 0.1 }}
+                                    className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-xl transition-all group cursor-pointer"
+                                >
+                                    <div className={`w-16 h-16 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform`}>
+                                        {category.icon}
+                                    </div>
+                                    <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                                        {category.title}
+                                    </h4>
+                                    <p className="text-gray-600 text-sm">
+                                        {category.description}
+                                    </p>
+                                </motion.div>
+                            </Link>
                         ))}
                     </div>
                 </div>
