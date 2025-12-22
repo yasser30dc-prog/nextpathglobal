@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nextpathglobal.my
+
+# Sitemaps
+Sitemap: https://nextpathglobal.my/sitemap.xml
