@@ -3,6 +3,7 @@
 import HeroScene from "@/components/3d/HeroScene";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, GraduationCap, Briefcase, Globe, ShieldCheck, Plane, CheckCircle2 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -153,28 +154,34 @@ export default function Home() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <div className="col-span-2 h-64 rounded-2xl overflow-hidden relative shadow-lg group">
-                  <img
+                  <Image
                     src="/assets/home/consultancy.png"
                     alt="Consultation"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white font-semibold">Expert Consultation</div>
                 </div>
                 <div className="h-48 rounded-2xl overflow-hidden relative shadow-lg group">
-                  <img
+                  <Image
                     src="/assets/home/travel.png"
                     alt="Travel"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white font-semibold">Global Travel</div>
                 </div>
                 <div className="h-48 rounded-2xl overflow-hidden relative shadow-lg group">
-                  <img
+                  <Image
                     src="/assets/home/global.png"
                     alt="Global Opportunities"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white font-semibold">Visa Success</div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
     Globe,
     GraduationCap,
@@ -84,10 +85,12 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                         className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group"
                     >
-                        <img
+                        <Image
                             src="/assets/about/office.png"
                             alt="NextPath Global Office"
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            sizes="(max-width: 768px) 100vw, 50vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </motion.div>

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Calendar, Star, ArrowRight } from "lucide-react";
 import { Institution, institutionColors, institutionTypeLabels } from "@/data/institutions";
@@ -33,10 +34,12 @@ export default function InstitutionCard({ institution, index, baseUrl }: Institu
                     >
                         {/* Actual Cover Image if available */}
                         {institution.coverImage && (
-                            <img
+                            <Image
                                 src={institution.coverImage}
                                 alt={institution.name}
-                                className="absolute inset-0 w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                         )}
 
