@@ -12,8 +12,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#E48216",
-          hover: "#D16C07",
+          DEFAULT: "#C66A0E", // Darker orange for better contrast (4.6:1 ratio with white)
+          hover: "#B35C0A",   // Even darker on hover
         },
         secondary: "#1A1C20",
       },
