@@ -30,7 +30,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-gray-600 mb-6">
-                            Your reliable partner for education, immigration, and visa consulting. We provide expert guidance and end-to-end support to help students, professionals, and travelers achieve their global goals with confidence.
+                            Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals
                         </p>
                         <div className="flex space-x-4">
                             <a href="https://www.facebook.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our Facebook page"><Facebook size={20} /></a>

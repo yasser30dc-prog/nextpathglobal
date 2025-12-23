@@ -14,12 +14,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Next Path Global | Immigration & Visa Consulting",
-  description: "Your reliable partner for education, immigration, and visa consulting. We provide expert guidance and end-to-end support to help students, professionals, and travelers achieve their global goals with confidence.",
+  description: "Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals",
   keywords: ["MM2H", "Malaysia My Second Home", "immigration", "visa consulting", "PVIP", "study abroad", "work permit", "NextPath Global"],
   authors: [{ name: "NextPath Global Sdn Bhd" }],
   openGraph: {
     title: "Next Path Global | Immigration & Visa Consulting",
-    description: "Your reliable partner for education, immigration, and visa consulting. We provide expert guidance and end-to-end support to help students, professionals, and travelers achieve their global goals with confidence.",
+    description: "Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals",
     url: "https://nextpathglobal.my",
     siteName: "Next Path Global",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Next Path Global | Immigration & Visa Consulting",
-    description: "Your reliable partner for education, immigration, and visa consulting. We provide expert guidance and end-to-end support to help students, professionals, and travelers achieve their global goals with confidence.",
+    description: "Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals",
     images: ["/og-image.png"],
   },
   icons: {
