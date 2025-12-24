@@ -127,22 +127,32 @@ export default function AppointmentForm() {
         setError(null);
 
         try {
+            console.log('=== FORM SUBMISSION START ===');
             const submitData = new FormData();
             Object.entries(formData).forEach(([key, value]) => {
                 submitData.append(key, value);
+                console.log(`Form field: ${key} = ${value}`);
             });
 
+            console.log('Calling submitAppointmentForm...');
             const result = await submitAppointmentForm(submitData);
+            console.log('Result received:', result);
 
             if (result.success) {
+                console.log('✅ Success!');
                 setIsSuccess(true);
             } else {
+                console.error('❌ Server returned error:', result.error);
                 setError(result.error || "Something went wrong. Please try again.");
             }
-        } catch {
+        } catch (error) {
+            console.error('❌ Exception caught:', error);
+            console.error('Error type:', typeof error);
+            console.error('Error details:', error);
             setError("Failed to submit. Please try again.");
         } finally {
             setIsSubmitting(false);
+            console.log('=== FORM SUBMISSION END ===');
         }
     };
 

@@ -72,6 +72,9 @@ const meetingModeLabels: Record<string, string> = {
 };
 
 export async function submitAppointmentForm(formData: FormData) {
+    console.log('=== SERVER ACTION CALLED ===');
+    console.log('FormData received');
+
     const fullName = formData.get("fullName") as string;
     const email = formData.get("email") as string;
     const phone = formData.get("phone") as string;
@@ -82,7 +85,10 @@ export async function submitAppointmentForm(formData: FormData) {
     const preferredTime = formData.get("preferredTime") as string;
     const meetingMode = formData.get("meetingMode") as string;
 
+    console.log('Form data extracted:', { fullName, email, phone, nationality, service, preferredDate, preferredTime, meetingMode });
+
     if (!fullName || !email || !phone || !nationality || !service || !preferredDate || !preferredTime || !meetingMode) {
+        console.log('Validation failed - missing fields');
         return { success: false, error: "Missing required fields" };
     }
 

@@ -13,6 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nextpathglobal.my'),
   title: "Next Path Global | Immigration & Visa Consulting",
   description: "Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals",
   keywords: ["MM2H", "Malaysia My Second Home", "immigration", "visa consulting", "PVIP", "study abroad", "work permit", "NextPath Global"],
