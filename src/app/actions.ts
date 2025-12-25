@@ -11,8 +11,6 @@ console.log("[DEBUG] Environment check:", {
     allEnvKeys: Object.keys(process.env).filter(k => k.includes('RESEND'))
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function submitContactForm(formData: FormData) {
     console.log('=== CONTACT FORM SERVER ACTION CALLED ===');
     console.log('FormData received');
@@ -38,6 +36,9 @@ export async function submitContactForm(formData: FormData) {
             error: "Email service is not configured. Please contact the administrator."
         };
     }
+
+    // Initialize Resend client
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     try {
         // 1. Send email to Admin (You)
@@ -173,6 +174,9 @@ export async function submitAppointmentForm(formData: FormData) {
             error: "Email service is not configured. Please contact the administrator."
         };
     }
+
+    // Initialize Resend client
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const serviceLabel = serviceLabels[service] || service;
     const meetingModeLabel = meetingModeLabels[meetingMode] || meetingMode;
