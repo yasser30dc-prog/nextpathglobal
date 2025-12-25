@@ -37,6 +37,7 @@ const services = [
     { value: "mm2h", label: "MM2H (Malaysia My 2nd Home)" },
     { value: "pvip", label: "PVIP (Premium Visa Programs)" },
     { value: "professional-visa", label: "Professional Visa (Employment Pass)" },
+    { value: "europe-work-permit", label: "Europe Work Permit" },
     { value: "tourist-visa", label: "Tourist Visa" },
     { value: "air-ticket", label: "Air Ticket Booking" },
     { value: "refund", label: "Refund Request" },
