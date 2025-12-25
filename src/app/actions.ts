@@ -2,6 +2,15 @@
 
 import { Resend } from "resend";
 
+// Debug logging for production
+console.log("[DEBUG] Environment check:", {
+    hasKey: !!process.env.RESEND_API_KEY,
+    keyLength: process.env.RESEND_API_KEY?.length,
+    keyPrefix: process.env.RESEND_API_KEY?.substring(0, 3),
+    nodeEnv: process.env.NODE_ENV,
+    allEnvKeys: Object.keys(process.env).filter(k => k.includes('RESEND'))
+});
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function submitContactForm(formData: FormData) {
