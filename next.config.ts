@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000, // 1 year
   },
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: false, // Temporarily disabled for debugging
   },
   modularizeImports: {
     'lucide-react': {
