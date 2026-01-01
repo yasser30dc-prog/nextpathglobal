@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import { CountryData } from "../../data/countries";
 
@@ -37,10 +38,13 @@ const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country }) =>
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
-                    <img
+                    <Image
                         src={country.coverImage}
                         alt={country.name}
-                        className="w-full h-full object-cover"
+                        fill
+                        priority
+                        className="object-cover"
+                        sizes="100vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-secondary/60 via-secondary/40 to-secondary/80"></div>
                 </div>
@@ -221,10 +225,12 @@ const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country }) =>
                             >
                                 <div className="h-48 bg-gray-200 relative overflow-hidden">
                                     {dest.image ? (
-                                        <img
+                                        <Image
                                             src={dest.image}
                                             alt={dest.name}
-                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                            fill
+                                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                         />
                                     ) : (
                                         <div className="absolute inset-0 bg-gray-300 group-hover:scale-110 transition-transform duration-500"></div>

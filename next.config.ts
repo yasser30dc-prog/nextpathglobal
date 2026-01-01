@@ -16,10 +16,32 @@ const nextConfig: NextConfig = {
       transform: 'lucide-react/dist/esm/icons/{{kebabCase member}}',
     },
   },
+  // Target modern browsers to reduce legacy JavaScript
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'framer-motion'],
+  },
   async headers() {
     return [
       {
         source: '/:path*.(svg|jpg|jpeg|png|webp|avif|gif)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*.(woff|woff2|eot|ttf|otf)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*.(js|css)',
         headers: [
           {
             key: 'Cache-Control',

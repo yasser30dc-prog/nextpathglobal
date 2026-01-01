@@ -19,6 +19,7 @@ import {
     UserCheck
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 const containerVariants = {
@@ -182,10 +183,12 @@ export default function MM2H() {
                             transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
                             className="relative h-[300px] rounded-2xl shadow-xl border border-gray-100 overflow-hidden group"
                         >
-                            <img
+                            <Image
                                 src="/assets/mm2h/mm2h-hero.png"
                                 alt="Malaysia My Second Home"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </motion.div>
                     </div>

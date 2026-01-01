@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Globe, Plane } from "lucide-react";
 import { countries } from "../../../data/countries";
 
@@ -49,10 +50,12 @@ export default function TouristVisaPage() {
                                     <div className="h-56 bg-gray-200 relative overflow-hidden">
                                         {/* Placeholder for country cover */}
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                                        <img
+                                        <Image
                                             src={country.coverImage}
                                             alt={country.name}
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                            fill
+                                            className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                         />
 
                                         <div className="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-secondary flex items-center gap-1">
