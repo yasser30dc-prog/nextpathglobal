@@ -28,14 +28,7 @@ export async function submitContactForm(formData: FormData) {
         return { success: false, error: "Missing required fields" };
     }
 
-    // Check if Resend API key is configured
-    if (!process.env.RESEND_API_KEY) {
-        console.error("RESEND_API_KEY is not configured");
-        return {
-            success: false,
-            error: "Email service is not configured. Please contact the administrator."
-        };
-    }
+    // Resend will handle API key validation and provide error if missing
 
     // Initialize Resend client
     const resend = new Resend(process.env.RESEND_API_KEY);
@@ -167,14 +160,7 @@ export async function submitAppointmentForm(formData: FormData) {
         return { success: false, error: "Missing required fields" };
     }
 
-    // Check if Resend API key is configured
-    if (!process.env.RESEND_API_KEY) {
-        console.error("RESEND_API_KEY is not configured");
-        return {
-            success: false,
-            error: "Email service is not configured. Please contact the administrator."
-        };
-    }
+    // Resend will handle API key validation and provide error if missing
 
     // Initialize Resend client
     const resend = new Resend(process.env.RESEND_API_KEY);
