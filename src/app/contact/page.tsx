@@ -63,17 +63,33 @@ export default function Contact() {
                         </div>
 
                         {/* Google Map */}
-                        <div className="h-[300px] rounded-2xl border border-gray-200 overflow-hidden shadow-lg">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9410472266887!2d101.72279131475766!3d3.1613799977136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d3a837f637%3A0x4a6c3a2a81de0d90!2sThe%20Intermark!5e0!3m2!1sen!2smy!4v1703045999999!5m2!1sen!2smy&z=17"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                title="NextPath Global Office Location"
-                            />
+                        <div className="space-y-4">
+                            <div className="flex items-center justify-between">
+                                <h3 className="text-xl font-bold text-gray-900">Our Location</h3>
+                                <a
+                                    href="https://www.google.com/maps/place/The+Intermark/@3.1613799,101.72279131475766,17z/data=!3m1!4b1!4m6!3m5!1s0x31cc37d3a837f637:0x4a6c3a2a81de0d90!8m2!3d3.16138!4d101.7253662!16s%2Fg%2F11bw3y8p0v"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-primary hover:text-primary/80 transition-colors text-sm font-medium flex items-center gap-1"
+                                >
+                                    View larger map
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div className="h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl border border-gray-200 overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <iframe
+                                    src="https://www.google.com/maps?q=NextPath+Global+Sdn+Bhd,+Level+41+The+Intermark+Vista+Tower,+Jalan+Tun+Razak,+Kuala+Lumpur&output=embed&z=17"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="NextPath Global Office Location - The Intermark, Kuala Lumpur"
+                                />
+                            </div>
                         </div>
                     </motion.div>
 
