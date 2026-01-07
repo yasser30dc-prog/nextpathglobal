@@ -174,7 +174,7 @@ export const countries: CountryData[] = [
         requirements: [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Full-page scanned copy" },
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Copy" },
-            { icon: <Plane size={20} />, document: "Confirmed Air Ticket", requirement: "In & Out from Thailand" },
+            { icon: <Plane size={20} />, document: "Confirmed Air Ticket", requirement: "In & Out from Thailand (For visitor in Malaysia)" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min. balance RM 3,000 or Equivalent to any other currencies" },
             { icon: <Briefcase size={20} />, document: "Professional Details", requirement: "Trade License/Name Card/ID Card" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "35 × 45 mm, White background" },
