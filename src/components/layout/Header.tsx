@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import SearchModal from "@/components/SearchModal";
 
 interface NavLink {
     name: string;
@@ -38,6 +39,7 @@ export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -64,7 +66,7 @@ export default function Header() {
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center space-x-8">
+                <nav className="hidden md:flex items-center space-x-6">
                     {navLinks.map((link) => (
                         <div
                             key={link.name}
@@ -117,6 +119,14 @@ export default function Header() {
                             )}
                         </div>
                     ))}
+                    {/* Search Button */}
+                    <button
+                        onClick={() => setIsSearchOpen(true)}
+                        className="text-gray-700 hover:text-primary transition-colors p-2 hover:bg-gray-100 rounded-full"
+                        aria-label="Search"
+                    >
+                        <Search size={20} />
+                    </button>
                     <Link
                         href="/book-appointment"
                         className="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105"
@@ -196,6 +206,17 @@ export default function Header() {
                                     )}
                                 </div>
                             ))}
+                            {/* Mobile Search Button */}
+                            <button
+                                onClick={() => {
+                                    setIsSearchOpen(true);
+                                    setIsMobileMenuOpen(false);
+                                }}
+                                className="flex items-center gap-3 text-gray-700 hover:text-primary text-lg font-medium py-2 w-full"
+                            >
+                                <Search size={20} />
+                                <span>Search Services</span>
+                            </button>
                             <Link
                                 href="/book-appointment"
                                 className="bg-primary text-white text-center py-3 rounded-lg font-medium mt-4"
@@ -207,6 +228,9 @@ export default function Header() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            {/* Search Modal */}
+            <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
         </header>
     );
 }
