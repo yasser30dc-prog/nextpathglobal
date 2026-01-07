@@ -617,10 +617,10 @@ export const countries: CountryData[] = [
             { icon: <Users size={32} />, title: "Cultural Heritage", description: "Rich traditions, craftsmanship, and historical significance" },
         ],
         destinations: [
-            { name: "Kabul", highlights: "National Museum, Gardens of Babur, Historic Sites", image: "/assets/destinations/kabul.jpg" },
-            { name: "Herat", highlights: "Friday Mosque, Citadel, Silk Road Heritage, Architecture", image: "/assets/destinations/herat.jpg" },
-            { name: "Band-e-Amir", highlights: "Turquoise Lakes, National Park, Natural Wonder", image: "/assets/destinations/band-e-amir.jpg" },
-            { name: "Mazar-i-Sharif", highlights: "Blue Mosque, Historic Landmarks, Cultural Center", image: "/assets/destinations/mazar.jpg" },
+            { name: "Kabul", highlights: "National Museum, Gardens of Babur, Historic Sites", image: "/assets/destinations/kabul.png" },
+            { name: "Herat", highlights: "Friday Mosque, Citadel, Silk Road Heritage, Architecture", image: "/assets/destinations/herat.png" },
+            { name: "Band-e-Amir", highlights: "Turquoise Lakes, National Park, Natural Wonder", image: "/assets/destinations/band-e-amir.png" },
+            { name: "Mazar-i-Sharif", highlights: "Blue Mosque, Historic Landmarks, Cultural Center", image: "/assets/destinations/mazar.png" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
