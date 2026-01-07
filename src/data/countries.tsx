@@ -178,6 +178,7 @@ export const countries: CountryData[] = [
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min. balance RM 3,000 or Equivalent to any other currencies" },
             { icon: <Briefcase size={20} />, document: "Professional Details", requirement: "Trade License/Name Card/ID Card" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "35 × 45 mm, White background" },
+            { icon: <FileText size={20} />, document: "Marriage Certificate", requirement: "For couple application" },
         ],
         whyChoose: [
             { icon: <Sun size={32} />, title: "Tropical Paradise", description: "World-famous beaches, crystal-clear waters, and stunning islands" },
