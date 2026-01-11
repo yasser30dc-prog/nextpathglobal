@@ -166,9 +166,9 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/thailand.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 320" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 320 (Single Entry) / RM 1000 (Multiple Entry)" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
-            { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry / Multiple Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Living/Travelling in Malaysia" },
         ],
         requirements: [
