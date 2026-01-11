@@ -98,9 +98,9 @@ export const countries: CountryData[] = [
             { icon: <Building size={20} />, document: "Malaysian Visa Copy", requirement: "If non-Malaysian" },
             { icon: <Plane size={20} />, document: "Air Ticket", requirement: "Booking a return ticket" },
             { icon: <Briefcase size={20} />, document: "Employment/Study Confirmation Letter", requirement: "From Company, University or College" },
-            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, with a minimum end balance of RM 5,000/Equivalent to any other currencies" },
+            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, with a minimum end balance of RM 5,000/equivalent to any other currency" },
             { icon: <FileText size={20} />, document: "Invitation Letter/Sponsor Letter/Hotel booking", requirement: "Required" },
-            { icon: <Camera size={20} />, document: "Photograph", requirement: "2 copy (35 × 45 mm, white background), printed and soft copy" },
+            { icon: <Camera size={20} />, document: "Photograph", requirement: "2 copies (35 × 45 mm, white background), printed and soft copy" },
         ],
         whyChoose: [
             { icon: <Landmark size={32} />, title: "Historic Landmarks", description: "Visit the stunning Ahsan Manzil, Lalbagh Fort, and National Parliament House" },
@@ -174,10 +174,10 @@ export const countries: CountryData[] = [
         requirements: [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Full-page scanned copy" },
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Copy" },
-            { icon: <Plane size={20} />, document: "Confirmed Air Ticket", requirement: "In & Out from Thailand (For visitor in Malaysia)" },
-            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min. balance RM 3,000 or Equivalent to any other currencies" },
+            { icon: <Plane size={20} />, document: "Confirmed Air Ticket", requirement: "In & Out from Thailand (For visitors in Malaysia)" },
+            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min. balance RM 3,000 or equivalent to any other currency" },
             { icon: <Briefcase size={20} />, document: "Professional Details", requirement: "Trade License/Name Card/ID Card" },
-            { icon: <Camera size={20} />, document: "Photograph", requirement: "35 × 45 mm, White background" },
+            { icon: <Camera size={20} />, document: "Photograph", requirement: "35 × 45 mm, white background" },
             { icon: <FileText size={20} />, document: "Marriage Certificate", requirement: "For couple application" },
         ],
         whyChoose: [
