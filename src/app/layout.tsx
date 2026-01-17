@@ -75,6 +75,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "google-site-verification-code", // User should replace with actual code
+    other: {
+      'agd-partner-manual-verification': '',
+    },
   },
 };
 
