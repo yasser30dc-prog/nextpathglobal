@@ -49,6 +49,7 @@ export default function ContactForm() {
                         <option value="MM2H (Malaysia My 2nd Home)">MM2H (Malaysia My 2nd Home)</option>
                         <option value="PVIP (Premium Visa Programs)">PVIP (Premium Visa Programs)</option>
                         <option value="Professional Visa (Employment Pass)">Professional Visa (Employment Pass)</option>
+                        <option value="Study Malaysia">Study Malaysia</option>
                         <option value="Europe Work Permit">Europe Work Permit</option>
                         <option value="Tourist Visa">Tourist Visa</option>
                         <option value="Air Ticket Booking">Air Ticket Booking</option>
