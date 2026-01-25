@@ -24,8 +24,12 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   async redirects() {
     return [
-      // Add any specific redirects for 404 pages here
-      // Example: { source: '/old-path', destination: '/new-path', permanent: true }
+      // Remove legacy WordPress cart page
+      {
+        source: '/wp-travel-engine-cart',
+        destination: '/',
+        permanent: true
+      },
     ];
   },
   async headers() {
