@@ -686,7 +686,8 @@ export const countries: CountryData[] = [
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Valid for at least 3 months" },
             { icon: <Briefcase size={20} />, document: "Employment/Study Letter", requirement: "From Company, University or College" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min balance RM 10,000" },
-            { icon: <Plane size={20} />, document: "Travel History", requirement: "Previous visas and entry/exit records" },
+            { icon: <Plane size={20} />, document: "Travel History (Minimum 3 countries)", requirement: "Previous visas and entry/exit records" },
+            { icon: <Shield size={20} />, document: "Travel Insurance", requirement: "Valid travel insurance coverage" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 copy (35 × 45 mm, white background)" },
         ],
         whyChoose: [
