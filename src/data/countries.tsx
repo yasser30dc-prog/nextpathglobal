@@ -556,11 +556,11 @@ export const countries: CountryData[] = [
         slug: "pakistan",
         name: "Pakistan",
         tagline: "Land of Pure",
-        description: "Home to K2 and the mighty Himalayas, Pakistan offers breathtaking mountain scenery, warm hospitality, and rich cultural heritage. Experience the adventure of a lifetime with FREE visa processing.",
+        description: "Home to K2 and the mighty Himalayas, Pakistan offers breathtaking mountain scenery, warm hospitality, and rich cultural heritage. Experience the adventure of a lifetime.",
         coverImage: "/assets/countries/pakistan.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1-3 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "FREE" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone worldwide" },
@@ -575,7 +575,7 @@ export const countries: CountryData[] = [
             { icon: <Mountain size={32} />, title: "Mountain Paradise", description: "Home to K2, Nanga Parbat, and five of the world's 14 highest peaks" },
             { icon: <Users size={32} />, title: "Warm Hospitality", description: "Renowned for some of the friendliest and most welcoming people" },
             { icon: <Landmark size={32} />, title: "Rich History", description: "Ancient civilizations, Mughal architecture, and historical landmarks" },
-            { icon: <DollarSign size={32} />, title: "FREE Visa", description: "No visa fees - making it accessible for all travelers" },
+            { icon: <DollarSign size={32} />, title: "Affordable Visa", description: "Competitive visa fees at RM 250 for all travelers" },
         ],
         destinations: [
             { name: "Hunza Valley", highlights: "Stunning Mountains, Karimabad Fort, Cherry Blossoms, Trekking", image: "/assets/destinations/hunza.jpg" },
