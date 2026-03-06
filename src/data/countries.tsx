@@ -137,6 +137,8 @@ export const countries: CountryData[] = [
         requirements: [
             { icon: <FileText size={20} />, document: "Original Passport", requirement: "Required" },
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Valid for at least 6 months" },
+            { icon: <Plane size={20} />, document: "Air Ticket Booking", requirement: "Return ticket required" },
+            { icon: <MapPin size={20} />, document: "Accommodation Booking", requirement: "Hotel or other accommodation booking" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 copy (35 × 45 mm, white background)" },
         ],
         whyChoose: [
