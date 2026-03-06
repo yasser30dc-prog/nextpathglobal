@@ -289,14 +289,15 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/vietnam.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
-            { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone (Except BD/AFG)" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone can apply from anywhere in the world" },
         ],
         requirements: [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Copy" },
             { icon: <Building size={20} />, document: "Visa Copy", requirement: "If residing outside the country" },
+            { icon: <Briefcase size={20} />, document: "Employment Confirmation Letter/NOC", requirement: "From Company, University or College" },
             { icon: <Briefcase size={20} />, document: "Professional Details", requirement: "Trade License/Name Card" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "35 × 45 mm, White background" },
         ],
