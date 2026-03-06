@@ -129,7 +129,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/cambodia.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 380" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Living/Travelling in Malaysia" },
