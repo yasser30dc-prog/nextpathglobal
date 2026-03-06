@@ -299,6 +299,8 @@ export const countries: CountryData[] = [
             { icon: <Building size={20} />, document: "Visa Copy", requirement: "If residing outside the country" },
             { icon: <Briefcase size={20} />, document: "Employment Confirmation Letter/NOC", requirement: "From Company, University or College" },
             { icon: <Briefcase size={20} />, document: "Professional Details", requirement: "Trade License/Name Card" },
+            { icon: <Plane size={20} />, document: "Air Ticket Booking", requirement: "Return ticket required" },
+            { icon: <MapPin size={20} />, document: "Accommodation Booking", requirement: "Hotel or other accommodation booking" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "35 × 45 mm, White background" },
         ],
         whyChoose: [
