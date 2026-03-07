@@ -29,9 +29,6 @@ export const metadata: Metadata = {
   authors: [{ name: "NextPath Global Sdn Bhd" }],
   creator: "NextPath Global Sdn Bhd",
   publisher: "NextPath Global Sdn Bhd",
-  alternates: {
-    canonical: "https://nextpathglobal.my",
-  },
   openGraph: {
     title: "Next Path Global | Immigration & Visa Consulting Services Malaysia",
     description: "Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals",
