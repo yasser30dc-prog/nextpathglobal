@@ -244,7 +244,7 @@ At NextPath Global Sdn Bhd, we assist international travellers with:
 - Travel planning & documentation
 - Insurance and flight support
 
-📩 Reach out today and let us help you plan your Malaysia journey with confidence. Feel free to contact us +60 11 1669 5249 or +60 17 462 7457
+📩 Reach out today and let us help you plan your Malaysia journey with confidence. Feel free to contact us +60 11 1669 5249 or +60 17 828 3135
         `
     },
     {

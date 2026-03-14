@@ -131,8 +131,8 @@ const faqData: FAQSection[] = [
                                         +60 11 1669 5249
                                     </a>
                                     ,{" "}
-                                    <a href="tel:+60174627457" className="text-primary hover:underline">
-                                        +60 17 462 7457
+                                    <a href="tel:+60178283135" className="text-primary hover:underline">
+                                        +60 17 828 3135
                                     </a>
                                 </div>
                             </div>

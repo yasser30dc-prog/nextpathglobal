@@ -225,7 +225,7 @@ export async function submitAppointmentForm(formData: FormData) {
         <p>We will send a confirmation email with your appointment details within 24 hours.</p>
         
         <p>If you have an urgent query, please contact us at:</p>
-        <p><strong>+60 11 1669 5249</strong> or <strong>+60 17 462 7457</strong></p>
+        <p><strong>+60 11 1669 5249</strong> or <strong>+60 17 828 3135</strong></p>
         
         <br />
         <p>Best regards,</p>

@@ -192,7 +192,7 @@ export default function AppointmentForm() {
                         If you have an urgent query, please contact us at:
                     </p>
                     <p className="font-semibold text-primary mt-2">
-                        +60 11 1669 5249 &amp; +60 17 462 7457
+                        +60 11 1669 5249 &amp; +60 17 828 3135
                     </p>
                 </div>
             </motion.div>

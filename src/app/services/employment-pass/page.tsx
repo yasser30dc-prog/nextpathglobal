@@ -499,10 +499,10 @@ export default function EmploymentPass() {
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/60174627457"
+                            href="https://wa.me/60178283135"
                             className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                         >
-                            <Phone size={24} /> +60 17 462 7457
+                            <Phone size={24} /> +60 17 828 3135
                         </motion.a>
                     </div>
                     <Link href="/contact">
