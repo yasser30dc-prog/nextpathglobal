@@ -4,107 +4,114 @@ import { institutions } from '@/data/institutions';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://nextpathglobal.my';
-    const currentDate = new Date().toISOString();
 
-    // Static pages with high priority
+    // ─── Static pages ───────────────────────────────────────────────────────
+    // Use real last-modified dates so Google can properly prioritise crawling.
+    // Only update these dates when the page content actually changes.
     const staticPages: MetadataRoute.Sitemap = [
         {
             url: baseUrl,
-            lastModified: currentDate,
-            changeFrequency: 'daily',
+            lastModified: new Date('2026-03-21'),
+            changeFrequency: 'weekly',
             priority: 1.0,
         },
         {
             url: `${baseUrl}/about`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/services`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
             url: `${baseUrl}/contact`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-03-14'),
             changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/book-appointment`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/why-choose-us`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',
             priority: 0.7,
         },
         {
-            url: `${baseUrl}/refund-policy`,
-            lastModified: currentDate,
-            changeFrequency: 'monthly',
-            priority: 0.6,
-        },
-        {
             url: `${baseUrl}/faq`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-03-06'),
+            changeFrequency: 'monthly',
             priority: 0.7,
         },
         {
             url: `${baseUrl}/payment-methods`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',
             priority: 0.6,
         },
         {
+            url: `${baseUrl}/refund-policy`,
+            lastModified: new Date('2026-01-19'),
+            changeFrequency: 'yearly',
+            priority: 0.5,
+        },
+        {
             url: `${baseUrl}/privacy`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-01-19'),
             changeFrequency: 'yearly',
             priority: 0.3,
         },
         {
             url: `${baseUrl}/terms`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-01-19'),
             changeFrequency: 'yearly',
             priority: 0.3,
         },
     ];
 
-    // Service pages
+    // ─── Service pages ───────────────────────────────────────────────────────
     const servicePages: MetadataRoute.Sitemap = [
         {
+            url: `${baseUrl}/services`,
+            lastModified: new Date('2026-01-25'),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/services/tourist-visa`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-02-17'),
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/services/study-abroad`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-01-25'),
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/services/pvip`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-01-25'),
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/services/mm2h`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-01-25'),
+            changeFrequency: 'monthly',
             priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/services/employment-pass`,
+            lastModified: new Date('2026-03-14'),
+            changeFrequency: 'monthly',
+            priority: 0.8,
         },
     ];
 
-    // Tourist visa country pages
+    // ─── Tourist visa country pages ──────────────────────────────────────────
     const countries = [
         'afghanistan', 'argentina', 'azerbaijan', 'bangladesh', 'brunei', 'cambodia',
         'china', 'egypt', 'hong-kong', 'indonesia', 'japan', 'laos', 'malaysia',
@@ -114,71 +121,71 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const countryPages: MetadataRoute.Sitemap = countries.map((country) => ({
         url: `${baseUrl}/services/tourist-visa/${country}`,
-        lastModified: currentDate,
-        changeFrequency: 'weekly' as const,
+        lastModified: new Date('2026-02-17'),
+        changeFrequency: 'monthly' as const,
         priority: 0.8,
     }));
 
-    // Blog pages
+    // ─── Blog pages ──────────────────────────────────────────────────────────
     const blogPages: MetadataRoute.Sitemap = [
         {
             url: `${baseUrl}/blog`,
-            lastModified: currentDate,
-            changeFrequency: 'daily',
+            lastModified: new Date('2026-03-21'),
+            changeFrequency: 'weekly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/blog/study-in-malaysia`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-03-21'),
             changeFrequency: 'weekly',
             priority: 0.7,
         },
         {
             url: `${baseUrl}/blog/travel-tourism`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-03-21'),
             changeFrequency: 'weekly',
             priority: 0.7,
         },
         {
             url: `${baseUrl}/blog/visa-immigration`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-03-21'),
             changeFrequency: 'weekly',
             priority: 0.7,
         },
         {
             url: `${baseUrl}/blog/updates-announcements`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-03-21'),
             changeFrequency: 'weekly',
             priority: 0.7,
         },
     ];
 
-    // Blog post pages
+    // Blog post pages — use the post's actual publish date
     const blogPostPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
         url: `${baseUrl}/blog/${post.category}/${post.slug}`,
-        lastModified: new Date(post.date).toISOString(),
+        lastModified: new Date(post.date),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
     }));
 
-    // Study Malaysia pages
+    // ─── Study Malaysia pages ─────────────────────────────────────────────────
     const studyMalaysiaPages: MetadataRoute.Sitemap = [
         {
             url: `${baseUrl}/study-malaysia/universities`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-01-25'),
+            changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/study-malaysia/university-colleges`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-01-25'),
+            changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/study-malaysia/colleges`,
-            lastModified: currentDate,
-            changeFrequency: 'weekly',
+            lastModified: new Date('2026-01-25'),
+            changeFrequency: 'monthly',
             priority: 0.8,
         },
     ];
@@ -194,7 +201,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
         return {
             url: `${baseUrl}${basePath}/${institution.slug}`,
-            lastModified: currentDate,
+            lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
         };
@@ -210,3 +217,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...institutionPages,
     ];
 }
+
