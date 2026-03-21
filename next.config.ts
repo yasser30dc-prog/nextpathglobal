@@ -24,11 +24,72 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   async redirects() {
     return [
-      // Remove legacy WordPress cart page
+      // ─── WordPress legacy pages ───────────────────────────────────────────
       {
         source: '/wp-travel-engine-cart',
         destination: '/',
-        permanent: true
+        permanent: true,
+      },
+      {
+        source: '/wp-travel-engine-cart/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/category/uncategorized',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/category/uncategorized/',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/terms-and-conditions',
+        destination: '/terms',
+        permanent: true,
+      },
+      {
+        source: '/terms-and-conditions/',
+        destination: '/terms',
+        permanent: true,
+      },
+      {
+        source: '/thank-you',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/thank-you/',
+        destination: '/',
+        permanent: true,
+      },
+      // ─── Old route formats ────────────────────────────────────────────────
+      {
+        source: '/ourcountries/:slug',
+        destination: '/services/tourist-visa/:slug',
+        permanent: true,
+      },
+      {
+        source: '/laos',
+        destination: '/services/tourist-visa/laos',
+        permanent: true,
+      },
+      {
+        source: '/laos/',
+        destination: '/services/tourist-visa/laos',
+        permanent: true,
+      },
+      {
+        source: '/study-abroad',
+        destination: '/services/study-abroad',
+        permanent: true,
+      },
+      {
+        source: '/study-abroad/',
+        destination: '/services/study-abroad',
+        permanent: true,
       },
     ];
   },
