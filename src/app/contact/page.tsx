@@ -56,7 +56,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold mb-1 text-gray-900">Email Us</h4>
-                                        <p className="text-gray-600">hello@nextpathglobal.my</p>
+                                        <p className="text-gray-600">info@nextpathglobal.my</p>
                                     </div>
                                 </div>
                             </div>
