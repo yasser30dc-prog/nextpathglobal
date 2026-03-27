@@ -35,7 +35,7 @@ export default function Footer() {
                         <div className="flex space-x-4">
                             <a href="https://www.facebook.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our Facebook page"><Facebook size={20} /></a>
                             <a href="https://www.instagram.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our Instagram profile"><Instagram size={20} /></a>
-                            <a href="https://www.tiktok.com/@npg0058" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our TikTok account"><TikTokIcon size={20} /></a>
+                            <a href="https://www.tiktok.com/@npg0585" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our TikTok account"><TikTokIcon size={20} /></a>
                         </div>
                     </div>
 
