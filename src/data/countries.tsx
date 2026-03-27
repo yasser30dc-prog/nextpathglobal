@@ -289,7 +289,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/vietnam.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 250" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone can apply from anywhere in the world" },
