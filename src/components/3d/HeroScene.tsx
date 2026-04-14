@@ -5,7 +5,7 @@ export default function HeroScene() {
         <div
             className="w-full h-full absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
-                backgroundImage: 'url(/assets/hero-background.jpg)',
+                backgroundImage: 'url(/assets/hero-background.png)',
             }}
         >
             {/* Overlay for better text readability */}
