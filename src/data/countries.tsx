@@ -45,7 +45,7 @@ export const countries: CountryData[] = [
         name: "Malaysia",
         tagline: "Truly Asia",
         description: "Experience the diversity of Malaysia - from Kuala Lumpur's Petronas Towers to pristine beaches, rainforests, and a harmonious blend of Malay, Chinese, and Indian cultures.",
-        coverImage: "/assets/countries/malaysia.png",
+        coverImage: "/assets/countries/malaysia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 175" },
@@ -85,7 +85,7 @@ export const countries: CountryData[] = [
         name: "Bangladesh",
         tagline: "Beautiful Bangladesh",
         description: "Discover the vibrant culture and natural beauty of Bangladesh. From the historic landmarks of Dhaka to the serene landscapes of the countryside, experience warm hospitality and rich heritage.",
-        coverImage: "/assets/countries/bangladesh.png",
+        coverImage: "/assets/countries/malaysia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 300" },
@@ -407,7 +407,7 @@ export const countries: CountryData[] = [
         name: "Philippines",
         tagline: "Pearl of the Orient Seas",
         description: "Over 7,000 islands of pristine beaches, vibrant culture, and warm Filipino hospitality. From stunning rice terraces to world-class diving sites, the Philippines offers unforgettable tropical adventures.",
-        coverImage: "/assets/countries/philippines.png",
+        coverImage: "/assets/countries/philippines.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
@@ -447,7 +447,7 @@ export const countries: CountryData[] = [
         name: "Brunei",
         tagline: "Abode of Peace",
         description: "Experience the serene beauty of Brunei, a peaceful sultanate known for its grand mosques, untouched rainforests, and rich cultural heritage steeped in tradition.",
-        coverImage: "/assets/countries/brunei.png",
+        coverImage: "/assets/countries/brunei.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 200" },
@@ -487,7 +487,7 @@ export const countries: CountryData[] = [
         name: "Myanmar",
         tagline: "Golden Land",
         description: "Discover Myanmar's ancient temples, golden pagodas, and traditional culture. From Bagan's thousands of temples to Inle Lake's floating gardens, experience Southeast Asia's hidden gem.",
-        coverImage: "/assets/countries/myanmar.png",
+        coverImage: "/assets/countries/myanmar.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "2-3 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 400" },
@@ -525,7 +525,7 @@ export const countries: CountryData[] = [
         name: "Indonesia",
         tagline: "Wonderful Indonesia",
         description: "The world's largest archipelago offers diverse experiences from Bali's temples to Jakarta's modern skyline. Discover volcanic landscapes, pristine beaches, and rich cultural heritage across 17,000 islands.",
-        coverImage: "/assets/countries/indonesia.png",
+        coverImage: "/assets/countries/indonesia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 750" },
@@ -562,7 +562,7 @@ export const countries: CountryData[] = [
         name: "Pakistan",
         tagline: "Land of Pure",
         description: "Home to K2 and the mighty Himalayas, Pakistan offers breathtaking mountain scenery, warm hospitality, and rich cultural heritage. Experience the adventure of a lifetime.",
-        coverImage: "/assets/countries/pakistan.png",
+        coverImage: "/assets/countries/pakistan.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1-3 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 250" },
@@ -600,7 +600,7 @@ export const countries: CountryData[] = [
         name: "Afghanistan",
         tagline: "Heart of Asia",
         description: "Ancient Silk Road heritage meets stunning mountain landscapes. Discover Afghanistan's historical treasures, from Herat's grand mosques to the legendary Band-e-Amir lakes.",
-        coverImage: "/assets/countries/afghanistan.png",
+        coverImage: "/assets/countries/afghanistan.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 500" },
@@ -639,7 +639,7 @@ export const countries: CountryData[] = [
         name: "Egypt",
         tagline: "Land of Pharaohs",
         description: "Journey through 5,000 years of history among the pyramids, cruise the Nile, and explore ancient temples. Egypt offers an unforgettable adventure through one of the world's greatest civilizations.",
-        coverImage: "/assets/countries/egypt.png",
+        coverImage: "/assets/countries/egypt.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 500" },
@@ -678,7 +678,7 @@ export const countries: CountryData[] = [
         name: "Azerbaijan",
         tagline: "Land of Fire",
         description: "Where East meets West on the Caspian Sea. Experience Baku's futuristic architecture, ancient fire temples, and the warm hospitality of this fascinating Caucasus nation.",
-        coverImage: "/assets/countries/azerbaijan.png",
+        coverImage: "/assets/countries/azerbaijan.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "5-7 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 380" },
@@ -719,7 +719,7 @@ export const countries: CountryData[] = [
         name: "Sri Lanka",
         tagline: "Pearl of the Indian Ocean",
         description: "Tropical paradise offering pristine beaches, ancient temples, lush tea plantations, and incredible wildlife. Discover this island gem with fast 1-day ETA processing.",
-        coverImage: "/assets/countries/sri-lanka.png",
+        coverImage: "/assets/countries/sri-lanka.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 200" },
@@ -757,7 +757,7 @@ export const countries: CountryData[] = [
         name: "Nepal",
         tagline: "Roof of the World",
         description: "Home to Mount Everest and the mighty Himalayas, Nepal offers world-class trekking, ancient temples, and spiritual experiences. Get your ETA in just 1 day for RM 100.",
-        coverImage: "/assets/countries/nepal.png",
+        coverImage: "/assets/countries/nepal.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 100" },
@@ -795,7 +795,7 @@ export const countries: CountryData[] = [
         name: "Maldives",
         tagline: "Paradise on Earth",
         description: "Luxury overwater villas, crystal-clear lagoons, and vibrant coral reefs make the Maldives the ultimate tropical escape. Get your IMUGA approval in just 1 day for RM 100.",
-        coverImage: "/assets/countries/maldives.png",
+        coverImage: "/assets/countries/maldives.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 100" },
@@ -833,7 +833,7 @@ export const countries: CountryData[] = [
         name: "Sabah",
         tagline: "Land Below the Wind",
         description: "Malaysian Borneo's natural paradise featuring Mount Kinabalu, pristine diving sites, orangutans, and rich cultural diversity. Experience adventure and wildlife for just RM 50.",
-        coverImage: "/assets/countries/sabah.png",
+        coverImage: "/assets/countries/sabah.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 50" },
@@ -872,7 +872,7 @@ export const countries: CountryData[] = [
         name: "Japan",
         tagline: "Land of the Rising Sun",
         description: "Where ancient tradition meets cutting-edge innovation. Experience cherry blossoms, Mount Fuji, traditional temples, and futuristic cities in this fascinating island nation.",
-        coverImage: "/assets/countries/japan.png",
+        coverImage: "/assets/countries/japan.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 595" },
@@ -912,7 +912,7 @@ export const countries: CountryData[] = [
         name: "Turkey",
         tagline: "Where East Meets West",
         description: "Straddling two continents, Turkey offers Byzantine wonders, Ottoman palaces, Mediterranean beaches, and the surreal landscapes of Cappadocia.",
-        coverImage: "/assets/countries/turkey.png",
+        coverImage: "/assets/countries/turkey.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
@@ -951,7 +951,7 @@ export const countries: CountryData[] = [
         name: "Hong Kong",
         tagline: "Asia's World City",
         description: "Vertical city of skyscrapers, dim sum, and Victoria Peak views. Experience the perfect blend of Eastern and Western cultures in this dynamic global financial hub.",
-        coverImage: "/assets/countries/hong-kong.png",
+        coverImage: "/assets/countries/hong-kong.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
@@ -990,7 +990,7 @@ export const countries: CountryData[] = [
         name: "Argentina",
         tagline: "Land of Tango and Passion",
         description: "From Buenos Aires' European elegance to Patagonia's glaciers and Iguazu's waterfalls. Experience South American culture, wine, steak, and breathtaking landscapes.",
-        coverImage: "/assets/countries/argentina.png",
+        coverImage: "/assets/countries/argentina.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "25-28 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 850" },
@@ -1029,7 +1029,7 @@ export const countries: CountryData[] = [
         name: "Russia",
         tagline: "Land of Tsars",
         description: "The world's largest country offers iconic landmarks from Red Square to St. Petersburg's palaces, rich history, world-class ballet, and the legendary Trans-Siberian Railway.",
-        coverImage: "/assets/countries/russia.png",
+        coverImage: "/assets/countries/russia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 500" },
