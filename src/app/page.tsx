@@ -4,7 +4,7 @@ import HeroScene from "@/components/3d/HeroScene";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, GraduationCap, Briefcase, Globe, ShieldCheck, Plane, CheckCircle2 } from "lucide-react";
+import { ArrowRight, GraduationCap, Briefcase, Globe, ShieldCheck, Plane, CheckCircle2, MessageCircle } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -108,6 +108,23 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Free Consultation Banner (Mid-Page) */}
+      <section className="bg-primary py-16 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+        <div className="container mx-auto px-6 relative z-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+             Not sure where to start? Talk to our education counsellor — it's free.
+          </h2>
+          <Link
+            href="/contact"
+            className="bg-white text-primary hover:bg-gray-100 font-bold py-4 px-10 rounded-full text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 inline-flex items-center gap-3"
+          >
+            <MessageCircle size={24} /> Get Free Consultation
+          </Link>
         </div>
       </section>
 
@@ -397,6 +414,23 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Free Consultation Banner (Bottom) */}
+      <section className="bg-primary py-16 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+        <div className="container mx-auto px-6 relative z-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+             Not sure where to start? Talk to our education counsellor — it's free.
+          </h2>
+          <Link
+            href="/contact"
+            className="bg-white text-primary hover:bg-gray-100 font-bold py-4 px-10 rounded-full text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 inline-flex items-center gap-3"
+          >
+            <MessageCircle size={24} /> Get Free Consultation
+          </Link>
         </div>
       </section>
 
