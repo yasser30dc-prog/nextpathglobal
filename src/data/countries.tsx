@@ -55,10 +55,10 @@ export const countries: CountryData[] = [
         ],
         requirements: [
             { icon: <FileText size={20} />, document: "Valid Passport", requirement: "Must be valid for at least 6 months" },
-            { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Must be valid for at least 3 months" },
             { icon: <Briefcase size={20} />, document: "Letter of Employment / Study", requirement: "An official letter from your current employer or educational institution" },
-            { icon: <FileText size={20} />, document: "Introduction Letter", requirement: "Must be officially issued by the Bangladesh High Commission in Malaysia" },
+            { icon: <Briefcase size={20} />, document: "Professional Details", requirement: "Proof of occupation (e.g., Trade License, Employee ID, Business Card)" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Certified statements from the last 3 months with a minimum balance of 200K BDT" },
+            { icon: <FileText size={20} />, document: "Invitation Letter", requirement: "From a Malaysian citizen or company" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "One recent passport-sized photo (35 × 45 mm) with a white background" },
         ],
         whyChoose: [
