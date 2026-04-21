@@ -68,10 +68,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Nature & Wildlife", description: "Rainforests, Cameron Highlands, Taman Negara, orangutans" },
         ],
         destinations: [
-            { name: "Kuala Lumpur", highlights: "Petronas Towers, Batu Caves, Chinatown, Shopping", image: "/assets/destinations/kuala-lumpur.jpg" },
-            { name: "Penang", highlights: "George Town UNESCO Site, Street Food, Beaches, Culture", image: "/assets/destinations/penang.jpg" },
-            { name: "Langkawi", highlights: "Island Paradise, Cable Car, Beaches, Duty-Free Shopping", image: "/assets/destinations/langkawi.jpg" },
-            { name: "Cameron Highlands", highlights: "Tea Plantations, Cool Climate, Strawberry Farms, Nature", image: "/assets/destinations/cameron.jpg" },
+            { name: "Kuala Lumpur", highlights: "Petronas Towers, Batu Caves, Chinatown, Shopping", image: "/assets/destinations/kuala-lumpur.png" },
+            { name: "Penang", highlights: "George Town UNESCO Site, Street Food, Beaches, Culture", image: "/assets/destinations/penang.png" },
+            { name: "Langkawi", highlights: "Island Paradise, Cable Car, Beaches, Duty-Free Shopping", image: "/assets/destinations/langkawi.png" },
+            { name: "Cameron Highlands", highlights: "Tea Plantations, Cool Climate, Strawberry Farms, Nature", image: "/assets/destinations/cameron.png" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
