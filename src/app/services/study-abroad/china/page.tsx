@@ -9,7 +9,7 @@ import { chinaPartners, chinaDiplomaPartners, chinaMbbsPartners, ChinaPartnerIns
 type TabType = 'bachelor' | 'diploma' | 'mbbs';
 
 export default function StudyChinaPage() {
-    const [activeTab, setActiveTab] = useState<TabType>('bachelor');
+    const [activeTab, setActiveTab] = useState<TabType>('diploma');
     const [selectedUni, setSelectedUni] = useState<ChinaPartnerInstitution | null>(null);
 
     const getActiveData = () => {
@@ -80,8 +80,8 @@ export default function StudyChinaPage() {
                     {/* Tabs */}
                     <div className="flex flex-wrap justify-center gap-4 mb-14">
                         {[
-                            { id: 'bachelor', label: 'Bachelor Programs', icon: <BookOpen size={18} /> },
                             { id: 'diploma', label: 'Diploma Programs', icon: <Building2 size={18} /> },
+                            { id: 'bachelor', label: 'Bachelor Programs', icon: <BookOpen size={18} /> },
                             { id: 'mbbs', label: 'MBBS Programs', icon: <Globe size={18} /> },
                         ].map((tab) => (
                             <button
