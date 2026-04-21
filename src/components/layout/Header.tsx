@@ -24,6 +24,7 @@ const navLinks: NavLink[] = [
             { name: "UK", href: "/services/study-abroad/uk" },
             { name: "Australia", href: "/services/study-abroad/australia" },
             { name: "Finland", href: "/services/study-abroad/finland" },
+            { name: "China", href: "/services/study-abroad/china" },
         ]
     },
     { name: "Tourist Visa", href: "/services/tourist-visa" },
