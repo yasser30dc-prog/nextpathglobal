@@ -39,8 +39,8 @@ export default function StudyMalaysiaPage() {
     return (
         <div className="min-h-screen bg-gray-50 pb-20">
             {/* Hero Section */}
-            <section className="bg-primary pt-40 pb-24 text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/20"></div>
+            <section className="pt-40 pb-24 text-white relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/assets/malaysia-study-hero.png')" }}>
+                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
