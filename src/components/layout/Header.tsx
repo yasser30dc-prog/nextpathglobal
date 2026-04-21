@@ -17,13 +17,13 @@ const navLinks: NavLink[] = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     {
-        name: "Study Malaysia",
+        name: "Study Abroad",
         href: "/services/study-abroad",
         subMenu: [
-            { name: "Overview", href: "/services/study-abroad" },
-            { name: "Universities", href: "/study-malaysia/universities" },
-            { name: "Colleges", href: "/study-malaysia/colleges" },
-            { name: "University Colleges", href: "/study-malaysia/university-colleges" },
+            { name: "Malaysia", href: "/services/study-abroad/malaysia" },
+            { name: "UK", href: "/services/study-abroad/uk" },
+            { name: "Australia", href: "/services/study-abroad/australia" },
+            { name: "Finland", href: "/services/study-abroad/finland" },
         ]
     },
     { name: "Tourist Visa", href: "/services/tourist-visa" },
