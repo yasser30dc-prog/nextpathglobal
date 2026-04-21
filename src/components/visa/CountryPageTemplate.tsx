@@ -248,6 +248,106 @@ const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country }) =>
                     </div>
                 </motion.section>
 
+                {/* Destination Thailand Visa (DTV) Section */}
+                {country.slug === "thailand" && (
+                    <motion.section
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="mt-20 bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-primary/10 relative overflow-hidden"
+                    >
+                        {/* Decorative Background */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -ml-32 -mb-32"></div>
+
+                        <div className="relative z-10">
+                            <div className="text-center mb-10 max-w-3xl mx-auto">
+                                <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
+                                    Special Visa Program
+                                </span>
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                                    Destination Thailand Visa (DTV)
+                                </h2>
+                                <p className="text-lg text-gray-600 leading-relaxed">
+                                    Planning to live and work remotely from Thailand? The Destination Thailand Visa (DTV) is designed for digital nomads, remote workers, freelancers, and global talents ready to expand their horizons. Here’s everything you need to prepare:
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                                {/* Checklist */}
+                                <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                        <FileText className="text-primary" size={24} />
+                                        Document Checklist & Requirements
+                                    </h3>
+                                    <ul className="space-y-4">
+                                        <li className="flex items-start gap-3">
+                                            <CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} />
+                                            <span className="text-gray-700"><strong>Passport/Travel Document</strong> (Full pages)</span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} />
+                                            <span className="text-gray-700"><strong>Recent photograph</strong> (taken within last 6 months)</span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} />
+                                            <span className="text-gray-700">
+                                                <strong>Financial proof of minimum 500,000 THB</strong><br/>
+                                                <span className="text-sm text-gray-500">(≈ 16,000 USD / approx. RM 65,000+ depending on conversion rate)</span><br/>
+                                                – Bank statements (last 3 months) or Sponsor letter
+                                            </span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <CheckCircle2 className="text-green-500 shrink-0 mt-0.5" size={20} />
+                                            <span className="text-gray-700">
+                                                <strong>Employment contract / Employment certificate</strong><br/>
+                                                OR Professional portfolio <span className="text-sm text-gray-500">(digital nomad / remote worker / freelancer / foreign talent)</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                {/* Cost */}
+                                <div className="bg-secondary text-white p-8 rounded-2xl shadow-lg relative overflow-hidden flex flex-col justify-center">
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                                    <h3 className="text-xl font-bold mb-8 flex items-center gap-2">
+                                        <DollarSign className="text-primary" size={24} />
+                                        Visa Processing Cost
+                                    </h3>
+                                    <div className="space-y-6">
+                                        <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                                            <span className="text-gray-300">Total Cost</span>
+                                            <span className="text-2xl font-bold text-white">RM 3,500</span>
+                                        </div>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                                            <div className="bg-white/10 p-4 rounded-xl">
+                                                <p className="text-xs text-gray-300 uppercase tracking-wider mb-1">Step 1</p>
+                                                <p className="font-semibold text-lg text-white mb-1">RM 2,500</p>
+                                                <p className="text-xs text-gray-400">With document submission</p>
+                                            </div>
+                                            <div className="bg-white/10 p-4 rounded-xl relative overflow-hidden">
+                                                <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+                                                <p className="text-xs text-gray-300 uppercase tracking-wider mb-1">Step 2</p>
+                                                <p className="font-semibold text-lg text-white mb-1">RM 1,000</p>
+                                                <p className="text-xs text-gray-400">After approval</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="mt-8 pt-6 border-t border-white/10">
+                                        <Link
+                                            href="/contact"
+                                            className="block w-full bg-primary hover:bg-primary-hover text-white text-center font-bold py-3 px-6 rounded-lg transition-all shadow-lg hover:shadow-xl"
+                                        >
+                                            Apply for DTV Now
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.section>
+                )}
+
                 <div className="mt-12 text-center">
                     <Link href="/services/tourist-visa" className="inline-flex items-center text-gray-500 hover:text-primary transition-colors font-medium">
                         <ArrowLeft size={20} className="mr-2" /> Back to All Countries
