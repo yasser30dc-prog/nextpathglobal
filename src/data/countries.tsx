@@ -137,8 +137,8 @@ export const countries: CountryData[] = [
         requirements: [
             { icon: <FileText size={20} />, document: "Original Passport", requirement: "Must submit your original physical passport" },
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Valid for at least 6 months" },
-            { icon: <Plane size={20} />, document: "Flight Itinerary", requirement: "Confirmed round-trip flight booking" },
-            { icon: <MapPin size={20} />, document: "Accommodation Booking", requirement: "Confirmed hotel or accommodation reservation" },
+            { icon: <Plane size={20} />, document: "Flight Itinerary", requirement: "Round-trip flight booking" },
+            { icon: <MapPin size={20} />, document: "Accommodation Booking", requirement: "Hotel or accommodation reservation" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "One recent passport-sized photo (35 × 45 mm) with a white background" },
         ],
         whyChoose: [
