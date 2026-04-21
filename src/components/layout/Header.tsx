@@ -27,8 +27,14 @@ const navLinks: NavLink[] = [
         ]
     },
     { name: "Tourist Visa", href: "/services/tourist-visa" },
-    { name: "MM2H", href: "/services/mm2h" },
-    { name: "PVIP", href: "/services/pvip" },
+    {
+        name: "Residency Programmes",
+        href: "#",
+        subMenu: [
+            { name: "MM2H", href: "/services/mm2h" },
+            { name: "PVIP", href: "/services/pvip" },
+        ]
+    },
     { name: "About Us", href: "/about" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
