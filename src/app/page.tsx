@@ -57,7 +57,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-white/90 mb-10 max-w-2xl mx-auto drop-shadow-md"
           >
-            Next Path Global provides expert immigration and visa consulting services to help you achieve your dreams abroad.
+            Expert guidance for students looking to study in Malaysia, UK, Australia, Finland and beyond.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
