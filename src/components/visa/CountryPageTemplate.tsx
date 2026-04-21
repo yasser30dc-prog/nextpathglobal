@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, FileText, DollarSign } from "lucide-react";
 import { CountryData } from "../../data/countries";
 
 interface CountryPageTemplateProps {
