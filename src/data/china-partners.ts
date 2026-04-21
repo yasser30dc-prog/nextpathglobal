@@ -401,3 +401,78 @@ export const chinaDiplomaPartners: ChinaPartnerInstitution[] = [
         programs: ["E-commerce", "Accounting", "International Trade", "Food Quality Inspection"]
     }
 ];
+
+export const chinaMbbsPartners: ChinaPartnerInstitution[] = [
+    {
+        id: "hainmc",
+        name: "Hainan Medical University (??????)",
+        shortName: "HMU",
+        domain: "hainmc.edu.cn",
+        location: "Hainan Province",
+        qsRanking: "Not Globally Ranked",
+        description: "A paramount medical institution prominently located in the tropical gateway of China, renowned for its exceptional international MBBS program.",
+        history: "Originally established in 1947, it has evolved into a premier university heavily integrated with the booming Hainan Free Trade Port healthcare sector.",
+        intakes: ["September", "March"],
+        programs: ["MBBS (Clinical Medicine)", "Pharmacy", "Dentistry", "Nursing"]
+    },
+    {
+        id: "fjmu",
+        name: "Fujian Medical University (??????)",
+        shortName: "FJMU",
+        domain: "fjmu.edu.cn",
+        location: "Fuzhou, Fujian",
+        qsRanking: "Not Globally Ranked",
+        description: "One of the most prestigious medical research hubs in East China with an extensive network of top-tier affiliated clinical hospitals.",
+        history: "Boasting nearly a century of legacy since its founding in 1937, it is recognized nationally as a powerhouse for cultivating highly skilled clinical physicians.",
+        intakes: ["September", "March"],
+        programs: ["MBBS (Clinical Medicine)", "Stomatology", "Preventive Medicine", "Medical Imaging"]
+    },
+    {
+        id: "beihua",
+        name: "Beihua University (????)",
+        shortName: "Beihua",
+        domain: "beihua.edu.cn",
+        location: "Jilin City, Jilin",
+        qsRanking: "Not Globally Ranked",
+        description: "A massive provincial comprehensive university offering a tremendously popular, highly affordable, and well-structured international MBBS program.",
+        history: "Formed in 1999 through the powerful merger of three prominent colleges including the revered Jilin Medical College (est. 1949).",
+        intakes: ["September", "March"],
+        programs: ["MBBS (Clinical Medicine)", "Medical Technology", "Pharmacology", "Nursing"]
+    },
+    {
+        id: "bzmc",
+        name: "Binzhou Medical University (?????)",
+        shortName: "BZMC",
+        domain: "bzmc.edu.cn",
+        location: "Yantai, Shandong",
+        qsRanking: "Not Globally Ranked",
+        description: "A highly acclaimed specialized medical college situated in the beautiful coastal city of Yantai, offering a rigorous dual-campus medical experience.",
+        history: "Stemming directly from the former public Qingdao Medical College established decades ago, it serves as the healthcare backbone of Shandong Peninsula.",
+        intakes: ["September", "March"],
+        programs: ["MBBS (Clinical Medicine)", "Traditional Chinese Medicine", "Special Education Medicine", "Rehabilitation Therapy"]
+    },
+    {
+        id: "hbuas",
+        name: "Hubei University of Arts and Science (??????)",
+        shortName: "HBUAS",
+        domain: "hbuas.edu.cn",
+        location: "Xiangyang, Hubei",
+        qsRanking: "Not Globally Ranked",
+        description: "A dynamic comprehensive university deeply praised for its rapidly ascending medical faculty and welcoming environment for international clinical students.",
+        history: "A historically significant academic cornerstone in Hubei that has continuously expanded its sciences to comprehensively integrate a globally focused medical school.",
+        intakes: ["September", "March"],
+        programs: ["MBBS (Clinical Medicine)", "Nursing", "Biomedical Engineering", "Public Health"]
+    },
+    {
+        id: "xzhmu",
+        name: "Xuzhou Medical University (??????)",
+        shortName: "XZHMU",
+        domain: "xzhmu.edu.cn",
+        location: "Xuzhou, Jiangsu",
+        qsRanking: "Not Globally Ranked",
+        description: "A tremendously influential medical institution celebrated globally as a pioneer in anesthesiology and an elite training ground for doctors.",
+        history: "Established securely in 1958, XZHMU literally founded the discipline of anesthesiology in China and continues to lead national medical innovations.",
+        intakes: ["September", "March"],
+        programs: ["MBBS (Clinical Medicine)", "Anesthesiology", "Medical Imaging", "Pediatrics"]
+    }
+];

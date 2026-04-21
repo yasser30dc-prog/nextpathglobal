@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, Building2, Clock, BookOpen, Calendar, Globe, MapPin } from "lucide-react";
 import Link from "next/link";
-import { chinaPartners, chinaDiplomaPartners, ChinaPartnerInstitution } from "@/data/china-partners";
+import { chinaPartners, chinaDiplomaPartners, chinaMbbsPartners, ChinaPartnerInstitution } from "@/data/china-partners";
 
 const PartnerCard = ({ uni, idx }: { uni: ChinaPartnerInstitution; idx: number }) => (
     <motion.div
@@ -167,6 +167,21 @@ export default function StudyChinaPage() {
 
                     <div className="space-y-8">
                         {chinaDiplomaPartners.map((uni, idx) => (
+                            <PartnerCard key={uni.id} uni={uni} idx={idx} />
+                        ))}
+                    </div>
+                    <div className="text-center mb-16 pt-12 border-t border-gray-200">
+                        <span className="text-red-500 font-semibold tracking-wider uppercase text-base">Medical & Clinical Medicine</span>
+                        <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-gray-900">
+                            MBBS Programs
+                        </h2>
+                        <p className="text-gray-600 max-w-2xl mx-auto">
+                            Pursue a world-class medical degree with our dedicated medical university partners, specifically tailored for international MBBS students.
+                        </p>
+                    </div>
+
+                    <div className="space-y-8">
+                        {chinaMbbsPartners.map((uni, idx) => (
                             <PartnerCard key={uni.id} uni={uni} idx={idx} />
                         ))}
                     </div>
