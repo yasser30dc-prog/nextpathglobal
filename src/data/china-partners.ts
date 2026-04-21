@@ -314,3 +314,90 @@ export const chinaPartners: ChinaPartnerInstitution[] = [
         programs: ["International Trade", "Foreign Languages", "Logistics Management", "Finance"]
     }
 ];
+
+export const chinaDiplomaPartners: ChinaPartnerInstitution[] = [
+    {
+        id: "cdttc",
+        name: "Chengdu Textile College (??????????)",
+        shortName: "CDTTC",
+        domain: "cdttc.edu.cn",
+        location: "Chengdu, Sichuan",
+        qsRanking: "Not Globally Ranked",
+        description: "A premier vocational college leading in textile engineering and light industry technology in Southwest China.",
+        history: "Established in 1939 to advance national industry, possessing a profound heritage in textile, fashion, and smart manufacturing.",
+        intakes: ["September", "March"],
+        programs: ["Textile Engineering", "Fashion Design", "Information Technology", "Business"]
+    },
+    {
+        id: "fjcpc",
+        name: "Fujian Chuanzheng Communications College (??????????)",
+        shortName: "FJCPC",
+        domain: "fjcpc.edu.cn",
+        location: "Fuzhou, Fujian",
+        qsRanking: "Not Globally Ranked",
+        description: "A specialized polytechnic historically centered around maritime logistics, shipping, and transportation engineering.",
+        history: "A visionary institution originally tied directly to the pioneering Fuzhou Arsenal (Chuanzheng) foundation, symbolizing Chinese maritime progression.",
+        intakes: ["September", "March"],
+        programs: ["Maritime Logistics", "Transportation Engineering", "Automotive Maintenance", "Civil Engineering"]
+    },
+    {
+        id: "fvti",
+        name: "Fuzhou Polytechnic (????????)",
+        shortName: "FVTI",
+        domain: "fvti.edu.cn",
+        location: "Fuzhou, Fujian",
+        qsRanking: "Not Globally Ranked",
+        description: "A highly dynamic state-run vocational college dedicated entirely to cultivating fast-deployable practical skills and regional technical talents.",
+        history: "Deeply entrenched in the robust economy of Fuzhou, explicitly aligned with the high-tech modern industrial zones of local enterprises.",
+        intakes: ["September", "March"],
+        programs: ["Computer Science", "E-commerce", "Electrical Automation", "Tourism"]
+    },
+    {
+        id: "lszyxy",
+        name: "Leshan Vocational and Technical College (????????)",
+        shortName: "LVTC",
+        domain: "lszyxy.edu.cn",
+        location: "Leshan, Sichuan",
+        qsRanking: "Not Globally Ranked",
+        description: "A picturesque higher vocational college known especially for nursing, clean energy technology, and applied medical disciplines.",
+        history: "Formed through the integration of multiple local medical and technical schools to serve the rapidly expanding healthcare and tech sectors.",
+        intakes: ["September", "March"],
+        programs: ["Nursing", "Solar Energy Technology", "Pharmacy", "Mechanical Engineering"]
+    },
+    {
+        id: "zzit",
+        name: "Zhangzhou Institute of Technology (????????)",
+        shortName: "ZZIT",
+        domain: "zzit.edu.cn",
+        location: "Zhangzhou, Fujian",
+        qsRanking: "Not Globally Ranked",
+        description: "An incredibly proactive technical institute famed for seamlessly integrating massive industry apprenticeships tightly with academic learning.",
+        history: "Founded as a crucial backbone for Zhangzhou's modernization, widely recognized regionally as a 'model vocational college'.",
+        intakes: ["September", "March"],
+        programs: ["Food Science", "Construction Engineering", "Logistics Management", "Electronic Commerce"]
+    },
+    {
+        id: "csmzxy",
+        name: "Changsha Social Work College (??????????)",
+        shortName: "CSMZ",
+        domain: "csmzxy.edu.cn",
+        location: "Changsha, Hunan",
+        qsRanking: "Not Globally Ranked",
+        description: "Pioneering the civic and social welfare service sectors, acting uniquely as the first vocational college directly specializing in civil affairs.",
+        history: "Created in 1984 under the Ministry of Civil Affairs, it remains the absolute authority nationwide for social work and welfare education.",
+        intakes: ["September", "March"],
+        programs: ["Social Work", "Elderly Care Management", "Modern Funeral Services", "Information Technology"]
+    },
+    {
+        id: "zjiet",
+        name: "Zhejiang Institute of Economics and Trade (??????????)",
+        shortName: "ZJIET",
+        domain: "zjiet.edu.cn",
+        location: "Hangzhou, Zhejiang",
+        qsRanking: "Not Globally Ranked",
+        description: "A highly prestigious provincial trade and economics institute sharply focused on commerce, supply chain modernization, and rural revitalization.",
+        history: "Endowed with over 40 years of commercial specialization, deeply tied to the colossal e-commerce heartbeat radiating from modern Hangzhou.",
+        intakes: ["September", "March"],
+        programs: ["E-commerce", "Accounting", "International Trade", "Food Quality Inspection"]
+    }
+];
