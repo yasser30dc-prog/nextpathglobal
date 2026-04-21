@@ -60,9 +60,26 @@ export default function StudyMalaysiaPage() {
                                 <div className="p-6 md:p-8 flex flex-col gap-6">
                                     <div className="flex items-start justify-between mb-2">
                                         <div className="flex items-center gap-4">
-                                            <div className="bg-primary/10 p-3 rounded-xl text-primary">
-                                                <Building2 size={24} />
-                                            </div>
+                                            {uni.domain ? (
+                                                <div className="bg-white p-2 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.06)] border border-gray-100 w-16 h-16 flex items-center justify-center shrink-0 overflow-hidden relative group-hover:scale-105 transition-transform">
+                                                    <img 
+                                                        src={`https://logo.clearbit.com/${uni.domain}`} 
+                                                        alt={`${uni.shortName} Logo`}
+                                                        className="max-w-full max-h-full object-contain"
+                                                        onError={(e) => {
+                                                            e.currentTarget.style.display = 'none';
+                                                            e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                                                        }}
+                                                    />
+                                                    <div className="hidden absolute inset-0 bg-primary/10 text-primary flex items-center justify-center">
+                                                        <Building2 size={28} />
+                                                    </div>
+                                                </div>
+                                            ) : (
+                                                <div className="bg-primary/10 p-3 rounded-xl text-primary w-16 h-16 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform">
+                                                    <Building2 size={28} />
+                                                </div>
+                                            )}
                                             <div>
                                                 <h3 className="text-xl md:text-2xl font-bold text-gray-900">
                                                     {uni.name} <span className="text-gray-500 text-lg font-medium">({uni.shortName})</span>
