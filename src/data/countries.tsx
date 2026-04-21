@@ -109,8 +109,8 @@ export const countries: CountryData[] = [
             { icon: <Utensils size={32} />, title: "Delicious Cuisine", description: "Savor authentic Bengali flavors from biryani to hilsa fish and sweet desserts" },
         ],
         destinations: [
-            { name: "Dhaka", highlights: "Ahsan Manzil, Lalbagh Fort, National Parliament, Sadarghat River Port", image: "/assets/destinations/dhaka.jpg" },
-            { name: "Cox's Bazar", highlights: "World's Longest Beach, Himchari, Inani Beach, Marine Drive", image: "/assets/destinations/coxs-bazar.jpg" },
+            { name: "Dhaka", highlights: "Ahsan Manzil, Lalbagh Fort, National Parliament, Sadarghat River Port", image: "/assets/destinations/dhaka.png" },
+            { name: "Cox's Bazar", highlights: "World's Longest Beach, Himchari, Inani Beach, Marine Drive", image: "/assets/destinations/coxs-bazar.png" },
             { name: "Sundarbans", highlights: "Mangrove Forest, Royal Bengal Tigers, River Cruises, Wildlife", image: "/assets/destinations/sundarbans.jpg" },
             { name: "Sylhet", highlights: "Tea Gardens, Ratargul Swamp Forest, Jaflong, Spiritual Sites", image: "/assets/destinations/sylhet.jpg" },
         ],
