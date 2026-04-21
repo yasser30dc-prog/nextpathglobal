@@ -176,7 +176,7 @@ export const countries: CountryData[] = [
         requirements: [
             { icon: <FileText size={20} />, document: "Valid Passport", requirement: "A clear, full-page scanned copy" },
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "A clear scanned copy of a valid Malaysian visa" },
-            { icon: <Plane size={20} />, document: "Confirmed Air Ticket", requirement: "Round-trip flight itinerary (inbound and outbound) for Thailand" },
+            { icon: <Plane size={20} />, document: "Confirmed Air Ticket", requirement: "Round-trip flight itinerary (inbound and outbound) for Thailand (Only for those on a visit visa in Malaysia)" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Certified statements from the last 3 months with a minimum balance of RM 3,000 (or equivalent)" },
             { icon: <Briefcase size={20} />, document: "Professional Details", requirement: "Proof of occupation (e.g., Trade License, Employee ID, or Business Card)" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "Recent passport-sized photo (35 × 45 mm) with a white background" },
