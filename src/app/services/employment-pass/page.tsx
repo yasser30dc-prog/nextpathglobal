@@ -40,18 +40,17 @@ const itemVariants = {
     }
 };
 
-// EP Categories
 const epCategories = [
     {
         name: "Category 1",
         color: "from-purple-600 to-purple-800",
         borderColor: "border-purple-400",
         bgColor: "bg-gradient-to-br from-purple-600 to-purple-800",
-        suitableFor: "Senior professionals & top management",
-        salary: "Higher salary bracket",
+        suitableFor: "Top management & technical experts",
+        salary: "RM 10,000 and above",
         validity: "Up to 5 years",
-        dependents: "Eligible",
-        roles: ["Director", "General Manager", "Technical Expert"],
+        dependents: "Eligible (Pass & Maid)",
+        roles: ["CEO", "Director", "General Manager", "Specialist"],
         popular: true
     },
     {
@@ -59,11 +58,11 @@ const epCategories = [
         color: "from-blue-600 to-blue-800",
         borderColor: "border-blue-400",
         bgColor: "bg-gradient-to-br from-blue-600 to-blue-800",
-        suitableFor: "Mid-level professionals",
-        salary: "Moderate salary requirement",
+        suitableFor: "Senior & mid-level professionals",
+        salary: "RM 5,000 to RM 9,999",
         validity: "Up to 2 years",
         dependents: "Eligible",
-        roles: ["Engineer", "Manager", "Executive", "Specialist"],
+        roles: ["Engineer", "Manager", "Executive"],
         popular: false
     },
     {
@@ -72,9 +71,9 @@ const epCategories = [
         borderColor: "border-gray-400",
         bgColor: "bg-gradient-to-br from-gray-600 to-gray-800",
         suitableFor: "Junior professionals / skilled staff",
-        salary: "Lower salary range",
-        validity: "Up to 1 year",
-        dependents: "Usually not allowed",
+        salary: "RM 3,000 to RM 4,999*",
+        validity: "Up to 12 months",
+        dependents: "Not Eligible",
         roles: ["Technical staff", "Junior executives"],
         popular: false
     }

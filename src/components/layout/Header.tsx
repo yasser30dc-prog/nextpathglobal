@@ -33,6 +33,7 @@ const navLinks: NavLink[] = [
         subMenu: [
             { name: "MM2H", href: "/services/mm2h" },
             { name: "PVIP", href: "/services/pvip" },
+            { name: "Employment Pass", href: "/services/employment-pass" },
         ]
     },
     { name: "About Us", href: "/about" },
