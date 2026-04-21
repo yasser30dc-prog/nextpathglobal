@@ -85,7 +85,7 @@ export const countries: CountryData[] = [
         name: "Bangladesh",
         tagline: "Beautiful Bangladesh",
         description: "Discover the vibrant culture and natural beauty of Bangladesh. From the historic landmarks of Dhaka to the serene landscapes of the countryside, experience warm hospitality and rich heritage.",
-        coverImage: "/assets/countries/malaysia.webp",
+        coverImage: "/assets/countries/bangladesh.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 300" },
