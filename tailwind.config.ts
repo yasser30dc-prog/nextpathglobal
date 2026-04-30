@@ -12,10 +12,25 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#C66A0E", // Darker orange for better contrast (4.6:1 ratio with white)
-          hover: "#B35C0A",   // Even darker on hover
+          DEFAULT: "#1E3A8A", // Deep Blue
+          hover: "#1E40AF",
         },
-        secondary: "#1A1C20",
+        secondary: {
+          DEFAULT: "#D4AF37", // Gold
+          hover: "#B8960B",
+        },
+        gold: {
+          50: '#FDFCF6',
+          100: '#FBF8E6',
+          200: '#F5ECC0',
+          300: '#EEDC93',
+          400: '#E5C961',
+          500: '#D4AF37', // Gold base
+          600: '#BE972B',
+          700: '#9B7422',
+          800: '#816023',
+          900: '#6E5124',
+        }
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
