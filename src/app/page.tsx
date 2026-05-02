@@ -207,7 +207,7 @@ export default function Home() {
                    href="/services/employment-pass"
                    className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
                  >
-                   Learn More <ArrowRight size={20} />
+                   Explore Employment Pass Services <ArrowRight size={20} />
                  </Link>
                </div>
                <div className="hidden md:flex flex-shrink-0 w-64 h-64 bg-white/10 rounded-full items-center justify-center backdrop-blur-md border border-white/20">
