@@ -35,6 +35,20 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
       },
+      animation: {
+        "marquee-vertical-up": "marquee-vertical-up 30s linear infinite",
+        "marquee-vertical-down": "marquee-vertical-down 30s linear infinite",
+      },
+      keyframes: {
+        "marquee-vertical-up": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-50% - 8px))" },
+        },
+        "marquee-vertical-down": {
+          from: { transform: "translateY(calc(-50% - 8px))" },
+          to: { transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],
