@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import StudyMalaysiaSection from "@/components/StudyMalaysiaSection";
 import { useState } from "react";
 import { partnerInstitutions } from "@/data/malaysia-partners";
 
@@ -34,9 +35,6 @@ const destinations = [
 
 export default function Home() {
   const [touristDestination, setTouristDestination] = useState("");
-  
-  const col1 = partnerInstitutions.slice(0, Math.ceil(partnerInstitutions.length / 2));
-  const col2 = partnerInstitutions.slice(Math.ceil(partnerInstitutions.length / 2));
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -127,103 +125,7 @@ export default function Home() {
       </section>
 
       {/* 3. Study in Malaysia Section */}
-      <section className="py-24 bg-gray-50 overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <span className="text-secondary font-bold tracking-wider uppercase text-sm border-b-2 border-secondary pb-1">Study in Malaysia</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-6 mb-6 text-primary">
-                World-Class Education in the Heart of Asia
-              </h2>
-              <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-                Malaysia offers affordable tuition, a multicultural environment, and globally recognized degrees. Partner with us to enroll in top-ranking universities and secure your student visa with ease.
-              </p>
-              <ul className="space-y-4 mb-10">
-                {['Affordable living and tuition costs', 'English-taught programs globally recognized', 'Safe and diverse multicultural environment', 'Seamless student visa processing'].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="text-secondary mt-1 flex-shrink-0" size={20} />
-                    <span className="text-gray-700 font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/services/study-malaysia"
-                className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full text-lg font-bold transition-all inline-flex items-center gap-2 shadow-lg hover:shadow-xl"
-              >
-                Explore Colleges <ArrowRight size={20} />
-              </Link>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="h-[500px] overflow-hidden relative flex gap-4 w-full [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
-            >
-              <div className="flex flex-col gap-4 w-1/2 animate-[marquee-vertical-up_30s_linear_infinite] group hover:[animation-play-state:paused]">
-                {[...col1, ...col1].map((college, idx) => (
-                   <div key={`col1-${idx}`} className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition-shadow">
-                      {college.domain ? (
-                          <div className="bg-white p-1 rounded-lg border border-gray-100 w-12 h-12 flex items-center justify-center shrink-0 overflow-hidden relative">
-                              <img 
-                                  src={`https://logo.clearbit.com/${college.domain}`} 
-                                  alt={`${college.shortName} Logo`}
-                                  className="max-w-full max-h-full object-contain"
-                                  onError={(e) => {
-                                      e.currentTarget.style.display = 'none';
-                                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                                  }}
-                              />
-                              <div className="hidden absolute inset-0 bg-primary/10 text-primary flex items-center justify-center">
-                                  <Building2 size={20} />
-                              </div>
-                          </div>
-                      ) : (
-                          <div className="bg-primary/10 p-2 rounded-lg text-primary w-12 h-12 flex items-center justify-center shrink-0 relative">
-                              <Building2 size={20} />
-                          </div>
-                      )}
-                      <h3 className="font-bold text-gray-900 text-sm">{college.name}</h3>
-                   </div>
-                ))}
-              </div>
-              <div className="flex flex-col gap-4 w-1/2 animate-[marquee-vertical-down_30s_linear_infinite] group hover:[animation-play-state:paused]">
-                {[...col2, ...col2].map((college, idx) => (
-                   <div key={`col2-${idx}`} className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition-shadow">
-                      {college.domain ? (
-                          <div className="bg-white p-1 rounded-lg border border-gray-100 w-12 h-12 flex items-center justify-center shrink-0 overflow-hidden relative">
-                              <img 
-                                  src={`https://logo.clearbit.com/${college.domain}`} 
-                                  alt={`${college.shortName} Logo`}
-                                  className="max-w-full max-h-full object-contain"
-                                  onError={(e) => {
-                                      e.currentTarget.style.display = 'none';
-                                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                                  }}
-                              />
-                              <div className="hidden absolute inset-0 bg-primary/10 text-primary flex items-center justify-center">
-                                  <Building2 size={20} />
-                              </div>
-                          </div>
-                      ) : (
-                          <div className="bg-primary/10 p-2 rounded-lg text-primary w-12 h-12 flex items-center justify-center shrink-0 relative">
-                              <Building2 size={20} />
-                          </div>
-                      )}
-                      <h3 className="font-bold text-gray-900 text-sm">{college.name}</h3>
-                   </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <StudyMalaysiaSection />
 
       {/* 4. Tourist Visa Widget Section */}
       <section className="py-24 bg-primary relative overflow-hidden">
