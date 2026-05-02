@@ -1255,10 +1255,10 @@ export const countries: CountryData[] = [
             { icon: <Mountain size={32} />, title: "Stunning Landscapes", description: "From the Swiss Alps to the Mediterranean coast" },
         ],
         destinations: [
-            { name: "Paris, France", highlights: "Eiffel Tower, Louvre Museum, Notre-Dame, Cuisine", image: "/assets/destinations/paris.jpg" },
-            { name: "Rome, Italy", highlights: "Colosseum, Vatican City, Trevi Fountain, History", image: "/assets/destinations/rome.jpg" },
-            { name: "Swiss Alps", highlights: "Skiing, Matterhorn, Scenic Trains, Chocolate", image: "/assets/destinations/swiss.jpg" },
-            { name: "Barcelona, Spain", highlights: "Sagrada Familia, Park Güell, Beaches, Tapas", image: "/assets/destinations/barcelona.jpg" },
+            { name: "Paris, France", highlights: "Eiffel Tower, Louvre Museum, Notre-Dame, Cuisine", image: "/assets/destinations/paris.png" },
+            { name: "Rome, Italy", highlights: "Colosseum, Vatican City, Trevi Fountain, History", image: "/assets/destinations/rome.png" },
+            { name: "Swiss Alps", highlights: "Skiing, Matterhorn, Scenic Trains, Chocolate", image: "/assets/destinations/swiss.png" },
+            { name: "Barcelona, Spain", highlights: "Sagrada Familia, Park Güell, Beaches, Tapas", image: "/assets/destinations/barcelona.png" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
