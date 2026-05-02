@@ -43,51 +43,104 @@ export default function Home() {
         <HeroScene />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A]/90 to-black/60 z-0"></div>
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <span className="inline-block py-1 px-3 rounded-full bg-secondary/20 text-secondary border border-secondary/30 font-semibold mb-6">
-                NextPath Global
-              </span>
-            </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg leading-tight"
-            >
-              Your Global Education <span className="text-secondary">Journey Starts Here</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-white/90 mb-10 max-w-2xl drop-shadow-md"
-            >
-              Expert guidance for students looking to study abroad, explore the world, or advance their career in Malaysia.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-wrap gap-4"
-            >
-              <Link
-                href="/contact"
-                className="bg-secondary hover:bg-secondary-hover text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-xl hover:shadow-secondary/30"
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-7 xl:col-span-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
               >
-                Get Free Consultation <ArrowRight size={20} />
-              </Link>
-              <Link
-                href="#destinations"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full text-lg font-semibold transition-all inline-flex items-center gap-2"
+                <span className="inline-block py-1 px-3 rounded-full bg-secondary/20 text-secondary border border-secondary/30 font-semibold mb-6">
+                  NextPath Global
+                </span>
+              </motion.div>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg leading-tight"
               >
-                Explore Destinations
-              </Link>
-            </motion.div>
+                Your Global Education <span className="text-secondary">Journey Starts Here</span>
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-xl text-white/90 mb-10 max-w-2xl drop-shadow-md"
+              >
+                Expert guidance for students looking to study abroad, explore the world, or advance their career in Malaysia.
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="flex flex-wrap gap-4"
+              >
+                <Link
+                  href="/contact"
+                  className="bg-secondary hover:bg-secondary-hover text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-xl hover:shadow-secondary/30"
+                >
+                  Get Free Consultation <ArrowRight size={20} />
+                </Link>
+                <Link
+                  href="#destinations"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full text-lg font-semibold transition-all inline-flex items-center gap-2"
+                >
+                  Explore Destinations
+                </Link>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-5 xl:col-span-4 hidden md:block">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="bg-white rounded-3xl shadow-2xl p-8 relative overflow-hidden"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 pointer-events-none"></div>
+                
+                <div className="flex flex-col gap-6">
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="bg-secondary/20 p-3 rounded-full text-secondary">
+                        <Plane size={24} />
+                      </span>
+                      <h2 className="text-2xl font-bold text-primary">Tourist Visa</h2>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Planning a trip?</h3>
+                    <p className="text-gray-600 text-sm">Select your destination and let us handle your visa process smoothly and efficiently.</p>
+                  </div>
+                  <div className="w-full">
+                    <div className="bg-gray-50 p-5 rounded-2xl border border-gray-100 space-y-4">
+                      <div className="space-y-2">
+                         <label className="font-semibold text-gray-700 text-sm">Where are you going?</label>
+                         <select 
+                            value={touristDestination}
+                            onChange={(e) => setTouristDestination(e.target.value)}
+                            className="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary focus:border-secondary outline-none bg-white text-gray-800"
+                         >
+                           <option value="">Select your destination →</option>
+                           <option value="china">China</option>
+                           <option value="japan">Japan</option>
+                           <option value="europe">Europe (Schengen)</option>
+                           <option value="australia">Australia</option>
+                           <option value="usa">USA</option>
+                           <option value="uk">United Kingdom</option>
+                           <option value="india">India</option>
+                         </select>
+                      </div>
+                      <Link 
+                         href={touristDestination ? `/services/tourist-visa/${touristDestination}` : '#'} 
+                         className="bg-secondary hover:bg-secondary-hover text-white px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 w-full transition-all"
+                      >
+                         <Search size={18} /> Check Requirements
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -127,52 +180,7 @@ export default function Home() {
       {/* 3. Study in Malaysia Section */}
       <StudyMalaysiaSection />
 
-      {/* 4. Tourist Visa Widget Section */}
-      <section className="py-24 bg-primary relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12 transform -translate-y-4 md:-translate-y-12">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-secondary/20 p-3 rounded-full text-secondary">
-                    <Plane size={24} />
-                  </span>
-                  <h2 className="text-3xl font-bold text-primary">Tourist Visa</h2>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Planning a trip?</h3>
-                <p className="text-gray-600">Select your destination and let us handle your visa process smoothly and efficiently.</p>
-              </div>
-              <div className="md:w-1/2 w-full">
-                <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 space-y-4">
-                  <div className="space-y-2">
-                     <label className="font-semibold text-gray-700 text-sm">Where are you going?</label>
-                     <select 
-                        value={touristDestination}
-                        onChange={(e) => setTouristDestination(e.target.value)}
-                        className="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary focus:border-secondary outline-none bg-white text-gray-800"
-                     >
-                       <option value="">Select your destination →</option>
-                       <option value="china">China</option>
-                       <option value="japan">Japan</option>
-                       <option value="europe">Europe (Schengen)</option>
-                       <option value="australia">Australia</option>
-                       <option value="usa">USA</option>
-                       <option value="uk">United Kingdom</option>
-                     </select>
-                  </div>
-                  <Link 
-                     href={touristDestination ? `/services/tourist-visa/${touristDestination}` : '#'} 
-                     className="bg-secondary hover:bg-secondary-hover text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 w-full transition-all"
-                  >
-                     <Search size={20} /> Check Requirements
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* 5. Employment Pass Section */}
       <section className="py-24 bg-white">
