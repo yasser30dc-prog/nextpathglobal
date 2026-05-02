@@ -147,6 +147,7 @@ export default function Header() {
                 <button
                     className="md:hidden text-gray-700"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label="Toggle mobile menu"
                 >
                     {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>

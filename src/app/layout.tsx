@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -13,11 +13,22 @@ const inter = Inter({
   fallback: ['system-ui', 'arial'],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://nextpathglobal.my'),
   title: {
     default: "Next Path Global | Immigration & Visa Consulting Services Malaysia",
     template: "%s | Next Path Global",
+  },
+  alternates: {
+    canonical: 'https://nextpathglobal.my',
   },
   description: "Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals",
   keywords: [
