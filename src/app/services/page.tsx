@@ -54,6 +54,12 @@ const allServices = [
         icon: <Plane size={40} className="text-primary" />,
     },
     {
+        title: "Flight Booking",
+        description: "Find and book the best flight deals worldwide with our trusted partners.",
+        icon: <Plane size={40} className="text-primary" />,
+        link: "/flight-booking"
+    },
+    {
         title: "Document Attestation",
         description: "Legalization and attestation of documents for international use.",
         icon: <FileText size={40} className="text-primary" />,
