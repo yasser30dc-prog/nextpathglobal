@@ -1132,7 +1132,7 @@ export const countries: CountryData[] = [
             { icon: <GraduationCap size={32} />, title: "World-Class Education", description: "Home to some of the world's oldest and most prestigious universities" },
         ],
         destinations: [
-            { name: "London", highlights: "Tower Bridge, British Museum, West End, Buckingham Palace", image: "/assets/destinations/london.jpg" },
+            { name: "London", highlights: "Tower Bridge, British Museum, West End, Buckingham Palace", image: "/assets/destinations/london.png" },
             { name: "Edinburgh", highlights: "Edinburgh Castle, Royal Mile, Arthur's Seat, History", image: "/assets/destinations/edinburgh.jpg" },
             { name: "Scottish Highlands", highlights: "Loch Ness, Glencoe, Isle of Skye, Nature", image: "/assets/destinations/highlands.jpg" },
             { name: "Bath", highlights: "Roman Baths, Georgian Architecture, Thermae Spa", image: "/assets/destinations/bath.jpg" },
@@ -1173,10 +1173,10 @@ export const countries: CountryData[] = [
             { icon: <Anchor size={32} />, title: "Entertainment", description: "Hollywood, Broadway, theme parks, and global attractions" },
         ],
         destinations: [
-            { name: "New York City", highlights: "Times Square, Central Park, Statue of Liberty, Broadway", image: "/assets/destinations/nyc.jpg" },
-            { name: "Los Angeles", highlights: "Hollywood, Venice Beach, Universal Studios, Beverly Hills", image: "/assets/destinations/la.jpg" },
-            { name: "Las Vegas", highlights: "The Strip, Casinos, Shows, Grand Canyon Tours", image: "/assets/destinations/vegas.jpg" },
-            { name: "Miami", highlights: "South Beach, Art Deco, Everglades, Nightlife", image: "/assets/destinations/miami.jpg" },
+            { name: "New York City", highlights: "Times Square, Central Park, Statue of Liberty, Broadway", image: "/assets/destinations/nyc.png" },
+            { name: "Los Angeles", highlights: "Hollywood, Venice Beach, Universal Studios, Beverly Hills", image: "/assets/destinations/la.png" },
+            { name: "Las Vegas", highlights: "The Strip, Casinos, Shows, Grand Canyon Tours", image: "/assets/destinations/vegas.png" },
+            { name: "Miami", highlights: "South Beach, Art Deco, Everglades, Nightlife", image: "/assets/destinations/miami.png" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1214,10 +1214,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Unique Wildlife", description: "Kangaroos, koalas, quokkas, and diverse ecosystems" },
         ],
         destinations: [
-            { name: "Sydney", highlights: "Opera House, Harbour Bridge, Bondi Beach, Darling Harbour", image: "/assets/destinations/sydney.jpg" },
-            { name: "Melbourne", highlights: "Laneways, Coffee Culture, Great Ocean Road, Arts", image: "/assets/destinations/melbourne.jpg" },
-            { name: "Cairns", highlights: "Great Barrier Reef, Daintree Rainforest, Kuranda", image: "/assets/destinations/cairns.jpg" },
-            { name: "Gold Coast", highlights: "Surfer's Paradise, Theme Parks, Beaches, Nightlife", image: "/assets/destinations/gold-coast.jpg" },
+            { name: "Sydney", highlights: "Opera House, Harbour Bridge, Bondi Beach, Darling Harbour", image: "/assets/destinations/sydney.png" },
+            { name: "Melbourne", highlights: "Laneways, Coffee Culture, Great Ocean Road, Arts", image: "/assets/destinations/melbourne.png" },
+            { name: "Cairns", highlights: "Great Barrier Reef, Daintree Rainforest, Kuranda", image: "/assets/destinations/cairns.png" },
+            { name: "Gold Coast", highlights: "Surfer's Paradise, Theme Parks, Beaches, Nightlife", image: "/assets/destinations/gold-coast.png" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
