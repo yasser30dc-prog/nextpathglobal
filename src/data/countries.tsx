@@ -1108,7 +1108,7 @@ export const countries: CountryData[] = [
         name: "United Kingdom",
         tagline: "Historic Charm & Modern Elegance",
         description: "Discover the historic charm of the United Kingdom. From the iconic landmarks of London to the scenic landscapes of the Scottish Highlands, the UK offers an unforgettable experience.",
-        coverImage: "/assets/countries/uk.webp",
+        coverImage: "/assets/countries/uk.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "15-20 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1550" },
@@ -1149,7 +1149,7 @@ export const countries: CountryData[] = [
         name: "United States",
         tagline: "The Land of Opportunity",
         description: "Explore the diverse landscapes and vibrant cities of the United States. From the bustling streets of New York to stunning national parks, the USA is a destination like no other.",
-        coverImage: "/assets/countries/usa.webp",
+        coverImage: "/assets/countries/usa.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 3000" },
@@ -1190,7 +1190,7 @@ export const countries: CountryData[] = [
         name: "Australia",
         tagline: "The Land Down Under",
         description: "Experience the unique wildlife, stunning beaches, and vibrant cities of Australia. From the iconic Sydney Opera House to the Outback, adventure awaits.",
-        coverImage: "/assets/countries/australia.webp",
+        coverImage: "/assets/countries/australia.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
