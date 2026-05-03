@@ -1146,7 +1146,7 @@ export const countries: CountryData[] = [
     },
     {
         slug: "usa",
-        name: "United States",
+        name: "United States of America (USA)",
         tagline: "The Land of Opportunity",
         description: "Explore the diverse landscapes and vibrant cities of the United States. From the bustling streets of New York to stunning national parks, the USA is a destination like no other.",
         coverImage: "/assets/countries/usa.png",
