@@ -330,7 +330,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/china.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 999" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM828" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Double Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Living in Malaysia (Long-term visa)" },
