@@ -875,7 +875,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/japan.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 595" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "1 Year or Longer" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Living in Malaysia (Long-term & MEV)" },
