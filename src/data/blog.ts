@@ -102,6 +102,347 @@ With proper guidance and planning, studying in Malaysia can be a life-changing s
         `
     },
     {
+        id: "3a",
+        title: "New Romanian Law (OUG) on Foreign Worker Recruitment – What You Need to Know",
+        slug: "romanian-oug-foreign-worker-recruitment-law",
+        category: "updates-announcements",
+        excerpt: "Romania has introduced a comprehensive Emergency Ordinance (OUG) tightening the rules around foreign worker recruitment. Whether you are an employer, a partner agency, or a worker planning to relocate to Romania — here is everything you need to know.",
+        author: "NextPath Global Team",
+        date: "2026-05-03",
+        readTime: "8 min read",
+        content: `
+<style>
+  .oug-intro-band {
+    background: #c9a84c;
+    padding: 22px 28px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+  }
+  .oug-intro-band p {
+    color: #0d1b2a;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.6;
+  }
+  .oug-section { margin-bottom: 48px; }
+  .oug-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e4ddd0;
+  }
+  .oug-section-icon { font-size: 26px; line-height: 1; }
+  .oug-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin: 0;
+  }
+  .oug-section p { font-size: 15.5px; color: #374a5a; margin-bottom: 14px; }
+  .oug-rule-grid { display: grid; gap: 10px; margin-top: 6px; }
+  .oug-rule-card {
+    background: #fff;
+    border: 1px solid #e4ddd0;
+    border-left: 4px solid #c9a84c;
+    border-radius: 4px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .oug-dot {
+    width: 8px; height: 8px;
+    background: #c9a84c;
+    border-radius: 50%;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .oug-rule-card p { margin: 0; font-size: 15px; color: #1e2a35; }
+  .oug-rule-card p strong { color: #0d1b2a; }
+  .oug-finance-block {
+    background: #fff;
+    border: 1px solid #e4ddd0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  .oug-finance-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #e4ddd0;
+    align-items: center;
+  }
+  .oug-finance-row:last-child { border-bottom: none; }
+  .oug-finance-row.oug-header { background: #0d1b2a; }
+  .oug-finance-row.oug-header span {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 13px 18px;
+    display: block;
+  }
+  .oug-cell { padding: 13px 18px; font-size: 15px; color: #1e2a35; }
+  .oug-cell:first-child { color: #6b7c8d; font-weight: 500; border-right: 1px solid #e4ddd0; }
+  .oug-cell strong { color: #0d1b2a; font-weight: 700; }
+  .oug-fine-card {
+    background: #fff;
+    border: 1px solid #e4ddd0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s;
+  }
+  .oug-fine-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+  .oug-fine-label { font-size: 15px; color: #1e2a35; flex: 1; }
+  .oug-fine-amount {
+    font-weight: 700;
+    font-size: 16px;
+    color: #c0392b;
+    white-space: nowrap;
+    background: rgba(192,57,43,0.07);
+    padding: 5px 12px;
+    border-radius: 4px;
+  }
+  .oug-warning-box {
+    background: #fff8e6;
+    border: 1px solid #c9a84c;
+    border-left: 5px solid #c9a84c;
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .oug-warn-title {
+    font-weight: 700;
+    color: #7a5c00;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  .oug-warning-box p { color: #5a4200; font-size: 15px; margin: 0; }
+  .oug-alert-box {
+    background: #fdf2f0;
+    border: 1px solid #e8b4ae;
+    border-left: 5px solid #c0392b;
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .oug-alert-title {
+    font-weight: 700;
+    color: #c0392b;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  .oug-alert-box p { color: #7a2318; font-size: 15px; margin: 0; }
+  .oug-resp-list { list-style: none; margin-top: 8px; padding: 0; }
+  .oug-resp-item {
+    padding: 11px 0 11px 26px;
+    position: relative;
+    font-size: 15px;
+    color: #374a5a;
+    border-bottom: 1px solid #e4ddd0;
+  }
+  .oug-resp-item:last-child { border-bottom: none; }
+  .oug-resp-item::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #c9a84c;
+    font-weight: 700;
+  }
+  .oug-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+  .oug-tag {
+    background: #e4ddd0;
+    color: #6b7c8d;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+  @media (max-width: 600px) {
+    .oug-finance-row { grid-template-columns: 1fr; }
+    .oug-cell:first-child { border-right: none; border-bottom: 1px solid #e4ddd0; }
+    .oug-fine-card { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+
+<div class="oug-intro-band">
+  <p>Romania has introduced a comprehensive Emergency Ordinance (OUG) tightening the rules around foreign worker recruitment. Whether you are an employer, a partner agency, or a worker planning to relocate to Romania — here is everything you need to know.</p>
+</div>
+
+<div class="oug-section">
+  <div class="oug-section-header">
+    <span class="oug-section-icon">🎯</span>
+    <h2 class="oug-section-title">Purpose of the New Law</h2>
+  </div>
+  <p>The new Romanian OUG (Articles 1–2) was introduced to regulate the authorization, operation, and strict control of foreign worker recruitment into Romania. Its primary goal is to eliminate unregistered intermediaries and informal operators from the recruitment chain — ensuring that only properly licensed agencies can recruit foreign workers.</p>
+  <div class="oug-warning-box">
+    <div class="oug-warn-title">⚠️ Important Notice for Partners</div>
+    <p>Travel agencies, informal intermediaries, and business-style operators (such as "Dreammakers" or work-style brokers) are <strong>NOT permitted</strong> to conduct recruitment activities without full authorization as a licensed recruitment agency.</p>
+  </div>
+</div>
+
+<div class="oug-section">
+  <div class="oug-section-header">
+    <span class="oug-section-icon">🔑</span>
+    <h2 class="oug-section-title">Key Rules at a Glance</h2>
+  </div>
+  <div class="oug-rule-grid">
+    <div class="oug-rule-card">
+      <div class="oug-dot"></div>
+      <p><strong>ANOFM Authorization is Mandatory</strong> — All recruitment agencies must obtain authorization from Romania's National Agency for Employment (ANOFM) before operating (Art. 1, 3).</p>
+    </div>
+    <div class="oug-rule-card">
+      <div class="oug-dot"></div>
+      <p><strong>Shortage Occupations Only</strong> — Recruitment of foreign workers is permitted only for occupations officially listed as being in shortage in Romania (Art. 1(2)).</p>
+    </div>
+    <div class="oug-rule-card">
+      <div class="oug-dot"></div>
+      <p><strong>All Procedures via WorkinRomania.Gov.ro</strong> — The official government platform must be used for all recruitment procedures and documentation (Art. 7).</p>
+    </div>
+    <div class="oug-rule-card">
+      <div class="oug-dot"></div>
+      <p><strong>Written Contracts Required</strong> — All employment contracts must be in writing and in a language the worker fully understands (Art. 8–10).</p>
+    </div>
+  </div>
+</div>
+
+<div class="oug-section">
+  <div class="oug-section-header">
+    <span class="oug-section-icon">🏦</span>
+    <h2 class="oug-section-title">Financial Guarantee Requirements (Art. 25)</h2>
+  </div>
+  <p>Before receiving authorization, all recruitment agencies must provide a financial guarantee — either as a cash deposit or bank guarantee. This fund protects workers and covers costs such as deportation, unpaid fines, and worker repatriation.</p>
+  <div class="oug-finance-block">
+    <div class="oug-finance-row oug-header">
+      <span>Condition</span>
+      <span>Deposit Required</span>
+    </div>
+    <div class="oug-finance-row">
+      <div class="oug-cell">Up to 250 workers</div>
+      <div class="oug-cell"><strong>€75,000</strong></div>
+    </div>
+    <div class="oug-finance-row">
+      <div class="oug-cell">Each additional 250 workers</div>
+      <div class="oug-cell"><strong>+ €50,000</strong> per 250 extra</div>
+    </div>
+    <div class="oug-finance-row">
+      <div class="oug-cell">Replenishment deadline if used</div>
+      <div class="oug-cell"><strong>Within 30 days</strong></div>
+    </div>
+    <div class="oug-finance-row">
+      <div class="oug-cell">When must it be in place?</div>
+      <div class="oug-cell"><strong>Before authorization is granted</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="oug-section">
+  <div class="oug-section-header">
+    <span class="oug-section-icon">❌</span>
+    <h2 class="oug-section-title">Financial Liability (Art. 26)</h2>
+  </div>
+  <div class="oug-alert-box">
+    <div class="oug-alert-title">🚨 Liability Alert</div>
+    <p>Agencies are charged <strong>€2,000 per deported or removed worker</strong>. This cost is enforced as a state debt and is automatically recovered from the financial guarantee if left unpaid.</p>
+  </div>
+  <p>This means that high visa refusal rates or workers failing to comply with immigration conditions directly impact the financial standing and continued operation of the recruitment agency.</p>
+</div>
+
+<div class="oug-section">
+  <div class="oug-section-header">
+    <span class="oug-section-icon">⚖️</span>
+    <h2 class="oug-section-title">Fines &amp; Violations</h2>
+  </div>
+  <p>Non-compliance with the OUG carries significant financial penalties per violation:</p>
+  <div class="oug-fine-card">
+    <div class="oug-fine-label">Hiring an illegal foreign worker (per person)</div>
+    <div class="oug-fine-amount">10,000 – 20,000 LEI</div>
+  </div>
+  <div class="oug-fine-card">
+    <div class="oug-fine-label">Failure to report worker absence or disappearance</div>
+    <div class="oug-fine-amount">700 – 1,000 LEI</div>
+  </div>
+  <div class="oug-fine-card">
+    <div class="oug-fine-label">Failure to report start, end, or change of employment</div>
+    <div class="oug-fine-amount">1,500 – 3,000 LEI</div>
+  </div>
+  <div class="oug-fine-card">
+    <div class="oug-fine-label">Accommodation standard violations</div>
+    <div class="oug-fine-amount">2,000 – 5,000 LEI</div>
+  </div>
+  <div class="oug-fine-card">
+    <div class="oug-fine-label">Failure to ensure legal stay or proper work conditions</div>
+    <div class="oug-fine-amount">10,000 – 20,000 LEI</div>
+  </div>
+</div>
+
+<div class="oug-section">
+  <div class="oug-section-header">
+    <span class="oug-section-icon">🚫</span>
+    <h2 class="oug-section-title">Suspension &amp; Sanctions (Art. 17–19)</h2>
+  </div>
+  <div class="oug-rule-grid">
+    <div class="oug-rule-card">
+      <div class="oug-dot"></div>
+      <p>License <strong>suspension or withdrawal</strong> for violations or fraudulent activity.</p>
+    </div>
+    <div class="oug-rule-card">
+      <div class="oug-dot"></div>
+      <p><strong>High visa refusal rates</strong> are a direct risk factor for suspension or license withdrawal — agencies must actively manage refusal rates. ‼️</p>
+    </div>
+    <div class="oug-rule-card">
+      <div class="oug-dot"></div>
+      <p><strong>Failure to maintain</strong> the required financial guarantee results in automatic suspension of the agency's license.</p>
+    </div>
+  </div>
+</div>
+
+<div class="oug-section">
+  <div class="oug-section-header">
+    <span class="oug-section-icon">✍️</span>
+    <h2 class="oug-section-title">Ongoing Responsibilities &amp; Control</h2>
+  </div>
+  <p>Recruitment agencies are not simply a gateway — they hold ongoing legal responsibilities for every worker they place in Romania:</p>
+  <ul class="oug-resp-list">
+    <li class="oug-resp-item">Continuous monitoring and reporting obligations after workers arrive in Romania.</li>
+    <li class="oug-resp-item">Mandatory reporting of any worker absence, non-start, or early termination of employment.</li>
+    <li class="oug-resp-item">Workers are subject to a <strong>~6-month employer stability rule</strong> — changing employers is restricted during this period.</li>
+    <li class="oug-resp-item">Agencies remain responsible for each worker for approximately <strong>6 months after arrival</strong>, including overseeing absences and facilitating return if necessary.</li>
+  </ul>
+  <div class="oug-warning-box" style="margin-top:22px;">
+    <div class="oug-warn-title">📋 Key Takeaway for Partners</div>
+    <p>Recruitment under this law is a <strong>long-term commitment</strong>, not a one-time transaction. All partners working with NextPath Global must be fully licensed and compliant with OUG requirements before any recruitment activity begins.</p>
+  </div>
+</div>
+
+<div class="oug-tags">
+  <span class="oug-tag">#RomaniaLaw</span>
+  <span class="oug-tag">#RecruitmentAgencies</span>
+  <span class="oug-tag">#WorkPermitRomania</span>
+  <span class="oug-tag">#ImmigrationRomania</span>
+  <span class="oug-tag">#WorkinRomania</span>
+  <span class="oug-tag">#LegalRecruitment</span>
+  <span class="oug-tag">#RecruitmentLaw</span>
+  <span class="oug-tag">#WorkforceRomania</span>
+  <span class="oug-tag">#NextPathGlobal</span>
+</div>
+        `
+    },
+    {
         id: "2",
         title: "Important Visa Update for Bangladeshi Citizens",
         slug: "visa-update-bangladeshi-citizens",
