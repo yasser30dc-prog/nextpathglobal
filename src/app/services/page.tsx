@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Globe, ShieldCheck, Plane, FileText, Home, Crown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const allServices = [
     {
@@ -62,20 +63,42 @@ const allServices = [
 
 export default function Services() {
     return (
-        <div className="min-h-screen bg-white pt-24 pb-20">
-            <div className="container mx-auto px-6">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center mb-20"
-                >
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">Our <span className="text-primary">Services</span></h1>
-                    <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-                        We offer a wide range of immigration and visa consulting services to meet your specific needs.
-                    </p>
-                </motion.div>
+        <div className="min-h-screen bg-white">
+            {/* Hero Cover Section */}
+            <div className="relative w-full h-[480px] md:h-[560px] overflow-hidden">
+                {/* Cover Image */}
+                <Image
+                    src="/assets/services-hero.png"
+                    alt="NextPath Global Immigration & Visa Services"
+                    fill
+                    className="object-cover object-center"
+                    priority
+                />
+                {/* Dark Overlay with fade to white at bottom */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/70 via-[#0d1b2a]/50 to-white" />
 
+                {/* Hero Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center pt-20">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.9 }}
+                    >
+                        <p className="text-[#c9a84c] font-semibold text-sm uppercase tracking-widest mb-3">
+                            Expert Guidance, Global Reach
+                        </p>
+                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-5 drop-shadow-lg">
+                            Our <span className="text-[#c9a84c]">Services</span>
+                        </h1>
+                        <p className="text-white/80 max-w-2xl mx-auto text-lg leading-relaxed">
+                            We offer a wide range of immigration and visa consulting services to meet your specific needs.
+                        </p>
+                    </motion.div>
+                </div>
+            </div>
+
+            {/* Services Grid */}
+            <div className="container mx-auto px-6 pb-20 -mt-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {allServices.map((service, index) => (
                         <motion.div
