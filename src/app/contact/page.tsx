@@ -6,19 +6,40 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
     return (
-        <div className="min-h-screen bg-white pt-24 pb-20">
-            <div className="container mx-auto px-6">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center mb-16"
-                >
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">Contact <span className="text-primary">Us</span></h1>
-                    <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-                        Get in touch with our expert consultants to start your global journey today.
-                    </p>
-                </motion.div>
+        <div className="min-h-screen bg-white pb-20">
+
+            {/* ── Hero Cover Section ── */}
+            <div className="relative w-full h-[400px] md:h-[480px] overflow-hidden">
+                <img
+                    src="/assets/contact-hero.png"
+                    alt="Contact NextPath Global"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                />
+                {/* Dark navy → white fade overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/80 via-[#0d1b2a]/55 to-white" />
+
+                {/* Hero Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center pt-16">
+                    <motion.div
+                        initial={{ opacity: 0, y: 28 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.9 }}
+                    >
+                        <span className="inline-block bg-[#c9a84c]/20 border border-[#c9a84c]/40 text-[#f0d485] text-sm font-semibold uppercase tracking-widest px-5 py-2 rounded-full mb-5">
+                            💬 We&apos;re Here to Help
+                        </span>
+                        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+                            Contact <span className="text-[#c9a84c]">Us</span>
+                        </h1>
+                        <p className="text-white/80 max-w-2xl mx-auto text-lg leading-relaxed">
+                            Get in touch with our expert consultants to start your global journey today.
+                        </p>
+                    </motion.div>
+                </div>
+            </div>
+
+            <div className="container mx-auto px-6 mt-4 mb-0">
+                <div className="mb-12" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     {/* Contact Info */}
