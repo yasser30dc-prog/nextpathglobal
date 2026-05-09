@@ -20,31 +20,55 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="min-h-screen bg-white pt-24 pb-20 overflow-hidden">
-            {/* Hero Section */}
-            <section className="container mx-auto px-6 mb-24 relative">
+        <div className="min-h-screen bg-white pb-20 overflow-hidden">
+            {/* Hero Section with Cover Photo */}
+            <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/assets/about/about-cover.png"
+                        alt="NextPath Global team - Your trusted partner in education and travel"
+                        fill
+                        className="object-cover"
+                        priority
+                        sizes="100vw"
+                        quality={90}
+                    />
+                </div>
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 z-[1]" />
+                {/* Decorative blur accents */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}
-                    className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"
+                    className="absolute top-20 right-20 w-96 h-96 bg-primary/20 rounded-full blur-[120px] z-[2]"
                 />
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center max-w-4xl mx-auto"
-                >
-                    <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6">
-                        Your Trusted Partner
-                    </span>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
-                        <span className="text-primary">NextPath Global Sdn Bhd</span>
-                    </h1>
-                    <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                        We are more than just a consultancy or a travel service provider—we are a trusted partner in life-changing journeys.
-                    </p>
-                </motion.div>
+                    className="absolute bottom-10 left-10 w-72 h-72 bg-secondary/15 rounded-full blur-[100px] z-[2]"
+                />
+
+                <div className="container mx-auto px-6 relative z-10 pt-32 pb-20">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center max-w-4xl mx-auto"
+                    >
+                        <span className="inline-block py-1.5 px-4 rounded-full bg-white/15 text-white font-semibold text-sm mb-6 backdrop-blur-sm border border-white/20">
+                            Your Trusted Partner
+                        </span>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg leading-tight">
+                            <span className="text-secondary">NextPath Global</span> Sdn Bhd
+                        </h1>
+                        <p className="text-xl text-white/85 mb-10 leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+                            We are more than just a consultancy or a travel service provider—we are a trusted partner in life-changing journeys.
+                        </p>
+                    </motion.div>
+                </div>
+
+                {/* Bottom fade into content */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent z-[3]" />
             </section>
 
             {/* Who We Are */}
