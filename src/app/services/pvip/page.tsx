@@ -20,6 +20,7 @@ import {
     Gem
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRef } from "react";
 
 const containerVariants = {
@@ -54,53 +55,78 @@ export default function PVIP() {
     const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
     return (
-        <div className="min-h-screen bg-white pt-24 pb-20 overflow-hidden" ref={ref}>
-            {/* Hero Section */}
-            <section className="container mx-auto px-6 mb-24 relative">
+        <div className="min-h-screen bg-white pb-20 overflow-hidden" ref={ref}>
+            {/* Hero Section with Cover Photo */}
+            <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/assets/pvip/pvip-cover.png"
+                        alt="Premium luxury living in Kuala Lumpur - PVIP Malaysia"
+                        fill
+                        className="object-cover"
+                        priority
+                        sizes="100vw"
+                        quality={90}
+                    />
+                </div>
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80 z-[1]" />
+                {/* Decorative blur accents */}
                 <motion.div
                     style={{ y, opacity }}
-                    className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-yellow-400/10 to-primary/5 rounded-full blur-3xl -z-10"
+                    className="absolute top-20 right-20 w-[500px] h-[500px] bg-gradient-to-br from-yellow-400/20 to-primary/10 rounded-full blur-[120px] z-[2]"
                 />
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="text-center max-w-5xl mx-auto"
-                >
+                    style={{ y }}
+                    className="absolute bottom-10 left-10 w-72 h-72 bg-yellow-500/15 rounded-full blur-[100px] z-[2]"
+                />
+
+                <div className="container mx-auto px-6 relative z-10 pt-32 pb-20">
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                        className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-200 text-yellow-800 font-semibold text-sm mb-8 shadow-sm"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="text-center max-w-5xl mx-auto"
                     >
-                        <Crown size={16} className="text-yellow-600" />
-                        <span>Malaysia's Premier Residency by Investment</span>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                            className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-white/15 border border-white/20 text-white font-semibold text-sm mb-8 backdrop-blur-sm"
+                        >
+                            <Crown size={16} className="text-yellow-400" />
+                            <span>Malaysia&apos;s Premier Residency by Investment</span>
+                        </motion.div>
+
+                        <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white tracking-tight drop-shadow-lg">
+                            Premium Visa <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-300">Programme</span> (PVIP)
+                        </h1>
+
+                        <p className="text-xl md:text-2xl text-white/85 mb-12 leading-relaxed max-w-4xl mx-auto drop-shadow-md">
+                            The ultimate 20-year residency for global investors and affluent individuals.
+                            Establish your long-term base in Malaysia with unparalleled freedom and zero restrictions.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-5 justify-center">
+                            <Link
+                                href="/contact"
+                                className="bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-4 px-10 rounded-full transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-2 text-lg"
+                            >
+                                Start Application <ArrowRight size={20} />
+                            </Link>
+                            <Link
+                                href="#features"
+                                className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold py-4 px-10 rounded-full transition-all hover:shadow-lg flex items-center justify-center gap-2 text-lg"
+                            >
+                                Explore Benefits
+                            </Link>
+                        </div>
                     </motion.div>
+                </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold mb-8 text-gray-900 tracking-tight">
-                        Premium Visa <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-500">Programme</span> (PVIP)
-                    </h1>
-
-                    <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-4xl mx-auto">
-                        The ultimate 20-year residency for global investors and affluent individuals.
-                        Establish your long-term base in Malaysia with unparalleled freedom and zero restrictions.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-5 justify-center">
-                        <Link
-                            href="/contact"
-                            className="bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-10 rounded-full transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-2 text-lg"
-                        >
-                            Start Application <ArrowRight size={20} />
-                        </Link>
-                        <Link
-                            href="#features"
-                            className="bg-white border border-gray-200 text-gray-700 hover:text-yellow-600 hover:border-yellow-200 font-bold py-4 px-10 rounded-full transition-all hover:shadow-lg flex items-center justify-center gap-2 text-lg"
-                        >
-                            Explore Benefits
-                        </Link>
-                    </div>
-                </motion.div>
+                {/* Bottom fade into content */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent z-[3]" />
             </section>
 
             {/* Introduction */}
