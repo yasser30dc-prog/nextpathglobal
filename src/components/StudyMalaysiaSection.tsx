@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useMemo } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Search, GraduationCap, ArrowRight, Sparkles, AlertCircle } from 'lucide-react';
 import styles from './StudyMalaysiaSection.module.css';
 
 const universities = [
@@ -280,6 +282,36 @@ function getIconLetter(name: string) {
   return name.split(' ').filter(w => /^[A-Z]/.test(w)).slice(0, 2).map(w => w[0]).join('') || name[0];
 }
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.04
+    }
+  }
+} as const;
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.96 },
+  show: { 
+    opacity: 1, 
+    y: 0, 
+    scale: 1,
+    transition: { 
+      type: "spring" as const,
+      stiffness: 140,
+      damping: 18
+    } 
+  },
+  exit: { 
+    opacity: 0, 
+    scale: 0.94,
+    y: 15,
+    transition: { duration: 0.25, ease: "easeInOut" } 
+  }
+} as const;
+
 export default function StudyMalaysiaSection() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentFilter, setCurrentFilter] = useState('all');
@@ -303,7 +335,10 @@ export default function StudyMalaysiaSection() {
       {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <div className={styles.heroLabel}>🎓 Study in Malaysia</div>
+          <div className={styles.heroLabel}>
+            <Sparkles size={13} style={{ color: '#d4af37' }} />
+            Study in Malaysia
+          </div>
           <h1>World-Class Education<br />in the <span>Heart of Asia</span></h1>
           <p>Partner with NextPath Global to enroll in Malaysia's top universities. Affordable tuition, globally recognised degrees, and seamless student visa processing — all in one place.</p>
           <div className={styles.heroStats}>
@@ -320,10 +355,7 @@ export default function StudyMalaysiaSection() {
       <div className={styles.controls}>
         <div className={styles.controlsInner}>
           <div className={styles.searchWrap}>
-            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg>
+            <Search size={18} />
             <input 
               className={styles.searchInput} 
               type="text" 
@@ -354,65 +386,82 @@ export default function StudyMalaysiaSection() {
           <p>Click <strong>Enquire Now</strong> on any university to start your application with NextPath Global.</p>
         </div>
         
-        <div className={styles.universityGrid}>
-          {filteredUniversities.map((u, idx) => {
-            const typeClass = u.type === 'public' ? styles.tagPublic : (u.type === 'private' ? styles.tagPrivate : styles.tagCollege);
-            const typeLabel = u.type.charAt(0).toUpperCase() + u.type.slice(1) + (u.type === 'college' ? '' : ' University');
+        <motion.div 
+          layout
+          className={styles.universityGrid}
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
+          <AnimatePresence mode="popLayout">
+            {filteredUniversities.map((u, idx) => {
+              const typeClass = u.type === 'public' ? styles.tagPublic : (u.type === 'private' ? styles.tagPrivate : styles.tagCollege);
+              const typeLabel = u.type.charAt(0).toUpperCase() + u.type.slice(1) + (u.type === 'college' ? '' : ' University');
 
-            return (
-              <div key={idx} className={styles.card}>
-                <div className={styles.cardTop}>
-                  <div className={styles.uniIcon}>{getIconLetter(u.name)}</div>
-                  <div className={styles.cardHeader}>
-                    <div className={styles.cardName}>{u.name}</div>
-                    <div className={styles.tagRow}>
-                      <span className={`${styles.tag} ${typeClass}`}>{typeLabel.trim()}</span>
-                      {u.highlight && <span className={`${styles.tag} ${styles.tagRank}`}>★ {u.highlight}</span>}
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.cardBody}>
-                  <p className={styles.cardDesc}>{u.desc}</p>
-                  <div className={styles.infoRows}>
-                    <div className={styles.infoRow}>
-                      <svg className={styles.infoIcon} width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
-                      </svg>
-                      <div>
-                        <span className={styles.infoLabel}>Popular Programmes</span>
-                        <span className={styles.infoVal}>{u.programs.slice(0, 3).join(' · ')}</span>
-                      </div>
-                    </div>
-                    <div className={styles.infoRow}>
-                      <svg className={styles.infoIcon} width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <rect x="3" y="4" width="18" height="18" rx="2" />
-                        <path d="M16 2v4M8 2v4M3 10h18" />
-                      </svg>
-                      <div>
-                        <span className={styles.infoLabel}>Intake Months</span>
-                        <span className={styles.infoVal}>{u.intakes.join(', ')}</span>
+              return (
+                <motion.div 
+                  layout
+                  key={u.name}
+                  variants={cardVariants}
+                  initial="hidden"
+                  animate="show"
+                  exit="exit"
+                  className={styles.card}
+                >
+                  <div className={styles.cardTop}>
+                    <div className={styles.uniIcon}>{getIconLetter(u.name)}</div>
+                    <div className={styles.cardHeader}>
+                      <div className={styles.cardName}>{u.name}</div>
+                      <div className={styles.tagRow}>
+                        <span className={`${styles.tag} ${typeClass}`}>{typeLabel.trim()}</span>
+                        {u.highlight && <span className={`${styles.tag} ${styles.tagRank}`}>★ {u.highlight}</span>}
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className={styles.cardFooter}>
-                  <div className={styles.intakeChips}>
-                    {u.intakes.map((intake, i) => (
-                      <span key={i} className={styles.intakeChip}>{intake}</span>
-                    ))}
+                  <div className={styles.cardBody}>
+                    <p className={styles.cardDesc}>{u.desc}</p>
+                    <div className={styles.infoRows}>
+                      <div className={styles.infoRow}>
+                        <GraduationCap className={styles.infoIcon} />
+                        <div>
+                          <span className={styles.infoLabel}>Popular Programmes</span>
+                          <div className={styles.programChips}>
+                            {u.programs.slice(0, 3).map((prog, pIdx) => (
+                              <span key={pIdx} className={styles.programChip}>
+                                {prog}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <button className={styles.enquireBtn} onClick={() => handleEnquire(u.name)}>Enquire Now</button>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+                  <div className={styles.cardFooter}>
+                    <div className={styles.intakeChips}>
+                      {u.intakes.map((intake, i) => (
+                        <span key={i} className={styles.intakeChip}>{intake}</span>
+                      ))}
+                    </div>
+                    <button className={styles.enquireBtn} onClick={() => handleEnquire(u.name)}>
+                      Enquire Now
+                      <ArrowRight size={14} />
+                    </button>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
+        </motion.div>
 
         {filteredUniversities.length === 0 && (
-          <div className={styles.noResults}>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className={styles.noResults}
+          >
+            <AlertCircle size={40} style={{ color: '#94a3b8', marginBottom: '16px' }} />
             <p>No universities match your search. Try a different keyword or filter.</p>
-          </div>
+          </motion.div>
         )}
       </div>
 
@@ -420,7 +469,10 @@ export default function StudyMalaysiaSection() {
       <div className={styles.ctaBar}>
         <h3>Ready to Start Your Journey?</h3>
         <p>Our consultants will guide you from university selection to visa approval — every step of the way.</p>
-        <a href="/contact" className={styles.ctaBtn}>Get Free Consultation →</a>
+        <a href="/contact" className={styles.ctaBtn}>
+          Get Free Consultation
+          <ArrowRight size={16} />
+        </a>
       </div>
     </div>
   );
