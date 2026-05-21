@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FacebookPixel from "@/components/layout/FacebookPixel";
 import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/metadata";
 
 const inter = Inter({
@@ -102,6 +103,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased min-h-screen flex flex-col`}
       >
+        <FacebookPixel />
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
