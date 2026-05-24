@@ -21,7 +21,6 @@ import {
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import StudyMalaysiaSection from "@/components/StudyMalaysiaSection";
 import { useState } from "react";
 import { partnerInstitutions } from "@/data/malaysia-partners";
 
@@ -183,9 +182,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* 3. Study in Malaysia Section */}
-      <StudyMalaysiaSection />
 
 
 
