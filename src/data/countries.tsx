@@ -1252,10 +1252,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Unique Wildlife", description: "Kangaroos, koalas, quokkas, and diverse ecosystems" },
         ],
         destinations: [
-            { name: "Sydney", highlights: "Opera House, Harbour Bridge, Bondi Beach, Darling Harbour", image: "/assets/destinations/sydney.png" },
-            { name: "Melbourne", highlights: "Laneways, Coffee Culture, Great Ocean Road, Arts", image: "/assets/destinations/melbourne.png" },
-            { name: "Cairns", highlights: "Great Barrier Reef, Daintree Rainforest, Kuranda", image: "/assets/destinations/cairns.png" },
-            { name: "Gold Coast", highlights: "Surfer's Paradise, Theme Parks, Beaches, Nightlife", image: "/assets/destinations/gold-coast.png" },
+            { name: "Sydney", highlights: "Opera House, Harbour Bridge, Bondi Beach, Darling Harbour", image: "/assets/destinations/sydney.jpg" },
+            { name: "Melbourne", highlights: "Laneways, Coffee Culture, Great Ocean Road, Arts", image: "/assets/destinations/melbourne.jpg" },
+            { name: "Cairns", highlights: "Great Barrier Reef, Daintree Rainforest, Kuranda", image: "/assets/destinations/cairns.jpg" },
+            { name: "Gold Coast", highlights: "Surfer's Paradise, Theme Parks, Beaches, Nightlife", image: "/assets/destinations/gold-coast.jpg" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
