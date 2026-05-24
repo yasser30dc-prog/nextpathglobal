@@ -27,7 +27,7 @@ const countries = [
     "Luxembourg", "Macau", "Malaysia", "Maldives", "Mexico", "Mongolia", "Morocco",
     "Myanmar", "Nepal", "Netherlands", "New Zealand", "Nigeria", "Norway", "Oman",
     "Pakistan", "Palestine", "Papua New Guinea", "Peru", "Philippines", "Poland",
-    "Portugal", "Qatar", "Romania", "Russia", "Saudi Arabia", "Singapore",
+    "Portugal", "Qatar", "Romania", "Russia", "Saudi Arabia", "Serbia", "Singapore",
     "Slovakia", "Slovenia", "South Africa", "South Korea", "Spain", "Sri Lanka",
     "Sudan", "Sweden", "Switzerland", "Syria", "Taiwan", "Thailand", "Tunisia",
     "Turkey", "UAE", "UK", "Ukraine", "USA", "Uzbekistan", "Vietnam", "Yemen", "Zimbabwe"
