@@ -134,6 +134,7 @@ export default function Home() {
                            <option value="netherlands">Netherlands</option>
                            <option value="new-zealand">New Zealand</option>
                            <option value="qatar">Qatar</option>
+                           <option value="sweden">Sweden</option>
                          </select>
                       </div>
                       <Link 

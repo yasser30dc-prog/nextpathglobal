@@ -116,7 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         'afghanistan', 'argentina', 'australia', 'azerbaijan', 'bangladesh', 'brunei', 'cambodia',
         'china', 'east-timor', 'egypt', 'germany', 'hong-kong', 'iceland', 'indonesia', 'japan', 'kenya', 'laos', 'malaysia',
         'maldives', 'myanmar', 'nepal', 'netherlands', 'new-zealand', 'pakistan', 'papua-new-guinea', 'philippines',
-        'qatar', 'russia', 'sabah', 'serbia', 'singapore', 'sri-lanka', 'thailand', 'turkey', 'vietnam'
+        'qatar', 'russia', 'sabah', 'serbia', 'singapore', 'sri-lanka', 'sweden', 'thailand', 'turkey', 'vietnam'
     ];
 
     const countryPages: MetadataRoute.Sitemap = countries.map((country) => ({
