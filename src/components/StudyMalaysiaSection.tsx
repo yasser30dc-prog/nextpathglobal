@@ -454,7 +454,7 @@ export default function StudyMalaysiaSection() {
                     <div className={styles.uniIcon}>
                       {(() => {
                         const branding = universityBranding[u.abbr];
-                        const logoSrc = branding?.localLogo || (branding?.domain ? `https://www.google.com/s2/favicons?sz=128&domain=${branding.domain}` : null);
+                        const logoSrc = branding?.localLogo;
                         return logoSrc ? (
                           <img 
                             src={logoSrc} 
