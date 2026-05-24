@@ -4,8 +4,49 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, CheckCircle2, FileText, DollarSign } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, FileText, DollarSign, MapPin } from "lucide-react";
 import { CountryData } from "../../data/countries";
+
+interface DestinationCardProps {
+    dest: { name: string; highlights: string; image?: string };
+}
+
+const DestinationCard: React.FC<DestinationCardProps> = ({ dest }) => {
+    const [imgError, setImgError] = React.useState(false);
+
+    return (
+        <motion.div
+            whileHover={{ y: -5 }}
+            className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 group flex flex-col h-full"
+        >
+            <div className="h-48 bg-gray-200 relative overflow-hidden flex-shrink-0">
+                {dest.image && !imgError ? (
+                    <Image
+                        src={dest.image}
+                        alt={dest.name}
+                        fill
+                        onError={() => setImgError(true)}
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
+                ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary-hover to-primary flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+                        <div className="text-white/20 group-hover:text-white/35 transition-colors flex flex-col items-center gap-2">
+                            <MapPin size={48} className="stroke-[1.5]" />
+                        </div>
+                    </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div>
+                <div className="absolute bottom-4 left-4 z-20">
+                    <h3 className="text-white font-bold text-xl">{dest.name}</h3>
+                </div>
+            </div>
+            <div className="p-6 flex-grow flex flex-col justify-between">
+                <p className="text-gray-600 text-sm leading-relaxed">{dest.highlights}</p>
+            </div>
+        </motion.div>
+    );
+};
 
 interface CountryPageTemplateProps {
     country: CountryData;
@@ -218,32 +259,7 @@ const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country }) =>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {country.destinations.map((dest, index) => (
-                            <motion.div
-                                key={index}
-                                whileHover={{ y: -5 }}
-                                className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 group"
-                            >
-                                <div className="h-48 bg-gray-200 relative overflow-hidden">
-                                    {dest.image ? (
-                                        <Image
-                                            src={dest.image}
-                                            alt={dest.name}
-                                            fill
-                                            className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                        />
-                                    ) : (
-                                        <div className="absolute inset-0 bg-gray-300 group-hover:scale-110 transition-transform duration-500"></div>
-                                    )}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                                    <div className="absolute bottom-4 left-4 z-20">
-                                        <h3 className="text-white font-bold text-xl">{dest.name}</h3>
-                                    </div>
-                                </div>
-                                <div className="p-6">
-                                    <p className="text-gray-600 text-sm leading-relaxed">{dest.highlights}</p>
-                                </div>
-                            </motion.div>
+                            <DestinationCard key={index} dest={dest} />
                         ))}
                     </div>
                 </motion.section>
