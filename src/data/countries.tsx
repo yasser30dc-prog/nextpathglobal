@@ -1310,7 +1310,7 @@ export const countries: CountryData[] = [
         name: "East Timor",
         tagline: "Sunrise of the Nation",
         description: "Discover Timor-Leste, one of Southeast Asia's youngest and most unspoiled nations. From its rugged mountains to crystal-clear dive sites, East Timor offers an authentic adventure for the intrepid traveler.",
-        coverImage: "/assets/countries/east-timor.webp",
+        coverImage: "/assets/countries/east-timor.png",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "Advisory Service Only" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "Visa on Arrival (VOA)" },
