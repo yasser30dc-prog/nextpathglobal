@@ -114,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── Tourist visa country pages ──────────────────────────────────────────
     const countries = [
         'afghanistan', 'argentina', 'australia', 'azerbaijan', 'bangladesh', 'brunei', 'cambodia',
-        'china', 'east-timor', 'egypt', 'germany', 'hong-kong', 'iceland', 'indonesia', 'japan', 'laos', 'malaysia',
+        'china', 'east-timor', 'egypt', 'germany', 'hong-kong', 'iceland', 'indonesia', 'japan', 'kenya', 'laos', 'malaysia',
         'maldives', 'myanmar', 'nepal', 'pakistan', 'papua-new-guinea', 'philippines',
         'russia', 'sabah', 'serbia', 'singapore', 'sri-lanka', 'thailand', 'turkey', 'vietnam'
     ];

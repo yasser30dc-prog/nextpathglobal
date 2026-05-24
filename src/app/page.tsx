@@ -130,6 +130,7 @@ export default function Home() {
                            <option value="germany">Germany</option>
                            <option value="iceland">Iceland</option>
                            <option value="india">India</option>
+                           <option value="kenya">Kenya</option>
                          </select>
                       </div>
                       <Link 
