@@ -17,7 +17,13 @@ import {
   CheckCircle2, 
   MessageCircle,
   Search,
-  BookOpen
+  BookOpen,
+  Crown,
+  Home as HomeIcon,
+  Ticket,
+  Hotel,
+  BadgeCheck,
+  FileSignature
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -178,6 +184,170 @@ export default function Home() {
                   </div>
                 </Link>
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Our Professional Services Section */}
+      <section className="py-24 bg-gray-50 border-t border-b border-gray-100">
+        <div className="container mx-auto px-6 max-w-5xl">
+          
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <span className="text-secondary font-semibold tracking-wider uppercase text-sm bg-secondary/10 px-4 py-2 rounded-full">
+              Comprehensive Global Solutions
+            </span>
+            <h2 className="text-4xl md:text-5xl font-extrabold mt-6 mb-6 text-primary tracking-tight">
+              Our Professional Services
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+              Certified visa, immigration, study consultancy, and corporate setups designed to support your international transition.
+            </p>
+          </div>
+
+          {/* Categories Grid */}
+          <div className="space-y-16">
+            {[
+              {
+                categoryName: "Global Education & Residency",
+                description: "Explore top academic institutions and premium golden residency programs.",
+                services: [
+                  {
+                    title: "Student Consultancy",
+                    description: "Comprehensive university admission and student visa support for destinations including the UK, Finland, Germany, Malaysia, and China.",
+                    icon: <GraduationCap size={28} className="text-[#c9a84c]" />,
+                    link: "/services/study-abroad"
+                  },
+                  {
+                    title: "MM2H (Malaysia My Second Home)",
+                    description: "Complete advisory and processing for Malaysia's standard 10-year renewable residency visa.",
+                    icon: <HomeIcon size={28} className="text-[#c9a84c]" />,
+                    link: "/services/mm2h"
+                  },
+                  {
+                    title: "PVIP (Premium Visa Program)",
+                    description: "Residency consultation for Malaysia's ultimate 20-year elite investor visa with business/work rights.",
+                    icon: <Crown size={28} className="text-[#c9a84c]" />,
+                    link: "/contact"
+                  }
+                ]
+              },
+              {
+                categoryName: "Corporate Mobility & Work Permits",
+                description: "Expatriate employment permits and global trade structures.",
+                services: [
+                  {
+                    title: "Employment Pass",
+                    description: "End-to-end work visa sponsorship (EP Category I, II, & III) for expatriates and skilled executives in Malaysia.",
+                    icon: <ShieldCheck size={28} className="text-[#c9a84c]" />,
+                    link: "/services/employment-pass"
+                  },
+                  {
+                    title: "European Work Permit Process",
+                    description: "Fully compliant work permit coordination, document mapping, and immigration pathways to European nations.",
+                    icon: <Globe size={28} className="text-[#c9a84c]" />,
+                    link: "/contact"
+                  },
+                  {
+                    title: "Business Set Up",
+                    description: "Local company incorporation (SSM), trade licensing, and foreign ownership setups for entrepreneurs.",
+                    icon: <Building2 size={28} className="text-[#c9a84c]" />,
+                    link: "/contact"
+                  }
+                ]
+              },
+              {
+                categoryName: "Travel & Worldwide Hospitality",
+                description: "Quick holiday visas, booking accommodations, and competitive flight ticketers.",
+                services: [
+                  {
+                    title: "Tourist Visa Process",
+                    description: "Fast-track documentation and tourist visa processing for major destinations globally with high success rates.",
+                    icon: <Plane size={28} className="text-[#c9a84c]" />,
+                    link: "/services/tourist-visa"
+                  },
+                  {
+                    title: "Air Ticket",
+                    description: "Worldwide airline ticketing, customized routes, baggage upgrades, and flexible corporate packages.",
+                    icon: <Ticket size={28} className="text-[#c9a84c]" />,
+                    link: "/contact"
+                  },
+                  {
+                    title: "Hotel Booking (Worldwide)",
+                    description: "Exclusive corporate rates and pre-screened room bookings at top hotels and stays around the globe.",
+                    icon: <Hotel size={28} className="text-[#c9a84c]" />,
+                    link: "/contact"
+                  }
+                ]
+              },
+              {
+                categoryName: "Legal & Legal Attestation Services",
+                description: "Official legalizations and attestations for corporate/personal needs.",
+                services: [
+                  {
+                    title: "Good Conduct Certificate",
+                    description: "Complete assistance in obtaining police clearance certificates from domestic and international security bodies.",
+                    icon: <BadgeCheck size={28} className="text-[#c9a84c]" />,
+                    link: "/contact"
+                  },
+                  {
+                    title: "Document Attestation",
+                    description: "MOFA attestations, degree legalisations, and notary translations of birth certificates and corporate deeds.",
+                    icon: <FileSignature size={28} className="text-[#c9a84c]" />,
+                    link: "/contact"
+                  }
+                ]
+              }
+            ].map((category, catIdx) => (
+              <div key={catIdx} className="border-b border-gray-200/60 pb-12 last:border-b-0 last:pb-0">
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.6 }}
+                  className="border-l-4 border-secondary pl-4 mb-8"
+                >
+                  <h3 className="text-2xl font-extrabold text-primary tracking-tight">
+                    {category.categoryName}
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1">
+                    {category.description}
+                  </p>
+                </motion.div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {category.services.map((service, idx) => (
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, y: 24 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-60px" }}
+                      transition={{ duration: 0.5, delay: idx * 0.05 }}
+                      className="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="mb-6 bg-primary/5 w-14 h-14 rounded-2xl flex items-center justify-center border border-gray-50 shadow-sm shrink-0">
+                          {service.icon}
+                        </div>
+                        <h4 className="text-xl font-bold mb-3 text-gray-900 tracking-tight leading-snug">
+                          {service.title}
+                        </h4>
+                        <p className="text-gray-600 text-sm mb-8 leading-relaxed">
+                          {service.description}
+                        </p>
+                      </div>
+                      
+                      <Link
+                        href={service.link}
+                        className="text-secondary font-semibold text-sm hover:text-secondary-hover transition-colors inline-flex items-center gap-2 group"
+                      >
+                        Enquire Now <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
