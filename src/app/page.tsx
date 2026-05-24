@@ -30,7 +30,7 @@ const destinations = [
   { name: "Finland", flag: "🇫🇮", link: "/services/study-abroad/finland" },
   { name: "Germany", flag: "🇩🇪", link: "/services/study-abroad/germany" },
   { name: "Malaysia", flag: "🇲🇾", link: "/services/study-abroad/malaysia" },
-  { name: "Europe", flag: "🇪🇺", link: "/services/study-abroad/europe" },
+  { name: "China", flag: "🇨🇳", link: "/services/study-abroad/china" },
 ];
 
 export default function Home() {
