@@ -68,10 +68,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Nature & Wildlife", description: "Rainforests, Cameron Highlands, Taman Negara, orangutans" },
         ],
         destinations: [
-            { name: "Kuala Lumpur", highlights: "Petronas Towers, Batu Caves, Chinatown, Shopping", image: "/assets/destinations/kuala-lumpur.png" },
-            { name: "Penang", highlights: "George Town UNESCO Site, Street Food, Beaches, Culture", image: "/assets/destinations/penang.png" },
-            { name: "Langkawi", highlights: "Island Paradise, Cable Car, Beaches, Duty-Free Shopping", image: "/assets/destinations/langkawi.png" },
-            { name: "Cameron Highlands", highlights: "Tea Plantations, Cool Climate, Strawberry Farms, Nature", image: "/assets/destinations/cameron.png" },
+            { name: "Kuala Lumpur", highlights: "Petronas Towers, Batu Caves, Chinatown, Shopping", image: "/assets/destinations/kuala-lumpur.webp" },
+            { name: "Penang", highlights: "George Town UNESCO Site, Street Food, Beaches, Culture", image: "/assets/destinations/penang.webp" },
+            { name: "Langkawi", highlights: "Island Paradise, Cable Car, Beaches, Duty-Free Shopping", image: "/assets/destinations/langkawi.webp" },
+            { name: "Cameron Highlands", highlights: "Tea Plantations, Cool Climate, Strawberry Farms, Nature", image: "/assets/destinations/cameron.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -85,7 +85,7 @@ export const countries: CountryData[] = [
         name: "Bangladesh",
         tagline: "Beautiful Bangladesh",
         description: "Discover the vibrant culture and natural beauty of Bangladesh. From the historic landmarks of Dhaka to the serene landscapes of the countryside, experience warm hospitality and rich heritage.",
-        coverImage: "/assets/countries/bangladesh.png",
+        coverImage: "/assets/countries/bangladesh.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 300" },
@@ -109,10 +109,10 @@ export const countries: CountryData[] = [
             { icon: <Utensils size={32} />, title: "Delicious Cuisine", description: "Savor authentic Bengali flavors from biryani to hilsa fish and sweet desserts" },
         ],
         destinations: [
-            { name: "Dhaka", highlights: "Ahsan Manzil, Lalbagh Fort, National Parliament, Sadarghat River Port", image: "/assets/destinations/dhaka.png" },
-            { name: "Cox's Bazar", highlights: "World's Longest Beach, Himchari, Inani Beach, Marine Drive", image: "/assets/destinations/coxs-bazar.png" },
-            { name: "Sundarbans", highlights: "Mangrove Forest, Royal Bengal Tigers, River Cruises, Wildlife", image: "/assets/destinations/sundarbans.jpg" },
-            { name: "Sylhet", highlights: "Tea Gardens, Ratargul Swamp Forest, Jaflong, Spiritual Sites", image: "/assets/destinations/sylhet.jpg" },
+            { name: "Dhaka", highlights: "Ahsan Manzil, Lalbagh Fort, National Parliament, Sadarghat River Port", image: "/assets/destinations/dhaka.webp" },
+            { name: "Cox's Bazar", highlights: "World's Longest Beach, Himchari, Inani Beach, Marine Drive", image: "/assets/destinations/coxs-bazar.webp" },
+            { name: "Sundarbans", highlights: "Mangrove Forest, Royal Bengal Tigers, River Cruises, Wildlife", image: "/assets/destinations/sundarbans.webp" },
+            { name: "Sylhet", highlights: "Tea Gardens, Ratargul Swamp Forest, Jaflong, Spiritual Sites", image: "/assets/destinations/sylhet.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -126,7 +126,7 @@ export const countries: CountryData[] = [
         name: "Cambodia",
         tagline: "Kingdom of Wonder",
         description: "Home to the magnificent Angkor Wat and warm Khmer hospitality, Cambodia offers a perfect blend of ancient wonders, tropical beaches, and vibrant culture.",
-        coverImage: "/assets/countries/cambodia.png",
+        coverImage: "/assets/countries/cambodia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 380" },
@@ -146,10 +146,10 @@ export const countries: CountryData[] = [
             { icon: <DollarSign size={32} />, title: "Budget-Friendly", description: "Affordable travel destination with great value for money" },
         ],
         destinations: [
-            { name: "Siem Reap", highlights: "Angkor Wat, Ta Prohm Temple, Pub Street, Night Markets", image: "/assets/destinations/siem-reap.jpg" },
-            { name: "Phnom Penh", highlights: "Royal Palace, Silver Pagoda, Central Market, Riverside", image: "/assets/destinations/phnom-penh.jpg" },
-            { name: "Sihanoukville", highlights: "Beaches, Island Hopping, Water Sports, Seafood", image: "/assets/destinations/sihanoukville.jpg" },
-            { name: "Battambang", highlights: "Bamboo Train, Bat Caves, Countryside Tours, French Architecture", image: "/assets/destinations/battambang.jpg" },
+            { name: "Siem Reap", highlights: "Angkor Wat, Ta Prohm Temple, Pub Street, Night Markets", image: "/assets/destinations/siem-reap.webp" },
+            { name: "Phnom Penh", highlights: "Royal Palace, Silver Pagoda, Central Market, Riverside", image: "/assets/destinations/phnom-penh.webp" },
+            { name: "Sihanoukville", highlights: "Beaches, Island Hopping, Water Sports, Seafood", image: "/assets/destinations/sihanoukville.webp" },
+            { name: "Battambang", highlights: "Bamboo Train, Bat Caves, Countryside Tours, French Architecture", image: "/assets/destinations/battambang.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -163,7 +163,7 @@ export const countries: CountryData[] = [
         name: "Thailand",
         tagline: "The Land of Smiles",
         description: "From pristine beaches to golden temples, bustling night markets to peaceful mountain villages – Thailand offers unforgettable experiences for every traveler.",
-        coverImage: "/assets/countries/thailand.png",
+        coverImage: "/assets/countries/thailand.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 320" },
@@ -185,10 +185,10 @@ export const countries: CountryData[] = [
             { icon: <DollarSign size={32} />, title: "Great Value", description: "Affordable luxury, shopping paradise, and excellent value for money" },
         ],
         destinations: [
-            { name: "Bangkok", highlights: "Grand Palace, Wat Pho, Floating Markets, Chatuchak Weekend Market", image: "/assets/destinations/bangkok.jpg" },
-            { name: "Phuket", highlights: "Patong Beach, Phi Phi Islands, Big Buddha, Old Phuket Town", image: "/assets/destinations/phuket.jpg" },
-            { name: "Chiang Mai", highlights: "Doi Suthep Temple, Night Bazaar, Elephant Sanctuary, Old City", image: "/assets/destinations/chiang-mai.jpg" },
-            { name: "Krabi", highlights: "Railay Beach, Tiger Cave Temple, Four Islands Tour, Emerald Pool", image: "/assets/destinations/krabi.jpg" },
+            { name: "Bangkok", highlights: "Grand Palace, Wat Pho, Floating Markets, Chatuchak Weekend Market", image: "/assets/destinations/bangkok.webp" },
+            { name: "Phuket", highlights: "Patong Beach, Phi Phi Islands, Big Buddha, Old Phuket Town", image: "/assets/destinations/phuket.webp" },
+            { name: "Chiang Mai", highlights: "Doi Suthep Temple, Night Bazaar, Elephant Sanctuary, Old City", image: "/assets/destinations/chiang-mai.webp" },
+            { name: "Krabi", highlights: "Railay Beach, Tiger Cave Temple, Four Islands Tour, Emerald Pool", image: "/assets/destinations/krabi.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -202,7 +202,7 @@ export const countries: CountryData[] = [
         name: "Singapore",
         tagline: "Your Gateway to the Lion City",
         description: "Modern metropolis meets cultural heritage. World-class education meets business excellence. This is Singapore – where your dreams take flight.",
-        coverImage: "/assets/countries/singapore.png",
+        coverImage: "/assets/countries/singapore.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-8 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
@@ -225,10 +225,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Cultural Melting Pot", description: "Four official languages and a harmonious blend of diverse cultures" },
         ],
         destinations: [
-            { name: "Marina Bay", highlights: "Marina Bay Sands, Gardens by the Bay, Merlion Park", image: "/assets/destinations/marina-bay.jpg" },
-            { name: "Cultural Districts", highlights: "Chinatown, Little India, Kampong Glam (Arab Street)", image: "/assets/destinations/cultural-districts.jpg" },
-            { name: "Sentosa Island", highlights: "Universal Studios, Beaches, Adventure Cove Waterpark", image: "/assets/destinations/sentosa.jpg" },
-            { name: "Shopping Paradise", highlights: "Orchard Road, Bugis Street, VivoCity, Jewel Changi", image: "/assets/destinations/shopping.jpg" },
+            { name: "Marina Bay", highlights: "Marina Bay Sands, Gardens by the Bay, Merlion Park", image: "/assets/destinations/marina-bay.webp" },
+            { name: "Cultural Districts", highlights: "Chinatown, Little India, Kampong Glam (Arab Street)", image: "/assets/destinations/cultural-districts.webp" },
+            { name: "Sentosa Island", highlights: "Universal Studios, Beaches, Adventure Cove Waterpark", image: "/assets/destinations/sentosa.webp" },
+            { name: "Shopping Paradise", highlights: "Orchard Road, Bugis Street, VivoCity, Jewel Changi", image: "/assets/destinations/shopping.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -242,7 +242,7 @@ export const countries: CountryData[] = [
         name: "Laos",
         tagline: "The Land of a Million Elephants",
         description: "Discover the serene beauty of Laos, where ancient temples meet untouched nature, and traditional culture thrives in peaceful riverside towns.",
-        coverImage: "/assets/countries/laos.png",
+        coverImage: "/assets/countries/laos.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 550" },
@@ -264,10 +264,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Authentic Experience", description: "Untouched by mass tourism, traditional Lao culture thrives" },
         ],
         destinations: [
-            { name: "Luang Prabang", highlights: "Royal Palace, Night Market, Kuang Si Falls, Alms Giving Ceremony", image: "/assets/destinations/luang-prabang.jpg" },
-            { name: "Vientiane", highlights: "Pha That Luang, Patuxai Monument, Buddha Park, Mekong Riverside", image: "/assets/destinations/vientiane.jpg" },
-            { name: "Vang Vieng", highlights: "Limestone Karsts, Blue Lagoon, Tham Chang Cave, River Tubing", image: "/assets/destinations/vang-vieng.jpg" },
-            { name: "4000 Islands", highlights: "Irrawaddy Dolphins, Khone Phapheng Falls, Island Life, Kayaking", image: "/assets/destinations/4000-islands.jpg" },
+            { name: "Luang Prabang", highlights: "Royal Palace, Night Market, Kuang Si Falls, Alms Giving Ceremony", image: "/assets/destinations/luang-prabang.webp" },
+            { name: "Vientiane", highlights: "Pha That Luang, Patuxai Monument, Buddha Park, Mekong Riverside", image: "/assets/destinations/vientiane.webp" },
+            { name: "Vang Vieng", highlights: "Limestone Karsts, Blue Lagoon, Tham Chang Cave, River Tubing", image: "/assets/destinations/vang-vieng.webp" },
+            { name: "4000 Islands", highlights: "Irrawaddy Dolphins, Khone Phapheng Falls, Island Life, Kayaking", image: "/assets/destinations/4000-islands.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -281,7 +281,7 @@ export const countries: CountryData[] = [
         name: "Vietnam",
         tagline: "Timeless Charm, Modern Energy",
         description: "From the bustling streets of Hanoi to the serene beauty of Ha Long Bay, Vietnam offers an unforgettable journey through history, culture, and natural wonders.",
-        coverImage: "/assets/countries/vietnam.png",
+        coverImage: "/assets/countries/vietnam.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
@@ -304,9 +304,9 @@ export const countries: CountryData[] = [
         ],
         destinations: [
             { name: "Hanoi", highlights: "Old Quarter, Ho Chi Minh Mausoleum, Temple of Literature, Water Puppet Show", image: "/assets/destinations/hanoi.webp" },
-            { name: "Ho Chi Minh City", highlights: "Notre Dame Cathedral, Ben Thanh Market, Cu Chi Tunnels, Mekong Delta", image: "/assets/destinations/ho-chi-minh-city.jpg" },
-            { name: "Ha Long Bay", highlights: "Overnight Cruises, Limestone Karsts, Kayaking, Floating Villages", image: "/assets/destinations/ha-long-bay.jpg" },
-            { name: "Hoi An", highlights: "Ancient Town, Japanese Bridge, Lantern Festival, Tailor Shops", image: "/assets/destinations/hoi-an.jpg" },
+            { name: "Ho Chi Minh City", highlights: "Notre Dame Cathedral, Ben Thanh Market, Cu Chi Tunnels, Mekong Delta", image: "/assets/destinations/ho-chi-minh-city.webp" },
+            { name: "Ha Long Bay", highlights: "Overnight Cruises, Limestone Karsts, Kayaking, Floating Villages", image: "/assets/destinations/ha-long-bay.webp" },
+            { name: "Hoi An", highlights: "Ancient Town, Japanese Bridge, Lantern Festival, Tailor Shops", image: "/assets/destinations/hoi-an.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -320,7 +320,7 @@ export const countries: CountryData[] = [
         name: "China",
         tagline: "Ancient Civilization, Modern Wonder",
         description: "Experience 5,000 years of history meets cutting-edge innovation. From the Great Wall to futuristic cities, pandas to palaces – China offers endless fascination.",
-        coverImage: "/assets/countries/china.png",
+        coverImage: "/assets/countries/china.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 829" },
@@ -345,9 +345,9 @@ export const countries: CountryData[] = [
         ],
         destinations: [
             { name: "Beijing", highlights: "Great Wall, Forbidden City, Temple of Heaven, Summer Palace", image: "/assets/destinations/beijing.avif" },
-            { name: "Shanghai", highlights: "The Bund, Yu Garden, Oriental Pearl Tower, French Concession", image: "/assets/destinations/shanghai.jpg" },
-            { name: "Xi’an", highlights: "Terracotta Warriors, Ancient City Wall, Muslim Quarter", image: "/assets/destinations/xian.jpg" },
-            { name: "Guilin", highlights: "Li River Cruise, Karst Mountains, Rice Terraces, Reed Flute Cave", image: "/assets/destinations/guilin.jpg" },
+            { name: "Shanghai", highlights: "The Bund, Yu Garden, Oriental Pearl Tower, French Concession", image: "/assets/destinations/shanghai.webp" },
+            { name: "Xi’an", highlights: "Terracotta Warriors, Ancient City Wall, Muslim Quarter", image: "/assets/destinations/xian.webp" },
+            { name: "Guilin", highlights: "Li River Cruise, Karst Mountains, Rice Terraces, Reed Flute Cave", image: "/assets/destinations/guilin.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -361,7 +361,7 @@ export const countries: CountryData[] = [
         name: "Papua New Guinea",
         tagline: "Last Frontier",
         description: "Discover one of the world’s most culturally diverse countries! Experience tribal cultures, pristine rainforests, coral reefs, and untouched natural beauty.",
-        coverImage: "/assets/countries/png.png",
+        coverImage: "/assets/countries/png.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 150" },
@@ -383,10 +383,10 @@ export const countries: CountryData[] = [
             { icon: <Mountain size={32} />, title: "Adventure Travel", description: "Hiking, trekking, exploration, off-the-beaten-path destinations" },
         ],
         destinations: [
-            { name: "Port Moresby", highlights: "Capital City, National Museum, Parliament, Cultural Centre", image: "/assets/destinations/port-moresby.jpg" },
-            { name: "Kokoda Track", highlights: "Historic WWII Trail, Mountain Trekking, Adventure Challenge", image: "/assets/destinations/kokoda-track.jpg" },
-            { name: "Sepik River", highlights: "Traditional Villages, River Cruises, Indigenous Art, Tribal Culture", image: "/assets/destinations/sepik-river.jpg" },
-            { name: "Tufi", highlights: "Fjord-like Scenery, World-Class Diving, WWII Wrecks, Marine Life", image: "/assets/destinations/tufi.jpg" },
+            { name: "Port Moresby", highlights: "Capital City, National Museum, Parliament, Cultural Centre", image: "/assets/destinations/port-moresby.webp" },
+            { name: "Kokoda Track", highlights: "Historic WWII Trail, Mountain Trekking, Adventure Challenge", image: "/assets/destinations/kokoda-track.webp" },
+            { name: "Sepik River", highlights: "Traditional Villages, River Cruises, Indigenous Art, Tribal Culture", image: "/assets/destinations/sepik-river.webp" },
+            { name: "Tufi", highlights: "Fjord-like Scenery, World-Class Diving, WWII Wrecks, Marine Life", image: "/assets/destinations/tufi.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -427,10 +427,10 @@ export const countries: CountryData[] = [
             { icon: <DollarSign size={32} />, title: "Affordable Travel", description: "Great value for money with budget-friendly accommodation and activities" },
         ],
         destinations: [
-            { name: "Manila", highlights: "Intramuros, Rizal Park, Mall of Asia, Historic Landmarks", image: "/assets/destinations/manila.jpg" },
-            { name: "Boracay", highlights: "White Beach, Water Sports, Nightlife, Sunset Views", image: "/assets/destinations/boracay.jpg" },
-            { name: "Palawan", highlights: "El Nido, Coron, Underground River, Island Hopping", image: "/assets/destinations/palawan.jpg" },
-            { name: "Cebu", highlights: "Beaches, Whale Sharks, Kawasan Falls, Historical Sites", image: "/assets/destinations/cebu.jpg" },
+            { name: "Manila", highlights: "Intramuros, Rizal Park, Mall of Asia, Historic Landmarks", image: "/assets/destinations/manila.webp" },
+            { name: "Boracay", highlights: "White Beach, Water Sports, Nightlife, Sunset Views", image: "/assets/destinations/boracay.webp" },
+            { name: "Palawan", highlights: "El Nido, Coron, Underground River, Island Hopping", image: "/assets/destinations/palawan.webp" },
+            { name: "Cebu", highlights: "Beaches, Whale Sharks, Kawasan Falls, Historical Sites", image: "/assets/destinations/cebu.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -467,10 +467,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Unique Culture", description: "Experience authentic Malay Islamic Monarchy traditions and heritage" },
         ],
         destinations: [
-            { name: "Bandar Seri Begawan", highlights: "Omar Ali Saifuddien Mosque, Royal Regalia Museum, Water Village", image: "/assets/destinations/bandar.jpg" },
-            { name: "Ulu Temburong", highlights: "National Park, Canopy Walkway, Rainforest, River Activities", image: "/assets/destinations/temburong.jpg" },
-            { name: "Kampong Ayer", highlights: "World's Largest Water Village, Traditional Houses, Cultural Tours", image: "/assets/destinations/kampong-ayer.jpg" },
-            { name: "Jerudong", highlights: "Jerudong Park, Beach, Empire Hotel, Entertainment", image: "/assets/destinations/jerudong.jpg" },
+            { name: "Bandar Seri Begawan", highlights: "Omar Ali Saifuddien Mosque, Royal Regalia Museum, Water Village", image: "/assets/destinations/bandar.webp" },
+            { name: "Ulu Temburong", highlights: "National Park, Canopy Walkway, Rainforest, River Activities", image: "/assets/destinations/temburong.webp" },
+            { name: "Kampong Ayer", highlights: "World's Largest Water Village, Traditional Houses, Cultural Tours", image: "/assets/destinations/kampong-ayer.webp" },
+            { name: "Jerudong", highlights: "Jerudong Park, Beach, Empire Hotel, Entertainment", image: "/assets/destinations/jerudong.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -505,10 +505,10 @@ export const countries: CountryData[] = [
             { icon: <DollarSign size={32} />, title: "Budget-Friendly", description: "Affordable destination with incredible value for travelers" },
         ],
         destinations: [
-            { name: "Yangon", highlights: "Shwedagon Pagoda, Colonial Architecture, Markets, Culture", image: "/assets/destinations/yangon.jpg" },
-            { name: "Bagan", highlights: "2,000+ Ancient Temples, Hot Air Balloons, Sunrise Views", image: "/assets/destinations/bagan.jpg" },
-            { name: "Inle Lake", highlights: "Floating Gardens, Leg-Rowing Fishermen, Stilted Villages", image: "/assets/destinations/inle-lake.jpg" },
-            { name: "Mandalay", highlights: "Royal Palace, U Bein Bridge, Monasteries, Cultural Heart", image: "/assets/destinations/mandalay.jpg" },
+            { name: "Yangon", highlights: "Shwedagon Pagoda, Colonial Architecture, Markets, Culture", image: "/assets/destinations/yangon.webp" },
+            { name: "Bagan", highlights: "2,000+ Ancient Temples, Hot Air Balloons, Sunrise Views", image: "/assets/destinations/bagan.webp" },
+            { name: "Inle Lake", highlights: "Floating Gardens, Leg-Rowing Fishermen, Stilted Villages", image: "/assets/destinations/inle-lake.webp" },
+            { name: "Mandalay", highlights: "Royal Palace, U Bein Bridge, Monasteries, Cultural Heart", image: "/assets/destinations/mandalay.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -543,10 +543,10 @@ export const countries: CountryData[] = [
             { icon: <Utensils size={32} />, title: "Amazing Food", description: "Nasi goreng, satay, rendang, and diverse regional cuisines" },
         ],
         destinations: [
-            { name: "Bali", highlights: "Temples, Rice Terraces, Beaches, Yoga Retreats", image: "/assets/destinations/bali.jpg" },
-            { name: "Jakarta", highlights: "Modern Skyline, Shopping, Museums, Nightlife", image: "/assets/destinations/jakarta.jpg" },
-            { name: "Yogyakarta", highlights: "Borobudur Temple, Prambanan, Sultan's Palace, Batik", image: "/assets/destinations/yogyakarta.jpg" },
-            { name: "Komodo", highlights: "Komodo Dragons, Diving, Pink Beach, Island Hopping", image: "/assets/destinations/komodo.jpg" },
+            { name: "Bali", highlights: "Temples, Rice Terraces, Beaches, Yoga Retreats", image: "/assets/destinations/bali.webp" },
+            { name: "Jakarta", highlights: "Modern Skyline, Shopping, Museums, Nightlife", image: "/assets/destinations/jakarta.webp" },
+            { name: "Yogyakarta", highlights: "Borobudur Temple, Prambanan, Sultan's Palace, Batik", image: "/assets/destinations/yogyakarta.webp" },
+            { name: "Komodo", highlights: "Komodo Dragons, Diving, Pink Beach, Island Hopping", image: "/assets/destinations/komodo.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -581,10 +581,10 @@ export const countries: CountryData[] = [
             { icon: <DollarSign size={32} />, title: "Affordable Visa", description: "Competitive visa fees at RM 250 for all travelers" },
         ],
         destinations: [
-            { name: "Hunza Valley", highlights: "Stunning Mountains, Karimabad Fort, Cherry Blossoms, Trekking", image: "/assets/destinations/hunza.jpg" },
-            { name: "Lahore", highlights: "Badshahi Mosque, Lahore Fort, Food Street, Cultural Heritage", image: "/assets/destinations/lahore.jpg" },
-            { name: "Skardu", highlights: "K2 Base Camp, Deosai Plains, Lakes, Adventure Tourism", image: "/assets/destinations/skardu.jpg" },
-            { name: "Islamabad", highlights: "Faisal Mosque, Margalla Hills, Modern Capital, Museums", image: "/assets/destinations/islamabad.jpg" },
+            { name: "Hunza Valley", highlights: "Stunning Mountains, Karimabad Fort, Cherry Blossoms, Trekking", image: "/assets/destinations/hunza.webp" },
+            { name: "Lahore", highlights: "Badshahi Mosque, Lahore Fort, Food Street, Cultural Heritage", image: "/assets/destinations/lahore.webp" },
+            { name: "Skardu", highlights: "K2 Base Camp, Deosai Plains, Lakes, Adventure Tourism", image: "/assets/destinations/skardu.webp" },
+            { name: "Islamabad", highlights: "Faisal Mosque, Margalla Hills, Modern Capital, Museums", image: "/assets/destinations/islamabad.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -620,10 +620,10 @@ export const countries: CountryData[] = [
             { icon: <Users size={32} />, title: "Cultural Heritage", description: "Rich traditions, craftsmanship, and historical significance" },
         ],
         destinations: [
-            { name: "Kabul", highlights: "National Museum, Gardens of Babur, Historic Sites", image: "/assets/destinations/kabul.png" },
-            { name: "Herat", highlights: "Friday Mosque, Citadel, Silk Road Heritage, Architecture", image: "/assets/destinations/herat.png" },
-            { name: "Band-e-Amir", highlights: "Turquoise Lakes, National Park, Natural Wonder", image: "/assets/destinations/band-e-amir.png" },
-            { name: "Mazar-i-Sharif", highlights: "Blue Mosque, Historic Landmarks, Cultural Center", image: "/assets/destinations/mazar.png" },
+            { name: "Kabul", highlights: "National Museum, Gardens of Babur, Historic Sites", image: "/assets/destinations/kabul.webp" },
+            { name: "Herat", highlights: "Friday Mosque, Citadel, Silk Road Heritage, Architecture", image: "/assets/destinations/herat.webp" },
+            { name: "Band-e-Amir", highlights: "Turquoise Lakes, National Park, Natural Wonder", image: "/assets/destinations/band-e-amir.webp" },
+            { name: "Mazar-i-Sharif", highlights: "Blue Mosque, Historic Landmarks, Cultural Center", image: "/assets/destinations/mazar.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -659,10 +659,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Rich Culture", description: "Islamic Cairo, bustling souks, and authentic Egyptian cuisine" },
         ],
         destinations: [
-            { name: "Cairo", highlights: "Pyramids of Giza, Egyptian Museum, Khan el-Khalili, Islamic Cairo", image: "/assets/destinations/cairo.jpg" },
-            { name: "Luxor", highlights: "Valley of the Kings, Karnak Temple, Hot Air Balloons", image: "/assets/destinations/luxor.jpg" },
-            { name: "Aswan", highlights: "Abu Simbel, Philae Temple, Nile Cruises, Nubian Culture", image: "/assets/destinations/aswan.jpg" },
-            { name: "Hurghada", highlights: "Red Sea Diving, Beaches, Water Sports, Resorts", image: "/assets/destinations/hurghada.jpg" },
+            { name: "Cairo", highlights: "Pyramids of Giza, Egyptian Museum, Khan el-Khalili, Islamic Cairo", image: "/assets/destinations/cairo.webp" },
+            { name: "Luxor", highlights: "Valley of the Kings, Karnak Temple, Hot Air Balloons", image: "/assets/destinations/luxor.webp" },
+            { name: "Aswan", highlights: "Abu Simbel, Philae Temple, Nile Cruises, Nubian Culture", image: "/assets/destinations/aswan.webp" },
+            { name: "Hurghada", highlights: "Red Sea Diving, Beaches, Water Sports, Resorts", image: "/assets/destinations/hurghada.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -699,10 +699,10 @@ export const countries: CountryData[] = [
             { icon: <Mountain size={32} />, title: "Natural Wonders", description: "Mud volcanoes, Caucasus mountains, and unique landscapes" },
         ],
         destinations: [
-            { name: "Baku", highlights: "Flame Towers, Old City, Boulevard, Maiden Tower", image: "/assets/destinations/baku.jpg" },
-            { name: "Gobustan", highlights: "Rock Art, Mud Volcanoes, Ancient Petroglyphs", image: "/assets/destinations/gobustan.jpg" },
-            { name: "Sheki", highlights: "Khan's Palace, Mountain Town, Silk Road Heritage", image: "/assets/destinations/sheki.jpg" },
-            { name: "Gabala", highlights: "Mountain Resort, Cable Car, Natural Beauty, Adventure", image: "/assets/destinations/gabala.jpg" },
+            { name: "Baku", highlights: "Flame Towers, Old City, Boulevard, Maiden Tower", image: "/assets/destinations/baku.webp" },
+            { name: "Gobustan", highlights: "Rock Art, Mud Volcanoes, Ancient Petroglyphs", image: "/assets/destinations/gobustan.webp" },
+            { name: "Sheki", highlights: "Khan's Palace, Mountain Town, Silk Road Heritage", image: "/assets/destinations/sheki.webp" },
+            { name: "Gabala", highlights: "Mountain Resort, Cable Car, Natural Beauty, Adventure", image: "/assets/destinations/gabala.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -737,10 +737,10 @@ export const countries: CountryData[] = [
             { icon: <Users size={32} />, title: "Wildlife Safari", description: "Spot elephants, leopards, and diverse wildlife in national parks" },
         ],
         destinations: [
-            { name: "Colombo", highlights: "Galle Face, Temples, Shopping, Colonial Architecture", image: "/assets/destinations/colombo.jpg" },
-            { name: "Kandy", highlights: "Temple of Tooth, Cultural Shows, Botanical Gardens", image: "/assets/destinations/kandy.jpg" },
-            { name: "Sigiriya", highlights: "Rock Fortress, Ancient Frescoes, UNESCO Heritage Site", image: "/assets/destinations/sigiriya.jpg" },
-            { name: "Galle", highlights: "Dutch Fort, Beaches, Historic Town, Coastal Beauty", image: "/assets/destinations/galle.jpg" },
+            { name: "Colombo", highlights: "Galle Face, Temples, Shopping, Colonial Architecture", image: "/assets/destinations/colombo.webp" },
+            { name: "Kandy", highlights: "Temple of Tooth, Cultural Shows, Botanical Gardens", image: "/assets/destinations/kandy.webp" },
+            { name: "Sigiriya", highlights: "Rock Fortress, Ancient Frescoes, UNESCO Heritage Site", image: "/assets/destinations/sigiriya.webp" },
+            { name: "Galle", highlights: "Dutch Fort, Beaches, Historic Town, Coastal Beauty", image: "/assets/destinations/galle.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -775,10 +775,10 @@ export const countries: CountryData[] = [
             { icon: <Users size={32} />, title: "Warm Culture", description: "Friendly Nepalese people and rich cultural traditions" },
         ],
         destinations: [
-            { name: "Kathmandu", highlights: "Durbar Square, Swayambhunath, Pashupatinath, Markets", image: "/assets/destinations/kathmandu.jpg" },
-            { name: "Pokhara", highlights: "Phewa Lake, Annapurna Views, Adventure Sports, Paragliding", image: "/assets/destinations/pokhara.jpg" },
-            { name: "Everest Region", highlights: "Base Camp Trek, Sherpa Culture, Mountain Views", image: "/assets/destinations/everest.jpg" },
-            { name: "Chitwan", highlights: "National Park, Wildlife Safari, Elephants, Jungle Activities", image: "/assets/destinations/chitwan.jpg" },
+            { name: "Kathmandu", highlights: "Durbar Square, Swayambhunath, Pashupatinath, Markets", image: "/assets/destinations/kathmandu.webp" },
+            { name: "Pokhara", highlights: "Phewa Lake, Annapurna Views, Adventure Sports, Paragliding", image: "/assets/destinations/pokhara.webp" },
+            { name: "Everest Region", highlights: "Base Camp Trek, Sherpa Culture, Mountain Views", image: "/assets/destinations/everest.webp" },
+            { name: "Chitwan", highlights: "National Park, Wildlife Safari, Elephants, Jungle Activities", image: "/assets/destinations/chitwan.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -813,10 +813,10 @@ export const countries: CountryData[] = [
             { icon: <Shield size={32} />, title: "Romantic Escape", description: "Perfect honeymoon destination with privacy and luxury" },
         ],
         destinations: [
-            { name: "Malé", highlights: "Capital City, Grand Friday Mosque, Local Markets, Culture", image: "/assets/destinations/male.jpg" },
-            { name: "North Malé Atoll", highlights: "Luxury Resorts, Diving Sites, Water Sports, Relaxation", image: "/assets/destinations/north-male.jpg" },
-            { name: "South Ari Atoll", highlights: "Whale Sharks, Manta Rays, Premium Resorts, Marine Life", image: "/assets/destinations/ari-atoll.jpg" },
-            { name: "Baa Atoll", highlights: "UNESCO Biosphere, Hanifaru Bay, Diving Paradise", image: "/assets/destinations/baa-atoll.jpg" },
+            { name: "Malé", highlights: "Capital City, Grand Friday Mosque, Local Markets, Culture", image: "/assets/destinations/male.webp" },
+            { name: "North Malé Atoll", highlights: "Luxury Resorts, Diving Sites, Water Sports, Relaxation", image: "/assets/destinations/north-male.webp" },
+            { name: "South Ari Atoll", highlights: "Whale Sharks, Manta Rays, Premium Resorts, Marine Life", image: "/assets/destinations/ari-atoll.webp" },
+            { name: "Baa Atoll", highlights: "UNESCO Biosphere, Hanifaru Bay, Diving Paradise", image: "/assets/destinations/baa-atoll.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -852,10 +852,10 @@ export const countries: CountryData[] = [
             { icon: <Sun size={32} />, title: "Island Beauty", description: "Pristine islands, white beaches, and marine parks" },
         ],
         destinations: [
-            { name: "Kota Kinabalu", highlights: "City Mosques, Tanjung Aru Beach, Markets, Sunsets", image: "/assets/destinations/kk.jpg" },
-            { name: "Mount Kinabalu", highlights: "Summit Climb, Via Ferrata, National Park, Hot Springs", image: "/assets/destinations/kinabalu.jpg" },
-            { name: "Sipadan", highlights: "World-Class Diving, Sea Turtles, Barracuda Vortex", image: "/assets/destinations/sipadan.jpg" },
-            { name: "Sepilok", highlights: "Orangutan Sanctuary, Sun Bear Centre, Rainforest", image: "/assets/destinations/sepilok.jpg" },
+            { name: "Kota Kinabalu", highlights: "City Mosques, Tanjung Aru Beach, Markets, Sunsets", image: "/assets/destinations/kk.webp" },
+            { name: "Mount Kinabalu", highlights: "Summit Climb, Via Ferrata, National Park, Hot Springs", image: "/assets/destinations/kinabalu.webp" },
+            { name: "Sipadan", highlights: "World-Class Diving, Sea Turtles, Barracuda Vortex", image: "/assets/destinations/sipadan.webp" },
+            { name: "Sepilok", highlights: "Orangutan Sanctuary, Sun Bear Centre, Rainforest", image: "/assets/destinations/sepilok.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -892,10 +892,10 @@ export const countries: CountryData[] = [
             { icon: <Utensils size={32} />, title: "Culinary Excellence", description: "Sushi, ramen, kaiseki - home to the world's most Michelin stars" },
         ],
         destinations: [
-            { name: "Tokyo", highlights: "Shibuya Crossing, Senso-ji Temple, Shinjuku, Akihabara", image: "/assets/destinations/tokyo.jpg" },
-            { name: "Kyoto", highlights: "Fushimi Inari, Kinkaku-ji, Bamboo Forest, Geisha District", image: "/assets/destinations/kyoto.jpg" },
-            { name: "Mount Fuji", highlights: "Iconic Mountain, Five Lakes, Hiking, Hot Springs", image: "/assets/destinations/fuji.jpg" },
-            { name: "Osaka", highlights: "Street Food, Osaka Castle, Dotonbori, Entertainment", image: "/assets/destinations/osaka.jpg" },
+            { name: "Tokyo", highlights: "Shibuya Crossing, Senso-ji Temple, Shinjuku, Akihabara", image: "/assets/destinations/tokyo.webp" },
+            { name: "Kyoto", highlights: "Fushimi Inari, Kinkaku-ji, Bamboo Forest, Geisha District", image: "/assets/destinations/kyoto.webp" },
+            { name: "Mount Fuji", highlights: "Iconic Mountain, Five Lakes, Hiking, Hot Springs", image: "/assets/destinations/fuji.webp" },
+            { name: "Osaka", highlights: "Street Food, Osaka Castle, Dotonbori, Entertainment", image: "/assets/destinations/osaka.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -931,10 +931,10 @@ export const countries: CountryData[] = [
             { icon: <Utensils size={32} />, title: "Delicious Cuisine", description: "Kebabs, baklava, Turkish delight, and diverse regional dishes" },
         ],
         destinations: [
-            { name: "Istanbul", highlights: "Hagia Sophia, Blue Mosque, Bosphorus Cruise, Grand Bazaar", image: "/assets/destinations/istanbul.jpg" },
-            { name: "Cappadocia", highlights: "Hot Air Balloons, Fairy Chimneys, Cave Hotels, Underground Cities", image: "/assets/destinations/cappadocia.jpg" },
-            { name: "Pamukkale", highlights: "Cotton Castle, Thermal Pools, Ancient Hierapolis", image: "/assets/destinations/pamukkale.jpg" },
-            { name: "Antalya", highlights: "Beaches, Old Town, Waterfalls, Mediterranean Coast", image: "/assets/destinations/antalya.jpg" },
+            { name: "Istanbul", highlights: "Hagia Sophia, Blue Mosque, Bosphorus Cruise, Grand Bazaar", image: "/assets/destinations/istanbul.webp" },
+            { name: "Cappadocia", highlights: "Hot Air Balloons, Fairy Chimneys, Cave Hotels, Underground Cities", image: "/assets/destinations/cappadocia.webp" },
+            { name: "Pamukkale", highlights: "Cotton Castle, Thermal Pools, Ancient Hierapolis", image: "/assets/destinations/pamukkale.webp" },
+            { name: "Antalya", highlights: "Beaches, Old Town, Waterfalls, Mediterranean Coast", image: "/assets/destinations/antalya.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -970,10 +970,10 @@ export const countries: CountryData[] = [
             { icon: <Anchor size={32} />, title: "Island Escapes", description: "Lantau Island, beaches, hiking trails, and outlying islands" },
         ],
         destinations: [
-            { name: "Victoria Peak", highlights: "Panoramic Views, Peak Tram, Sky Terrace, Hiking Trails", image: "/assets/destinations/victoria-peak.jpg" },
-            { name: "Tsim Sha Tsui", highlights: "Avenue of Stars, Harbor Views, Museums, Shopping", image: "/assets/destinations/tsim-sha-tsui.jpg" },
-            { name: "Lantau Island", highlights: "Big Buddha, Po Lin Monastery, Cable Car, Tai O Village", image: "/assets/destinations/lantau.jpg" },
-            { name: "Central & Soho", highlights: "Mid-Levels Escalator, Restaurants, Nightlife, Art Galleries", image: "/assets/destinations/central-hk.jpg" },
+            { name: "Victoria Peak", highlights: "Panoramic Views, Peak Tram, Sky Terrace, Hiking Trails", image: "/assets/destinations/victoria-peak.webp" },
+            { name: "Tsim Sha Tsui", highlights: "Avenue of Stars, Harbor Views, Museums, Shopping", image: "/assets/destinations/tsim-sha-tsui.webp" },
+            { name: "Lantau Island", highlights: "Big Buddha, Po Lin Monastery, Cable Car, Tai O Village", image: "/assets/destinations/lantau.webp" },
+            { name: "Central & Soho", highlights: "Mid-Levels Escalator, Restaurants, Nightlife, Art Galleries", image: "/assets/destinations/central-hk.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -1009,10 +1009,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Natural Wonders", description: "Iguazu Falls, Andes mountains, diverse ecosystems" },
         ],
         destinations: [
-            { name: "Buenos Aires", highlights: "Tango Shows, La Boca, Recoleta, European Architecture", image: "/assets/destinations/buenos-aires.jpg" },
-            { name: "Patagonia", highlights: "Glaciers, El Calafate, Torres del Paine, Adventure", image: "/assets/destinations/patagonia.jpg" },
-            { name: "Iguazu Falls", highlights: "Waterfalls, Rainforest, Devil's Throat, Nature", image: "/assets/destinations/iguazu.jpg" },
-            { name: "Mendoza", highlights: "Wine Country, Vineyards, Andes Views, Wine Tours", image: "/assets/destinations/mendoza.jpg" },
+            { name: "Buenos Aires", highlights: "Tango Shows, La Boca, Recoleta, European Architecture", image: "/assets/destinations/buenos-aires.webp" },
+            { name: "Patagonia", highlights: "Glaciers, El Calafate, Torres del Paine, Adventure", image: "/assets/destinations/patagonia.webp" },
+            { name: "Iguazu Falls", highlights: "Waterfalls, Rainforest, Devil's Throat, Nature", image: "/assets/destinations/iguazu.webp" },
+            { name: "Mendoza", highlights: "Wine Country, Vineyards, Andes Views, Wine Tours", image: "/assets/destinations/mendoza.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -1026,7 +1026,7 @@ export const countries: CountryData[] = [
         name: "Serbia",
         tagline: "Crossroads of Europe",
         description: "Experience the vibrant energy and rich history of Serbia. From Belgrade's historic fortress and lively cafes to stunning national parks and scenic rivers, discover Southeast Europe's hidden gem.",
-        coverImage: "/assets/countries/serbia.png",
+        coverImage: "/assets/countries/serbia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 2550" },
@@ -1050,10 +1050,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Crossroads of Culture", description: "A fascinating blend of Central European, Ottoman, and Balkan influences" },
         ],
         destinations: [
-            { name: "Belgrade", highlights: "Kalemegdan Fortress, Knez Mihailova Street, St. Sava Temple, Skadarlija", image: "/assets/destinations/belgrade.jpg" },
-            { name: "Novi Sad", highlights: "Petrovaradin Fortress, Dunavska Street, Exit Festival, Danube River", image: "/assets/destinations/novi-sad.jpg" },
-            { name: "Tara National Park", highlights: "Drina River, Banjska Stena Lookout, Lakes, Pristine Forests", image: "/assets/destinations/tara.jpg" },
-            { name: "Niš", highlights: "Niš Fortress, Skull Tower, Mediana Roman Heritage, Spa Resorts", image: "/assets/destinations/nis.jpg" },
+            { name: "Belgrade", highlights: "Kalemegdan Fortress, Knez Mihailova Street, St. Sava Temple, Skadarlija", image: "/assets/destinations/belgrade.webp" },
+            { name: "Novi Sad", highlights: "Petrovaradin Fortress, Dunavska Street, Exit Festival, Danube River", image: "/assets/destinations/novi-sad.webp" },
+            { name: "Tara National Park", highlights: "Drina River, Banjska Stena Lookout, Lakes, Pristine Forests", image: "/assets/destinations/tara.webp" },
+            { name: "Niš", highlights: "Niš Fortress, Skull Tower, Mediana Roman Heritage, Spa Resorts", image: "/assets/destinations/nis.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1089,10 +1089,10 @@ export const countries: CountryData[] = [
             { icon: <Mountain size={32} />, title: "Trans-Siberian", description: "Epic railway journey across the world's largest country" },
         ],
         destinations: [
-            { name: "Moscow", highlights: "Red Square, Kremlin, St. Basil's, Bolshoi Theatre", image: "/assets/destinations/moscow.jpg" },
-            { name: "St. Petersburg", highlights: "Hermitage Museum, Winter Palace, Peterhof, Canals", image: "/assets/destinations/st-petersburg.jpg" },
-            { name: "Golden Ring", highlights: "Historic Towns, Monasteries, Traditional Russia", image: "/assets/destinations/golden-ring.jpg" },
-            { name: "Lake Baikal", highlights: "World's Deepest Lake, Nature, Trans-Siberian Railway", image: "/assets/destinations/baikal.jpg" },
+            { name: "Moscow", highlights: "Red Square, Kremlin, St. Basil's, Bolshoi Theatre", image: "/assets/destinations/moscow.webp" },
+            { name: "St. Petersburg", highlights: "Hermitage Museum, Winter Palace, Peterhof, Canals", image: "/assets/destinations/st-petersburg.webp" },
+            { name: "Golden Ring", highlights: "Historic Towns, Monasteries, Traditional Russia", image: "/assets/destinations/golden-ring.webp" },
+            { name: "Lake Baikal", highlights: "World's Deepest Lake, Nature, Trans-Siberian Railway", image: "/assets/destinations/baikal.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -1129,10 +1129,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Natural Wonders", description: "Himalayan peaks, backwaters of Kerala, Thar Desert, and lush national parks" },
         ],
         destinations: [
-            { name: "Agra", highlights: "Taj Mahal, Agra Fort, Mehtab Bagh, Fatehpur Sikri", image: "/assets/destinations/agra.jpg" },
-            { name: "Delhi", highlights: "Red Fort, India Gate, Qutub Minar, Old Delhi Markets", image: "/assets/destinations/delhi.jpg" },
-            { name: "Rajasthan", highlights: "Jaipur Pink City, Udaipur Lakes, Desert Safari, Palaces", image: "/assets/destinations/rajasthan.jpg" },
-            { name: "Kerala", highlights: "Backwaters, Houseboat Cruises, Hill Stations, Beaches", image: "/assets/destinations/kerala.jpg" },
+            { name: "Agra", highlights: "Taj Mahal, Agra Fort, Mehtab Bagh, Fatehpur Sikri", image: "/assets/destinations/agra.webp" },
+            { name: "Delhi", highlights: "Red Fort, India Gate, Qutub Minar, Old Delhi Markets", image: "/assets/destinations/delhi.webp" },
+            { name: "Rajasthan", highlights: "Jaipur Pink City, Udaipur Lakes, Desert Safari, Palaces", image: "/assets/destinations/rajasthan.webp" },
+            { name: "Kerala", highlights: "Backwaters, Houseboat Cruises, Hill Stations, Beaches", image: "/assets/destinations/kerala.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
@@ -1146,7 +1146,7 @@ export const countries: CountryData[] = [
         name: "United Kingdom (UK)",
         tagline: "Historic Charm & Modern Elegance",
         description: "Discover the historic charm of the United Kingdom. From the iconic landmarks of London to the scenic landscapes of the Scottish Highlands, the UK offers an unforgettable experience.",
-        coverImage: "/assets/countries/uk.png",
+        coverImage: "/assets/countries/uk.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "15-20 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
@@ -1170,10 +1170,10 @@ export const countries: CountryData[] = [
             { icon: <GraduationCap size={32} />, title: "World-Class Education", description: "Home to some of the world's oldest and most prestigious universities" },
         ],
         destinations: [
-            { name: "London", highlights: "Tower Bridge, British Museum, West End, Buckingham Palace", image: "/assets/destinations/london.png" },
-            { name: "Edinburgh", highlights: "Edinburgh Castle, Royal Mile, Arthur's Seat, History", image: "/assets/destinations/edinburgh.jpg" },
-            { name: "Scottish Highlands", highlights: "Loch Ness, Glencoe, Isle of Skye, Nature", image: "/assets/destinations/highlands.jpg" },
-            { name: "Bath", highlights: "Roman Baths, Georgian Architecture, Thermae Spa", image: "/assets/destinations/bath.jpg" },
+            { name: "London", highlights: "Tower Bridge, British Museum, West End, Buckingham Palace", image: "/assets/destinations/london.webp" },
+            { name: "Edinburgh", highlights: "Edinburgh Castle, Royal Mile, Arthur's Seat, History", image: "/assets/destinations/edinburgh.webp" },
+            { name: "Scottish Highlands", highlights: "Loch Ness, Glencoe, Isle of Skye, Nature", image: "/assets/destinations/highlands.webp" },
+            { name: "Bath", highlights: "Roman Baths, Georgian Architecture, Thermae Spa", image: "/assets/destinations/bath.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1187,7 +1187,7 @@ export const countries: CountryData[] = [
         name: "United States of America (USA)",
         tagline: "The Land of Opportunity",
         description: "Explore the diverse landscapes and vibrant cities of the United States. From the bustling streets of New York to stunning national parks, the USA is a destination like no other.",
-        coverImage: "/assets/countries/usa.png",
+        coverImage: "/assets/countries/usa.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 3000" },
@@ -1211,10 +1211,10 @@ export const countries: CountryData[] = [
             { icon: <Anchor size={32} />, title: "Entertainment", description: "Hollywood, Broadway, theme parks, and global attractions" },
         ],
         destinations: [
-            { name: "New York City", highlights: "Times Square, Central Park, Statue of Liberty, Broadway", image: "/assets/destinations/nyc.png" },
-            { name: "Los Angeles", highlights: "Hollywood, Venice Beach, Universal Studios, Beverly Hills", image: "/assets/destinations/la.png" },
-            { name: "Las Vegas", highlights: "The Strip, Casinos, Shows, Grand Canyon Tours", image: "/assets/destinations/vegas.png" },
-            { name: "Miami", highlights: "South Beach, Art Deco, Everglades, Nightlife", image: "/assets/destinations/miami.png" },
+            { name: "New York City", highlights: "Times Square, Central Park, Statue of Liberty, Broadway", image: "/assets/destinations/nyc.webp" },
+            { name: "Los Angeles", highlights: "Hollywood, Venice Beach, Universal Studios, Beverly Hills", image: "/assets/destinations/la.webp" },
+            { name: "Las Vegas", highlights: "The Strip, Casinos, Shows, Grand Canyon Tours", image: "/assets/destinations/vegas.webp" },
+            { name: "Miami", highlights: "South Beach, Art Deco, Everglades, Nightlife", image: "/assets/destinations/miami.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1228,7 +1228,7 @@ export const countries: CountryData[] = [
         name: "Australia",
         tagline: "The Land Down Under",
         description: "Experience the unique wildlife, stunning beaches, and vibrant cities of Australia. From the iconic Sydney Opera House to the Outback, adventure awaits.",
-        coverImage: "/assets/countries/australia.png",
+        coverImage: "/assets/countries/australia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 3000" },
@@ -1252,10 +1252,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Unique Wildlife", description: "Kangaroos, koalas, quokkas, and diverse ecosystems" },
         ],
         destinations: [
-            { name: "Sydney", highlights: "Opera House, Harbour Bridge, Bondi Beach, Darling Harbour", image: "/assets/destinations/sydney.jpg" },
-            { name: "Melbourne", highlights: "Laneways, Coffee Culture, Great Ocean Road, Arts", image: "/assets/destinations/melbourne.jpg" },
-            { name: "Cairns", highlights: "Great Barrier Reef, Daintree Rainforest, Kuranda", image: "/assets/destinations/cairns.jpg" },
-            { name: "Gold Coast", highlights: "Surfer's Paradise, Theme Parks, Beaches, Nightlife", image: "/assets/destinations/gold-coast.jpg" },
+            { name: "Sydney", highlights: "Opera House, Harbour Bridge, Bondi Beach, Darling Harbour", image: "/assets/destinations/sydney.webp" },
+            { name: "Melbourne", highlights: "Laneways, Coffee Culture, Great Ocean Road, Arts", image: "/assets/destinations/melbourne.webp" },
+            { name: "Cairns", highlights: "Great Barrier Reef, Daintree Rainforest, Kuranda", image: "/assets/destinations/cairns.webp" },
+            { name: "Gold Coast", highlights: "Surfer's Paradise, Theme Parks, Beaches, Nightlife", image: "/assets/destinations/gold-coast.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1269,7 +1269,7 @@ export const countries: CountryData[] = [
         name: "Schengen Area",
         tagline: "Discover Europe",
         description: "Explore 29 European countries with a single visa. From the romantic streets of Paris to the historic ruins of Rome, the Schengen area offers unparalleled travel experiences.",
-        coverImage: "/assets/countries/schengen.png",
+        coverImage: "/assets/countries/schengen.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
@@ -1293,10 +1293,10 @@ export const countries: CountryData[] = [
             { icon: <Mountain size={32} />, title: "Stunning Landscapes", description: "From the Swiss Alps to the Mediterranean coast" },
         ],
         destinations: [
-            { name: "Paris, France", highlights: "Eiffel Tower, Louvre Museum, Notre-Dame, Cuisine", image: "/assets/destinations/paris.png" },
-            { name: "Rome, Italy", highlights: "Colosseum, Vatican City, Trevi Fountain, History", image: "/assets/destinations/rome.png" },
-            { name: "Swiss Alps", highlights: "Skiing, Matterhorn, Scenic Trains, Chocolate", image: "/assets/destinations/swiss.png" },
-            { name: "Barcelona, Spain", highlights: "Sagrada Familia, Park Güell, Beaches, Tapas", image: "/assets/destinations/barcelona.png" },
+            { name: "Paris, France", highlights: "Eiffel Tower, Louvre Museum, Notre-Dame, Cuisine", image: "/assets/destinations/paris.webp" },
+            { name: "Rome, Italy", highlights: "Colosseum, Vatican City, Trevi Fountain, History", image: "/assets/destinations/rome.webp" },
+            { name: "Swiss Alps", highlights: "Skiing, Matterhorn, Scenic Trains, Chocolate", image: "/assets/destinations/swiss.webp" },
+            { name: "Barcelona, Spain", highlights: "Sagrada Familia, Park Güell, Beaches, Tapas", image: "/assets/destinations/barcelona.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1310,7 +1310,7 @@ export const countries: CountryData[] = [
         name: "East Timor",
         tagline: "Sunrise of the Nation",
         description: "Discover Timor-Leste, one of Southeast Asia's youngest and most unspoiled nations. From its rugged mountains to crystal-clear dive sites, East Timor offers an authentic adventure for the intrepid traveler.",
-        coverImage: "/assets/countries/east-timor.png",
+        coverImage: "/assets/countries/east-timor.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "Advisory Service Only" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "Visa on Arrival (VOA)" },
@@ -1333,10 +1333,10 @@ export const countries: CountryData[] = [
             { icon: <Leaf size={32} />, title: "Unspoiled Nature", description: "One of Southeast Asia's last truly pristine natural destinations" },
         ],
         destinations: [
-            { name: "Dili", highlights: "Cristo Rei Statue, Resistance Museum, Tais Market, Waterfront", image: "/assets/destinations/dili.jpg" },
-            { name: "Atauro Island", highlights: "World-Class Diving, Snorkeling, Traditional Villages, Whale Watching", image: "/assets/destinations/atauro.jpg" },
-            { name: "Baucau", highlights: "Ancient Town, Portuguese Architecture, Natural Swimming Pool", image: "/assets/destinations/baucau.jpg" },
-            { name: "Mount Ramelau", highlights: "Highest Peak, Sunrise Trekking, Panoramic Views, Adventure", image: "/assets/destinations/ramelau.jpg" },
+            { name: "Dili", highlights: "Cristo Rei Statue, Resistance Museum, Tais Market, Waterfront", image: "/assets/destinations/dili.webp" },
+            { name: "Atauro Island", highlights: "World-Class Diving, Snorkeling, Traditional Villages, Whale Watching", image: "/assets/destinations/atauro.webp" },
+            { name: "Baucau", highlights: "Ancient Town, Portuguese Architecture, Natural Swimming Pool", image: "/assets/destinations/baucau.webp" },
+            { name: "Mount Ramelau", highlights: "Highest Peak, Sunrise Trekking, Panoramic Views, Adventure", image: "/assets/destinations/ramelau.webp" },
         ],
         process: [
             { step: 1, title: "Consult Our Team", description: "Get expert advisory on East Timor VOA requirements" },
@@ -1350,7 +1350,7 @@ export const countries: CountryData[] = [
         name: "Germany",
         tagline: "Land of Ideas and Castles",
         description: "From fairytale castles and historic monuments to vibrant cities, scenic forests, and world-famous festivals. Germany offers an unforgettable European journey in the heart of the Schengen area.",
-        coverImage: "/assets/countries/germany.png",
+        coverImage: "/assets/countries/germany.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1990" },
@@ -1374,10 +1374,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Rich Traditions", description: "World-famous festivals like Oktoberfest, traditional food, and rich brewing history" },
         ],
         destinations: [
-            { name: "Berlin", highlights: "Capital City, Historic Brandenburg Gate, Berlin Wall, Museum Island", image: "/assets/destinations/berlin.jpg" },
-            { name: "Munich", highlights: "Bavarian Heartland, Marienplatz Square, Oktoberfest, English Garden", image: "/assets/destinations/munich.jpg" },
-            { name: "Neuschwanstein", highlights: "Fairytale Castle Nestled in the Bavarian Alps, Inspiration for Disney", image: "/assets/destinations/neuschwanstein.jpg" },
-            { name: "Frankfurt", highlights: "Financial Hub, Modern Skyscraper Skyline, Historic Römer Square", image: "/assets/destinations/frankfurt.jpg" },
+            { name: "Berlin", highlights: "Capital City, Historic Brandenburg Gate, Berlin Wall, Museum Island", image: "/assets/destinations/berlin.webp" },
+            { name: "Munich", highlights: "Bavarian Heartland, Marienplatz Square, Oktoberfest, English Garden", image: "/assets/destinations/munich.webp" },
+            { name: "Neuschwanstein", highlights: "Fairytale Castle Nestled in the Bavarian Alps, Inspiration for Disney", image: "/assets/destinations/neuschwanstein.webp" },
+            { name: "Frankfurt", highlights: "Financial Hub, Modern Skyscraper Skyline, Historic Römer Square", image: "/assets/destinations/frankfurt.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1391,7 +1391,7 @@ export const countries: CountryData[] = [
         name: "Iceland",
         tagline: "Land of Fire and Ice",
         description: "A breathtaking island of dramatic volcanic landscapes, majestic glaciers, cascading waterfalls, and spectacular northern lights. Iceland offers an awe-inspiring escape into pristine nature.",
-        coverImage: "/assets/countries/iceland.png",
+        coverImage: "/assets/countries/iceland.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 2790" },
@@ -1415,10 +1415,10 @@ export const countries: CountryData[] = [
             { icon: <Shield size={32} />, title: "Pristine Serenity", description: "Extremely safe, peaceful environment with untouched nature and low crowd density" },
         ],
         destinations: [
-            { name: "Reykjavik", highlights: "Charming Capital City, Hallgrimskirkja Church, Design Shops, Vibrant Culture", image: "/assets/destinations/reykjavik.jpg" },
-            { name: "Blue Lagoon", highlights: "World-Famous Geothermal Spa Known for Mineral-Rich Milky Blue Waters", image: "/assets/destinations/blue-lagoon.jpg" },
-            { name: "Golden Circle", highlights: "Classic Route Containing Gullfoss Waterfall, Geysir, and Thingvellir National Park", image: "/assets/destinations/golden-circle.jpg" },
-            { name: "Vik & Black Sand Beach", highlights: "Dramatic Basalt Column Cliffs, Powerful Ocean Waves, and Black Volcanic Sand", image: "/assets/destinations/vik.jpg" },
+            { name: "Reykjavik", highlights: "Charming Capital City, Hallgrimskirkja Church, Design Shops, Vibrant Culture", image: "/assets/destinations/reykjavik.webp" },
+            { name: "Blue Lagoon", highlights: "World-Famous Geothermal Spa Known for Mineral-Rich Milky Blue Waters", image: "/assets/destinations/blue-lagoon.webp" },
+            { name: "Golden Circle", highlights: "Classic Route Containing Gullfoss Waterfall, Geysir, and Thingvellir National Park", image: "/assets/destinations/golden-circle.webp" },
+            { name: "Vik & Black Sand Beach", highlights: "Dramatic Basalt Column Cliffs, Powerful Ocean Waves, and Black Volcanic Sand", image: "/assets/destinations/vik.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1432,7 +1432,7 @@ export const countries: CountryData[] = [
         name: "Kenya",
         tagline: "The Pride of Africa",
         description: "Embark on an extraordinary journey through world-famous wildlife savannas, spectacular rift valley lakes, white-sand beaches, and rich cultural traditions in East Africa's leading safari destination.",
-        coverImage: "/assets/countries/kenya.png",
+        coverImage: "/assets/countries/kenya.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
@@ -1452,10 +1452,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Rich Heritage", description: "Warm hospitality, colorful tribal traditions, and delicious East African cuisine" },
         ],
         destinations: [
-            { name: "Maasai Mara", highlights: "Wildlife Safaris, Great Wildebeest Migration, Hot Air Balloon Rides, Big Five", image: "/assets/destinations/maasai-mara.jpg" },
-            { name: "Nairobi", highlights: "Capital City, Nairobi National Park, Elephant Sanctuary, Giraffe Centre", image: "/assets/destinations/nairobi.jpg" },
-            { name: "Mombasa", highlights: "Coastal Beaches, Fort Jesus, Swahili Culture, Snorkeling, Island Resorts", image: "/assets/destinations/mombasa.jpg" },
-            { name: "Lake Nakuru", highlights: "Pink Flamingo Flocks, Rhino Sanctuary, Scenic Waterfalls, Bird Watching", image: "/assets/destinations/lake-nakuru.jpg" },
+            { name: "Maasai Mara", highlights: "Wildlife Safaris, Great Wildebeest Migration, Hot Air Balloon Rides, Big Five", image: "/assets/destinations/maasai-mara.webp" },
+            { name: "Nairobi", highlights: "Capital City, Nairobi National Park, Elephant Sanctuary, Giraffe Centre", image: "/assets/destinations/nairobi.webp" },
+            { name: "Mombasa", highlights: "Coastal Beaches, Fort Jesus, Swahili Culture, Snorkeling, Island Resorts", image: "/assets/destinations/mombasa.webp" },
+            { name: "Lake Nakuru", highlights: "Pink Flamingo Flocks, Rhino Sanctuary, Scenic Waterfalls, Bird Watching", image: "/assets/destinations/lake-nakuru.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather passport copy, photo, and visa copy if applicable" },
@@ -1469,7 +1469,7 @@ export const countries: CountryData[] = [
         name: "Netherlands",
         tagline: "Land of Tulips and Windmills",
         description: "Wander through picturesque canal districts, vibrant tulip fields, and historic windmill landscapes. The Netherlands blends historic art masterpieces with progressive modern culture in Europe's scenic lowlands.",
-        coverImage: "/assets/countries/netherlands.png",
+        coverImage: "/assets/countries/netherlands.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1950" },
@@ -1493,10 +1493,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Art & Masterpieces", description: "Explore world-renowned museums housing works of Van Gogh, Rembrandt, and Vermeer" },
         ],
         destinations: [
-            { name: "Amsterdam", highlights: "Historic Canals, Rijksmuseum, Van Gogh Museum, Anne Frank House", image: "/assets/destinations/amsterdam.jpg" },
-            { name: "Keukenhof", highlights: "World's Largest Flower Garden, Millions of Tulips, Spring Exhibition", image: "/assets/destinations/keukenhof.jpg" },
-            { name: "Rotterdam", highlights: "Futuristic Architecture, Erasmus Bridge, Cube Houses, Europoort Hub", image: "/assets/destinations/rotterdam.jpg" },
-            { name: "The Hague", highlights: "Seat of Government, Peace Palace, Royal Art Galleries, North Sea Beaches", image: "/assets/destinations/the-hague.jpg" },
+            { name: "Amsterdam", highlights: "Historic Canals, Rijksmuseum, Van Gogh Museum, Anne Frank House", image: "/assets/destinations/amsterdam.webp" },
+            { name: "Keukenhof", highlights: "World's Largest Flower Garden, Millions of Tulips, Spring Exhibition", image: "/assets/destinations/keukenhof.webp" },
+            { name: "Rotterdam", highlights: "Futuristic Architecture, Erasmus Bridge, Cube Houses, Europoort Hub", image: "/assets/destinations/rotterdam.webp" },
+            { name: "The Hague", highlights: "Seat of Government, Peace Palace, Royal Art Galleries, North Sea Beaches", image: "/assets/destinations/the-hague.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1510,7 +1510,7 @@ export const countries: CountryData[] = [
         name: "New Zealand",
         tagline: "100% Pure New Zealand",
         description: "Discover the dramatic landscapes of New Zealand — from snow-capped alpine peaks and pristine fjords to active volcanic zones and rich Maori heritage. An adventure of unparalleled natural beauty.",
-        coverImage: "/assets/countries/new-zealand.png",
+        coverImage: "/assets/countries/new-zealand.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 2900" },
@@ -1534,10 +1534,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Scenic Road Trips", description: "Safe driving routes past pristine blue lakes, rolling green hills, and volcanic peaks" },
         ],
         destinations: [
-            { name: "Milford Sound", highlights: "Pristine Fjords, Waterfalls, Mitre Peak, Boat Cruises", image: "/assets/destinations/milford-sound.jpg" },
-            { name: "Queenstown", highlights: "Adventure Capital, Skiing, Bungee Jumping, Lake Wakatipu", image: "/assets/destinations/queenstown.jpg" },
-            { name: "Rotorua", highlights: "Maori Culture, Geothermal Activity, Mud Pools, Hot Springs", image: "/assets/destinations/rotorua.jpg" },
-            { name: "Auckland", highlights: "Sails City, Sky Tower, Waitemata Harbour, Volcanic Cones", image: "/assets/destinations/auckland.jpg" },
+            { name: "Milford Sound", highlights: "Pristine Fjords, Waterfalls, Mitre Peak, Boat Cruises", image: "/assets/destinations/milford-sound.webp" },
+            { name: "Queenstown", highlights: "Adventure Capital, Skiing, Bungee Jumping, Lake Wakatipu", image: "/assets/destinations/queenstown.webp" },
+            { name: "Rotorua", highlights: "Maori Culture, Geothermal Activity, Mud Pools, Hot Springs", image: "/assets/destinations/rotorua.webp" },
+            { name: "Auckland", highlights: "Sails City, Sky Tower, Waitemata Harbour, Volcanic Cones", image: "/assets/destinations/auckland.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
@@ -1551,7 +1551,7 @@ export const countries: CountryData[] = [
         name: "Qatar",
         tagline: "Where Heritage Meets Modernity",
         description: "Experience the unique blend of ancient Bedouin culture and ultra-modern architecture in Qatar. From Doha's futuristic skyline and luxury shopping to historic souqs and desert adventures.",
-        coverImage: "/assets/countries/qatar.png",
+        coverImage: "/assets/countries/qatar.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
@@ -1573,10 +1573,10 @@ export const countries: CountryData[] = [
             { icon: <Globe size={32} />, title: "Premium Hospitality", description: "Enjoy unparalleled Middle Eastern luxury dining, shopping, and resort stays" },
         ],
         destinations: [
-            { name: "Doha", highlights: "Futuristic Skyline, Museum of Islamic Art, Corniche Promenade, Shopping", image: "/assets/destinations/doha.jpg" },
-            { name: "Souq Waqif", highlights: "Traditional Market, Spices, Falconry, Authentic Qatari Cuisine", image: "/assets/destinations/souq-waqif.jpg" },
-            { name: "The Pearl-Qatar", highlights: "Luxury Island Marina, Dining, Shopping, Mediterranean Vibes", image: "/assets/destinations/the-pearl.jpg" },
-            { name: "Khor Al Adaid", highlights: "Inland Sea, Desert Dunes Meeting the Ocean, Adventure Tours", image: "/assets/destinations/khor-al-adaid.jpg" },
+            { name: "Doha", highlights: "Futuristic Skyline, Museum of Islamic Art, Corniche Promenade, Shopping", image: "/assets/destinations/doha.webp" },
+            { name: "Souq Waqif", highlights: "Traditional Market, Spices, Falconry, Authentic Qatari Cuisine", image: "/assets/destinations/souq-waqif.webp" },
+            { name: "The Pearl-Qatar", highlights: "Luxury Island Marina, Dining, Shopping, Mediterranean Vibes", image: "/assets/destinations/the-pearl.webp" },
+            { name: "Khor Al Adaid", highlights: "Inland Sea, Desert Dunes Meeting the Ocean, Adventure Tours", image: "/assets/destinations/khor-al-adaid.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather passport, bank statement, letter and photograph" },
@@ -1590,7 +1590,7 @@ export const countries: CountryData[] = [
         name: "Sweden",
         tagline: "Beauty of the Archipelago",
         description: "Experience Sweden's captivating blend of pristine wilderness, historic medieval towns, and progressive modern design. Wander through Stockholm's picturesque archipelagos, historic palaces, and serene lakes.",
-        coverImage: "/assets/countries/sweden.png",
+        coverImage: "/assets/countries/sweden.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1950" },
@@ -1614,10 +1614,10 @@ export const countries: CountryData[] = [
             { icon: <Building size={32} />, title: "Progressive Design", description: "Immerse yourself in world-leading modern architecture, innovation, and style" },
         ],
         destinations: [
-            { name: "Stockholm", highlights: "Vibrant Capital, Gamla Stan (Old Town), Vasa Museum, Archipelago", image: "/assets/destinations/stockholm.jpg" },
-            { name: "Gothenburg", highlights: "Gothenburg Canal, Coastal Seafood, Liseberg Park", image: "/assets/destinations/gothenburg.jpg" },
-            { name: "Abisko", highlights: "Arctic Wilderness, Aurora Borealis, Midnight Sun, Hiking", image: "/assets/destinations/abisko.jpg" },
-            { name: "Visby", highlights: "Medieval Walled Town, UNESCO Heritage, Hanseatic Ruins", image: "/assets/destinations/visby.jpg" },
+            { name: "Stockholm", highlights: "Vibrant Capital, Gamla Stan (Old Town), Vasa Museum, Archipelago", image: "/assets/destinations/stockholm.webp" },
+            { name: "Gothenburg", highlights: "Gothenburg Canal, Coastal Seafood, Liseberg Park", image: "/assets/destinations/gothenburg.webp" },
+            { name: "Abisko", highlights: "Arctic Wilderness, Aurora Borealis, Midnight Sun, Hiking", image: "/assets/destinations/abisko.webp" },
+            { name: "Visby", highlights: "Medieval Walled Town, UNESCO Heritage, Hanseatic Ruins", image: "/assets/destinations/visby.webp" },
         ],
         process: [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
