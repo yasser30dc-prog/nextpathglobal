@@ -23,6 +23,7 @@ const navLinks: NavLink[] = [
             { name: "Malaysia", href: "/services/study-abroad/malaysia" },
             { name: "UK", href: "/services/study-abroad/uk" },
             { name: "Finland", href: "/services/study-abroad/finland" },
+            { name: "Germany", href: "/services/study-abroad/germany" },
             { name: "China", href: "/services/study-abroad/china" },
         ]
     },
