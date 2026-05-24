@@ -26,7 +26,7 @@ export default function About() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/assets/about/about-cover.png"
+                        src="/assets/about/about-cover.webp"
                         alt="NextPath Global team - Your trusted partner in education and travel"
                         fill
                         className="object-cover"
@@ -110,7 +110,7 @@ export default function About() {
                         className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group"
                     >
                         <Image
-                            src="/assets/about/office.png"
+                            src="/assets/about/office.webp"
                             alt="NextPath Global Office"
                             fill
                             className="object-cover transition-transform duration-700 group-hover:scale-110"

@@ -112,7 +112,7 @@ export default function MM2H() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/assets/mm2h/mm2h-cover.png"
+                        src="/assets/mm2h/mm2h-cover.webp"
                         alt="Kuala Lumpur skyline at golden hour - Malaysia My Second Home"
                         fill
                         className="object-cover"
@@ -209,7 +209,7 @@ export default function MM2H() {
                             className="relative h-[300px] rounded-2xl shadow-xl border border-gray-100 overflow-hidden group"
                         >
                             <Image
-                                src="/assets/mm2h/mm2h-hero.png"
+                                src="/assets/mm2h/mm2h-hero.webp"
                                 alt="Malaysia My Second Home"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"

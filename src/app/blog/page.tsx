@@ -34,7 +34,7 @@ export default function Blog() {
             {/* ── Hero Cover Section ── */}
             <div className="relative w-full h-[420px] md:h-[500px] overflow-hidden">
                 <img
-                    src="/assets/blog-hero.png"
+                    src="/assets/blog-hero.webp"
                     alt="NextPath Global Blog"
                     className="absolute inset-0 w-full h-full object-cover object-center"
                 />

@@ -61,7 +61,7 @@ export default function PVIP() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/assets/pvip/pvip-cover.png"
+                        src="/assets/pvip/pvip-cover.webp"
                         alt="Premium luxury living in Kuala Lumpur - PVIP Malaysia"
                         fill
                         className="object-cover"

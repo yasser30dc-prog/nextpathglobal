@@ -14,7 +14,7 @@ export default function RefundPolicyPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/assets/refund/refund-cover.png"
+                        src="/assets/refund/refund-cover.webp"
                         alt="Trust and transparency - NextPath Global Refund Policy"
                         fill
                         className="object-cover"

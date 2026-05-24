@@ -9,7 +9,7 @@ export default function AgentPortalPage() {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col pt-[104px]">
             {/* Coming Soon Hero Banner */}
-            <section className="relative flex-1 flex flex-col justify-center items-center text-center p-6 bg-cover bg-center" style={{ backgroundImage: "url('/assets/agent-portal-hero.png')" }}>
+            <section className="relative flex-1 flex flex-col justify-center items-center text-center p-6 bg-cover bg-center" style={{ backgroundImage: "url('/assets/agent-portal-hero.webp')" }}>
                 <div className="absolute inset-0 bg-blue-900/80 backdrop-blur-[2px]"></div>
                 <motion.div 
                     initial={{ opacity: 0, y: 20 }}

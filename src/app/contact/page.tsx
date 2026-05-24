@@ -11,7 +11,7 @@ export default function Contact() {
             {/* ── Hero Cover Section ── */}
             <div className="relative w-full h-[400px] md:h-[480px] overflow-hidden">
                 <img
-                    src="/assets/contact-hero.png"
+                    src="/assets/contact-hero.webp"
                     alt="Contact NextPath Global"
                     className="absolute inset-0 w-full h-full object-cover object-center"
                 />

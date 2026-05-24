@@ -6,7 +6,7 @@ export default function HeroScene() {
     return (
         <div className="w-full h-full absolute inset-0 z-0">
             <Image
-                src="/assets/hero-background.png"
+                src="/assets/hero-background.webp"
                 alt="NextPath Global Background"
                 fill
                 priority

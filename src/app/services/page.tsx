@@ -68,7 +68,7 @@ export default function Services() {
             <div className="relative w-full h-[480px] md:h-[560px] overflow-hidden">
                 {/* Cover Image */}
                 <Image
-                    src="/assets/services-hero.png"
+                    src="/assets/services-hero.webp"
                     alt="NextPath Global Immigration & Visa Services"
                     fill
                     className="object-cover object-center"

@@ -16,7 +16,7 @@ export default function StudyUKPage() {
             {/* ── Hero Section ── */}
             <section
                 className="pt-40 pb-28 text-white relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: "url('/assets/uk-study-hero.png')" }}
+                style={{ backgroundImage: "url('/assets/uk-study-hero.webp')" }}
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/75 via-[#0d1b2a]/60 to-[#0d1b2a]/80" />
                 <div className="container mx-auto px-6 relative z-10 text-center">

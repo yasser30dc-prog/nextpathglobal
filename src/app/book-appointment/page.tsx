@@ -15,7 +15,7 @@ export default function BookAppointment() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/assets/appointment/appointment-cover.png"
+                        src="/assets/appointment/appointment-cover.webp"
                         alt="Professional consultation at NextPath Global"
                         fill
                         className="object-cover"

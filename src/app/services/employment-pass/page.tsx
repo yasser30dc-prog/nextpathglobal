@@ -88,7 +88,7 @@ export default function EmploymentPass() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/assets/employment-pass/ep-cover.png"
+                        src="/assets/employment-pass/ep-cover.webp"
                         alt="Professional corporate environment in Kuala Lumpur - Employment Pass Malaysia"
                         fill
                         className="object-cover"

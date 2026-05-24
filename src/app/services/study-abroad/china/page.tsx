@@ -43,7 +43,7 @@ export default function StudyChinaPage() {
     return (
         <div className="min-h-screen bg-gray-50 pb-20">
             {/* Hero Section */}
-            <section className="pt-40 pb-24 text-white relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/assets/china-study-hero.png')" }}>
+            <section className="pt-40 pb-24 text-white relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/assets/china-study-hero.webp')" }}>
                 <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <motion.div
