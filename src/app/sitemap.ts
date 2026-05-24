@@ -109,6 +109,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/services/study-abroad/uk`,
+            lastModified: new Date('2026-05-24'),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/services/study-abroad/finland`,
+            lastModified: new Date('2026-05-24'),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/services/study-abroad/china`,
+            lastModified: new Date('2026-05-24'),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/services/study-abroad/malaysia`,
+            lastModified: new Date('2026-05-24'),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
     ];
 
     // ─── Tourist visa country pages ──────────────────────────────────────────

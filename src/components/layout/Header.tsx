@@ -22,7 +22,6 @@ const navLinks: NavLink[] = [
         subMenu: [
             { name: "Malaysia", href: "/services/study-abroad/malaysia" },
             { name: "UK", href: "/services/study-abroad/uk" },
-            { name: "Australia", href: "/services/study-abroad/australia" },
             { name: "Finland", href: "/services/study-abroad/finland" },
             { name: "China", href: "/services/study-abroad/china" },
         ]

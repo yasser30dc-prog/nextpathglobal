@@ -27,7 +27,7 @@ import { partnerInstitutions } from "@/data/malaysia-partners";
 
 const destinations = [
   { name: "UK", flag: "🇬🇧", link: "/services/study-abroad/uk" },
-  { name: "Australia", flag: "🇦🇺", link: "/services/study-abroad/australia" },
+  { name: "Finland", flag: "🇫🇮", link: "/services/study-abroad/finland" },
   { name: "Canada", flag: "🇨🇦", link: "/services/study-abroad/canada" },
   { name: "Malaysia", flag: "🇲🇾", link: "/services/study-malaysia" },
   { name: "Europe", flag: "🇪🇺", link: "/services/study-abroad/europe" },
