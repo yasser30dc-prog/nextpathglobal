@@ -31,11 +31,11 @@ import { useState } from "react";
 import { partnerInstitutions } from "@/data/malaysia-partners";
 
 const destinations = [
-  { name: "UK", flag: "🇬🇧", link: "/services/study-abroad/uk" },
-  { name: "Finland", flag: "🇫🇮", link: "/services/study-abroad/finland" },
-  { name: "Germany", flag: "🇩🇪", link: "/services/study-abroad/germany" },
-  { name: "Malaysia", flag: "🇲🇾", link: "/services/study-abroad/malaysia" },
-  { name: "China", flag: "🇨🇳", link: "/services/study-abroad/china" },
+  { name: "UK", flagCode: "gb", emoji: "🇬🇧", link: "/services/study-abroad/uk", tagline: "World-Class Universities" },
+  { name: "Finland", flagCode: "fi", emoji: "🇫🇮", link: "/services/study-abroad/finland", tagline: "World's Happiest Country" },
+  { name: "Germany", flagCode: "de", emoji: "🇩🇪", link: "/services/study-abroad/germany", tagline: "Tuition-Free Education" },
+  { name: "Malaysia", flagCode: "my", emoji: "🇲🇾", link: "/services/study-abroad/malaysia", tagline: "Affordable Excellence" },
+  { name: "China", flagCode: "cn", emoji: "🇨🇳", link: "/services/study-abroad/china", tagline: "Scholarships Available" },
 ];
 
 export default function Home() {
@@ -167,7 +167,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-5 max-w-5xl mx-auto">
             {destinations.map((dest, index) => (
               <motion.div
                 key={index}
@@ -177,10 +177,21 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={dest.link} className="group block text-center">
-                  <div className="bg-gray-50 border border-gray-100 p-8 rounded-2xl shadow-sm group-hover:shadow-xl group-hover:border-secondary/50 transition-all duration-300 transform group-hover:-translate-y-2 mb-4 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-                    <span className="text-5xl block mb-4 relative z-10 group-hover:scale-110 transition-transform">{dest.flag}</span>
-                    <h3 className="font-bold text-gray-900 relative z-10 group-hover:text-primary transition-colors">{dest.name}</h3>
+                  <div className="bg-white border border-gray-100 rounded-2xl shadow-sm group-hover:shadow-xl group-hover:border-secondary/40 transition-all duration-300 transform group-hover:-translate-y-2 overflow-hidden">
+                    {/* Flag Image Banner */}
+                    <div className="relative h-24 overflow-hidden">
+                      <img
+                        src={`https://flagcdn.com/w320/${dest.flagCode}.png`}
+                        alt={`${dest.name} flag`}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    </div>
+                    {/* Name & Tagline */}
+                    <div className="p-4">
+                      <h3 className="font-extrabold text-gray-900 text-base group-hover:text-primary transition-colors leading-tight">{dest.name}</h3>
+                      <p className="text-gray-400 text-xs mt-1 leading-tight">{dest.tagline}</p>
+                    </div>
                   </div>
                 </Link>
               </motion.div>
