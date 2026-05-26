@@ -1,14 +1,122 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Globe, Plane, Search } from "lucide-react";
+import { ArrowRight, Globe, Plane, Search, ChevronLeft, ChevronRight } from "lucide-react";
 import { countries } from "../../../data/countries";
+
+const testimonials = [
+    {
+        name: "Daniel Groveria",
+        role: "Student",
+        quote: "Travellers from countries categorized under the high-risk list who are eligible to enter Germany, aged 12 and older, are obliged to present their vaccination certificates.",
+        rating: 5,
+        visa: "Switzerland Visa",
+    },
+    {
+        name: "Mohammad Ashik",
+        role: "Traveller",
+        quote: "Very good service. I will use their services again. Mahabub Hasan was really friendly and helped me a lot. ❤️❤️❤️",
+        rating: 5,
+        visa: "Thailand Visa",
+    },
+    {
+        name: "MD SALA UDDIN",
+        role: "Traveller",
+        quote: "That's a very good service. Specially Mahabub brother was well person. 2 days Thailand visa confirmed. Alhamdulillah.",
+        rating: 5,
+        visa: "Thailand Visa",
+    },
+    {
+        name: "mohiddin khan",
+        role: "Local Guide",
+        quote: "I highly recommend this tour and travels company! Their service is excellent, and their visa processing was incredibly fast and efficient. They are very professional and handle everything with great care, and their friendly demeanor made the entire process smooth. I'm very pleased with their assistance",
+        rating: 5,
+        visa: "Thailand Visa",
+    },
+    {
+        name: "Ripat khan",
+        role: "Local Guide",
+        quote: "Thank you so much.especially mahabub vhaiya & yasin bro. nextpath global ur support ur guideline. I very early get visa Singapore thanks lot",
+        rating: 5,
+        visa: "Singapore Visa",
+    },
+    {
+        name: "HELISTAR",
+        role: "Local Guide",
+        quote: "Excellent travel agency in Malaysia! Very professional, friendly service and smooth arrangements. Highly recommended!",
+        rating: 5,
+        visa: "Travel Services",
+    },
+    {
+        name: "Abir Ahmed",
+        role: "Client",
+        quote: "Over All My Experience Excellent Work service .trusted and professional service Thank you for your service mr Mahabub sir",
+        rating: 5,
+        visa: "Professional Service",
+    },
+    {
+        name: "Masud Rana1977",
+        role: "Client",
+        quote: "Mahabub Bhai got me a visa for Thailand, I am very happy and delighted with his service, I am very happy with his behavior.",
+        rating: 5,
+        visa: "Thailand Visa",
+    },
+    {
+        name: "Md. Mahmudul Islam",
+        role: "Client",
+        quote: "I am so happy. Good behave. Polite & helpful service. Thanks.",
+        rating: 5,
+        visa: "Customer Service",
+    },
+];
 
 export default function TouristVisaPage() {
     const [searchQuery, setSearchQuery] = useState("");
+    const [visibleCards, setVisibleCards] = useState(1);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1024) {
+                setVisibleCards(3);
+            } else if (window.innerWidth >= 768) {
+                setVisibleCards(2);
+            } else {
+                setVisibleCards(1);
+            }
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const maxIndex = Math.max(0, testimonials.length - visibleCards);
+
+    const nextSlide = () => {
+        setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+    };
+
+    useEffect(() => {
+        if (isPaused) return;
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [isPaused, maxIndex]);
+
+    useEffect(() => {
+        if (currentIndex > maxIndex) {
+            setCurrentIndex(maxIndex);
+        }
+    }, [maxIndex, currentIndex]);
 
     // Filter and sort countries alphabetically based on search query
     const filteredCountries = countries
@@ -163,103 +271,124 @@ export default function TouristVisaPage() {
             </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-50 overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-primary font-semibold tracking-wider uppercase text-base">Testimonials</span>
-            <h2 className="text-4xl md:text-6xl font-bold mt-2 mb-6 text-gray-900">
-              What Clients Say About Us <br className="hidden md:block" /> and Our Services
-            </h2>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
+            <div className="text-left">
+              <span className="text-primary font-semibold tracking-wider uppercase text-base">Testimonials</span>
+              <h2 className="text-4xl md:text-5xl font-bold mt-2 text-gray-900 leading-tight">
+                What Clients Say About Us <br className="hidden md:block" /> and Our Services
+              </h2>
+            </div>
+            {/* Navigation Arrows for Desktop */}
+            <div className="hidden md:flex gap-4 mt-6 md:mt-0">
+              <button 
+                onClick={prevSlide}
+                className="p-4 rounded-full border border-gray-200 bg-white text-gray-700 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm"
+                aria-label="Previous testimonial"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <button 
+                onClick={nextSlide}
+                className="p-4 rounded-full border border-gray-200 bg-white text-gray-700 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm"
+                aria-label="Next testimonial"
+              >
+                <ChevronRight size={24} />
+              </button>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Daniel Groveria",
-                role: "Student",
-                quote: "Travellers from countries categorized under the high-risk list who are eligible to enter Germany, aged 12 and older, are obliged to present their vaccination certificates.",
-                rating: 5,
-                visa: "Switzerland Visa",
-              },
-              {
-                name: "Mohammad Ashik",
-                role: "Traveller",
-                quote: "Very good service. I will use their services again. Mahabub Hasan was really friendly and helped me a lot. ❤️❤️❤️",
-                rating: 5,
-                visa: "Thailand Visa",
-              },
-              {
-                name: "MD SALA UDDIN",
-                role: "Traveller",
-                quote: "That's a very good service. Specially Mahabub brother was well person. 2 days Thailand visa confirmed. Alhamdulillah.",
-                rating: 5,
-                visa: "Thailand Visa",
-              },
-              {
-                name: "HELISTAR",
-                role: "Local Guide",
-                quote: "Excellent travel agency in Malaysia! Very professional, friendly service and smooth arrangements. Highly recommended!",
-                rating: 5,
-                visa: "Travel Services",
-              },
-              {
-                name: "Abir Ahmed",
-                role: "Client",
-                quote: "Over All My Experience Excellent Work service .trusted and professional service Thank you for your service mr Mahabub sir",
-                rating: 5,
-                visa: "Professional Service",
-              },
-              {
-                name: "Masud Rana1977",
-                role: "Client",
-                quote: "Mahabub Bhai got me a visa for Thailand, I am very happy and delighted with his service, I am very happy with his behavior.",
-                rating: 5,
-                visa: "Thailand Visa",
-              },
-              {
-                name: "Md. Mahmudul Islam",
-                role: "Client",
-                quote: "I am so happy. Good behave. Polite & helpful service. Thanks.",
-                rating: 5,
-                visa: "Customer Service",
-              },
-            ].map((testimonial, index) => (
+          {/* Testimonials Slider */}
+          <div 
+            className="relative px-1 py-4"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            <div className="overflow-hidden">
               <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 relative"
+                className="flex"
+                animate={{
+                  x: `-${currentIndex * (100 / visibleCards)}%`
+                }}
+                transition={{ type: "spring", stiffness: 150, damping: 20 }}
+                style={{
+                  width: `${(testimonials.length / visibleCards) * 100}%`
+                }}
               >
-                {/* Quote Icon */}
-                <div className="absolute top-10 right-10 text-primary/20">
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z" />
-                  </svg>
-                </div>
+                {testimonials.map((testimonial, index) => (
+                  <div 
+                    key={index} 
+                    style={{ width: `${100 / testimonials.length}%` }}
+                    className="px-4"
+                  >
+                    <div className="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between h-full hover:shadow-md transition-shadow duration-300">
+                      {/* Quote Icon */}
+                      <div className="absolute top-10 right-10 text-primary/10">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 8.44772 5.0166 9V11C5.0166 11.5523 4.56889 12 4.0166 12H3.0166V5H13.0166V15C13.0166 18.3137 10.3303 21 7.0166 21H5.0166Z" />
+                        </svg>
+                      </div>
 
-                <div className="mb-6">
-                  <h4 className="text-xl font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500 uppercase tracking-wide">{testimonial.role}</p>
-                </div>
+                      <div>
+                        <div className="mb-6">
+                          <h4 className="text-xl font-bold text-gray-900">{testimonial.name}</h4>
+                          <p className="text-sm text-gray-500 uppercase tracking-wide">{testimonial.role}</p>
+                        </div>
 
-                <p className="text-base text-gray-600 mb-8 leading-relaxed italic">
-                  "{testimonial.quote}"
-                </p>
+                        <p className="text-base text-gray-600 mb-8 leading-relaxed italic">
+                          "{testimonial.quote}"
+                        </p>
+                      </div>
 
-                <div className="flex items-center justify-between mt-auto">
-                  <div className="flex gap-1 text-yellow-400">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                        <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
-                      </svg>
-                    ))}
+                      <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-50">
+                        <div className="flex gap-1 text-yellow-400">
+                          {[...Array(testimonial.rating)].map((_, i) => (
+                            <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+                            </svg>
+                          ))}
+                        </div>
+                        <span className="text-sm text-gray-400 font-medium">({testimonial.visa})</span>
+                      </div>
+                    </div>
                   </div>
-                  <span className="text-sm text-gray-400 font-medium">({testimonial.visa})</span>
-                </div>
+                ))}
               </motion.div>
-            ))}
+            </div>
+          </div>
+
+          {/* Bottom Indicators & Navigation (Mobile only) */}
+          <div className="flex items-center justify-center gap-6 mt-8">
+            <button 
+              onClick={prevSlide}
+              className="md:hidden p-3 rounded-full border border-gray-200 bg-white text-gray-700 hover:bg-primary hover:text-white transition-all shadow-sm"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft size={20} />
+            </button>
+
+            {/* Pagination Dots */}
+            <div className="flex gap-2">
+              {[...Array(maxIndex + 1)].map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentIndex(i)}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    currentIndex === i ? "w-8 bg-primary" : "w-2.5 bg-gray-300 hover:bg-gray-400"
+                  }`}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            <button 
+              onClick={nextSlide}
+              className="md:hidden p-3 rounded-full border border-gray-200 bg-white text-gray-700 hover:bg-primary hover:text-white transition-all shadow-sm"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight size={20} />
+            </button>
           </div>
         </div>
       </section>
