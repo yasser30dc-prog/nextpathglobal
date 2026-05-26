@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  compress: true,
   output: "standalone",
   images: {
     formats: ['image/webp', 'image/avif'],
@@ -9,7 +10,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000, // 1 year
   },
   compiler: {
-    removeConsole: false, // Temporarily disabled for debugging
+    removeConsole: process.env.NODE_ENV === 'production',
   },
   modularizeImports: {
     'lucide-react': {

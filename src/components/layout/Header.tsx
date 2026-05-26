@@ -65,7 +65,7 @@ export default function Header() {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link href="/" className="relative w-40 h-12">
                     <Image
-                        src="/assets/logo-transparent.png"
+                        src="/assets/logo-transparent.webp"
                         alt="Next Path Global"
                         fill
                         className="object-contain"

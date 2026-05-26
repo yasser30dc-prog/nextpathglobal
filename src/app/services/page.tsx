@@ -20,6 +20,7 @@ interface ServiceItem {
 interface ServiceCategory {
     categoryName: string;
     description: string;
+    coverImage: string;
     services: ServiceItem[];
 }
 
@@ -27,6 +28,7 @@ const serviceCategories: ServiceCategory[] = [
     {
         categoryName: "Global Education & Residency",
         description: "Explore world-class academic institutions and long-term golden residency programs worldwide.",
+        coverImage: "/assets/cover-education-residency.png",
         services: [
             {
                 title: "Student Consultancy",
@@ -51,6 +53,7 @@ const serviceCategories: ServiceCategory[] = [
     {
         categoryName: "Corporate Mobility & Work Permits",
         description: "Professional work permit acquisition and compliant business registration for global professionals and founders.",
+        coverImage: "/assets/cover-corporate-mobility.png",
         services: [
             {
                 title: "Employment Pass",
@@ -75,6 +78,7 @@ const serviceCategories: ServiceCategory[] = [
     {
         categoryName: "Travel & Hospitality",
         description: "Fast-track holiday visas, worldwide hotel bookings, and airline ticketing for seamless journeys.",
+        coverImage: "/assets/cover-travel-hospitality.png",
         services: [
             {
                 title: "Tourist Visa Process",
@@ -99,6 +103,7 @@ const serviceCategories: ServiceCategory[] = [
     {
         categoryName: "Legal & Attestation Services",
         description: "Official legalizations, document attestations, and governmental certifications for international use.",
+        coverImage: "/assets/cover-legal-attestation.png",
         services: [
             {
                 title: "Good Conduct Certificate",
@@ -157,21 +162,34 @@ export default function ServicesPage() {
                 
                 {serviceCategories.map((category, catIdx) => (
                     <div key={catIdx} className="mb-16">
-                        
-                        {/* Category Title Banner */}
+
+                        {/* Category Cover Image Banner */}
                         <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.6 }}
-                            className="border-l-4 border-[#c9a84c] pl-4 mb-8"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-80px" }}
+                            transition={{ duration: 0.7 }}
+                            className="relative w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-6 shadow-md"
                         >
-                            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
-                                {category.categoryName}
-                            </h2>
-                            <p className="text-gray-500 text-sm mt-1">
-                                {category.description}
-                            </p>
+                            <Image
+                                src={category.coverImage}
+                                alt={category.categoryName}
+                                fill
+                                className="object-cover object-center"
+                            />
+                            {/* Gradient overlay for text readability */}
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a]/80 via-[#0d1b2a]/40 to-transparent" />
+                            {/* Category heading overlaid on image */}
+                            <div className="absolute inset-0 flex flex-col justify-end p-6">
+                                <div className="border-l-4 border-[#c9a84c] pl-4">
+                                    <h2 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight drop-shadow">
+                                        {category.categoryName}
+                                    </h2>
+                                    <p className="text-white/80 text-sm mt-1">
+                                        {category.description}
+                                    </p>
+                                </div>
+                            </div>
                         </motion.div>
 
                         {/* Grid list of services */}

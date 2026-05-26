@@ -1264,47 +1264,7 @@ export const countries: CountryData[] = [
             { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 20-25 working days" },
         ],
     },
-    {
-        slug: "schengen",
-        name: "Schengen Area",
-        tagline: "Discover Europe",
-        description: "Explore 29 European countries with a single visa. From the romantic streets of Paris to the historic ruins of Rome, the Schengen area offers unparalleled travel experiences.",
-        coverImage: "/assets/countries/schengen.webp",
-        quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
-            { icon: <Calendar size={20} />, label: "Validity", value: "Varies (Up to 90 days)" },
-            { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Multiple Entry" },
-            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term visa" },
-        ],
-        requirements: [
-            { icon: <FileText size={20} />, document: "Passport", requirement: "Minimum 6 months validity from date of travel" },
-            { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Minimum 6 months validity" },
-            { icon: <Shield size={20} />, document: "Travel Insurance", requirement: "Coverage valid for a minimum of 6 months" },
-            { icon: <Briefcase size={20} />, document: "Employment / Enrollment Confirmation Letter", requirement: "Issued by employer, university, or college on official letterhead" },
-            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering last 6 months, minimum closing balance of RM 10,000" },
-            { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
-            { icon: <Lightbulb size={20} />, document: "Tip", requirement: "A minimum travel history of 5 to 7 countries would significantly improve your chances of visa approval" },
-        ],
-        whyChoose: [
-            { icon: <Globe size={32} />, title: "29 Countries", description: "Travel freely between 29 European countries with a single visa" },
-            { icon: <Landmark size={32} />, title: "Rich History", description: "Explore ancient ruins, medieval castles, and historic cities" },
-            { icon: <Utensils size={32} />, title: "Diverse Cuisine", description: "Enjoy authentic Italian pasta, French wine, and Spanish tapas" },
-            { icon: <Mountain size={32} />, title: "Stunning Landscapes", description: "From the Swiss Alps to the Mediterranean coast" },
-        ],
-        destinations: [
-            { name: "Paris, France", highlights: "Eiffel Tower, Louvre Museum, Notre-Dame, Cuisine", image: "/assets/destinations/paris.webp" },
-            { name: "Rome, Italy", highlights: "Colosseum, Vatican City, Trevi Fountain, History", image: "/assets/destinations/rome.webp" },
-            { name: "Swiss Alps", highlights: "Skiing, Matterhorn, Scenic Trains, Chocolate", image: "/assets/destinations/swiss.webp" },
-            { name: "Barcelona, Spain", highlights: "Sagrada Familia, Park Güell, Beaches, Tapas", image: "/assets/destinations/barcelona.webp" },
-        ],
-        process: [
-            { step: 1, title: "Prepare Documents", description: "Gather all required documents including travel history" },
-            { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
-            { step: 3, title: "Appointment", description: "Attend the VFS/Embassy appointment for biometrics" },
-            { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 10-15 days" },
-        ],
-    },
+
     {
         slug: "east-timor",
         name: "East Timor",
