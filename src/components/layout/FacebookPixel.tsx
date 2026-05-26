@@ -1,8 +1,7 @@
 'use client';
 
 import { usePathname, useSearchParams } from "next/navigation";
-import Script from "next/script";
-import { useEffect, Suspense } from "react";
+import { useEffect, Suspense, useState } from "react";
 
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
 
@@ -22,14 +21,41 @@ function NavigationTracker() {
 }
 
 export default function FacebookPixel() {
-  if (!FB_PIXEL_ID) return null;
+  const [shouldLoad, setShouldLoad] = useState(false);
+
+  useEffect(() => {
+    if (!FB_PIXEL_ID) return;
+
+    // Defer loading until first user scroll, mouse move, touch, or a 3.5-second timeout
+    const loadPixel = () => {
+      setShouldLoad(true);
+      cleanup();
+    };
+
+    const cleanup = () => {
+      window.removeEventListener("scroll", loadPixel);
+      window.removeEventListener("mousemove", loadPixel);
+      window.removeEventListener("touchstart", loadPixel);
+    };
+
+    const timer = setTimeout(loadPixel, 3500);
+
+    window.addEventListener("scroll", loadPixel, { passive: true });
+    window.addEventListener("mousemove", loadPixel, { passive: true });
+    window.addEventListener("touchstart", loadPixel, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      cleanup();
+    };
+  }, []);
+
+  if (!FB_PIXEL_ID || !shouldLoad) return null;
 
   return (
     <>
       {/* Base Facebook Pixel Script */}
-      <Script
-        id="fb-pixel"
-        strategy="lazyOnload"
+      <script
         dangerouslySetInnerHTML={{
           __html: `
             !function(f,b,e,v,n,t,s)
@@ -57,7 +83,7 @@ export default function FacebookPixel() {
         />
       </noscript>
 
-      {/* Track client-side page views on navigation (wrapped in Suspense to preserve SSG) */}
+      {/* Track client-side page views on navigation */}
       <Suspense fallback={null}>
         <NavigationTracker />
       </Suspense>
