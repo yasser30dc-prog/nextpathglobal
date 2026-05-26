@@ -276,41 +276,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Employment Pass Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="bg-gradient-to-br from-gray-900 to-primary rounded-3xl overflow-hidden shadow-2xl relative">
-            <div className="absolute right-0 top-0 w-1/2 h-full opacity-20 pointer-events-none hidden md:block">
-              <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full text-white fill-current">
-                <polygon points="0,100 100,0 100,100" />
-              </svg>
-            </div>
-            <div className="p-10 md:p-16 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
-              <div className="max-w-2xl text-white">
-                <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
-                  <Briefcase size={16} /> Employment Pass Specialists
-                </div>
-                <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Working in Malaysia? <br />
-                  <span className="text-secondary">We Handle Your Work Permit.</span>
-                </h2>
-                <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                  Navigating employment regulations can be complex. We provide end-to-end corporate immigration services to secure your Employment Pass efficiently and compliantly.
-                </p>
-                <Link
-                  href="/services/employment-pass"
-                  className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
-                >
-                  Explore Employment Pass Services <ArrowRight size={20} />
-                </Link>
-              </div>
-              <div className="hidden md:flex flex-shrink-0 w-64 h-64 bg-white/10 rounded-full items-center justify-center backdrop-blur-md border border-white/20">
-                <ShieldCheck size={100} className="text-secondary" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 7. Final CTA Section */}
       <section className="py-24 bg-gray-50">

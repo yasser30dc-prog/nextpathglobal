@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -36,17 +37,33 @@ export default function WhyChooseUsPage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
-            <div className="container mx-auto px-6 py-16 max-w-5xl">
-                {/* Header */}
-                <div className="text-center mb-16">
-                    <div className="inline-block mb-4">
-                        <span className="text-5xl">🌟</span>
-                    </div>
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+
+            {/* Cover Image Hero */}
+            <div className="relative w-full h-72 md:h-96 overflow-hidden">
+                <Image
+                    src="/assets/why-choose-us-hero.png"
+                    alt="Why Choose NextPath Global — Your Trusted Global Partner"
+                    fill
+                    priority
+                    className="object-cover object-center"
+                    sizes="100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                    <span className="text-5xl mb-4">🌟</span>
+                    <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-4">
                         Why Choose Us
                     </h1>
-                    <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                    <p className="text-lg md:text-xl text-white/90 max-w-2xl drop-shadow-md">
                         At NextPath Global, we don't just provide services—we create life-changing journeys.
+                    </p>
+                </div>
+            </div>
+
+            <div className="container mx-auto px-6 py-16 max-w-5xl">
+                {/* Sub-header */}
+                <div className="text-center mb-16">
+                    <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
                         Here's why students and travelers trust us:
                     </p>
                 </div>
