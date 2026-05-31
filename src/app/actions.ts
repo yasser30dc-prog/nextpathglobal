@@ -313,7 +313,7 @@ export async function submitAssessmentForm(formData: FormData) {
 
     console.log("Form data extracted:", { name, email, waCode, waNum, sscGrade, sscYear, hscGrade, hscYear, program, country, course, budget });
 
-    if (!name || !email || !waCode || !waNum || !sscGrade || !sscYear || !hscGrade || !hscYear || !program || !country || !course || !budget) {
+    if (!name || !email || !waCode || !waNum || !sscGrade || !sscYear || !program || !country || !course || !budget) {
         console.log("Validation failed - missing fields");
         return { success: false, error: "Missing required fields" };
     }
@@ -337,7 +337,7 @@ export async function submitAssessmentForm(formData: FormData) {
                 
                 <h3>Academic Background</h3>
                 <p><strong>SSC Result:</strong> ${sscGrade} (Passing Year: ${sscYear})</p>
-                <p><strong>HSC Result:</strong> ${hscGrade} (Passing Year: ${hscYear})</p>
+                <p><strong>HSC Result:</strong> ${hscGrade ? `${hscGrade} (Passing Year: ${hscYear})` : "Not applicable"}</p>
                 <p><strong>Bachelor Result:</strong> ${bachGrade ? `${bachGrade} (Passing Year: ${bachYear})` : "Not applicable"}</p>
                 <p><strong>Masters Result:</strong> ${mastersGrade ? `${mastersGrade} (Passing Year: ${mastersYear})` : "Not applicable"}</p>
                 

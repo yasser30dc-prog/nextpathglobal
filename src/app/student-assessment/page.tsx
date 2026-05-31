@@ -80,15 +80,14 @@ export default function StudentAssessmentPage() {
     }
     if (step === 2) {
       const isSscGradeValid = !!form.sscGrade.trim();
-      const isHscGradeValid = !!form.hscGrade.trim();
 
       setErrors((prev) => ({
         ...prev,
         sscGrade: !isSscGradeValid,
-        hscGrade: !isHscGradeValid,
+        hscGrade: false,
       }));
 
-      ok = isSscGradeValid && isHscGradeValid;
+      ok = isSscGradeValid;
     }
     return ok;
   };
@@ -609,9 +608,9 @@ export default function StudentAssessmentPage() {
                 {errors.sscGrade && <div className="err-msg">Please enter your SSC result</div>}
               </div>
 
-              <div className={`field ${errors.hscGrade ? "has-error" : ""}`}>
+              <div className="field">
                 <label>
-                  HSC result &amp; passing year <span className="req">*</span>
+                  HSC result &amp; passing year <span className="opt-tag">optional</span>
                 </label>
                 <div className="field-row">
                   <input
@@ -635,7 +634,7 @@ export default function StudentAssessmentPage() {
                     ))}
                   </select>
                 </div>
-                {errors.hscGrade && <div className="err-msg">Please enter your HSC result</div>}
+                <div className="hint">Leave blank if not applicable</div>
               </div>
 
               <div className="field">
