@@ -262,9 +262,9 @@ export default function StudentAssessmentPage() {
         }
 
         /* WhatsApp row */
-        .wa-row { display: flex; gap: 8px; }
-        .wa-code { width: 130px; flex-shrink: 0; }
-        .wa-num { flex: 1; }
+        .wa-row { display: flex; gap: 8px; width: 100%; }
+        .assessment-container select.wa-code { width: 130px !important; flex-shrink: 0; min-width: 130px; }
+        .assessment-container input.wa-num { flex: 1 !important; width: auto !important; }
 
         /* Field row (2 cols) */
         .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
