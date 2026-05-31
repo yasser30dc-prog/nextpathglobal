@@ -23,6 +23,7 @@ export default function StudentAssessmentPage() {
     mastersGrade: "",
     mastersYear: "",
     program: "",
+    course: "",
     budget: "",
   });
 
@@ -35,6 +36,7 @@ export default function StudentAssessmentPage() {
     hscGrade: false,
     program: false,
     budget: false,
+    course: false,
   });
 
   const stepNames = ["Personal details", "Academic results", "Program & budget"];
@@ -51,6 +53,7 @@ export default function StudentAssessmentPage() {
     if (id === "hsc-grade" || id === "hscGrade") setForm((prev) => ({ ...prev, hscGrade: value }));
     if (id === "bach-grade" || id === "bachGrade") setForm((prev) => ({ ...prev, bachGrade: value }));
     if (id === "masters-grade" || id === "mastersGrade") setForm((prev) => ({ ...prev, mastersGrade: value }));
+    if (id === "course") setErrors((prev) => ({ ...prev, course: false }));
   };
 
   const handleSelectChange = (id: string, value: string) => {
@@ -110,6 +113,10 @@ export default function StudentAssessmentPage() {
       setErrors((prev) => ({ ...prev, program: true }));
       ok = false;
     }
+    if (!form.course || !form.course.trim()) {
+      setErrors((prev) => ({ ...prev, course: true }));
+      ok = false;
+    }
     if (!form.budget) {
       setErrors((prev) => ({ ...prev, budget: true }));
       ok = false;
@@ -134,6 +141,7 @@ export default function StudentAssessmentPage() {
     formData.append("masters-grade", form.mastersGrade);
     formData.append("masters-year", form.mastersYear);
     formData.append("program", form.program);
+    formData.append("course", form.course);
     formData.append("budget", form.budget);
 
     try {
@@ -709,6 +717,38 @@ export default function StudentAssessmentPage() {
                 {errors.program && <div className="err-msg">Please select a program</div>}
               </div>
 
+              <div className={`field ${errors.course ? "has-error" : ""}`}>
+                <label htmlFor="course">
+                  Desired course / subject <span className="req">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="course"
+                  value={form.course}
+                  onChange={handleInputChange}
+                  placeholder="e.g. Diploma in Business Administration, Bachelor in Information Technology"
+                  list="course-suggestions"
+                  autoComplete="off"
+                />
+                <datalist id="course-suggestions">
+                  <option value="Diploma in Business Administration" />
+                  <option value="Bachelor in Information Technology" />
+                  <option value="Bachelor of Computer Science" />
+                  <option value="Bachelor of Business Administration" />
+                  <option value="Master of Business Administration (MBA)" />
+                  <option value="Master of Information Technology" />
+                  <option value="Diploma in Information Technology" />
+                  <option value="Bachelor of Software Engineering" />
+                  <option value="Bachelor of Cyber Security" />
+                  <option value="Bachelor of Mechanical Engineering" />
+                  <option value="Bachelor of Electrical & Electronic Engineering" />
+                  <option value="Master of Computer Science" />
+                  <option value="PhD in Computer Science" />
+                  <option value="PhD in Business Administration" />
+                </datalist>
+                {errors.course && <div className="err-msg">Please select or type your desired course</div>}
+              </div>
+
               <div className={`field ${errors.budget ? "has-error" : ""}`}>
                 <label>
                   Annual tuition fee budget <span className="req">*</span>
@@ -781,6 +821,10 @@ export default function StudentAssessmentPage() {
                 <div className="summary-row">
                   <span className="sum-label">Program</span>
                   <span className="sum-val">{form.program}</span>
+                </div>
+                <div className="summary-row">
+                  <span className="sum-label">Course / Subject</span>
+                  <span className="sum-val">{form.course}</span>
                 </div>
                 <div className="summary-row">
                   <span className="sum-label">Budget</span>
