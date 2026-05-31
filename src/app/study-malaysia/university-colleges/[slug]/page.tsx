@@ -266,7 +266,7 @@ export default function UniversityCollegeDetailPage() {
                                 Let NextPath Global guide you through the admission process for {institution.shortName}.
                             </p>
                             <Link
-                                href="/contact"
+                                href="/student-assessment"
                                 className="block bg-white text-primary text-center font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors"
                             >
                                 Get Free Consultation

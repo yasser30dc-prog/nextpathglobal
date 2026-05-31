@@ -65,7 +65,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="/contact"
+                  href="/student-assessment"
                   className="bg-secondary hover:bg-secondary-hover text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-xl hover:shadow-secondary/30"
                 >
                   Get Free Consultation <ArrowRight size={20} />

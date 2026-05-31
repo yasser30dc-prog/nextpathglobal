@@ -527,7 +527,7 @@ export default function StudyMalaysiaSection() {
       <div className={styles.ctaBar}>
         <h3>Ready to Start Your Journey?</h3>
         <p>Our consultants will guide you from university selection to visa approval — every step of the way.</p>
-        <a href="/contact" className={styles.ctaBtn}>
+        <a href="/student-assessment" className={styles.ctaBtn}>
           Get Free Consultation
           <ArrowRight size={16} />
         </a>
