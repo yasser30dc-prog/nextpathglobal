@@ -183,82 +183,74 @@ export default function StudentAssessmentPage() {
           --radius-lg: 14px;
 
           font-family: 'DM Sans', sans-serif;
-          background-image: url('/assets/hero-background.webp');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
+          background: var(--bg);
           color: var(--text);
           min-height: 100vh;
-          padding: 3rem 1rem 5rem;
-          margin-top: -80px; /* Offset the header padding */
-          padding-top: 140px;
-          position: relative;
-        }
-
-        .assessment-container::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(247, 249, 248, 0.94);
-          backdrop-filter: blur(2px);
-          z-index: 0;
+          padding-bottom: 5rem;
         }
 
         .wrap { 
           max-width: 560px; 
           margin: 0 auto; 
+          padding: 2.5rem 1rem 0;
           position: relative;
           z-index: 1;
         }
 
-        /* Header */
-        .header { text-align: center; margin-bottom: 2rem; }
-        .brand {
+        /* Hero Header */
+        .assessment-hero {
+          width: 100%;
+          min-height: 280px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background-image: url('/assets/home/campus_students_bg.webp');
+          background-size: cover;
+          background-position: center 25%;
+          margin-top: -80px; /* Offset the header padding */
+          padding-top: 100px;
+          padding-bottom: 2rem;
+          color: var(--text);
+          border-bottom: 1px solid var(--border);
+        }
+
+        .assessment-hero-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to bottom, rgba(247, 249, 248, 0.82), rgba(247, 249, 248, 0.9));
+          z-index: 1;
+        }
+
+        .assessment-hero-content {
+          position: relative;
+          z-index: 2;
+          max-width: 600px;
+          padding: 0 1rem;
+        }
+
+        .assessment-hero .brand {
           display: inline-flex; align-items: center; gap: 8px;
-          background: var(--green-light); border-radius: 99px;
+          background: var(--green-light); 
+          border: 1px solid var(--green-mid);
+          border-radius: 99px;
           padding: 5px 14px; margin-bottom: 1.25rem;
         }
-        .brand-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
-        .brand-name { font-size: 12px; font-weight: 600; color: var(--green-dark); letter-spacing: .06em; text-transform: uppercase; }
-        .header h1 { font-size: 28px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-        .header p { font-size: 14px; color: var(--text-muted); }
-
-        /* Progress */
-        .progress-wrap { margin-bottom: 1.5rem; }
-        .progress-meta { display: flex; justify-content: space-between; margin-bottom: 8px; }
-        .progress-meta .step-name { font-size: 13px; font-weight: 600; color: var(--green-dark); }
-        .progress-meta .step-count { font-size: 13px; color: var(--text-muted); }
-        .progress-track { height: 5px; background: var(--border); border-radius: 99px; overflow: hidden; }
-        .progress-fill { height: 100%; background: linear-gradient(90deg, var(--green), #5DCAA5); border-radius: 99px; transition: width .4s cubic-bezier(.4,0,.2,1); }
+        .assessment-hero .brand-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
+        .assessment-hero .brand-name { font-size: 12px; font-weight: 600; color: var(--green-dark); letter-spacing: .06em; text-transform: uppercase; }
+        
+        .assessment-hero h1 { font-size: 32px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+        .assessment-hero p { font-size: 14px; color: var(--text-muted); font-weight: 500; }
 
         /* Card */
         .card {
           background: var(--card);
           border: 1px solid var(--border);
           border-radius: var(--radius-lg);
+          padding: 2.25rem 2rem;
           box-shadow: 0 2px 12px rgba(0,0,0,.04);
-          overflow: hidden;
           position: relative;
-        }
-
-        .card-cover {
-          width: 100%;
-          height: 180px;
-          overflow: hidden;
-          position: relative;
-          border-bottom: 1px solid var(--border);
-        }
-
-        .card-cover img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center 30%;
-        }
-
-        .card-body {
-          padding: 2rem;
         }
 
         /* Fields */
@@ -422,8 +414,10 @@ export default function StudentAssessmentPage() {
         }
       `}} />
 
-      <div className="wrap">
-        <div className="header">
+      {/* 1. Full-width Hero Header Banner */}
+      <div className="assessment-hero">
+        <div className="assessment-hero-overlay"></div>
+        <div className="assessment-hero-content">
           <div className="brand">
             <div className="brand-dot"></div>
             <span className="brand-name">NextPath Global</span>
@@ -436,7 +430,9 @@ export default function StudentAssessmentPage() {
             }
           </p>
         </div>
+      </div>
 
+      <div className="wrap">
         {currentStep <= 3 && (
           <div className="progress-wrap">
             <div className="progress-meta">
@@ -453,11 +449,7 @@ export default function StudentAssessmentPage() {
         )}
 
         <div className="card">
-          <div className="card-cover">
-            <img src="/assets/cover-education-residency.png" alt="Student Assessment Form Cover" />
-          </div>
-          <div className="card-body">
-            {errorMsg && <div className="err-container">{errorMsg}</div>}
+          {errorMsg && <div className="err-container">{errorMsg}</div>}
 
           {/* Step 1: Personal Details */}
           {currentStep === 1 && (
@@ -797,7 +789,6 @@ export default function StudentAssessmentPage() {
               </div>
             </div>
           )}
-          </div> {/* card-body */}
         </div> {/* card */}
       </div>
     </div>
