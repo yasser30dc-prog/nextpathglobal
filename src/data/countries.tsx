@@ -1586,4 +1586,43 @@ export const countries: CountryData[] = [
             { step: 4, title: "Get Your Visa", description: "Receive your Sweden visa in 10-15 working days" },
         ],
     },
+    {
+        slug: "south-korea",
+        name: "South Korea",
+        tagline: "Land of the Morning Calm",
+        description: "Experience the perfect harmony of rich history, dynamic culture, and cutting-edge modernity. Discover South Korea's ancient palaces, vibrant K-culture, futuristic streetscapes, and serene natural beauties.",
+        coverImage: "/assets/countries/south-korea.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living or travelling in Malaysia" },
+        ],
+        requirements: [
+            { icon: <FileText size={20} />, document: "Passport", requirement: "Minimum validity of 6 months from the date of travel" },
+            { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Must be valid for a minimum of 3 months" },
+            { icon: <Briefcase size={20} />, document: "Employment / Enrollment Confirmation Letter", requirement: "Issued by your employer, university, or college on official letterhead" },
+            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering the last 3 months, with a minimum closing balance of RM 7,000 or equivalent in any other currency" },
+            { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
+        ],
+        whyChoose: [
+            { icon: <Globe size={32} />, title: "K-Culture & Trends", description: "Immerse yourself in K-Pop, K-Dramas, world-renowned skincare, fashion, and technology" },
+            { icon: <Landmark size={32} />, title: "Ancient Palaces", description: "Step back in time at Gyeongbokgung Palace and wander historic Bukchon Hanok Village" },
+            { icon: <Sun size={32} />, title: "Scenic Nature", description: "Explore the volcanic wonders of Jeju Island and romantic foliage in Nami Island" },
+            { icon: <Building size={32} />, title: "Bustling Markets", description: "Savor authentic Korean street foods and shop at vibrant spots like Myeongdong" },
+        ],
+        destinations: [
+            { name: "Seoul", highlights: "Gyeongbokgung Palace, N Seoul Tower, Myeongdong, Bukchon Hanok Village", image: "/assets/destinations/seoul.webp" },
+            { name: "Busan", highlights: "Haeundae Beach, Gamcheon Culture Village, Jagalchi Fish Market", image: "/assets/destinations/busan.webp" },
+            { name: "Jeju Island", highlights: "Hallasan Mountain, Seongsan Ilchulbong Sunrise Peak, Waterfalls", image: "/assets/destinations/jeju.webp" },
+            { name: "Nami Island", highlights: "Scenic Tree-lined Pathways, Romantic Autumn Landscapes, Art & Culture", image: "/assets/destinations/nami.webp" },
+        ],
+        process: [
+            { step: 1, title: "Prepare Documents", description: "Gather passport, bank statement, letter and photograph" },
+            { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
+            { step: 3, title: "Processing", description: "We handle your South Korea visa application with the embassy" },
+            { step: 4, title: "Get Your Visa", description: "Receive your South Korea visa in 5-10 working days" },
+        ],
+    },
 ];
