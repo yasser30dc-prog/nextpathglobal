@@ -183,15 +183,34 @@ export default function StudentAssessmentPage() {
           --radius-lg: 14px;
 
           font-family: 'DM Sans', sans-serif;
-          background: var(--bg);
+          background-image: url('/assets/hero-background.webp');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
           color: var(--text);
           min-height: 100vh;
           padding: 3rem 1rem 5rem;
           margin-top: -80px; /* Offset the header padding */
-          padding-top: 120px;
+          padding-top: 140px;
+          position: relative;
         }
 
-        .wrap { max-width: 560px; margin: 0 auto; }
+        .assessment-container::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(247, 249, 248, 0.94);
+          backdrop-filter: blur(2px);
+          z-index: 0;
+        }
+
+        .wrap { 
+          max-width: 560px; 
+          margin: 0 auto; 
+          position: relative;
+          z-index: 1;
+        }
 
         /* Header */
         .header { text-align: center; margin-bottom: 2rem; }
@@ -218,8 +237,28 @@ export default function StudentAssessmentPage() {
           background: var(--card);
           border: 1px solid var(--border);
           border-radius: var(--radius-lg);
-          padding: 2rem;
           box-shadow: 0 2px 12px rgba(0,0,0,.04);
+          overflow: hidden;
+          position: relative;
+        }
+
+        .card-cover {
+          width: 100%;
+          height: 180px;
+          overflow: hidden;
+          position: relative;
+          border-bottom: 1px solid var(--border);
+        }
+
+        .card-cover img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 30%;
+        }
+
+        .card-body {
+          padding: 2rem;
         }
 
         /* Fields */
@@ -414,7 +453,11 @@ export default function StudentAssessmentPage() {
         )}
 
         <div className="card">
-          {errorMsg && <div className="err-container">{errorMsg}</div>}
+          <div className="card-cover">
+            <img src="/assets/cover-education-residency.png" alt="Student Assessment Form Cover" />
+          </div>
+          <div className="card-body">
+            {errorMsg && <div className="err-container">{errorMsg}</div>}
 
           {/* Step 1: Personal Details */}
           {currentStep === 1 && (
@@ -754,7 +797,8 @@ export default function StudentAssessmentPage() {
               </div>
             </div>
           )}
-        </div>
+          </div> {/* card-body */}
+        </div> {/* card */}
       </div>
     </div>
   );
