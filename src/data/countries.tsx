@@ -1597,7 +1597,7 @@ export const countries: CountryData[] = [
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
-            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living or travelling in Malaysia" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long term visa/Pass" },
         ],
         requirements: [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Minimum validity of 6 months from the date of travel" },
