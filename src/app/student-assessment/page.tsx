@@ -25,6 +25,7 @@ export default function StudentAssessmentPage() {
     program: "",
     course: "",
     budget: "",
+    country: "",
   });
 
   // Validation state
@@ -37,6 +38,7 @@ export default function StudentAssessmentPage() {
     program: false,
     budget: false,
     course: false,
+    country: false,
   });
 
   const stepNames = ["Personal details", "Academic results", "Program & budget"];
@@ -107,10 +109,19 @@ export default function StudentAssessmentPage() {
     setErrors((prev) => ({ ...prev, budget: false }));
   };
 
+  const handleCountrySelect = (country: string) => {
+    setForm((prev) => ({ ...prev, country }));
+    setErrors((prev) => ({ ...prev, country: false }));
+  };
+
   const handleSubmit = async () => {
     let ok = true;
     if (!form.program) {
       setErrors((prev) => ({ ...prev, program: true }));
+      ok = false;
+    }
+    if (!form.country) {
+      setErrors((prev) => ({ ...prev, country: true }));
       ok = false;
     }
     if (!form.course || !form.course.trim()) {
@@ -143,6 +154,7 @@ export default function StudentAssessmentPage() {
     formData.append("program", form.program);
     formData.append("course", form.course);
     formData.append("budget", form.budget);
+    formData.append("country", form.country);
 
     try {
       const res = await submitAssessmentForm(formData);
@@ -343,6 +355,22 @@ export default function StudentAssessmentPage() {
         .prog-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
         .prog-span2 { grid-column: span 2; }
 
+        /* Country cards */
+        .country-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .country-card {
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          padding: 14px 10px; border: 1px solid var(--border);
+          border-radius: var(--radius); cursor: pointer;
+          transition: all .15s; user-select: none;
+          text-align: center;
+        }
+        .country-card:hover { border-color: var(--green-mid); background: #FAFFFE; }
+        .country-card.selected { border-color: var(--green); background: var(--green-light); }
+        .country-flag {
+          font-size: 24px; margin-bottom: 6px;
+        }
+        .country-name { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.2; }
+
         /* Budget cards */
         .budget-stack { display: flex; flex-direction: column; gap: 8px; }
         .budget-card {
@@ -419,6 +447,7 @@ export default function StudentAssessmentPage() {
           .prog-span2 { grid-column: span 1; }
           .field-row { grid-template-columns: 1fr; }
           .wa-code { width: 115px; }
+          .country-grid { grid-template-columns: repeat(2, 1fr); }
         }
       `}} />
 
@@ -717,6 +746,37 @@ export default function StudentAssessmentPage() {
                 {errors.program && <div className="err-msg">Please select a program</div>}
               </div>
 
+              <div className={`field ${errors.country ? "has-error" : ""}`}>
+                <label>
+                  Preferred destination country <span className="req">*</span>
+                </label>
+                <div className="country-grid">
+                  {[
+                    { val: "Malaysia", flag: "🇲🇾", name: "Malaysia" },
+                    { val: "United Kingdom", flag: "🇬🇧", name: "UK" },
+                    { val: "Australia", flag: "🇦🇺", name: "Australia" },
+                    { val: "Germany", flag: "🇩🇪", name: "Germany" },
+                    { val: "Finland", flag: "🇫🇮", name: "Finland" },
+                    { val: "China", flag: "🇨🇳", name: "China" },
+                    { val: "USA", flag: "🇺🇸", name: "USA" },
+                    { val: "Canada", flag: "🇨🇦", name: "Canada" },
+                    { val: "Other", flag: "🌍", name: "Other / Any" },
+                  ].map((c) => (
+                    <div
+                      key={c.val}
+                      className={`country-card ${
+                        form.country === c.val ? "selected" : ""
+                      }`}
+                      onClick={() => handleCountrySelect(c.val)}
+                    >
+                      <div className="country-flag">{c.flag}</div>
+                      <div className="country-name">{c.name}</div>
+                    </div>
+                  ))}
+                </div>
+                {errors.country && <div className="err-msg">Please select a preferred country</div>}
+              </div>
+
               <div className={`field ${errors.course ? "has-error" : ""}`}>
                 <label htmlFor="course">
                   Desired course / subject <span className="req">*</span>
@@ -821,6 +881,10 @@ export default function StudentAssessmentPage() {
                 <div className="summary-row">
                   <span className="sum-label">Program</span>
                   <span className="sum-val">{form.program}</span>
+                </div>
+                <div className="summary-row">
+                  <span className="sum-label">Preferred Country</span>
+                  <span className="sum-val">{form.country}</span>
                 </div>
                 <div className="summary-row">
                   <span className="sum-label">Course / Subject</span>

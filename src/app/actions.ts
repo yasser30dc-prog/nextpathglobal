@@ -307,12 +307,13 @@ export async function submitAssessmentForm(formData: FormData) {
     const mastersYear = formData.get("masters-year") as string;
 
     const program = formData.get("program") as string;
+    const country = formData.get("country") as string;
     const course = formData.get("course") as string;
     const budget = formData.get("budget") as string;
 
-    console.log("Form data extracted:", { name, email, waCode, waNum, sscGrade, sscYear, hscGrade, hscYear, program, course, budget });
+    console.log("Form data extracted:", { name, email, waCode, waNum, sscGrade, sscYear, hscGrade, hscYear, program, country, course, budget });
 
-    if (!name || !email || !waCode || !waNum || !sscGrade || !sscYear || !hscGrade || !hscYear || !program || !course || !budget) {
+    if (!name || !email || !waCode || !waNum || !sscGrade || !sscYear || !hscGrade || !hscYear || !program || !country || !course || !budget) {
         console.log("Validation failed - missing fields");
         return { success: false, error: "Missing required fields" };
     }
@@ -342,6 +343,7 @@ export async function submitAssessmentForm(formData: FormData) {
                 
                 <h3>Program & Budget Preferences</h3>
                 <p><strong>Preferred Program:</strong> ${program}</p>
+                <p><strong>Preferred Destination Country:</strong> ${country}</p>
                 <p><strong>Desired Course:</strong> ${course}</p>
                 <p><strong>Annual Tuition Budget:</strong> ${budgetLabel}</p>
             `,
@@ -366,6 +368,7 @@ export async function submitAssessmentForm(formData: FormData) {
                 
                 <h3>Your Assessment Summary</h3>
                 <p><strong>Preferred Program:</strong> ${program}</p>
+                <p><strong>Preferred Destination Country:</strong> ${country}</p>
                 <p><strong>Desired Course:</strong> ${course}</p>
                 <p><strong>Annual Tuition Budget:</strong> ${budgetLabel}</p>
                 <p><strong>WhatsApp Number:</strong> ${waNumber}</p>
