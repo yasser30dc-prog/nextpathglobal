@@ -57,12 +57,20 @@ export default function StudyChinaPage() {
                         <p className="text-xl text-white/90 max-w-2xl mx-auto drop-shadow-md mb-10">
                             Immerse yourself in world-leading innovation and ancient heritage at our distinguished partnered universities across China.
                         </p>
-                        <Link
-                            href="/contact"
-                            className="bg-secondary text-white hover:bg-gray-900 font-bold py-4 px-10 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
-                        >
-                            <GraduationCap size={24} /> Get Admission Help
-                        </Link>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <Link
+                                href="/student-assessment"
+                                className="bg-secondary text-white hover:bg-gray-900 font-bold py-4 px-10 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
+                            >
+                                <GraduationCap size={24} /> Start Free Assessment
+                            </Link>
+                            <Link
+                                href="/contact"
+                                className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold py-4 px-10 rounded-full text-lg transition-all inline-flex items-center gap-3"
+                            >
+                                Get Admission Help
+                            </Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -308,6 +316,37 @@ export default function StudyChinaPage() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            {/* Bottom CTA Section */}
+            <section className="bg-primary py-20 px-6 text-center text-white">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7 }}
+                >
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                        Ready to Study in China?
+                    </h2>
+                    <p className="text-white/70 max-w-xl mx-auto mb-8 text-lg">
+                        Get a free, personalized assessment of your academic credentials and discover the best program options for you!
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <Link
+                            href="/student-assessment"
+                            className="bg-secondary hover:bg-secondary-hover text-white font-bold py-4 px-12 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
+                        >
+                            <GraduationCap size={22} /> Start Free Assessment
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="bg-white/10 border border-white/30 backdrop-blur-sm hover:bg-white/20 text-white font-semibold py-4 px-12 rounded-full text-lg transition-all inline-flex items-center gap-3"
+                        >
+                            Contact Advisors
+                        </Link>
+                    </div>
+                </motion.div>
+            </section>
         </div>
     );
 }

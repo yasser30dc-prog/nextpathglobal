@@ -20,6 +20,7 @@ const navLinks: NavLink[] = [
         name: "Study Abroad",
         href: "/services/study-abroad",
         subMenu: [
+            { name: "Student Assessment", href: "/student-assessment" },
             { name: "Malaysia", href: "/services/study-abroad/malaysia" },
             { name: "UK", href: "/services/study-abroad/uk" },
             { name: "Finland", href: "/services/study-abroad/finland" },

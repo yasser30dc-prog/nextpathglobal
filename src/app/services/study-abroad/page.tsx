@@ -26,10 +26,16 @@ const StudyAbroadPage = () => {
                         <p className="text-xl md:text-2xl font-light tracking-wide text-gray-200 max-w-3xl mx-auto">
                             Your gateway to world-class education! We specialize in helping international students pursue their academic dreams, with a special focus on studying in Malaysia – Asia’s rising education hub.
                         </p>
-                        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <Link
+                                href="/student-assessment"
+                                className="bg-white text-primary font-bold py-3.5 px-8 rounded-full hover:bg-gray-100 transition-all shadow-lg inline-flex items-center gap-2"
+                            >
+                                Start Free Assessment <ArrowRight size={18} />
+                            </Link>
                             <Link
                                 href="/contact"
-                                className="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all shadow-lg"
+                                className="bg-transparent border border-white/40 text-white font-semibold py-3.5 px-8 rounded-full hover:bg-white/10 transition-all"
                             >
                                 Book Free Consultation
                             </Link>
@@ -178,19 +184,19 @@ const StudyAbroadPage = () => {
                             <span className="hidden sm:inline text-gray-500">•</span>
                             <span className="bg-white/10 px-4 py-2 rounded-full text-sm">98% visa success rate</span>
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <Link
+                                href="/student-assessment"
+                                className="bg-white text-secondary hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-all shadow-lg"
+                            >
+                                Start Free Assessment
+                            </Link>
                             <Link
                                 href="https://wa.me/601116695249"
                                 target="_blank"
                                 className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2"
                             >
                                 WhatsApp Us Now
-                            </Link>
-                            <Link
-                                href="/contact"
-                                className="bg-white text-secondary hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-all shadow-lg"
-                            >
-                                Book Free Consultation
                             </Link>
                         </div>
                     </div>

@@ -282,4 +282,115 @@ export async function submitAppointmentForm(formData: FormData) {
     }
 }
 
+const budgetLabels: Record<string, string> = {
+    low: "BDT 5–7 lac / year (Entry-level programs)",
+    mid: "BDT 7–10 lac / year (Standard programs)",
+    high: "BDT 10–15 lac / year (Premium programs)",
+};
+
+export async function submitAssessmentForm(formData: FormData) {
+    console.log("=== ASSESSMENT FORM SERVER ACTION CALLED ===");
+    console.log("FormData received");
+
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const waCode = formData.get("wa-code") as string;
+    const waNum = formData.get("wa-num") as string;
+    
+    const sscGrade = formData.get("ssc-grade") as string;
+    const sscYear = formData.get("ssc-year") as string;
+    const hscGrade = formData.get("hsc-grade") as string;
+    const hscYear = formData.get("hsc-year") as string;
+    const bachGrade = formData.get("bach-grade") as string;
+    const bachYear = formData.get("bach-year") as string;
+
+    const program = formData.get("program") as string;
+    const budget = formData.get("budget") as string;
+
+    console.log("Form data extracted:", { name, email, waCode, waNum, sscGrade, sscYear, hscGrade, hscYear, program, budget });
+
+    if (!name || !email || !waCode || !waNum || !sscGrade || !sscYear || !hscGrade || !hscYear || !program || !budget) {
+        console.log("Validation failed - missing fields");
+        return { success: false, error: "Missing required fields" };
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const budgetLabel = budgetLabels[budget] || budget;
+    const waNumber = `${waCode} ${waNum}`;
+
+    try {
+        // 1. Send email to Admin
+        const adminEmailResult = await resend.emails.send({
+            from: "Next Path Global <noreply@nextpathglobal.my>",
+            to: "nextpathglobal058@gmail.com",
+            subject: `New Student Assessment Submission from ${name}`,
+            html: `
+                <h2>New Student Assessment Submission</h2>
+                <h3>Personal Details</h3>
+                <p><strong>Full Name:</strong> ${name}</p>
+                <p><strong>Email Address:</strong> ${email}</p>
+                <p><strong>WhatsApp Number:</strong> ${waNumber}</p>
+                
+                <h3>Academic Background</h3>
+                <p><strong>SSC Result:</strong> ${sscGrade} (Passing Year: ${sscYear})</p>
+                <p><strong>HSC Result:</strong> ${hscGrade} (Passing Year: ${hscYear})</p>
+                <p><strong>Bachelor Result:</strong> ${bachGrade ? `${bachGrade} (Passing Year: ${bachYear})` : "Not applicable"}</p>
+                
+                <h3>Program & Budget Preferences</h3>
+                <p><strong>Preferred Program:</strong> ${program}</p>
+                <p><strong>Annual Tuition Budget:</strong> ${budgetLabel}</p>
+            `,
+        });
+
+        if (adminEmailResult.error) {
+            console.error("Admin email error:", adminEmailResult.error);
+            return {
+                success: false,
+                error: "Failed to send assessment details. Please try again or contact us directly."
+            };
+        }
+
+        // 2. Send confirmation email to Client
+        const clientEmailResult = await resend.emails.send({
+            from: "Next Path Global <noreply@nextpathglobal.my>",
+            to: email,
+            subject: "We received your assessment details! - Next Path Global",
+            html: `
+                <h2>Hi ${name},</h2>
+                <p>Thank you for submitting your student assessment details to Next Path Global. We have successfully received your information.</p>
+                
+                <h3>Your Assessment Summary</h3>
+                <p><strong>Preferred Program:</strong> ${program}</p>
+                <p><strong>Annual Tuition Budget:</strong> ${budgetLabel}</p>
+                <p><strong>WhatsApp Number:</strong> ${waNumber}</p>
+                
+                <p>Our academic advisors will evaluate your results and contact you on WhatsApp within 24 hours to discuss the best university and pathway options for you.</p>
+                
+                <br />
+                <p>Best regards,</p>
+                <p><strong>Next Path Global Team</strong></p>
+                <p>NextPath Global Sdn Bhd<br />Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+            `,
+        });
+
+        if (clientEmailResult.error) {
+            console.error("Client email error:", clientEmailResult.error);
+            return {
+                success: true,
+                warning: "Your details were received, but we couldn't send a confirmation email. We'll contact you soon."
+            };
+        }
+
+        return { success: true };
+    } catch (error) {
+        console.error("=== ASSESSMENT FORM RESEND API ERROR ===");
+        console.error(error);
+        return {
+            success: false,
+            error: error instanceof Error ? error.message : "An unexpected error occurred."
+        };
+    }
+}
+
+
 

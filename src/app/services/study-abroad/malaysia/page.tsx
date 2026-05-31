@@ -24,12 +24,20 @@ export default function StudyMalaysiaPage() {
                         <p className="text-xl text-white/90 max-w-2xl mx-auto drop-shadow-md mb-10">
                             Discover world-class education at our partnered universities and colleges across Malaysia.
                         </p>
-                        <Link
-                            href="/contact"
-                            className="bg-secondary text-white hover:bg-gray-900 font-bold py-4 px-10 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
-                        >
-                            <GraduationCap size={24} /> Get Admission Help
-                        </Link>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <Link
+                                href="/student-assessment"
+                                className="bg-secondary text-white hover:bg-gray-900 font-bold py-4 px-10 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
+                            >
+                                <GraduationCap size={24} /> Start Free Assessment
+                            </Link>
+                            <Link
+                                href="/contact"
+                                className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold py-4 px-10 rounded-full text-lg transition-all inline-flex items-center gap-3"
+                            >
+                                Get Admission Help
+                            </Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -111,7 +119,7 @@ export default function StudyMalaysiaPage() {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8 text-sm pt-4 border-t border-gray-100">
                                         <div className="flex items-start gap-3">
-                                            <div className="bg-blue-50 p-2 rounded-lg text-blue-600 mt-0.5">
+                                            <div className="bg-blue-50 p-2 rounded-lg text-blue-600 mt-0.5 shrink-0">
                                                 <Clock className="w-5 h-5" />
                                             </div>
                                             <div>
@@ -122,7 +130,7 @@ export default function StudyMalaysiaPage() {
 
                                         <div className="flex flex-col gap-6">
                                             <div className="flex items-start gap-3">
-                                                <div className="bg-orange-50 p-2 rounded-lg text-orange-600 mt-0.5">
+                                                <div className="bg-orange-50 p-2 rounded-lg text-orange-600 mt-0.5 shrink-0">
                                                     <Calendar className="w-5 h-5" />
                                                 </div>
                                                 <div>
@@ -132,7 +140,7 @@ export default function StudyMalaysiaPage() {
                                             </div>
 
                                             <div className="flex items-start gap-3">
-                                                <div className="bg-purple-50 p-2 rounded-lg text-purple-600 mt-0.5">
+                                                <div className="bg-purple-50 p-2 rounded-lg text-purple-600 mt-0.5 shrink-0">
                                                     <BookOpen className="w-5 h-5" />
                                                 </div>
                                                 <div>
@@ -147,6 +155,37 @@ export default function StudyMalaysiaPage() {
                         ))}
                     </div>
                 </div>
+            </section>
+
+            {/* Bottom CTA Section */}
+            <section className="bg-primary py-20 px-6 text-center text-white">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7 }}
+                >
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                        Ready to Study in Malaysia?
+                    </h2>
+                    <p className="text-white/70 max-w-xl mx-auto mb-8 text-lg">
+                        Get a free, personalized assessment of your academic credentials and discover the best program options for you!
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <Link
+                            href="/student-assessment"
+                            className="bg-secondary hover:bg-secondary-hover text-white font-bold py-4 px-12 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
+                        >
+                            <GraduationCap size={22} /> Start Free Assessment
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="bg-white/10 border border-white/30 backdrop-blur-sm hover:bg-white/20 text-white font-semibold py-4 px-12 rounded-full text-lg transition-all inline-flex items-center gap-3"
+                        >
+                            Contact Advisors
+                        </Link>
+                    </div>
+                </motion.div>
             </section>
         </div>
     );

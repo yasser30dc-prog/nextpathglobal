@@ -39,19 +39,19 @@ export default function StudyFinlandPage() {
                             Gain a world-class degree in the world's happiest country. Harness high-tech design, 
                             sustainable innovations, and exceptional quality of life with tuition fees starting as low as €7,000.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
-                                href="/contact"
+                                href="/student-assessment"
                                 className="bg-[#c9a84c] hover:bg-[#b8943d] text-white font-bold py-4 px-10 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
                             >
-                                <GraduationCap size={22} /> Get Admission Help
+                                <GraduationCap size={22} /> Start Free Assessment
                             </Link>
-                            <a
-                                href="#universities"
+                            <Link
+                                href="/contact"
                                 className="bg-white/10 border border-white/30 backdrop-blur-sm hover:bg-white/20 text-white font-semibold py-4 px-10 rounded-full text-lg transition-all inline-flex items-center gap-3"
                             >
-                                <Building2 size={22} /> View Universities
-                            </a>
+                                Get Admission Help
+                            </Link>
                         </div>
                     </motion.div>
                 </div>
@@ -462,14 +462,22 @@ export default function StudyFinlandPage() {
                         Ready to Study in <span className="text-[#c9a84c]">Finland?</span>
                     </h2>
                     <p className="text-white/70 max-w-xl mx-auto mb-8 text-lg">
-                        Our expert consultants guide you from university selection to visa approval — every step of the way.
+                        Get a free, personalized assessment of your academic credentials and discover the best program options for you!
                     </p>
-                    <Link
-                        href="/contact"
-                        className="bg-[#c9a84c] hover:bg-[#b8943d] text-white font-bold py-4 px-12 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
-                    >
-                        <GraduationCap size={22} /> Start Your Journey
-                    </Link>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <Link
+                            href="/student-assessment"
+                            className="bg-[#c9a84c] hover:bg-[#b8943d] text-white font-bold py-4 px-12 rounded-full text-lg transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3"
+                        >
+                            <GraduationCap size={22} /> Start Free Assessment
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="bg-white/10 border border-white/30 backdrop-blur-sm hover:bg-white/20 text-white font-semibold py-4 px-12 rounded-full text-lg transition-all inline-flex items-center gap-3"
+                        >
+                            Contact Advisors
+                        </Link>
+                    </div>
                 </motion.div>
             </section>
         </div>
