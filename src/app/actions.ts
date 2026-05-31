@@ -303,6 +303,8 @@ export async function submitAssessmentForm(formData: FormData) {
     const hscYear = formData.get("hsc-year") as string;
     const bachGrade = formData.get("bach-grade") as string;
     const bachYear = formData.get("bach-year") as string;
+    const mastersGrade = formData.get("masters-grade") as string;
+    const mastersYear = formData.get("masters-year") as string;
 
     const program = formData.get("program") as string;
     const budget = formData.get("budget") as string;
@@ -335,6 +337,7 @@ export async function submitAssessmentForm(formData: FormData) {
                 <p><strong>SSC Result:</strong> ${sscGrade} (Passing Year: ${sscYear})</p>
                 <p><strong>HSC Result:</strong> ${hscGrade} (Passing Year: ${hscYear})</p>
                 <p><strong>Bachelor Result:</strong> ${bachGrade ? `${bachGrade} (Passing Year: ${bachYear})` : "Not applicable"}</p>
+                <p><strong>Masters Result:</strong> ${mastersGrade ? `${mastersGrade} (Passing Year: ${mastersYear})` : "Not applicable"}</p>
                 
                 <h3>Program & Budget Preferences</h3>
                 <p><strong>Preferred Program:</strong> ${program}</p>

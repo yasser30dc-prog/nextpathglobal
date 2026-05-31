@@ -20,6 +20,8 @@ export default function StudentAssessmentPage() {
     hscYear: "",
     bachGrade: "",
     bachYear: "",
+    mastersGrade: "",
+    mastersYear: "",
     program: "",
     budget: "",
   });
@@ -48,6 +50,7 @@ export default function StudentAssessmentPage() {
     if (id === "ssc-grade" || id === "sscGrade") setForm((prev) => ({ ...prev, sscGrade: value }));
     if (id === "hsc-grade" || id === "hscGrade") setForm((prev) => ({ ...prev, hscGrade: value }));
     if (id === "bach-grade" || id === "bachGrade") setForm((prev) => ({ ...prev, bachGrade: value }));
+    if (id === "masters-grade" || id === "mastersGrade") setForm((prev) => ({ ...prev, mastersGrade: value }));
   };
 
   const handleSelectChange = (id: string, value: string) => {
@@ -128,6 +131,8 @@ export default function StudentAssessmentPage() {
     formData.append("hsc-year", form.hscYear);
     formData.append("bach-grade", form.bachGrade);
     formData.append("bach-year", form.bachYear);
+    formData.append("masters-grade", form.mastersGrade);
+    formData.append("masters-year", form.mastersYear);
     formData.append("program", form.program);
     formData.append("budget", form.budget);
 
@@ -582,6 +587,35 @@ export default function StudentAssessmentPage() {
                     <option value="">Passing year</option>
                     {years.map((y) => (
                       <option key={`bach-${y}`} value={y}>
+                        {y}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="hint">Leave blank if not applicable</div>
+              </div>
+
+              <div className="field">
+                <label>
+                  Masters result &amp; passing year <span className="opt-tag">optional</span>
+                </label>
+                <div className="field-row">
+                  <input
+                    type="text"
+                    id="mastersGrade"
+                    value={form.mastersGrade}
+                    onChange={handleInputChange}
+                    placeholder="e.g. CGPA 3.50 / Merit"
+                  />
+                  <select
+                    id="mastersYear"
+                    value={form.mastersYear}
+                    onChange={(e) => handleSelectChange("mastersYear", e.target.value)}
+                    aria-label="Masters passing year"
+                  >
+                    <option value="">Passing year</option>
+                    {years.map((y) => (
+                      <option key={`masters-${y}`} value={y}>
                         {y}
                       </option>
                     ))}
