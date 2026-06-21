@@ -254,10 +254,11 @@ export default function AppointmentForm() {
                         <h3 className="text-xl font-bold text-gray-900 mb-4">Personal Details</h3>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-600 mb-2">
+                            <label htmlFor="fullName" className="block text-sm font-medium text-gray-600 mb-2">
                                 Full Name <span className="text-red-500">*</span>
                             </label>
                             <input
+                                id="fullName"
                                 type="text"
                                 value={formData.fullName}
                                 onChange={(e) => updateField("fullName", e.target.value)}
@@ -269,10 +270,11 @@ export default function AppointmentForm() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">
+                                <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-2">
                                     Email Address <span className="text-red-500">*</span>
                                 </label>
                                 <input
+                                    id="email"
                                     type="email"
                                     value={formData.email}
                                     onChange={(e) => updateField("email", e.target.value)}
@@ -282,10 +284,11 @@ export default function AppointmentForm() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">
+                                <label htmlFor="phone" className="block text-sm font-medium text-gray-600 mb-2">
                                     Phone Number <span className="text-red-500">*</span>
                                 </label>
                                 <input
+                                    id="phone"
                                     type="tel"
                                     value={formData.phone}
                                     onChange={(e) => updateField("phone", e.target.value)}
@@ -315,10 +318,11 @@ export default function AppointmentForm() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-600 mb-2">
+                            <label htmlFor="address" className="block text-sm font-medium text-gray-600 mb-2">
                                 Current Residential Address
                             </label>
                             <textarea
+                                id="address"
                                 value={formData.address}
                                 onChange={(e) => updateField("address", e.target.value)}
                                 rows={3}
@@ -386,10 +390,11 @@ export default function AppointmentForm() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">
+                                <label htmlFor="preferredDate" className="block text-sm font-medium text-gray-600 mb-2">
                                     Preferred Date <span className="text-red-500">*</span>
                                 </label>
                                 <input
+                                    id="preferredDate"
                                     type="date"
                                     value={formData.preferredDate}
                                     onChange={(e) => updateField("preferredDate", e.target.value)}

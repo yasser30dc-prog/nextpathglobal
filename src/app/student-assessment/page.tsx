@@ -521,7 +521,7 @@ export default function StudentAssessmentPage() {
               </div>
 
               <div className={`field ${errors.waNum ? "has-error" : ""}`}>
-                <label htmlFor="wa-num">
+                <label htmlFor="waNum">
                   WhatsApp number <span className="req">*</span>
                 </label>
                 <div className="wa-row">
@@ -580,7 +580,7 @@ export default function StudentAssessmentPage() {
           {currentStep === 2 && (
             <div className="step-content">
               <div className={`field ${errors.sscGrade ? "has-error" : ""}`}>
-                <label>
+                <label htmlFor="sscGrade">
                   SSC result &amp; passing year <span className="req">*</span>
                 </label>
                 <div className="field-row">
@@ -609,7 +609,7 @@ export default function StudentAssessmentPage() {
               </div>
 
               <div className="field">
-                <label>
+                <label htmlFor="hscGrade">
                   HSC result &amp; passing year <span className="opt-tag">optional</span>
                 </label>
                 <div className="field-row">
@@ -638,7 +638,7 @@ export default function StudentAssessmentPage() {
               </div>
 
               <div className="field">
-                <label>
+                <label htmlFor="bachGrade">
                   Bachelor result &amp; passing year <span className="opt-tag">optional</span>
                 </label>
                 <div className="field-row">
@@ -667,7 +667,7 @@ export default function StudentAssessmentPage() {
               </div>
 
               <div className="field">
-                <label>
+                <label htmlFor="mastersGrade">
                   Masters result &amp; passing year <span className="opt-tag">optional</span>
                 </label>
                 <div className="field-row">

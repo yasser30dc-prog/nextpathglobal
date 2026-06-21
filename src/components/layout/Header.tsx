@@ -86,6 +86,9 @@ export default function Header() {
                             {link.subMenu ? (
                                 <>
                                     <button
+                                        type="button"
+                                        aria-haspopup="true"
+                                        aria-expanded={activeDropdown === link.name}
                                         className="text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1"
                                     >
                                         {link.name}
@@ -130,6 +133,7 @@ export default function Header() {
                     ))}
                     {/* Search Button */}
                     <button
+                        type="button"
                         onClick={() => setIsSearchOpen(true)}
                         className="text-gray-700 hover:text-primary transition-colors p-2 hover:bg-gray-100 rounded-full"
                         aria-label="Search"
@@ -146,6 +150,8 @@ export default function Header() {
 
                 {/* Mobile Menu Button */}
                 <button
+                    type="button"
+                    aria-expanded={isMobileMenuOpen}
                     className="md:hidden text-gray-700"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Toggle mobile menu"
@@ -169,6 +175,8 @@ export default function Header() {
                                     {link.subMenu ? (
                                         <>
                                             <button
+                                                type="button"
+                                                aria-expanded={mobileExpandedMenu === link.name}
                                                 onClick={() => setMobileExpandedMenu(
                                                     mobileExpandedMenu === link.name ? null : link.name
                                                 )}
@@ -218,6 +226,7 @@ export default function Header() {
                             ))}
                             {/* Mobile Search Button */}
                             <button
+                                type="button"
                                 onClick={() => {
                                     setIsSearchOpen(true);
                                     setIsMobileMenuOpen(false);

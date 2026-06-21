@@ -30,17 +30,17 @@ export default function ContactForm() {
             <h3 className="text-2xl font-bold mb-6 text-gray-900">Send a Message</h3>
             <form action={handleSubmit} className="space-y-6">
                 <div>
-                    <label className="block text-sm font-medium text-gray-600 mb-2">Full Name</label>
-                    <input name="name" type="text" required className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="John Doe" />
+                    <label htmlFor="contact-name" className="block text-sm font-medium text-gray-600 mb-2">Full Name</label>
+                    <input id="contact-name" name="name" type="text" required className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="John Doe" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label className="block text-sm font-medium text-gray-600 mb-2">Email Address</label>
-                        <input name="email" type="email" required className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="john@example.com" />
+                        <label htmlFor="contact-email" className="block text-sm font-medium text-gray-600 mb-2">Email Address</label>
+                        <input id="contact-email" name="email" type="email" required className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="john@example.com" />
                     </div>
                     <div>
-                        <label className="block text-sm font-medium text-gray-600 mb-2">Phone Number</label>
-                        <input name="phone" type="tel" required className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="+60 12 345 6789" />
+                        <label htmlFor="contact-phone" className="block text-sm font-medium text-gray-600 mb-2">Phone Number</label>
+                        <input id="contact-phone" name="phone" type="tel" required className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="+60 12 345 6789" />
                     </div>
                 </div>
                 <div>
@@ -58,8 +58,8 @@ export default function ContactForm() {
                     </select>
                 </div>
                 <div>
-                    <label className="block text-sm font-medium text-gray-600 mb-2">Message</label>
-                    <textarea name="message" required rows={4} className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="How can we help you?"></textarea>
+                    <label htmlFor="contact-message" className="block text-sm font-medium text-gray-600 mb-2">Message</label>
+                    <textarea id="contact-message" name="message" required rows={4} className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="How can we help you?"></textarea>
                 </div>
 
                 {status.message && (

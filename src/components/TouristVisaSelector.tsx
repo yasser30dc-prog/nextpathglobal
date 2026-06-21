@@ -27,8 +27,9 @@ export default function TouristVisaSelector() {
         <div className="w-full">
           <div className="bg-gray-50 p-5 rounded-2xl border border-gray-100 space-y-4">
             <div className="space-y-2">
-              <label className="font-semibold text-gray-700 text-sm">Where are you going?</label>
+              <label htmlFor="touristDestinationSelect" className="font-semibold text-gray-700 text-sm">Where are you going?</label>
               <select
+                id="touristDestinationSelect"
                 value={touristDestination}
                 onChange={(e) => setTouristDestination(e.target.value)}
                 className="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary focus:border-secondary outline-none bg-white text-gray-800"

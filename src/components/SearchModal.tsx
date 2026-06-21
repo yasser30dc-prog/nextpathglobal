@@ -132,6 +132,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                     <input
                                         ref={inputRef}
                                         type="text"
+                                        aria-label="Search services, visas, and residency programs"
                                         placeholder="Search services, visas, programs..."
                                         value={searchQuery}
                                         onChange={(e) => setSearchQuery(e.target.value)}
@@ -139,7 +140,9 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                     />
                                     {searchQuery && (
                                         <button
+                                            type="button"
                                             onClick={() => setSearchQuery("")}
+                                            aria-label="Clear search query"
                                             className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
                                         >
                                             <X size={20} />

@@ -389,6 +389,7 @@ export default function StudyMalaysiaSection() {
             <input 
               className={styles.searchInput} 
               type="text" 
+              aria-label="Search university or study program"
               placeholder="Search university or program…" 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -397,6 +398,7 @@ export default function StudyMalaysiaSection() {
           <div className={styles.filterBtns}>
             {['all', 'public', 'private', 'college'].map(filter => (
               <button 
+                type="button"
                 key={filter}
                 className={`${styles.filterBtn} ${currentFilter === filter ? styles.filterBtnActive : ''}`}
                 onClick={() => setCurrentFilter(filter)}
@@ -500,7 +502,7 @@ export default function StudyMalaysiaSection() {
                         <span key={i} className={styles.intakeChip}>{intake}</span>
                       ))}
                     </div>
-                    <button className={styles.enquireBtn} onClick={() => handleEnquire(u.name)}>
+                    <button type="button" className={styles.enquireBtn} onClick={() => handleEnquire(u.name)}>
                       Enquire Now
                       <ArrowRight size={14} />
                     </button>

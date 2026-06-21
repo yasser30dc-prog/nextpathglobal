@@ -62,6 +62,7 @@ export default function InstitutionGrid({
                             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                             <input
                                 type="text"
+                                aria-label="Search institutions"
                                 placeholder="Search institutions..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -74,6 +75,7 @@ export default function InstitutionGrid({
                             <div className="flex flex-wrap gap-2 justify-center">
                                 {filters.map((filter) => (
                                     <button
+                                        type="button"
                                         key={filter.value}
                                         onClick={() => setActiveFilter(filter.value)}
                                         className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeFilter === filter.value
@@ -114,6 +116,7 @@ export default function InstitutionGrid({
                     <div className="text-center py-20">
                         <p className="text-gray-500 text-lg">No institutions found matching your criteria.</p>
                         <button
+                            type="button"
                             onClick={() => { setActiveFilter('all'); setSearchQuery(''); }}
                             className="mt-4 text-primary font-medium hover:underline"
                         >
