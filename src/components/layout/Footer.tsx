@@ -50,8 +50,6 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-bold mb-6 text-primary">Services</h3>
                         <ul className="space-y-3">
-                            <li><Link href="/services/mm2h" className="text-gray-600 hover:text-primary transition-colors">MM2H Programme</Link></li>
-                            <li><Link href="/services/pvip" className="text-gray-600 hover:text-primary transition-colors">PVIP Programme</Link></li>
                             <li><Link href="/services/tourist-visa" className="text-gray-600 hover:text-primary transition-colors">Tourist Visa</Link></li>
                             <li><Link href="/services/study-abroad" className="text-gray-600 hover:text-primary transition-colors">Study Abroad</Link></li>
                             <li><Link href="/services/employment-pass" className="text-gray-600 hover:text-primary transition-colors">Employment Pass</Link></li>

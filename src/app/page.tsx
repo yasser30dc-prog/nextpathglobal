@@ -143,26 +143,14 @@ export default function Home() {
           <div className="space-y-16">
             {[
               {
-                categoryName: "Global Education & Residency",
-                description: "Explore top academic institutions and premium golden residency programs.",
+                categoryName: "Global Education",
+                description: "Explore top academic institutions and premium study programs.",
                 services: [
                   {
                     title: "Student Consultancy",
                     description: "Comprehensive university admission and student visa support for destinations including the UK, Finland, Germany, Malaysia, and China.",
                     icon: <GraduationCap size={28} className="text-[#c9a84c]" />,
                     link: "/services/study-abroad"
-                  },
-                  {
-                    title: "MM2H (Malaysia My Second Home)",
-                    description: "Complete advisory and processing for Malaysia's standard 10-year renewable residency visa.",
-                    icon: <HomeIcon size={28} className="text-[#c9a84c]" />,
-                    link: "/services/mm2h"
-                  },
-                  {
-                    title: "PVIP (Premium Visa Program)",
-                    description: "Residency consultation for Malaysia's ultimate 20-year elite investor visa with business/work rights.",
-                    icon: <Crown size={28} className="text-[#c9a84c]" />,
-                    link: "/contact"
                   }
                 ]
               },

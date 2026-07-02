@@ -34,8 +34,6 @@ const countries = [
 ];
 
 const services = [
-    { value: "mm2h", label: "MM2H (Malaysia My 2nd Home)" },
-    { value: "pvip", label: "PVIP (Premium Visa Programs)" },
     { value: "professional-visa", label: "Professional Visa (Employment Pass)" },
     { value: "study-malaysia", label: "Study Malaysia" },
     { value: "europe-work-permit", label: "Europe Work Permit" },

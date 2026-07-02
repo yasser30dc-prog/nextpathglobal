@@ -12,7 +12,7 @@ import {
     Target,
     Eye,
     Home,
-    Crown,
+    ShieldCheck,
     MessageCircle,
     Mail
 } from "lucide-react";
@@ -196,9 +196,9 @@ export default function About() {
                             icon: <Plane size={40} />
                         },
                         {
-                            title: "MM2H & PVIP",
-                            desc: "Malaysia My Second Home & Premium Visa Programme - Live, retire, or invest in Malaysia with 10-20 year renewable visas.",
-                            icon: <Crown size={40} />
+                            title: "Employment Pass (Work Visas)",
+                            desc: "End-to-end work visa sponsorship and compliance for skilled corporate talents, executives, and business setups in Malaysia.",
+                            icon: <ShieldCheck size={40} />
                         }
                     ].map((service, i) => (
                         <motion.div

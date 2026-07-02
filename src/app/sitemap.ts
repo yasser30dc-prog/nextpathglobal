@@ -92,18 +92,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
-            url: `${baseUrl}/services/pvip`,
-            lastModified: new Date('2026-01-25'),
-            changeFrequency: 'monthly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/services/mm2h`,
-            lastModified: new Date('2026-01-25'),
-            changeFrequency: 'monthly',
-            priority: 0.9,
-        },
-        {
             url: `${baseUrl}/services/employment-pass`,
             lastModified: new Date('2026-03-14'),
             changeFrequency: 'monthly',
