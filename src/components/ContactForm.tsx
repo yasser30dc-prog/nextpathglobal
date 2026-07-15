@@ -46,6 +46,8 @@ export default function ContactForm() {
                 <div>
                     <label htmlFor="service" className="block text-sm font-medium text-gray-600 mb-2">Service Interest</label>
                     <select id="service" name="service" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors">
+                        <option value="MM2H (Malaysia My 2nd Home)">MM2H (Malaysia My 2nd Home)</option>
+                        <option value="PVIP (Premium Visa Programs)">PVIP (Premium Visa Programs)</option>
                         <option value="Professional Visa (Employment Pass)">Professional Visa (Employment Pass)</option>
                         <option value="Study Malaysia">Study Malaysia</option>
                         <option value="Europe Work Permit">Europe Work Permit</option>

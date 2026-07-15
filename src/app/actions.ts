@@ -123,6 +123,8 @@ export async function submitContactForm(formData: FormData) {
 }
 
 const serviceLabels: Record<string, string> = {
+    "mm2h": "MM2H (Malaysia My 2nd Home)",
+    "pvip": "PVIP (Premium Visa Programs)",
     "professional-visa": "Professional Visa (Employment Pass)",
     "study-malaysia": "Study Malaysia",
     "europe-work-permit": "Europe Work Permit",

@@ -26,8 +26,8 @@ interface ServiceCategory {
 
 const serviceCategories: ServiceCategory[] = [
     {
-        categoryName: "Global Education",
-        description: "Explore world-class academic institutions and student consultancy programs worldwide.",
+        categoryName: "Global Education & Residency",
+        description: "Explore world-class academic institutions and long-term golden residency programs worldwide.",
         coverImage: "/assets/cover-education-residency.png",
         services: [
             {
@@ -35,6 +35,18 @@ const serviceCategories: ServiceCategory[] = [
                 description: "Comprehensive university admission guidance and visa support for top destinations including the UK, Finland, Germany, Malaysia, and China. We handle your entire application process.",
                 icon: <GraduationCap size={32} className="text-[#c9a84c]" />,
                 link: "/services/study-abroad"
+            },
+            {
+                title: "MM2H (Malaysia My Second Home)",
+                description: "Complete advisory and application coordination for Malaysia's prestigious long-term residency program. Live, retire, or invest in Malaysia with our expert immigration guidance.",
+                icon: <Home size={32} className="text-[#c9a84c]" />,
+                link: "/services/mm2h"
+            },
+            {
+                title: "PVIP (Premium Visa Program)",
+                description: "Residency consultation for Malaysia's Premium Visa Program. Secure up to 20 years of elite residency for global investors, entrepreneurs, and high-net-worth individuals.",
+                icon: <Crown size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
             }
         ]
     },

@@ -72,6 +72,13 @@ const testimonials = [
         visa: "Customer Service",
     },
     {
+        name: "Chowdhury Mohammad Golam",
+        role: "Client",
+        quote: "Getting MM2H approval can feel overwhelming, but NextPath Global made it incredibly easy. Their team handled everything efficiently, kept communication clear throughout, and made sure every document was in perfect order before submission. No unnecessary back-and-forth, no delays — just a smooth, well-managed process from start to finish. Truly diligent professionals who know what they're doing. Highly recommended!",
+        rating: 5,
+        visa: "MM2H",
+    },
+    {
         name: "information of the world deal",
         role: "Client",
         quote: "very good service .sotti vaiya der service onek valo..amader visa korsi..tq..vai jan",

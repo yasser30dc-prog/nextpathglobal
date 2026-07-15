@@ -16,6 +16,13 @@ const searchData = [
         ]
     },
     {
+        category: "Residency Programs",
+        items: [
+            { name: "MM2H Programme", description: "Malaysia My Second Home - Long-term residency with 5-20 year visa options", href: "/services/mm2h", keywords: ["mm2h", "malaysia my second home", "residency", "retirement", "long term"] },
+            { name: "PVIP Programme", description: "Premium Visa Programme - 20-year residency for global investors", href: "/services/pvip", keywords: ["pvip", "premium", "investor", "investment", "20 year"] },
+        ]
+    },
+    {
         category: "Education",
         items: [
             { name: "Study Abroad", description: "Your gateway to world-class education in Malaysia", href: "/services/study-abroad", keywords: ["study", "education", "university", "college", "abroad", "international"] },
@@ -125,7 +132,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                     <input
                                         ref={inputRef}
                                         type="text"
-                                        aria-label="Search services, visas, and study programs"
+                                        aria-label="Search services, visas, and residency programs"
                                         placeholder="Search services, visas, programs..."
                                         value={searchQuery}
                                         onChange={(e) => setSearchQuery(e.target.value)}

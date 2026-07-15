@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   description: "Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals",
   keywords: [
-    "immigration Malaysia", "visa consulting",
-    "study abroad Malaysia", "work permit Malaysia", "tourist visa",
+    "MM2H", "Malaysia My Second Home", "immigration Malaysia", "visa consulting",
+    "PVIP", "study abroad Malaysia", "work permit Malaysia", "tourist visa",
     "student visa", "education consulting", "university Malaysia", "NextPath Global",
     "visa services Malaysia", "immigration consultant", "study in Malaysia"
   ],

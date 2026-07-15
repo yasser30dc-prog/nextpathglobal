@@ -665,6 +665,346 @@ If you still have energy, head to KL Tower, another iconic landmark. Its observa
 
 Kuala Lumpur may be a city of modern skyscrapers, but it's also a place full of culture, history, and flavors. Even in just one day, you can experience its highlights, snap iconic photos, and enjoy a taste of local life.
         `
+    },
+    {
+        id: "5",
+        title: "MM2H vs PVIP: Which Malaysian Residency Program Is Right for You?",
+        slug: "mm2h-vs-pvip-comparison",
+        category: "visa-immigration",
+        excerpt: "Malaysia has long been one of Asia's most attractive destinations for foreigners seeking long-term residency. Compare MM2H and PVIP programs to find which one suits your financial profile and long-term goals.",
+        author: "NextPath Global Team",
+        date: "2026-01-17",
+        readTime: "12 min read",
+        content: `
+Malaysia has long been one of Asia's most attractive destinations for foreigners seeking long-term residency, lifestyle stability, and business freedom. With its strong infrastructure, affordable living costs, and welcoming environment, many expatriates now look at structured residency programs rather than short-term visas.
+
+Among the available long-term residency pathways, **Malaysia My Second Home (MM2H)** and the **Premium Visa Programme (PVIP)** stand out as the two most popular options.
+
+Both programs allow foreigners to legally stay in Malaysia for an extended period—but they are designed for very different financial profiles and long-term goals.
+
+This guide compares MM2H and PVIP clearly, focusing on what matters most: **cost efficiency, fixed deposit requirements, business opportunities, and visa duration**.
+
+## 1. Cost Efficiency: Practical vs Premium Residency
+
+### MM2H – Cost-Efficient & Lifestyle-Focused
+
+The MM2H program is widely regarded as the more cost-efficient option, making it suitable for retirees, families, and long-term residents who want stability without locking in excessive capital.
+
+**Key advantages of MM2H:**
+- Lower overall financial commitment (depending on tier)
+- Suitable for middle to upper-middle income applicants
+- Malaysia's affordable living costs make MM2H ideal for long-term stay
+
+MM2H focuses on quality of life, residency stability, and financial flexibility rather than aggressive investment.
+
+### PVIP – Premium Residency for High-Net-Worth Individuals
+
+The Premium Visa Programme (PVIP) is a high-entry, premium-tier residency program designed for investors, entrepreneurs, and ultra-high-net-worth individuals.
+
+**Key characteristics of PVIP:**
+- Very high upfront financial commitment
+- Designed for applicants who prioritize flexibility and longevity over cost
+- Not suitable for budget-conscious applicants
+
+**Winner for cost efficiency:** ✅ MM2H
+
+## 2. Fixed Deposit Requirement: Capital Lock-In Matters
+
+### MM2H – Lower & More Flexible Fixed Deposits
+
+One of the strongest advantages of MM2H is its comparatively lower fixed deposit requirement, especially in entry-level tiers.
+
+**MM2H fixed deposit benefits:**
+- Lower deposit requirement compared to PVIP
+- Up to 50% withdrawal allowed after one year for approved purposes:
+  - Property purchase
+  - Medical expenses
+  - Education costs
+- Better flexibility for long-term financial planning
+
+### PVIP – Higher Deposit with Limited Flexibility
+
+PVIP requires a significantly higher fixed deposit, which is largely locked in for the duration of participation.
+
+**PVIP deposit structure:**
+- High mandatory fixed deposit
+- Limited withdrawal flexibility
+- Best suited for applicants with substantial liquid assets
+
+**Winner for lower fixed deposit:** ✅ MM2H
+
+## 3. Business & Investment Opportunities
+
+### MM2H – Residency & Lifestyle First
+
+MM2H is primarily a residency and lifestyle program, not a business visa.
+
+**MM2H business scope:**
+- Limited direct business involvement
+- Suitable for passive investments
+- Ideal for retirement or semi-retirement planning
+
+### PVIP – Built for Business & Investors
+
+PVIP is strongly aligned with business owners, investors, and global entrepreneurs.
+
+**PVIP business advantages:**
+- Allows active business participation
+- Suitable for company ownership and management
+- Ideal for investors planning regional expansion in Southeast Asia
+
+**Winner for business opportunities:** ✅ PVIP
+
+## 4. Visa Duration & Long-Term Stability
+
+### MM2H – Long-Term, Tier-Based Validity
+
+MM2H offers long-term residency with visa duration depending on the selected tier.
+
+**MM2H visa features:**
+- Long-term stay option
+- Renewable subject to compliance
+- Stability for families and retirees
+
+### PVIP – One of Malaysia's Longest Visas
+
+PVIP offers up to 20 years validity, making it one of the longest residency visas available in Malaysia.
+
+**PVIP visa advantages:**
+- No frequent renewals
+- Long-term certainty for planning business, assets, and family life
+- Renewable for another long term
+
+**Winner for longest visa duration:** ✅ PVIP
+
+## MM2H vs PVIP: Quick Comparison Table
+
+<div class="overflow-x-auto my-8">
+  <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
+    <thead class="bg-gray-50">
+      <tr>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">Factor</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">MM2H</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">PVIP</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Cost Efficiency</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">High</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Low</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Fixed Deposit</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Lower</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Very High</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Business Access</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Limited</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Strong</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Visa Duration</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">5–20 years</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Up to 20 years</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Target Profile</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Retirees, families</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Investors, entrepreneurs</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## 🇲🇾 MM2H Program Cost Comparison (RM & BDT)
+
+The MM2H program offers multiple tiers, each with different fixed deposit requirements and visa validity.
+
+### Fixed Deposit Requirements
+
+<div class="overflow-x-auto my-8">
+  <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
+    <thead class="bg-gray-50">
+      <tr>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">MM2H Tier</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">Fixed Deposit (MYR)</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">Approx. BDT</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Visa Duration</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Silver</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~RM 700,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~21,000,000 BDT</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~5 years</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Gold</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~RM 2,340,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~70,200,000 BDT</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~15 years</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Platinum</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~RM 4,680,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~140,400,000 BDT</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~20 years</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">SEZ (21–49 yrs)</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~RM 305,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~9,150,000 BDT</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~10 years</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">SEZ (50+ yrs)</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~RM 150,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">~4,500,000 BDT</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~10 years</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+📌 Part of the fixed deposit may be withdrawn after one year for approved purposes.
+
+### Government Participation Fees
+
+<div class="overflow-x-auto my-8">
+  <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
+    <thead class="bg-gray-50">
+      <tr>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">Tier</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">Fee (MYR)</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Approx. BDT</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Platinum</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 200,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~6,000,000 BDT</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Gold</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 3,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~90,000 BDT</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Silver</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 1,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~30,000 BDT</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">SEZ</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 1,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~30,000 BDT</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## 💎 PVIP Program Cost Comparison (RM & BDT)
+
+The Premium Visa Programme (PVIP) is positioned as Malaysia's top-tier residency option.
+
+<div class="overflow-x-auto my-8">
+  <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
+    <thead class="bg-gray-50">
+      <tr>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">PVIP Item</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">Fee (MYR)</th>
+        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Approx. BDT</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Fixed Deposit</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 1,000,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~30,000,000 BDT</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Principal Participation Fee</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 200,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~6,000,000 BDT</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Dependent Fee</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 100,000 each</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~3,000,000 BDT</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">Annual Visa Fee</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200">RM 2,000/year</td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">~60,000 BDT/year</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+📌 The fixed deposit is mandatory and must be maintained in a Malaysian bank.
+
+## Practical Cost Considerations
+
+### Why Choose MM2H?
+- Lower entry cost (especially Silver & SEZ tiers)
+- Partial fixed deposit withdrawal allowed
+- Ideal for lifestyle-focused long-term living
+
+### Why Choose PVIP?
+- Strong business flexibility
+- No mandatory property purchase
+- Longest visa duration with minimal renewals
+
+## Top 5 Reasons Foreigners Choose MM2H or PVIP
+
+### 1. Long-Term Legal Stay in a Stable Country
+No visa runs, no short renewals—just peace of mind.
+
+### 2. Strategic Southeast Asian Location
+Perfect for business, travel, healthcare, and international education.
+
+### 3. Affordable High-Quality Lifestyle
+World-class living at a fraction of Western costs—traditional value with modern comfort.
+
+### 4. Business-Friendly Environment
+Especially under PVIP, Malaysia welcomes foreign investors and entrepreneurs.
+
+### 5. Family-Friendly & Safe
+Safe cities, cultural harmony, international schools, and long-term comfort.
+
+## Final Thought
+
+**MM2H** is ideal for those who prioritize cost efficiency, lifestyle, and long-term stability.
+
+**PVIP** is designed for those seeking business freedom, long visa validity, and premium flexibility.
+
+Different paths—but both lead to the same destination: **a secure, long-term future in Malaysia**.
+
+## Ready to Settle in Malaysia the Right Way?
+
+Choosing between MM2H and PVIP is not just about cost—it's about strategy, eligibility, and long-term planning. A small mistake in program selection or documentation can cost you time and money.
+
+**Let our experienced consultants guide you before you apply.**
+
+We help you with:
+- ✔ Program suitability assessment (MM2H vs PVIP)
+- ✔ Cost planning in RM & BDT
+- ✔ Document preparation and verification
+- ✔ Step-by-step application guidance
+- ✔ Ongoing support until approval
+
+📅 **Book a consultation:** [https://nextpathglobal.my/book-appointment](https://nextpathglobal.my/book-appointment)
+
+📩 **Send an enquiry:** [https://nextpathglobal.my/contact](https://nextpathglobal.my/contact)
+
+📍 **Based in Kuala Lumpur | Serving clients worldwide**
+
+*Assessment and approvals are subject to Malaysian Immigration regulations.*
+        `
     }
 ];
 

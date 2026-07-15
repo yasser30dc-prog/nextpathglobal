@@ -29,7 +29,15 @@ const navLinks: NavLink[] = [
         ]
     },
     { name: "Tourist Visa", href: "/services/tourist-visa" },
-    { name: "Employment Pass", href: "/services/employment-pass" },
+    {
+        name: "Residency Programmes",
+        href: "#",
+        subMenu: [
+            { name: "MM2H", href: "/services/mm2h" },
+            { name: "PVIP", href: "/services/pvip" },
+            { name: "Employment Pass", href: "/services/employment-pass" },
+        ]
+    },
     { name: "About Us", href: "/about" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },

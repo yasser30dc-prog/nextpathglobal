@@ -4,7 +4,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 
 export const metadata: Metadata = {
     title: "Book Appointment | NextPath Global",
-    description: "Schedule an appointment with NextPath Global for visa services, study consultancy, corporate mobility, and more. Our team will help you with your immigration needs.",
+    description: "Schedule an appointment with NextPath Global for visa services, MM2H, PVIP, and more. Our team will help you with your immigration needs.",
 };
 
 export default function BookAppointment() {
