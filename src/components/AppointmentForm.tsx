@@ -188,12 +188,20 @@ export default function AppointmentForm() {
                     We will send a confirmation email with your appointment details within 24 hours.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 mb-2">
                         If you have an urgent query, please contact us at:
                     </p>
-                    <p className="font-semibold text-primary mt-2">
-                        +60 11 1669 5249, +60 17 296 5249, &amp; +60 17 882 3135
-                    </p>
+                    <div className="flex flex-col gap-1.5">
+                        <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline flex items-center gap-1">
+                            <span>💬 +60 11 1669 5249</span>
+                        </a>
+                        <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline flex items-center gap-1">
+                            <span>💬 +60 17 296 5249</span>
+                        </a>
+                        <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline flex items-center gap-1">
+                            <span>💬 +60 17 882 3135</span>
+                        </a>
+                    </div>
                 </div>
             </motion.div>
         );

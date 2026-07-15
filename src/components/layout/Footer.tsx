@@ -81,9 +81,17 @@ export default function Footer() {
                                 384, Jln Tun Razak, Kampung Datuk Keramat,<br />
                                 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur
                             </p>
-                            <p>+60 11 1669 5249</p>
-                            <p>+60 17 296 5249</p>
-                            <p>+60 17 882 3135</p>
+                            <div className="flex flex-col gap-1 text-sm">
+                                <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                                    <span>💬 +60 11 1669 5249</span>
+                                </a>
+                                <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                                    <span>💬 +60 17 296 5249</span>
+                                </a>
+                                <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                                    <span>💬 +60 17 882 3135</span>
+                                </a>
+                            </div>
                             <p>info@nextpathglobal.my</p>
                         </div>
                     </div>
