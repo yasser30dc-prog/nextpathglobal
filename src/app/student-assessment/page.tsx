@@ -752,10 +752,8 @@ export default function StudentAssessmentPage() {
                 <div className="country-grid">
                   {[
                     { val: "Malaysia", flag: "🇲🇾", name: "Malaysia" },
-                    { val: "United Kingdom", flag: "🇬🇧", name: "UK" },
+                    { val: "Spain", flag: "🇪🇸", name: "Spain" },
                     { val: "Australia", flag: "🇦🇺", name: "Australia" },
-                    { val: "Germany", flag: "🇩🇪", name: "Germany" },
-                    { val: "Finland", flag: "🇫🇮", name: "Finland" },
                     { val: "China", flag: "🇨🇳", name: "China" },
                     { val: "USA", flag: "🇺🇸", name: "USA" },
                     { val: "Canada", flag: "🇨🇦", name: "Canada" },

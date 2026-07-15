@@ -35,7 +35,7 @@ const faqData: FAQSection[] = [
         items: [
             {
                 question: "Q3. Which countries do you provide student admission support for?",
-                answer: "We currently assist students to study in Malaysia, the United Kingdom, Australia, Finland, Spain, France, Ireland & selected European universities."
+                answer: "We currently assist students to study in Malaysia, Spain, China, Australia, France, Ireland & selected European universities."
             },
             {
                 question: "Q4. What are the benefits of applying through NextPath Global?",

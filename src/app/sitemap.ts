@@ -110,19 +110,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/services/study-abroad/uk`,
-            lastModified: new Date('2026-05-24'),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/services/study-abroad/finland`,
-            lastModified: new Date('2026-05-24'),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/services/study-abroad/germany`,
+            url: `${baseUrl}/services/study-abroad/spain`,
             lastModified: new Date('2026-05-24'),
             changeFrequency: 'monthly',
             priority: 0.8,

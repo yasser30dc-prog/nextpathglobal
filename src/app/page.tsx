@@ -24,9 +24,7 @@ import TouristVisaSelector from "@/components/TouristVisaSelector";
 import { partnerInstitutions } from "@/data/malaysia-partners";
 
 const destinations = [
-  { name: "UK", emoji: "🇬🇧", link: "/services/study-abroad/uk", tagline: "World-Class Universities" },
-  { name: "Finland", emoji: "🇫🇮", link: "/services/study-abroad/finland", tagline: "World's Happiest Country" },
-  { name: "Germany", emoji: "🇩🇪", link: "/services/study-abroad/germany", tagline: "Tuition-Free Education" },
+  { name: "Spain", emoji: "🇪🇸", link: "/services/study-abroad/spain", tagline: "C3S Business School" },
   { name: "Malaysia", emoji: "🇲🇾", link: "/services/study-abroad/malaysia", tagline: "Affordable Excellence" },
   { name: "China", emoji: "🇨🇳", link: "/services/study-abroad/china", tagline: "Scholarships Available" },
 ];
@@ -96,7 +94,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-5 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
             {destinations.map((dest, index) => (
               <div key={index}>
                 <Link href={dest.link} className="group block text-center">
@@ -148,7 +146,7 @@ export default function Home() {
                 services: [
                   {
                     title: "Student Consultancy",
-                    description: "Comprehensive university admission and student visa support for destinations including the UK, Finland, Germany, Malaysia, and China.",
+                    description: "Comprehensive university admission and student visa support for destinations including Spain, Malaysia, and China.",
                     icon: <GraduationCap size={28} className="text-[#c9a84c]" />,
                     link: "/services/study-abroad"
                   },

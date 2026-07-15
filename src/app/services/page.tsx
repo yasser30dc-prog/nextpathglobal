@@ -32,7 +32,7 @@ const serviceCategories: ServiceCategory[] = [
         services: [
             {
                 title: "Student Consultancy",
-                description: "Comprehensive university admission guidance and visa support for top destinations including the UK, Finland, Germany, Malaysia, and China. We handle your entire application process.",
+                description: "Comprehensive university admission guidance and visa support for top destinations including Spain, Malaysia, and China. We handle your entire application process.",
                 icon: <GraduationCap size={32} className="text-[#c9a84c]" />,
                 link: "/services/study-abroad"
             },
