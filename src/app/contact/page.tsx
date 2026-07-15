@@ -66,9 +66,10 @@ export default function Contact() {
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold mb-1 text-gray-900">Call Us</h4>
+                                        <h4 className="font-bold mb-1 text-gray-900">Contact Us</h4>
                                         <p className="text-gray-600">+60 11 1669 5249</p>
-                                        <p className="text-gray-600">+60 17 828 3135</p>
+                                        <p className="text-gray-600">+60 17 296 5249</p>
+                                        <p className="text-gray-600">+60 17 882 3135</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">

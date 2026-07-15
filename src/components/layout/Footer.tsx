@@ -82,6 +82,8 @@ export default function Footer() {
                                 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur
                             </p>
                             <p>+60 11 1669 5249</p>
+                            <p>+60 17 296 5249</p>
+                            <p>+60 17 882 3135</p>
                             <p>info@nextpathglobal.my</p>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, DollarSign, Globe, ShieldCheck, Briefcase, Home, BookOpen, CheckCircle2, ArrowRight, Star } from "lucide-react";
+import { GraduationCap, DollarSign, Globe, ShieldCheck, Briefcase, Home, BookOpen, CheckCircle2, ArrowRight, Star, MessageCircle } from "lucide-react";
 import Link from "next/link";
 
 const StudyAbroadPage = () => {
@@ -191,13 +191,32 @@ const StudyAbroadPage = () => {
                             >
                                 Start Free Assessment
                             </Link>
-                            <Link
-                                href="https://wa.me/601116695249"
-                                target="_blank"
-                                className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2"
-                            >
-                                WhatsApp Us Now
-                            </Link>
+                            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+                                <a
+                                    href="https://wa.me/601116695249"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 w-full md:w-auto"
+                                >
+                                    <MessageCircle size={20} /> +60 11 1669 5249
+                                </a>
+                                <a
+                                    href="https://wa.me/60172965249"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 w-full md:w-auto"
+                                >
+                                    <MessageCircle size={20} /> +60 17 296 5249
+                                </a>
+                                <a
+                                    href="https://wa.me/60178823135"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 w-full md:w-auto"
+                                >
+                                    <MessageCircle size={20} /> +60 17 882 3135
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </motion.div>

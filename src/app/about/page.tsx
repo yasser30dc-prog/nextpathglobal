@@ -297,18 +297,38 @@ export default function About() {
                         <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
                             Contact us today for professional B2B visa services and take the first step toward your global dreams.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                            <a
-                                href="tel:+601116695249"
-                                className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
-                            >
-                                <MessageCircle size={24} /> +60 11 1669 5249
-                            </a>
+                        <div className="flex flex-col gap-4 items-center justify-center max-w-4xl mx-auto">
+                            <div className="flex flex-wrap gap-4 justify-center">
+                                <a
+                                    href="https://wa.me/601116695249"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3.5 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                                >
+                                    <MessageCircle size={20} className="text-[#25D366]" /> +60 11 1669 5249
+                                </a>
+                                <a
+                                    href="https://wa.me/60172965249"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3.5 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                                >
+                                    <MessageCircle size={20} className="text-[#25D366]" /> +60 17 296 5249
+                                </a>
+                                <a
+                                    href="https://wa.me/60178823135"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3.5 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                                >
+                                    <MessageCircle size={20} className="text-[#25D366]" /> +60 17 882 3135
+                                </a>
+                            </div>
                             <Link
                                 href="/contact"
-                                className="bg-primary hover:bg-primary-hover text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                                className="bg-primary hover:bg-primary-hover text-white font-bold py-3.5 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 w-full sm:w-auto"
                             >
-                                <Mail size={24} /> Contact Us
+                                <Mail size={20} /> Contact Us
                             </Link>
                         </div>
                     </div>

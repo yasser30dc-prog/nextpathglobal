@@ -515,18 +515,26 @@ export default function EmploymentPass() {
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/60111166952249"
+                            href="https://wa.me/601116695249"
                             className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                         >
-                            <MessageCircle size={24} /> WhatsApp: +60 111 1669 5249
+                            <MessageCircle size={24} /> WhatsApp: +60 11 1669 5249
                         </motion.a>
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/60178283135"
+                            href="https://wa.me/60172965249"
                             className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                         >
-                            <Phone size={24} /> +60 17 828 3135
+                            <MessageCircle size={24} /> WhatsApp: +60 17 296 5249
+                        </motion.a>
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            href="https://wa.me/60178823135"
+                            className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                        >
+                            <MessageCircle size={24} /> WhatsApp: +60 17 882 3135
                         </motion.a>
                     </div>
                     <Link href="/contact">
