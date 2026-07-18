@@ -176,6 +176,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.7,
         },
+        {
+            url: `${baseUrl}/blog/student-life`,
+            lastModified: new Date('2026-07-19'),
+            changeFrequency: 'weekly',
+            priority: 0.7,
+        },
     ];
 
     // Blog post pages — use the post's actual publish date
