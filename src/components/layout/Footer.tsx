@@ -41,9 +41,9 @@ export default function Footer() {
                             Trusted partner for education, immigration, and visa services — providing expert guidance and full support to help students, professionals, and travellers achieve their global goals
                         </p>
                         <div className="flex space-x-4">
-                            <a href="https://www.facebook.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our Facebook page"><Facebook size={20} /></a>
-                            <a href="https://www.instagram.com/npg058/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our Instagram profile"><Instagram size={20} /></a>
-                            <a href="https://www.tiktok.com/@npg0585" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our TikTok account"><TikTokIcon size={20} /></a>
+                            <a href="https://www.facebook.com/nextpathglobal.my" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our Facebook page"><Facebook size={20} /></a>
+                            <a href="https://www.instagram.com/nextpathglobal.my" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our Instagram profile"><Instagram size={20} /></a>
+                            <a href="https://www.tiktok.com/@nextpathglobal.my" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors" aria-label="Visit our TikTok account"><TikTokIcon size={20} /></a>
                         </div>
                     </div>
 

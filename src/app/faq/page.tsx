@@ -170,7 +170,7 @@ const faqData: FAQSection[] = [
                     <p>
                         Follow our official{" "}
                         <a
-                            href="https://www.facebook.com/npg058"
+                            href="https://www.facebook.com/nextpathglobal.my"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-primary hover:underline font-semibold"

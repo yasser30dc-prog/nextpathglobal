@@ -7,8 +7,9 @@ export const siteConfig = {
     url: 'https://nextpathglobal.my',
     ogImage: 'https://nextpathglobal.my/og-image.jpg',
     links: {
-        facebook: 'https://www.facebook.com/nextpathglobal',
-        instagram: 'https://www.instagram.com/nextpathglobal',
+        facebook: 'https://www.facebook.com/nextpathglobal.my',
+        instagram: 'https://www.instagram.com/nextpathglobal.my',
+        tiktok: 'https://www.tiktok.com/@nextpathglobal.my',
     },
 };
 
@@ -103,6 +104,7 @@ export function generateOrganizationSchema() {
         sameAs: [
             siteConfig.links.facebook,
             siteConfig.links.instagram,
+            siteConfig.links.tiktok,
         ],
         contactPoint: {
             '@type': 'ContactPoint',
