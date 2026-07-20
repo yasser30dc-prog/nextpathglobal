@@ -1625,4 +1625,42 @@ export const countries: CountryData[] = [
             { step: 4, title: "Get Your Visa", description: "Receive your South Korea visa in 5-10 working days" },
         ],
     },
+    {
+        slug: "uae",
+        name: "UAE",
+        tagline: "Land of Modern Wonders & Desert Adventures",
+        description: "Experience the glitz and glamour of the UAE - from Dubai's towering skyscrapers and luxurious resorts to Abu Dhabi's majestic grand mosques and golden desert dunes.",
+        coverImage: "/assets/countries/uae.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days (15-20 Days for 5-Yr)" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "From RM 2,000" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "30 Days / 60 Days / 5 Years" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Single & Multiple Entry" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone can apply from anywhere in the world" },
+        ],
+        requirements: [
+            { icon: <FileText size={20} />, document: "Passport", requirement: "Clear scanned copy of the information/bio-data page (Must be valid for at least 6 months)" },
+            { icon: <Building size={20} />, document: "Visa Copy", requirement: "Required if currently residing outside your home country" },
+            { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
+            { icon: <Landmark size={20} />, document: "Bank Statement (5 Years Multiple Entry)", requirement: "6 months bank statement with minimum closing balance of USD 4,000 or equivalent" },
+            { icon: <DollarSign size={20} />, document: "Visa Options & Fee Breakdown", requirement: "30 Days: RM 2,000 (5-10 working days) | 60 Days: RM 2,500 (7-10 working days) | 5 Years Multiple Entry: RM 6,500 (15-20 working days, includes RM 3,500 refundable deposit)" },
+        ],
+        whyChoose: [
+            { icon: <Building size={32} />, title: "Futuristic Architecture", description: "Iconic Burj Khalifa, Museum of the Future, and Sheikh Zayed Grand Mosque" },
+            { icon: <Sun size={32} />, title: "Desert Safaris", description: "Thrilling dune bashing, quad biking, camel rides, and luxury desert camps" },
+            { icon: <Globe size={32} />, title: "World-Class Shopping", description: "Grand Dubai Mall, Mall of the Emirates, and historic gold & spice souqs" },
+            { icon: <Utensils size={32} />, title: "Global Gastronomy", description: "Michelin-starred dining, traditional Emirati cuisine, and international flavours" },
+        ],
+        destinations: [
+            { name: "Dubai", highlights: "Burj Khalifa, Palm Jumeirah, Dubai Marina, Museum of the Future, Gold Souk", image: "/assets/destinations/dubai.webp" },
+            { name: "Abu Dhabi", highlights: "Sheikh Zayed Grand Mosque, Louvre Abu Dhabi, Yas Island, Corniche Beach", image: "/assets/destinations/abu-dhabi.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Visa Type", description: "Choose 30 Days, 60 Days, or 5-Year Multiple Entry visa" },
+            { step: 2, title: "Prepare Documents", description: "Scanned passport copy, photo, and visa copy (plus bank statement for 5-year visa)" },
+            { step: 3, title: "Submit Application", description: "We process your UAE e-visa with official immigration systems" },
+            { step: 4, title: "Get Your Visa", description: "Receive your official UAE e-visa directly via email" },
+        ],
+    },
 ];
+

@@ -71,7 +71,7 @@ const faqData: FAQSection[] = [
         items: [
             {
                 question: "Q9. Which visit visas can you help apply for?",
-                answer: "We assist with Malaysia, Thailand, Singapore, Japan, China, Turkey, Cambodia, Laos, Brunei, Hongkong, Sri Lanka, Pakistan, Nepal, Turkey, Egypt, Kenya, Qatar, The USA, Canada and Schengen visit visas — depending on your travel plan and eligibility."
+                answer: "We assist with Malaysia, Thailand, Singapore, Japan, China, UAE, Turkey, Cambodia, Laos, Brunei, Hongkong, Sri Lanka, Pakistan, Nepal, Egypt, Kenya, Qatar, The USA, Canada and Schengen visit visas — depending on your travel plan and eligibility."
             },
             {
                 question: "Q10. Do you arrange air tickets and accommodation?",
