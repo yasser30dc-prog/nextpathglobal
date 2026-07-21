@@ -1108,10 +1108,10 @@ export const countries: CountryData[] = [
         description: "Experience the vibrant tapestry of India — from the majestic Taj Mahal and ancient temples to colourful festivals, diverse cuisines, and breathtaking landscapes. A land of timeless wonders awaits.",
         coverImage: "/assets/countries/india.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "8-10 Working Days" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 650" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "8-10 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Service Charge", value: "RM 250 (if eVisa RM 80)" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
-            { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Single & Double Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term visa" },
         ],
         requirements: [
