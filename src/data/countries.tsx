@@ -47,7 +47,7 @@ export const countries: CountryData[] = [
         description: "Experience the diversity of Malaysia - from Kuala Lumpur's Petronas Towers to pristine beaches, rainforests, and a harmonious blend of Malay, Chinese, and Indian cultures.",
         coverImage: "/assets/countries/malaysia.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 175" },
             { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -87,7 +87,7 @@ export const countries: CountryData[] = [
         description: "Discover the vibrant culture and natural beauty of Bangladesh. From the historic landmarks of Dhaka to the serene landscapes of the countryside, experience warm hospitality and rich heritage.",
         coverImage: "/assets/countries/bangladesh.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 300" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -128,7 +128,7 @@ export const countries: CountryData[] = [
         description: "Home to the magnificent Angkor Wat and warm Khmer hospitality, Cambodia offers a perfect blend of ancient wonders, tropical beaches, and vibrant culture.",
         coverImage: "/assets/countries/cambodia.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 380" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -165,7 +165,7 @@ export const countries: CountryData[] = [
         description: "From pristine beaches to golden temples, bustling night markets to peaceful mountain villages – Thailand offers unforgettable experiences for every traveler.",
         coverImage: "/assets/countries/thailand.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 320" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -204,7 +204,7 @@ export const countries: CountryData[] = [
         description: "Modern metropolis meets cultural heritage. World-class education meets business excellence. This is Singapore – where your dreams take flight.",
         coverImage: "/assets/countries/singapore.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-8 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-8 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
             { icon: <Calendar size={20} />, label: "Validity", value: "60 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Multiple Entry" },
@@ -244,7 +244,7 @@ export const countries: CountryData[] = [
         description: "Discover the serene beauty of Laos, where ancient temples meet untouched nature, and traditional culture thrives in peaceful riverside towns.",
         coverImage: "/assets/countries/laos.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 550" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -283,7 +283,7 @@ export const countries: CountryData[] = [
         description: "From the bustling streets of Hanoi to the serene beauty of Ha Long Bay, Vietnam offers an unforgettable journey through history, culture, and natural wonders.",
         coverImage: "/assets/countries/vietnam.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -322,7 +322,7 @@ export const countries: CountryData[] = [
         description: "Experience 5,000 years of history meets cutting-edge innovation. From the Great Wall to futuristic cities, pandas to palaces – China offers endless fascination.",
         coverImage: "/assets/countries/china.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 829" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Double Entry" },
@@ -363,7 +363,7 @@ export const countries: CountryData[] = [
         description: "Discover one of the world’s most culturally diverse countries! Experience tribal cultures, pristine rainforests, coral reefs, and untouched natural beauty.",
         coverImage: "/assets/countries/png.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 150" },
             { icon: <Calendar size={20} />, label: "Validity", value: "60 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -402,7 +402,7 @@ export const countries: CountryData[] = [
         description: "Over 7,000 islands of pristine beaches, vibrant culture, and warm Filipino hospitality. From stunning rice terraces to world-class diving sites, the Philippines offers unforgettable tropical adventures.",
         coverImage: "/assets/countries/philippines.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "59 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -446,7 +446,7 @@ export const countries: CountryData[] = [
         description: "Experience the serene beauty of Brunei, a peaceful sultanate known for its grand mosques, untouched rainforests, and rich cultural heritage steeped in tradition.",
         coverImage: "/assets/countries/brunei.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 200" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -486,7 +486,7 @@ export const countries: CountryData[] = [
         description: "Discover Myanmar's ancient temples, golden pagodas, and traditional culture. From Bagan's thousands of temples to Inle Lake's floating gardens, experience Southeast Asia's hidden gem.",
         coverImage: "/assets/countries/myanmar.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "2-3 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "2-3 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 400" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -524,7 +524,7 @@ export const countries: CountryData[] = [
         description: "The world's largest archipelago offers diverse experiences from Bali's temples to Jakarta's modern skyline. Discover volcanic landscapes, pristine beaches, and rich cultural heritage across 17,000 islands.",
         coverImage: "/assets/countries/indonesia.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 750" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -562,7 +562,7 @@ export const countries: CountryData[] = [
         description: "Home to K2 and the mighty Himalayas, Pakistan offers breathtaking mountain scenery, warm hospitality, and rich cultural heritage. Experience the adventure of a lifetime.",
         coverImage: "/assets/countries/pakistan.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "1-3 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "1-3 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -600,7 +600,7 @@ export const countries: CountryData[] = [
         description: "Ancient Silk Road heritage meets stunning mountain landscapes. Discover Afghanistan's historical treasures, from Herat's grand mosques to the legendary Band-e-Amir lakes.",
         coverImage: "/assets/countries/afghanistan.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 500" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -639,7 +639,7 @@ export const countries: CountryData[] = [
         description: "Journey through 5,000 years of history among the pyramids, cruise the Nile, and explore ancient temples. Egypt offers an unforgettable adventure through one of the world's greatest civilizations.",
         coverImage: "/assets/countries/egypt.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 500" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -678,7 +678,7 @@ export const countries: CountryData[] = [
         description: "Where East meets West on the Caspian Sea. Experience Baku's futuristic architecture, ancient fire temples, and the warm hospitality of this fascinating Caucasus nation.",
         coverImage: "/assets/countries/azerbaijan.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "5-7 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-7 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 500" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -718,7 +718,7 @@ export const countries: CountryData[] = [
         description: "Tropical paradise offering pristine beaches, ancient temples, lush tea plantations, and incredible wildlife. Discover this island gem with fast 1-day ETA processing.",
         coverImage: "/assets/countries/sri-lanka.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 200" },
             { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry (ETA)" },
@@ -756,7 +756,7 @@ export const countries: CountryData[] = [
         description: "Home to Mount Everest and the mighty Himalayas, Nepal offers world-class trekking, ancient temples, and spiritual experiences. Get your ETA in just 1 day for RM 100.",
         coverImage: "/assets/countries/nepal.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 100" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry (ETA)" },
@@ -794,7 +794,7 @@ export const countries: CountryData[] = [
         description: "Luxury overwater villas, crystal-clear lagoons, and vibrant coral reefs make the Maldives the ultimate tropical escape. Get your IMUGA approval in just 1 day for RM 100.",
         coverImage: "/assets/countries/maldives.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 100" },
             { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry (IMUGA)" },
@@ -832,7 +832,7 @@ export const countries: CountryData[] = [
         description: "Malaysian Borneo's natural paradise featuring Mount Kinabalu, pristine diving sites, orangutans, and rich cultural diversity. Experience adventure and wildlife for just RM 50.",
         coverImage: "/assets/countries/sabah.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 50" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -871,7 +871,7 @@ export const countries: CountryData[] = [
         description: "Where ancient tradition meets cutting-edge innovation. Experience cherry blossoms, Mount Fuji, traditional temples, and futuristic cities in this fascinating island nation.",
         coverImage: "/assets/countries/japan.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "1 Year or Longer" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
@@ -911,7 +911,7 @@ export const countries: CountryData[] = [
         description: "Straddling two continents, Turkey offers Byzantine wonders, Ottoman palaces, Mediterranean beaches, and the surreal landscapes of Cappadocia.",
         coverImage: "/assets/countries/turkey.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "180 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
@@ -950,7 +950,7 @@ export const countries: CountryData[] = [
         description: "Vertical city of skyscrapers, dim sum, and Victoria Peak views. Experience the perfect blend of Eastern and Western cultures in this dynamic global financial hub.",
         coverImage: "/assets/countries/hong-kong.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -989,7 +989,7 @@ export const countries: CountryData[] = [
         description: "From Buenos Aires' European elegance to Patagonia's glaciers and Iguazu's waterfalls. Experience South American culture, wine, steak, and breathtaking landscapes.",
         coverImage: "/assets/countries/argentina.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "25-28 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "25-28 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 850" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -1028,7 +1028,7 @@ export const countries: CountryData[] = [
         description: "Experience the vibrant energy and rich history of Serbia. From Belgrade's historic fortress and lively cafes to stunning national parks and scenic rivers, discover Southeast Europe's hidden gem.",
         coverImage: "/assets/countries/serbia.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 2550" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -1069,7 +1069,7 @@ export const countries: CountryData[] = [
         description: "The world's largest country offers iconic landmarks from Red Square to St. Petersburg's palaces, rich history, world-class ballet, and the legendary Trans-Siberian Railway.",
         coverImage: "/assets/countries/russia.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 500" },
             { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -1150,7 +1150,7 @@ export const countries: CountryData[] = [
         description: "Discover the historic charm of the United Kingdom. From the iconic landmarks of London to the scenic landscapes of the Scottish Highlands, the UK offers an unforgettable experience.",
         coverImage: "/assets/countries/uk.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "15-20 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-20 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
             { icon: <Calendar size={20} />, label: "Validity", value: "6 Months" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
@@ -1191,7 +1191,7 @@ export const countries: CountryData[] = [
         description: "Explore the diverse landscapes and vibrant cities of the United States. From the bustling streets of New York to stunning national parks, the USA is a destination like no other.",
         coverImage: "/assets/countries/usa.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 3000" },
             { icon: <Calendar size={20} />, label: "Validity", value: "10 Years" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
@@ -1232,7 +1232,7 @@ export const countries: CountryData[] = [
         description: "Experience the unique wildlife, stunning beaches, and vibrant cities of Australia. From the iconic Sydney Opera House to the Outback, adventure awaits.",
         coverImage: "/assets/countries/australia.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 3000" },
             { icon: <Calendar size={20} />, label: "Validity", value: "1 Year" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
@@ -1314,7 +1314,7 @@ export const countries: CountryData[] = [
         description: "From fairytale castles and historic monuments to vibrant cities, scenic forests, and world-famous festivals. Germany offers an unforgettable European journey in the heart of the Schengen area.",
         coverImage: "/assets/countries/germany.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1990" },
             { icon: <Calendar size={20} />, label: "Validity", value: "Varies (Up to 90 days)" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Multiple Entry" },
@@ -1355,7 +1355,7 @@ export const countries: CountryData[] = [
         description: "A breathtaking island of dramatic volcanic landscapes, majestic glaciers, cascading waterfalls, and spectacular northern lights. Iceland offers an awe-inspiring escape into pristine nature.",
         coverImage: "/assets/countries/iceland.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 2790" },
             { icon: <Calendar size={20} />, label: "Validity", value: "Varies (Up to 90 days)" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Multiple Entry" },
@@ -1396,7 +1396,7 @@ export const countries: CountryData[] = [
         description: "Embark on an extraordinary journey through world-famous wildlife savannas, spectacular rift valley lakes, white-sand beaches, and rich cultural traditions in East Africa's leading safari destination.",
         coverImage: "/assets/countries/kenya.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 350" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -1433,7 +1433,7 @@ export const countries: CountryData[] = [
         description: "Wander through picturesque canal districts, vibrant tulip fields, and historic windmill landscapes. The Netherlands blends historic art masterpieces with progressive modern culture in Europe's scenic lowlands.",
         coverImage: "/assets/countries/netherlands.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1950" },
             { icon: <Calendar size={20} />, label: "Validity", value: "Varies (Up to 90 days)" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Multiple Entry" },
@@ -1474,7 +1474,7 @@ export const countries: CountryData[] = [
         description: "Discover the dramatic landscapes of New Zealand — from snow-capped alpine peaks and pristine fjords to active volcanic zones and rich Maori heritage. An adventure of unparalleled natural beauty.",
         coverImage: "/assets/countries/new-zealand.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 2900" },
             { icon: <Calendar size={20} />, label: "Validity", value: "Varies (Up to 90 days)" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Multiple Entry" },
@@ -1515,7 +1515,7 @@ export const countries: CountryData[] = [
         description: "Experience the unique blend of ancient Bedouin culture and ultra-modern architecture in Qatar. From Doha's futuristic skyline and luxury shopping to historic souqs and desert adventures.",
         coverImage: "/assets/countries/qatar.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-8 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -1554,7 +1554,7 @@ export const countries: CountryData[] = [
         description: "Experience Sweden's captivating blend of pristine wilderness, historic medieval towns, and progressive modern design. Wander through Stockholm's picturesque archipelagos, historic palaces, and serene lakes.",
         coverImage: "/assets/countries/sweden.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1950" },
             { icon: <Calendar size={20} />, label: "Validity", value: "Varies (Up to 90 days)" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Multiple Entry" },
@@ -1595,7 +1595,7 @@ export const countries: CountryData[] = [
         description: "Experience the perfect harmony of rich history, dynamic culture, and cutting-edge modernity. Discover South Korea's ancient palaces, vibrant K-culture, futuristic streetscapes, and serene natural beauties.",
         coverImage: "/assets/countries/south-korea.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
@@ -1634,7 +1634,7 @@ export const countries: CountryData[] = [
         description: "Experience the glitz and glamour of the UAE - from Dubai's towering skyscrapers and luxurious resorts to Abu Dhabi's majestic grand mosques and golden desert dunes.",
         coverImage: "/assets/countries/uae.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days (15-20 Days for 5-Yr)" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "From RM 2,000" },
             { icon: <Calendar size={20} />, label: "Validity", value: "30 Days / 60 Days / 5 Years" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single & Multiple Entry" },
