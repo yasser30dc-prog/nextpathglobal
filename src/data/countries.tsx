@@ -1116,11 +1116,13 @@ export const countries: CountryData[] = [
         ],
         requirements: [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Clear scanned copy of the information/bio-data page" },
+            { icon: <FileText size={20} />, document: "All Original Passports", requirement: "All current and previous original physical passports" },
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Clear and legible copy" },
-            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering the last 3 months, with a minimum closing balance of RM 5,000" },
-            { icon: <Briefcase size={20} />, document: "Employment / Enrollment Confirmation Letter", requirement: "Issued by your employer, university, or college on official letterhead" },
+            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering the last 3 months, with a minimum closing balance of RM 2,000" },
+            { icon: <FileText size={20} />, document: "Online Application Form", requirement: "Completed and signed online visa application form" },
+            { icon: <Building size={20} />, document: "High Commission / Embassy Letter", requirement: "Required in case of losing passport" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (2 × 2 inches, white background), along with a soft copy of the same photograph" },
-            { icon: <FileText size={20} />, document: "Invitation Letter / Sponsor Details", requirement: "A formal invitation letter or complete details of the sponsoring party" },
+            { icon: <FileText size={20} />, document: "Invitation Letter / Sponsor Details (If any)", requirement: "A formal invitation letter or complete details of the sponsoring party (if any)" },
         ],
         whyChoose: [
             { icon: <Landmark size={32} />, title: "Iconic Monuments", description: "Taj Mahal, Red Fort, Qutub Minar, and hundreds of UNESCO World Heritage Sites" },
