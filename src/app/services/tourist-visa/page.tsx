@@ -106,11 +106,6 @@ export default function TouristVisaLandingPage() {
                             whileHover={{ y: -8 }}
                             className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between relative"
                         >
-                            {/* Launching soon badge */}
-                            <div className="absolute top-4 right-4 bg-primary/20 text-primary text-xs font-bold px-3 py-1 rounded-full border border-primary/20 uppercase tracking-wider">
-                                Launching Soon
-                            </div>
-
                             <div className="p-8 md:p-10 flex-grow">
                                 <div className="inline-flex p-4 rounded-2xl bg-primary/10 text-primary mb-6">
                                     <Plane size={32} />
@@ -126,24 +121,25 @@ export default function TouristVisaLandingPage() {
                                     </li>
                                     <li className="flex items-center gap-3 text-sm text-gray-700">
                                         <CheckCircle2 size={16} className="text-green-500 shrink-0" />
-                                        <span>Expert verification & financial vetting</span>
+                                        <span>Expert verification &amp; financial vetting</span>
                                     </li>
                                     <li className="flex items-center gap-3 text-sm text-gray-700">
                                         <CheckCircle2 size={16} className="text-green-500 shrink-0" />
-                                        <span>Custom consultation & inquiries</span>
+                                        <span>Custom consultation &amp; inquiries</span>
                                     </li>
                                 </ul>
                             </div>
                             <div className="px-8 pb-8 md:px-10 md:pb-10 pt-0">
                                 <Link
                                     href="/services/tourist-visa/from-bangladesh"
-                                    className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-center py-4 rounded-xl font-bold transition-colors flex items-center justify-center gap-2 group"
+                                    className="w-full bg-secondary hover:bg-secondary-hover text-white text-center py-4 rounded-xl font-bold transition-colors shadow-md flex items-center justify-center gap-2 group"
                                 >
-                                    View Services
+                                    Proceed to Destinations
                                     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
                             </div>
                         </motion.div>
+
                     </div>
                 </div>
             </section>

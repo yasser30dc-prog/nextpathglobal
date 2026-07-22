@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blog';
 import { institutions } from '@/data/institutions';
+import { bangladeshCountries } from '@/data/countries-bangladesh';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://nextpathglobal.my';
@@ -156,6 +157,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }));
 
+    // ─── Bangladesh tourist visa country pages ───────────────────────────────
+    const bangladeshCountryPages: MetadataRoute.Sitemap = bangladeshCountries.map((country) => ({
+        url: `${baseUrl}/services/tourist-visa/from-bangladesh/${country.slug}`,
+        lastModified: new Date('2026-07-22'),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
     // ─── Blog pages ──────────────────────────────────────────────────────────
     const blogPages: MetadataRoute.Sitemap = [
         {
@@ -247,6 +256,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...staticPages,
         ...servicePages,
         ...countryPages,
+        ...bangladeshCountryPages,
         ...blogPages,
         ...blogPostPages,
         ...studyMalaysiaPages,
