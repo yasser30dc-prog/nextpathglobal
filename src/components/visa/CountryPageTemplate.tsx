@@ -50,9 +50,10 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ dest }) => {
 
 interface CountryPageTemplateProps {
     country: CountryData;
+    backLink?: string;
 }
 
-const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country }) => {
+const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country, backLink }) => {
     // Animation variants
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -365,7 +366,7 @@ const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country }) =>
                 )}
 
                 <div className="mt-12 text-center">
-                    <Link href="/services/tourist-visa" className="inline-flex items-center text-gray-500 hover:text-primary transition-colors font-medium">
+                    <Link href={backLink || "/services/tourist-visa"} className="inline-flex items-center text-gray-500 hover:text-primary transition-colors font-medium">
                         <ArrowLeft size={20} className="mr-2" /> Back to All Countries
                     </Link>
                 </div>

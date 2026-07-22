@@ -26,7 +26,14 @@ const navLinks: NavLink[] = [
             { name: "China", href: "/services/study-abroad/china" },
         ]
     },
-    { name: "Tourist Visa", href: "/services/tourist-visa" },
+    {
+        name: "Tourist Visa",
+        href: "/services/tourist-visa",
+        subMenu: [
+            { name: "From Malaysia", href: "/services/tourist-visa/from-malaysia" },
+            { name: "From Bangladesh", href: "/services/tourist-visa/from-bangladesh" },
+        ]
+    },
     {
         name: "Residency Programmes",
         href: "#",

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
     const title = `${country.name} Tourist Visa Services | Next Path Global`;
     const description = `Apply for a ${country.name} tourist visa with Next Path Global. ${country.description.slice(0, 160)}`;
-    const url = `${siteConfig.url}/services/tourist-visa/${country.slug}`;
+    const url = `${siteConfig.url}/services/tourist-visa/from-malaysia/${country.slug}`;
 
     return {
         title,
@@ -59,5 +59,10 @@ export default async function CountryPage({ params }: PageProps) {
         notFound();
     }
 
-    return <CountryPageTemplate country={country} />;
+    return (
+        <CountryPageTemplate 
+            country={country} 
+            backLink="/services/tourist-visa/from-malaysia" 
+        />
+    );
 }

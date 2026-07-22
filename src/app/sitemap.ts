@@ -86,6 +86,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/services/tourist-visa/from-malaysia`,
+            lastModified: new Date('2026-07-22'),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/services/tourist-visa/from-bangladesh`,
+            lastModified: new Date('2026-07-22'),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${baseUrl}/services/study-abroad`,
             lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',
@@ -138,7 +150,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
 
     const countryPages: MetadataRoute.Sitemap = countries.map((country) => ({
-        url: `${baseUrl}/services/tourist-visa/${country}`,
+        url: `${baseUrl}/services/tourist-visa/from-malaysia/${country}`,
         lastModified: new Date('2026-02-17'),
         changeFrequency: 'monthly' as const,
         priority: 0.8,

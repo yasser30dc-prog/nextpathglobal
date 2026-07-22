@@ -52,7 +52,7 @@ export default function TouristVisaSelector() {
               </select>
             </div>
             <Link
-              href={touristDestination ? `/services/tourist-visa/${touristDestination}` : "#"}
+              href={touristDestination ? `/services/tourist-visa/from-malaysia/${touristDestination}` : "#"}
               className="bg-secondary hover:bg-secondary-hover text-white px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 w-full transition-all"
             >
               <Search size={18} /> Check Requirements
