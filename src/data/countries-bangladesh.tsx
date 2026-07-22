@@ -40,12 +40,14 @@ export interface BangladeshCountryData {
     }[];
     importantNotes?: string[];
     whatsappNumbers?: string[];
+    visaType?: string;
 }
 
 export const bangladeshCountries: BangladeshCountryData[] = [
     {
         slug: "thailand",
         name: "Thailand",
+        visaType: "E-Visa",
         tagline: "The Land of Smiles",
         description: "From pristine beaches to golden temples, bustling night markets to peaceful mountain villages – Thailand offers unforgettable experiences for every traveler. Apply for your Thailand E-Visa with NextPath Global from Bangladesh.",
         coverImage: "/assets/countries/thailand.webp",
@@ -215,6 +217,7 @@ export const bangladeshCountries: BangladeshCountryData[] = [
     {
         slug: "malaysia",
         name: "Malaysia",
+        visaType: "E-Visa",
         tagline: "Truly Asia",
         description: "Experience the ultimate Asian destination – from Kuala Lumpur's futuristic skyline to pristine tropical islands, lush rainforests, and multicultural harmony. Apply for your Malaysia E-Visa with NextPath Global from Bangladesh.",
         coverImage: "/assets/countries/malaysia.webp",
@@ -377,6 +380,7 @@ export const bangladeshCountries: BangladeshCountryData[] = [
     {
         slug: "singapore",
         name: "Singapore",
+        visaType: "Visa with LOI",
         tagline: "The Lion City",
         description: "Experience the futuristic cityscape, world-class attractions, lush gardens, and rich cultural heritage of Singapore. Apply for your Singapore Visa with LOI with NextPath Global from Bangladesh.",
         coverImage: "/assets/countries/singapore.webp",
@@ -490,6 +494,7 @@ export const bangladeshCountries: BangladeshCountryData[] = [
     {
         slug: "indonesia",
         name: "Indonesia",
+        visaType: "Sticker Visa",
         tagline: "Wonderful Indonesia",
         description: "Explore the tropical paradise of Indonesia – from Bali's iconic beaches and ancient temples to Komodo dragons, volcanic lakes, and rich traditional arts. Apply for your Sticker Visa for Indonesia with NextPath Global from Bangladesh.",
         coverImage: "/assets/countries/indonesia.webp",

@@ -136,7 +136,7 @@ export default function TouristVisaFromBangladeshPage() {
                                 </div>
                                 <div className="absolute top-4 right-4">
                                     <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow">
-                                        E-Visa
+                                        {country.visaType || "E-Visa"}
                                     </span>
                                 </div>
                             </div>

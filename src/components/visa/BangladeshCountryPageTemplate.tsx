@@ -117,7 +117,7 @@ const BangladeshCountryPageTemplate: React.FC<BangladeshCountryPageTemplateProps
                         transition={{ duration: 0.8 }}
                     >
                         <span className="inline-block bg-primary/20 border border-primary/40 text-primary font-semibold tracking-widest uppercase text-xs px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
-                            E-Visa • Applying from Bangladesh
+                            {country.visaType || "E-Visa"} • Applying from Bangladesh
                         </span>
                         <h1 className="text-6xl md:text-8xl font-black mb-4 drop-shadow-lg tracking-tight">
                             {country.name}
@@ -169,7 +169,7 @@ const BangladeshCountryPageTemplate: React.FC<BangladeshCountryPageTemplateProps
                                     <FileText size={24} />
                                 </span>
                                 <div>
-                                    <h2 className="text-2xl font-bold text-gray-900">Required Documents for E-Visa</h2>
+                                    <h2 className="text-2xl font-bold text-gray-900">Required Documents for {country.visaType || "E-Visa"}</h2>
                                     <p className="text-sm text-gray-500 mt-0.5">Select your applicant category to view requirements</p>
                                 </div>
                             </div>
@@ -405,7 +405,7 @@ const BangladeshCountryPageTemplate: React.FC<BangladeshCountryPageTemplateProps
                             Ready to Apply?
                         </span>
                         <h2 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
-                            Start Your Thailand E-Visa<br className="hidden md:block" /> Application Today
+                            Start Your {country.name} {country.visaType || "E-Visa"}<br className="hidden md:block" /> Application Today
                         </h2>
                         <p className="text-gray-300 max-w-xl mx-auto mb-8 leading-relaxed">
                             Our expert visa team is ready to guide you through every step. Contact us on WhatsApp after making payment to begin processing.
