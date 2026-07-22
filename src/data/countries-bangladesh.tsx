@@ -380,7 +380,7 @@ export const bangladeshCountries: BangladeshCountryData[] = [
     {
         slug: "singapore",
         name: "Singapore",
-        visaType: "Visa with LOI",
+        visaType: "E-Visa with LOI",
         tagline: "The Lion City",
         description: "Experience the futuristic cityscape, world-class attractions, lush gardens, and rich cultural heritage of Singapore. Apply for your Singapore Visa with LOI with NextPath Global from Bangladesh.",
         coverImage: "/assets/countries/singapore.webp",
