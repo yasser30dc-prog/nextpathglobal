@@ -44,7 +44,6 @@ const navLinks: NavLink[] = [
         ]
     },
     { name: "About Us", href: "/about" },
-    { name: "Free Registration", href: "/free-registration" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
 ];
