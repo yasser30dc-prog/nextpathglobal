@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import FreeRegistrationForm from "./FreeRegistrationForm";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 import { CheckCircle2, ShieldCheck, Clock, Sparkles, Globe2 } from "lucide-react";
@@ -29,29 +30,45 @@ export default function FreeRegistrationPage() {
     ];
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 pt-28 pb-20">
-            {/* Header / Hero Section */}
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-                <Breadcrumbs items={breadcrumbItems} />
+        <main className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 pb-20">
+            {/* ── Top Hero Cover Section ── */}
+            <div className="relative w-full h-[380px] sm:h-[440px] md:h-[480px] overflow-hidden">
+                <Image
+                    src="/assets/free-registration-hero.jpg"
+                    alt="Free Registration NextPath Global"
+                    fill
+                    priority
+                    className="object-cover object-center"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/85 via-[#0d1b2a]/65 to-gray-50" />
 
-                <div className="text-center max-w-3xl mx-auto mt-6 mb-12">
-                    <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-                        <Sparkles className="w-4 h-4" />
+                {/* Hero Banner Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 text-center pt-16 max-w-4xl mx-auto">
+                    <div className="inline-flex items-center gap-2 bg-[#c9a84c]/20 border border-[#c9a84c]/40 text-[#f0d485] px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 drop-shadow-md">
+                        <Sparkles className="w-4 h-4 text-[#f0d485]" />
                         <span>100% Free Consultation & Registration</span>
                     </div>
 
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
-                        Free Registration for <span className="text-primary">European Pathways</span>
+                    <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight drop-shadow-lg">
+                        Free Registration for <span className="text-[#c9a84c]">European Pathways</span>
                     </h1>
 
-                    <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
+                    <p className="mt-4 text-sm sm:text-lg text-white/90 leading-relaxed max-w-2xl drop-shadow">
                         Start your journey today. Fill in your details below to register for free and connect with our senior immigration & visa specialists.
                     </p>
                 </div>
+            </div>
 
-                {/* Grid Layout: Features & Form */}
+            {/* Main Content Area */}
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl -mt-6 relative z-20">
+                <div className="bg-white/80 backdrop-blur-md rounded-2xl p-4 shadow-sm border border-gray-100/80 mb-8 inline-block">
+                    <Breadcrumbs items={breadcrumbItems} />
+                </div>
+
+                {/* Grid Layout: Target Countries/Benefits & Form */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    {/* Left Column: Benefits & Target Countries */}
+                    {/* Left Column: Target Countries & Why Register */}
                     <div className="lg:col-span-5 space-y-6">
                         <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-gray-100">
                             <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
@@ -62,13 +79,16 @@ export default function FreeRegistrationPage() {
                                 {countries.map((country) => (
                                     <div
                                         key={country.name}
-                                        className="p-3 bg-gray-50 rounded-2xl border border-gray-100 hover:border-primary/30 transition-all"
+                                        className="p-3 bg-gray-50 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-sm transition-all"
                                     >
                                         <div className="flex items-center gap-2.5">
                                             <span className="text-2xl">{country.flag}</span>
                                             <div>
                                                 <span className="font-semibold text-gray-900 text-sm block">
                                                     {country.name}
+                                                </span>
+                                                <span className="text-[11px] text-gray-500 leading-tight block">
+                                                    {country.desc}
                                                 </span>
                                             </div>
                                         </div>
@@ -78,7 +98,7 @@ export default function FreeRegistrationPage() {
                         </div>
 
                         {/* Why Choose Us Card */}
-                        <div className="bg-gradient-to-br from-primary to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+                        <div className="bg-gradient-to-br from-primary via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
                             <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none" />
                             <h3 className="text-xl font-bold mb-4">Why Register With Next Path Global?</h3>
                             <ul className="space-y-4 text-sm text-gray-200">
