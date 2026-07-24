@@ -35,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/free-registration`,
+            lastModified: new Date('2026-07-24'),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/why-choose-us`,
             lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',

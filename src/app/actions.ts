@@ -405,5 +405,87 @@ export async function submitAssessmentForm(formData: FormData) {
     }
 }
 
+export async function submitFreeRegistrationForm(formData: FormData) {
+    console.log("=== FREE REGISTRATION FORM SERVER ACTION CALLED ===");
+
+    const name = formData.get("name") as string;
+    const nationality = formData.get("nationality") as string;
+    const targetCountry = formData.get("targetCountry") as string;
+    const whatsappCode = (formData.get("whatsappCode") as string) || "";
+    const whatsappNumber = formData.get("whatsappNumber") as string;
+    const email = (formData.get("email") as string) || "";
+
+    console.log("Form data extracted:", { name, nationality, targetCountry, whatsappCode, whatsappNumber, email });
+
+    if (!name || !nationality || !targetCountry || !whatsappNumber) {
+        return { success: false, error: "Missing required fields. Please fill in all required fields." };
+    }
+
+    const fullWhatsapp = `${whatsappCode} ${whatsappNumber}`.trim();
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    try {
+        // 1. Send email to Admin
+        const adminEmailResult = await resend.emails.send({
+            from: "Next Path Global <noreply@nextpathglobal.my>",
+            to: "nextpathglobal058@gmail.com",
+            subject: `New Free Registration: ${name} - ${targetCountry}`,
+            html: `
+                <h2>New Free Registration Submission</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Nationality:</strong> ${nationality}</p>
+                <p><strong>Country Want to Apply:</strong> ${targetCountry}</p>
+                <p><strong>WhatsApp Number:</strong> ${fullWhatsapp}</p>
+                ${email ? `<p><strong>Email Address:</strong> ${email}</p>` : ""}
+                <br />
+                <p>Submitted via Next Path Global website Free Registration page.</p>
+            `,
+        });
+
+        if (adminEmailResult.error) {
+            console.error("Admin email error:", adminEmailResult.error);
+            return {
+                success: false,
+                error: "Failed to send notification email. Please try again or contact us directly on WhatsApp."
+            };
+        }
+
+        // 2. If client provided email, send confirmation email
+        if (email) {
+            await resend.emails.send({
+                from: "Next Path Global <noreply@nextpathglobal.my>",
+                to: email,
+                subject: `Free Registration Received - Next Path Global`,
+                html: `
+                    <h2>Hi ${name},</h2>
+                    <p>Thank you for registering with Next Path Global!</p>
+                    <p>We have received your registration details for <strong>${targetCountry}</strong>.</p>
+                    <h3>Registration Summary:</h3>
+                    <ul>
+                        <li><strong>Name:</strong> ${name}</li>
+                        <li><strong>Nationality:</strong> ${nationality}</li>
+                        <li><strong>Country Want to Apply:</strong> ${targetCountry}</li>
+                        <li><strong>WhatsApp Number:</strong> ${fullWhatsapp}</li>
+                    </ul>
+                    <p>Our expert team will review your details and reach out to you on WhatsApp shortly.</p>
+                    <br />
+                    <p>Best regards,</p>
+                    <p><strong>Next Path Global Team</strong></p>
+                    <p>NextPath Global Sdn Bhd<br />Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur</p>
+                `,
+            });
+        }
+
+        return { success: true };
+    } catch (error) {
+        console.error("=== FREE REGISTRATION RESEND API ERROR ===", error);
+        return {
+            success: false,
+            error: error instanceof Error ? error.message : "An unexpected error occurred. Please try again."
+        };
+    }
+}
+
+
 
 

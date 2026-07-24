@@ -62,6 +62,7 @@ export default function Footer() {
                         <h3 className="text-lg font-bold mb-6 text-primary">Quick Links</h3>
                         <ul className="space-y-3">
                             <li><Link href="/about" className="text-gray-600 hover:text-primary transition-colors">About Us</Link></li>
+                            <li><Link href="/free-registration" className="text-gray-600 hover:text-primary transition-colors">Free Registration</Link></li>
                             <li><Link href="/contact" className="text-gray-600 hover:text-primary transition-colors">Contact Us</Link></li>
                             <li><Link href="/student-assessment" className="text-gray-600 hover:text-primary transition-colors">Student Assessment Form</Link></li>
                             <li><Link href="/why-choose-us" className="text-gray-600 hover:text-primary transition-colors">Why Choose Us</Link></li>
