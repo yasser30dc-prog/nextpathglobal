@@ -52,41 +52,63 @@ export default function Contact() {
                         <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg">
                             <h3 className="text-2xl font-bold mb-6 text-gray-900">Get in Touch</h3>
                             <div className="space-y-6">
+                                {/* Corporate Office */}
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-primary/10 p-3 rounded-full text-primary">
+                                    <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-1">
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold mb-1 text-gray-900">Visit Us</h4>
-                                        <p className="text-gray-600">NextPath Global Sdn Bhd<br />Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak,<br />Kampung Datuk Keramat, 50400 Kuala Lumpur,<br />Federal Territory of Kuala Lumpur</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-4">
-                                    <div className="bg-primary/10 p-3 rounded-full text-primary">
-                                        <Phone size={24} />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold mb-1 text-gray-900">Contact Us</h4>
-                                        <div className="flex flex-col gap-1 mt-1">
-                                            <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1">
+                                        <h4 className="font-bold text-gray-900 text-lg mb-1">Corporate Office:</h4>
+                                        <p className="text-gray-600 leading-relaxed mb-2">
+                                            Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur.
+                                        </p>
+                                        <div className="flex flex-col gap-1.5 text-sm">
+                                            <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
                                                 <span>💬 +60 11 1669 5249</span>
                                             </a>
-                                            <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1">
-                                                <span>💬 +60 17 296 5249</span>
-                                            </a>
-                                            <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1">
+                                            <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
                                                 <span>💬 +60 17 882 3135</span>
+                                            </a>
+                                            <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
+                                                <span>💬 +60 17 296 5249</span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex items-start gap-4">
-                                    <div className="bg-primary/10 p-3 rounded-full text-primary">
-                                        <Mail size={24} />
+
+                                {/* Bangladesh Office */}
+                                <div className="flex items-start gap-4 pt-4 border-t border-gray-100">
+                                    <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-1">
+                                        <MapPin size={24} />
                                     </div>
                                     <div>
+                                        <h4 className="font-bold text-gray-900 text-lg mb-1">Bangladesh Office:</h4>
+                                        <p className="text-gray-600 leading-relaxed mb-2">
+                                            House No- 18, Road No- 11, Dhaka- 1229, Bangladesh.
+                                        </p>
+                                        <div className="flex flex-col gap-1.5 text-sm">
+                                            <a href="https://wa.me/8801410237495" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
+                                                <span>💬 +88 014 1023 7495</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Emails */}
+                                <div className="flex items-start gap-4 pt-4 border-t border-gray-100">
+                                    <div className="bg-primary/10 p-3 rounded-full text-primary shrink-0 mt-1">
+                                        <Mail size={24} />
+                                    </div>
+                                    <div className="space-y-1">
                                         <h4 className="font-bold mb-1 text-gray-900">Email Us</h4>
-                                        <p className="text-gray-600">info@nextpathglobal.my</p>
+                                        <p className="text-gray-600 flex items-center gap-1 flex-wrap text-sm">
+                                            <a href="mailto:info@nextpathglobal.my" className="hover:text-primary transition-colors font-medium">info@nextpathglobal.my</a>
+                                            <span className="text-gray-500 text-xs">(general Query)</span>
+                                        </p>
+                                        <p className="text-gray-600 flex items-center gap-1 flex-wrap text-sm">
+                                            <a href="mailto:partnerships@nextpathglobal.my" className="hover:text-primary transition-colors font-medium">partnerships@nextpathglobal.my</a>
+                                            <span className="text-gray-500 text-xs">(B2B partnership)</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

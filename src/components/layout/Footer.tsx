@@ -75,25 +75,47 @@ export default function Footer() {
 
                     <div>
                         <h3 className="text-lg font-bold mb-6 text-primary">Contact</h3>
-                        <div className="space-y-4 text-gray-600">
-                            <p className="leading-relaxed">
-                                NextPath Global Sdn Bhd<br />
-                                Level 41, The Intermark, Vista Tower,<br />
-                                384, Jln Tun Razak, Kampung Datuk Keramat,<br />
-                                50400 Kuala Lumpur, Federal Territory of Kuala Lumpur
-                            </p>
-                            <div className="flex flex-col gap-1 text-sm">
-                                <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
-                                    <span>💬 +60 11 1669 5249</span>
-                                </a>
-                                <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
-                                    <span>💬 +60 17 296 5249</span>
-                                </a>
-                                <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
-                                    <span>💬 +60 17 882 3135</span>
-                                </a>
+                        <div className="space-y-4 text-gray-600 text-sm">
+                            <div>
+                                <p className="font-bold text-gray-900 mb-1">Corporate Office:</p>
+                                <p className="leading-relaxed mb-2">
+                                    Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur.
+                                </p>
+                                <div className="flex flex-col gap-1">
+                                    <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                                        <span>💬 +60 11 1669 5249</span>
+                                    </a>
+                                    <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                                        <span>💬 +60 17 882 3135</span>
+                                    </a>
+                                    <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                                        <span>💬 +60 17 296 5249</span>
+                                    </a>
+                                </div>
                             </div>
-                            <p>info@nextpathglobal.my</p>
+
+                            <div>
+                                <p className="font-bold text-gray-900 mb-1">Bangladesh Office:</p>
+                                <p className="leading-relaxed mb-2">
+                                    House No- 18, Road No- 11, Dhaka- 1229, Bangladesh.
+                                </p>
+                                <div className="flex flex-col gap-1">
+                                    <a href="https://wa.me/8801410237495" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                                        <span>💬 +88 014 1023 7495</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="pt-2 border-t border-gray-200/80 space-y-1">
+                                <p className="flex items-center gap-1 flex-wrap">
+                                    <a href="mailto:info@nextpathglobal.my" className="hover:text-primary transition-colors font-medium">info@nextpathglobal.my</a>
+                                    <span className="text-gray-500 text-xs">(general Query)</span>
+                                </p>
+                                <p className="flex items-center gap-1 flex-wrap">
+                                    <a href="mailto:partnerships@nextpathglobal.my" className="hover:text-primary transition-colors font-medium">partnerships@nextpathglobal.my</a>
+                                    <span className="text-gray-500 text-xs">(B2B partnership)</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

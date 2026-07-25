@@ -191,7 +191,7 @@ const StudyAbroadPage = () => {
                             >
                                 Start Free Assessment
                             </Link>
-                            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+                             <div className="flex flex-col md:flex-row gap-4 justify-center items-center flex-wrap">
                                 <a
                                     href="https://wa.me/601116695249"
                                     target="_blank"
@@ -199,6 +199,14 @@ const StudyAbroadPage = () => {
                                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 w-full md:w-auto"
                                 >
                                     <MessageCircle size={20} /> +60 11 1669 5249
+                                </a>
+                                <a
+                                    href="https://wa.me/60178823135"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 w-full md:w-auto"
+                                >
+                                    <MessageCircle size={20} /> +60 17 882 3135
                                 </a>
                                 <a
                                     href="https://wa.me/60172965249"
@@ -209,12 +217,12 @@ const StudyAbroadPage = () => {
                                     <MessageCircle size={20} /> +60 17 296 5249
                                 </a>
                                 <a
-                                    href="https://wa.me/60178823135"
+                                    href="https://wa.me/8801410237495"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 w-full md:w-auto"
                                 >
-                                    <MessageCircle size={20} /> +60 17 882 3135
+                                    <MessageCircle size={20} /> +88 014 1023 7495
                                 </a>
                             </div>
                         </div>

@@ -226,15 +226,17 @@ export async function submitAppointmentForm(formData: FormData) {
         
         <p>If you have an urgent query, please contact us at:</p>
         <p>
-          <a href="https://wa.me/601116695249" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 11 1669 5249</strong></a>, 
-          <a href="https://wa.me/60172965249" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 17 296 5249</strong></a>, or 
-          <a href="https://wa.me/60178823135" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 17 882 3135</strong></a>
+          Corporate Office: <a href="https://wa.me/601116695249" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 11 1669 5249</strong></a>, 
+          <a href="https://wa.me/60178823135" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 17 882 3135</strong></a>, 
+          <a href="https://wa.me/60172965249" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 17 296 5249</strong></a><br />
+          Bangladesh Office: <a href="https://wa.me/8801410237495" style="color: #0c4a6e; text-decoration: underline;"><strong>+88 014 1023 7495</strong></a>
         </p>
         
         <br />
         <p>Best regards,</p>
         <p><strong>Next Path Global Team</strong></p>
-        <p>NextPath Global Sdn Bhd<br />Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+        <p><strong>Corporate Office:</strong> Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur.<br />
+        <strong>Bangladesh Office:</strong> House No- 18, Road No- 11, Dhaka- 1229, Bangladesh.</p>
       `,
         });
 

@@ -248,38 +248,47 @@ export default function TermsPage() {
                         <p className="text-gray-700 leading-relaxed mb-4">
                             For any questions or concerns regarding these Terms of Service, please contact us at:
                         </p>
-                        <div className="space-y-3 text-gray-700">
+                        <div className="space-y-4 text-gray-700">
                             <div className="flex items-start">
                                 <span className="mr-2">📧</span>
-                                <div>
+                                <div className="space-y-1">
                                     <span className="font-semibold">Email:</span>{" "}
-                                    <a href="mailto:info@nextpathglobal.my" className="text-primary hover:underline">
-                                        info@nextpathglobal.my
-                                    </a>
+                                    <div className="flex flex-col gap-1 mt-1">
+                                        <a href="mailto:info@nextpathglobal.my" className="text-primary hover:underline">
+                                            info@nextpathglobal.my <span className="text-gray-500 text-xs">(general Query)</span>
+                                        </a>
+                                        <a href="mailto:partnerships@nextpathglobal.my" className="text-primary hover:underline">
+                                            partnerships@nextpathglobal.my <span className="text-gray-500 text-xs">(B2B partnership)</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div className="flex items-start">
                                 <span className="mr-2">🏢</span>
-                                <div>
-                                    <span className="font-semibold">Address:</span>{" "}
-                                    NextPath Global Sdn Bhd<br />
-                                    Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur
-                                </div>
-                            </div>
-                            <div className="flex items-start">
-                                <span className="mr-2">📞</span>
-                                <div>
-                                    <span className="font-semibold">Phone / WhatsApp:</span>{" "}
-                                    <div className="flex flex-col gap-1 mt-1">
-                                        <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
-                                            <span>💬 +60 11 1669 5249</span>
-                                        </a>
-                                        <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
-                                            <span>💬 +60 17 296 5249</span>
-                                        </a>
-                                        <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
-                                            <span>💬 +60 17 882 3135</span>
-                                        </a>
+                                <div className="space-y-3">
+                                    <div>
+                                        <span className="font-bold text-gray-900">Corporate Office:</span><br />
+                                        Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur.
+                                        <div className="flex flex-col gap-1 mt-2">
+                                            <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
+                                                <span>💬 +60 11 1669 5249</span>
+                                            </a>
+                                            <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
+                                                <span>💬 +60 17 882 3135</span>
+                                            </a>
+                                            <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
+                                                <span>💬 +60 17 296 5249</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span className="font-bold text-gray-900">Bangladesh Office:</span><br />
+                                        House No- 18, Road No- 11, Dhaka- 1229, Bangladesh.
+                                        <div className="flex flex-col gap-1 mt-2">
+                                            <a href="https://wa.me/8801410237495" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
+                                                <span>💬 +88 014 1023 7495</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

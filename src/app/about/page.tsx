@@ -308,6 +308,14 @@ export default function About() {
                                     <MessageCircle size={20} className="text-[#25D366]" /> +60 11 1669 5249
                                 </a>
                                 <a
+                                    href="https://wa.me/60178823135"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3.5 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                                >
+                                    <MessageCircle size={20} className="text-[#25D366]" /> +60 17 882 3135
+                                </a>
+                                <a
                                     href="https://wa.me/60172965249"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -316,12 +324,12 @@ export default function About() {
                                     <MessageCircle size={20} className="text-[#25D366]" /> +60 17 296 5249
                                 </a>
                                 <a
-                                    href="https://wa.me/60178823135"
+                                    href="https://wa.me/8801410237495"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3.5 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                                 >
-                                    <MessageCircle size={20} className="text-[#25D366]" /> +60 17 882 3135
+                                    <MessageCircle size={20} className="text-[#25D366]" /> +88 014 1023 7495
                                 </a>
                             </div>
                             <Link

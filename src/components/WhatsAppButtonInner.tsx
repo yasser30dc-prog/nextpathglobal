@@ -8,9 +8,10 @@ export default function WhatsAppButtonInner() {
   const [isOpen, setIsOpen] = useState(false);
 
   const contacts = [
-    { name: "Advisor 1", phone: "+60 11 1669 5249", url: "https://wa.me/601116695249" },
-    { name: "Advisor 2", phone: "+60 17 296 5249", url: "https://wa.me/60172965249" },
-    { name: "Advisor 3", phone: "+60 17 882 3135", url: "https://wa.me/60178823135" },
+    { name: "Corporate Office (Malaysia)", phone: "+60 11 1669 5249", url: "https://wa.me/601116695249" },
+    { name: "Corporate Office (Malaysia)", phone: "+60 17 882 3135", url: "https://wa.me/60178823135" },
+    { name: "Corporate Office (Malaysia)", phone: "+60 17 296 5249", url: "https://wa.me/60172965249" },
+    { name: "Bangladesh Office", phone: "+88 014 1023 7495", url: "https://wa.me/8801410237495" },
   ];
 
   return (
