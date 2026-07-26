@@ -20,6 +20,7 @@ const searchData = [
         items: [
             { name: "MM2H Programme", description: "Malaysia My Second Home - Long-term residency with 5-20 year visa options", href: "/services/mm2h", keywords: ["mm2h", "malaysia my second home", "residency", "retirement", "long term"] },
             { name: "PVIP Programme", description: "Premium Visa Programme - 20-year residency for global investors", href: "/services/pvip", keywords: ["pvip", "premium", "investor", "investment", "20 year"] },
+            { name: "De Rantau / Digital Nomad Visa", description: "Malaysia Digital Nomad Pass for freelancers & remote workers to live in Malaysia", href: "/services/de-rantau-digital-nomad-visa", keywords: ["de rantau", "digital nomad", "nomad pass", "remote work", "freelance visa", "malaysia digital nomad"] },
         ]
     },
     {

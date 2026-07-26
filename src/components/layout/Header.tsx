@@ -41,6 +41,7 @@ const navLinks: NavLink[] = [
             { name: "MM2H", href: "/services/mm2h" },
             { name: "PVIP", href: "/services/pvip" },
             { name: "Employment Pass", href: "/services/employment-pass" },
+            { name: "De Rantau / Digital Nomad Visa", href: "/services/de-rantau-digital-nomad-visa" },
         ]
     },
     { name: "About Us", href: "/about" },

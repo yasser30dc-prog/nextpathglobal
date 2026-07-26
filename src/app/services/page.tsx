@@ -62,6 +62,12 @@ const serviceCategories: ServiceCategory[] = [
                 link: "/services/employment-pass"
             },
             {
+                title: "De Rantau / Digital Nomad Visa",
+                description: "Official MDEC Malaysia Nomad Pass processing for digital freelancers, independent contractors, and remote workers to live and work in Malaysia for up to 24 months.",
+                icon: <Globe size={32} className="text-[#c9a84c]" />,
+                link: "/services/de-rantau-digital-nomad-visa"
+            },
+            {
                 title: "European Work Permit Process",
                 description: "Fully compliant work permit filing, employer matching guidance, and relocation coordination for major European nations looking for qualified international skilled workforce.",
                 icon: <Globe size={32} className="text-[#c9a84c]" />,
