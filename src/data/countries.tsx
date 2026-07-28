@@ -720,7 +720,7 @@ export const countries: CountryData[] = [
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "RM 200" },
-            { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "6 Months (Stay permit 30 days)" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry (ETA)" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone can apply from anywhere in the world" },
         ],
