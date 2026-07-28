@@ -562,4 +562,97 @@ export const bangladeshCountries: BangladeshCountryData[] = [
             "+8801410237495",
         ],
     },
+    {
+        slug: "sri-lanka",
+        name: "Sri Lanka",
+        visaType: "ETA",
+        tagline: "Pearl of the Indian Ocean",
+        description: "Tropical paradise offering pristine beaches, ancient temples, lush tea plantations, and incredible wildlife. Discover this island gem with fast 1-day ETA processing. Apply for your Sri Lanka ETA with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/sri-lanka.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "1 Working Day (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "3,500 BDT" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "30 Days" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry (ETA)" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone can apply from anywhere in the world" },
+        ],
+        documentCategories: [
+            {
+                category: "Job Holder",
+                documents: [
+                    "07 Months Valid Passport With Old Passport (If have)",
+                    "Clear scanned copy of the information/bio-data page",
+                    "Visa Copy (Required if currently residing outside your home country)",
+                    "Visiting Card / No Objection Certificate (NOC)",
+                    "Recent 2 copy photograph taken in last 3 months (white background only, photo size 35 mm X 45 mm)",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "07 Months Valid Passport With Old Passport (If have)",
+                    "Clear scanned copy of the information/bio-data page",
+                    "Visa Copy (Required if currently residing outside your home country)",
+                    "Renewal trade license copy / Visiting Card / Company Letter Head Pad",
+                    "Recent 2 copy photograph taken in last 3 months (white background only, photo size 35 mm X 45 mm)",
+                ],
+            },
+            {
+                category: "Govt Job Holder",
+                documents: [
+                    "07 Months Valid Passport With Old Passport (If have)",
+                    "Clear scanned copy of the information/bio-data page",
+                    "GO (Government order) / Employee ID Card / Visiting Card",
+                    "Recent 2 copy photograph taken in last 3 months (white background only, photo size 35 mm X 45 mm)",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "07 Months Valid Passport With Old Passport (If have)",
+                    "Clear scanned copy of the information/bio-data page",
+                    "Student ID Card / Leave Letter from school or college",
+                    "Recent 2 copy photograph taken in last 3 months (white background only, photo size 35 mm X 45 mm)",
+                ],
+            },
+            {
+                category: "General / Other",
+                documents: [
+                    "07 Months Valid Passport With Old Passport (If have)",
+                    "Clear scanned copy of the information/bio-data page",
+                    "Visa Copy (Required if currently residing outside your home country)",
+                    "Trade License / Business Card — As proof of professional details and business credentials",
+                    "Recent 2 copy photograph taken in last 3 months (white background only, photo size 35 mm X 45 mm)",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Sun size={32} />, title: "Beautiful Beaches", description: "Pristine coastline with golden sands and crystal-clear waters" },
+            { icon: <Leaf size={32} />, title: "Tea Country", description: "Visit lush tea plantations and scenic hill stations like Nuwara Eliya" },
+            { icon: <Landmark size={32} />, title: "Ancient Heritage", description: "UNESCO sites including Sigiriya Rock and ancient temples" },
+            { icon: <Users size={32} />, title: "Wildlife Safari", description: "Spot elephants, leopards, and diverse wildlife in national parks" },
+        ],
+        destinations: [
+            { name: "Colombo", highlights: "Galle Face, Temples, Shopping, Colonial Architecture", image: "/assets/destinations/colombo.webp" },
+            { name: "Kandy", highlights: "Temple of Tooth, Cultural Shows, Botanical Gardens", image: "/assets/destinations/kandy.webp" },
+            { name: "Sigiriya", highlights: "Rock Fortress, Ancient Frescoes, UNESCO Heritage Site", image: "/assets/destinations/sigiriya.webp" },
+            { name: "Galle", highlights: "Dutch Fort, Beaches, Historic Town, Coastal Beauty", image: "/assets/destinations/galle.webp" },
+        ],
+        process: [
+            { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
+            { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
+            { step: 3, title: "Processing", description: "We handle your ETA application" },
+            { step: 4, title: "Get Your ETA", description: "Receive an approved ETA in 1 day" },
+        ],
+        importantNotes: [
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
 ];
+
