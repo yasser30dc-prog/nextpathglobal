@@ -7,19 +7,13 @@ import {
     CheckCircle2,
     Users,
     GraduationCap,
-    DollarSign,
-    Clock,
     ArrowRight,
     Sparkles,
     MessageCircle,
-    FileText,
     Check,
-    Globe,
     Building2,
     BookOpen,
     Compass,
-    Headphones,
-    Award,
     BadgePercent,
     PhoneCall,
     HelpCircle,
@@ -85,45 +79,6 @@ export default function BecomeAPartnerPage() {
             desc: "Language academy directors, coaching center heads, alumni mentors, and youth leaders with an active network of students and parents seeking reliable overseas education guidance.",
             icon: Building2,
             tag: "Bulk Student Referrals",
-        },
-    ];
-
-    const benefits = [
-        {
-            title: "Earnings You Can See",
-            desc: "Lucrative, transparent commission structure on every enrolled student or successful visa case. Documented clearly in writing with zero hidden deductions or surprise fees.",
-            icon: DollarSign,
-            badge: "Direct Bank Payouts",
-        },
-        {
-            title: "End-to-End Processing & Support",
-            desc: "Our senior admissions officers handle all university correspondence, document translation, student visa submissions (EMGS), and arrival coordination.",
-            icon: Headphones,
-            badge: "Dedicated Admissions Desk",
-        },
-        {
-            title: "Work On Your Own Schedule",
-            desc: "Total flexibility. Collaborate alongside your regular teaching hours, lecturing schedule, or consulting practice with no strict referral quotas.",
-            icon: Clock,
-            badge: "100% Flexible",
-        },
-        {
-            title: "Ready-Made Marketing Materials",
-            desc: "Instant access to official university brochures, entry requirement cheat sheets, course comparisons, fee schedules, and customizable presentation decks.",
-            icon: FileText,
-            badge: "Turnkey Collateral",
-        },
-        {
-            title: "A Prestigious Global Network",
-            desc: "Direct representation agreements with 50+ top universities in Malaysia (Sunway, APU, Taylor's, UCSI, MAHSA), Spanish institutions, and accredited Chinese universities.",
-            icon: Globe,
-            badge: "50+ Institutional Partners",
-        },
-        {
-            title: "Clear, Fair Terms & Formal MOU",
-            desc: "We issue a formal B2B partnership agreement guaranteeing full attribution of your student referrals, lifetime tracking integrity, and transparent payment schedules.",
-            icon: Award,
-            badge: "Legal B2B Protection",
         },
     ];
 
@@ -301,56 +256,6 @@ export default function BecomeAPartnerPage() {
                                     <div className="pt-5 mt-5 border-t border-gray-200/60 flex items-center text-xs font-semibold text-primary">
                                         <span>Ideal Partner Profile</span>
                                         <Check className="w-4 h-4 ml-1.5 text-emerald-600" />
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            {/* ── 3. What You Get as a Partner (Benefits Grid) ── */}
-            <section className="py-20 bg-slate-50 border-y border-slate-200/60">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-14">
-                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
-                            <Sparkles className="w-3.5 h-3.5 text-amber-600" /> Partner Value Proposition
-                        </div>
-                        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-                            What You Get as a NextPath Partner
-                        </h2>
-                        <p className="mt-3 text-base sm:text-lg text-gray-600 leading-relaxed">
-                            We provide complete administrative, marketing, and processing infrastructure so you can focus on helping students choose the right pathway.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {benefits.map((b) => {
-                            const Icon = b.icon;
-                            return (
-                                <div
-                                    key={b.title}
-                                    className="bg-white rounded-3xl p-7 border-l-4 border-l-amber-400 border-t border-r border-b border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between"
-                                >
-                                    <div>
-                                        <div className="flex items-center justify-between mb-4">
-                                            <div className="w-10 h-10 rounded-xl bg-blue-50 text-primary flex items-center justify-center">
-                                                <Icon className="w-5 h-5" />
-                                            </div>
-                                            <span className="text-xs font-semibold text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full">
-                                                {b.badge}
-                                            </span>
-                                        </div>
-                                        <h3 className="text-lg font-bold text-gray-900 mb-2">
-                                            {b.title}
-                                        </h3>
-                                        <p className="text-sm text-gray-600 leading-relaxed">
-                                            {b.desc}
-                                        </p>
-                                    </div>
-                                    <div className="mt-5 pt-4 border-t border-gray-100 flex items-center text-xs text-emerald-700 font-semibold gap-1.5">
-                                        <CheckCircle2 className="w-3.5 h-3.5" />
-                                        <span>Guaranteed in Partnership MOU</span>
                                     </div>
                                 </div>
                             );
