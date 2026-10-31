@@ -47,7 +47,6 @@ const navLinks: NavLink[] = [
         ]
     },
     { name: "Business Transformation", href: "/services/business-transformation" },
-    { name: "Become a Partner", href: "/become-a-partner" },
     { name: "Contact", href: "/contact" },
 ];
 
@@ -153,10 +152,10 @@ export default function Header() {
                         <Search size={19} />
                     </button>
                     <Link
-                        href="/book-appointment"
+                        href="/become-a-partner"
                         className="bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-full font-medium whitespace-nowrap shrink-0 transition-all transform hover:scale-105 shadow-sm"
                     >
-                        Book Appointment
+                        Become a Partner
                     </Link>
                 </nav>
 
@@ -171,10 +170,10 @@ export default function Header() {
                         <Search size={20} />
                     </button>
                     <Link
-                        href="/book-appointment"
+                        href="/become-a-partner"
                         className="hidden sm:inline-flex bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all shadow-sm"
                     >
-                        Book Appointment
+                        Become a Partner
                     </Link>
                     <button
                         type="button"
@@ -265,11 +264,11 @@ export default function Header() {
                                 <span>Search Services</span>
                             </button>
                             <Link
-                                href="/book-appointment"
+                                href="/become-a-partner"
                                 className="bg-primary text-white text-center py-3 rounded-lg font-medium mt-4"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                Book Appointment
+                                Become a Partner
                             </Link>
                         </nav>
                     </motion.div>
