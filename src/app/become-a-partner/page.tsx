@@ -21,7 +21,6 @@ import {
     Headphones,
     Award,
     BadgePercent,
-    CalendarCheck,
     PhoneCall,
     HelpCircle,
 } from "lucide-react";
@@ -125,33 +124,6 @@ export default function BecomeAPartnerPage() {
             desc: "We issue a formal B2B partnership agreement guaranteeing full attribution of your student referrals, lifetime tracking integrity, and transparent payment schedules.",
             icon: Award,
             badge: "Legal B2B Protection",
-        },
-    ];
-
-    const steps = [
-        {
-            number: "01",
-            title: "Submit Your Application",
-            desc: "Fill in the short partner registration form below. It takes under 3 minutes to tell us about your experience and student reach.",
-            tag: "Takes ~3 mins",
-        },
-        {
-            number: "02",
-            title: "Discovery & Review",
-            desc: "Our Partner Relations team reaches out within 24 to 48 hours via WhatsApp or email to discuss mutual goals and commission terms.",
-            tag: "24–48h Response",
-        },
-        {
-            number: "03",
-            title: "Complete Onboarding",
-            desc: "Receive your official Partner Agreement, university marketing kits, fee catalogs, and direct contact with your dedicated Partner Manager.",
-            tag: "Full Partner Kit",
-        },
-        {
-            number: "04",
-            title: "Refer Students & Earn",
-            desc: "Introduce students to NextPath Global. Our team handles counseling, admissions, and visa files, while you track status and receive prompt payouts.",
-            tag: "High Commissions",
         },
     ];
 
@@ -383,52 +355,6 @@ export default function BecomeAPartnerPage() {
                                 </div>
                             );
                         })}
-                    </div>
-                </div>
-            </section>
-
-            {/* ── 4. How It Works (Timeline & Process) ── */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-primary text-xs font-bold uppercase tracking-wider mb-3">
-                            <CalendarCheck className="w-3.5 h-3.5" /> Simple 4-Step Process
-                        </div>
-                        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-                            How It Works
-                        </h2>
-                        <p className="mt-3 text-base sm:text-lg text-gray-600 leading-relaxed">
-                            From your initial 3-minute application to your first student enrollment and commission payment.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-                        {steps.map((st, idx) => (
-                            <div
-                                key={st.number}
-                                className="relative bg-slate-50 rounded-3xl p-7 border border-slate-200/80 hover:border-primary/30 transition-all flex flex-col justify-between"
-                            >
-                                <div>
-                                    <div className="flex items-center justify-between mb-4">
-                                        <span className="w-12 h-12 rounded-2xl bg-primary text-white font-black text-xl flex items-center justify-center shadow-md shadow-blue-500/20">
-                                            {st.number}
-                                        </span>
-                                        <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800">
-                                            {st.tag}
-                                        </span>
-                                    </div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                                        {st.title}
-                                    </h3>
-                                    <p className="text-sm text-gray-600 leading-relaxed">
-                                        {st.desc}
-                                    </p>
-                                </div>
-                                <div className="mt-6 pt-4 border-t border-gray-200/60 text-xs font-semibold text-gray-500">
-                                    Step {idx + 1} of 4
-                                </div>
-                            </div>
-                        ))}
                     </div>
                 </div>
             </section>
